@@ -1,0 +1,1001 @@
+{
+  "categories": {
+    "미국_S&P500": {
+      "description": "미국 대형주 500개 기업을 추종하는 ETF",
+      "country": "US",
+      "etfs": [
+        {
+          "ticker": "SPY",
+          "name": "State Street SPDR S&P 500 ETF Trust",
+          "price": 681.75,
+          "priceChange": 0.48,
+          "priceChangePct": 0.07,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 708919230464,
+          "dividendYield": 1.05,
+          "returns": {
+            "1M": -1.52,
+            "3M": 1.74,
+            "6M": 6.56,
+            "1Y": null
+          },
+          "volatility": 19.46,
+          "maxDrawdown": -18.76,
+          "volume": 96150400,
+          "lastUpdate": "2026-02-16T22:34:36.990234"
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "price": 626.89,
+          "priceChange": 0.4,
+          "priceChangePct": 0.06,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 1509873025024,
+          "dividendYield": 1.11,
+          "returns": {
+            "1M": -1.53,
+            "3M": 1.73,
+            "6M": 6.57,
+            "1Y": null
+          },
+          "volatility": 18.51,
+          "maxDrawdown": -18.69,
+          "volume": 9302800,
+          "lastUpdate": "2026-02-16T22:34:37.972047"
+        },
+        {
+          "ticker": "IVV",
+          "name": "iShares Core S&P 500 ETF",
+          "price": 684.76,
+          "priceChange": 0.43,
+          "priceChangePct": 0.06,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 763643363328,
+          "dividendYield": 1.16,
+          "returns": {
+            "1M": -1.52,
+            "3M": 1.74,
+            "6M": 6.59,
+            "1Y": null
+          },
+          "volatility": 18.71,
+          "maxDrawdown": -18.75,
+          "volume": 5508700,
+          "lastUpdate": "2026-02-16T22:34:38.957338"
+        },
+        {
+          "ticker": "SPLG",
+          "name": "State Street SPDR Portfolio S&P 500 ETF",
+          "price": 80.2,
+          "priceChange": 0.04,
+          "priceChangePct": 0.05,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 97328324608,
+          "dividendYield": 1.13,
+          "returns": {
+            "1M": -1.52,
+            "3M": 1.74,
+            "6M": 6.33,
+            "1Y": null
+          },
+          "volatility": 18.72,
+          "maxDrawdown": -18.72,
+          "volume": 11640247,
+          "lastUpdate": "2026-02-16T22:34:39.915072"
+        }
+      ]
+    },
+    "미국_나스닥": {
+      "description": "기술주 중심의 나스닥 지수 추종 ETF",
+      "country": "US",
+      "etfs": [
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust",
+          "price": 601.92,
+          "priceChange": 1.28,
+          "priceChangePct": 0.21,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 411780087808,
+          "dividendYield": 0.45,
+          "returns": {
+            "1M": -3.19,
+            "3M": -0.94,
+            "6M": 4.51,
+            "1Y": null
+          },
+          "volatility": 23.44,
+          "maxDrawdown": -22.77,
+          "volume": 69152700,
+          "lastUpdate": "2026-02-16T22:34:40.899874"
+        },
+        {
+          "ticker": "QQQM",
+          "name": "Invesco NASDAQ 100 ETF",
+          "price": 247.83,
+          "priceChange": 0.51,
+          "priceChangePct": 0.21,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 73416523776,
+          "dividendYield": 0.49,
+          "returns": {
+            "1M": -3.19,
+            "3M": -0.93,
+            "6M": 4.54,
+            "1Y": null
+          },
+          "volatility": 23.16,
+          "maxDrawdown": -22.7,
+          "volume": 5637800,
+          "lastUpdate": "2026-02-16T22:34:41.839405"
+        },
+        {
+          "ticker": "QQQE",
+          "name": "Direxion NASDAQ-100 Equal Weighted Index Shares",
+          "price": 102.68,
+          "priceChange": 1.16,
+          "priceChangePct": 1.14,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 1225758464,
+          "dividendYield": 0.51,
+          "returns": {
+            "1M": -1.72,
+            "3M": 2.02,
+            "6M": 4.81,
+            "1Y": null
+          },
+          "volatility": 20.93,
+          "maxDrawdown": -21.38,
+          "volume": 154600,
+          "lastUpdate": "2026-02-16T22:34:42.897318"
+        },
+        {
+          "ticker": "QQQJ",
+          "name": "Invesco NASDAQ Next Gen 100 ETF",
+          "price": 38.04,
+          "priceChange": 0.32,
+          "priceChangePct": 0.85,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 883644352,
+          "dividendYield": 0.82,
+          "returns": {
+            "1M": -2.93,
+            "3M": 5.12,
+            "6M": 12.19,
+            "1Y": null
+          },
+          "volatility": 22.26,
+          "maxDrawdown": -22.46,
+          "volume": 216800,
+          "lastUpdate": "2026-02-16T22:34:43.831100"
+        },
+        {
+          "ticker": "ONEQ",
+          "name": "Fidelity Nasdaq Composite Index ETF",
+          "price": 88.75,
+          "priceChange": -0.23,
+          "priceChangePct": -0.26,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 9389847552,
+          "dividendYield": 0.53,
+          "returns": {
+            "1M": -4.1,
+            "3M": -1.17,
+            "6M": 4.58,
+            "1Y": null
+          },
+          "volatility": 24.03,
+          "maxDrawdown": -23.65,
+          "volume": 186400,
+          "lastUpdate": "2026-02-16T22:34:44.907050"
+        },
+        {
+          "ticker": "TQQQ",
+          "name": "ProShares UltraPro QQQ",
+          "price": 48.47,
+          "priceChange": 0.21,
+          "priceChangePct": 0.44,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 28960600064,
+          "dividendYield": 0.63,
+          "returns": {
+            "1M": -10.87,
+            "3M": -7.23,
+            "6M": 4.21,
+            "1Y": null
+          },
+          "volatility": 69.51,
+          "maxDrawdown": -56.84,
+          "volume": 122897400,
+          "lastUpdate": "2026-02-16T22:34:45.904314"
+        },
+        {
+          "ticker": "PSQ",
+          "name": "ProShares Short QQQ",
+          "price": 30.97,
+          "priceChange": -0.05,
+          "priceChangePct": -0.16,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 511553344,
+          "dividendYield": 5.01,
+          "returns": {
+            "1M": 3.58,
+            "3M": 2.07,
+            "6M": -2.16,
+            "1Y": null
+          },
+          "volatility": 23.25,
+          "maxDrawdown": -33.97,
+          "volume": 11878200,
+          "lastUpdate": "2026-02-16T22:34:46.906092"
+        }
+      ]
+    },
+    "미국_채권": {
+      "description": "국채, 회사채 등 채권에 투자하는 ETF",
+      "country": "US",
+      "etfs": [
+        {
+          "ticker": "AGG",
+          "name": "iShares Core U.S. Aggregate Bond ETF",
+          "price": 100.99,
+          "priceChange": 0.32,
+          "priceChangePct": 0.32,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 138324639744,
+          "dividendYield": 3.88,
+          "returns": {
+            "1M": 1.1,
+            "3M": 1.86,
+            "6M": 4.09,
+            "1Y": null
+          },
+          "volatility": 4.32,
+          "maxDrawdown": -2.43,
+          "volume": 5927000,
+          "lastUpdate": "2026-02-16T22:34:47.941092"
+        },
+        {
+          "ticker": "TLT",
+          "name": "iShares 20+ Year Treasury Bond ETF",
+          "price": 89.72,
+          "priceChange": 0.49,
+          "priceChangePct": 0.55,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 45213560832,
+          "dividendYield": 4.43,
+          "returns": {
+            "1M": 1.99,
+            "3M": 1.52,
+            "6M": 6.17,
+            "1Y": null
+          },
+          "volatility": 11.6,
+          "maxDrawdown": -9.23,
+          "volume": 56740600,
+          "lastUpdate": "2026-02-16T22:34:48.946954"
+        },
+        {
+          "ticker": "SHY",
+          "name": "iShares 1-3 Year Treasury Bond ETF",
+          "price": 83.06,
+          "priceChange": 0.13,
+          "priceChangePct": 0.16,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 24251971584,
+          "dividendYield": 3.8,
+          "returns": {
+            "1M": 0.6,
+            "3M": 1.23,
+            "6M": 2.35,
+            "1Y": null
+          },
+          "volatility": 1.39,
+          "maxDrawdown": -0.73,
+          "volume": 3563900,
+          "lastUpdate": "2026-02-16T22:34:50.070198"
+        }
+      ]
+    },
+    "미국_기술주": {
+      "description": "기술 섹터 및 반도체 중심 투자 ETF",
+      "country": "US",
+      "etfs": [
+        {
+          "ticker": "XLK",
+          "name": "State Street Technology Select Sector SPDR ETF",
+          "price": 139.56,
+          "priceChange": 0.35,
+          "priceChangePct": 0.25,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 91643199488,
+          "dividendYield": 0.54,
+          "returns": {
+            "1M": -4.06,
+            "3M": -2.46,
+            "6M": 5.35,
+            "1Y": null
+          },
+          "volatility": 27.63,
+          "maxDrawdown": -25.66,
+          "volume": 26635800,
+          "lastUpdate": "2026-02-16T22:34:51.078586"
+        },
+        {
+          "ticker": "VGT",
+          "name": "Vanguard Information Technology Index Fund ETF Shares",
+          "price": 730.8,
+          "priceChange": 1.16,
+          "priceChangePct": 0.16,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 130278727680,
+          "dividendYield": 0.41,
+          "returns": {
+            "1M": -3.76,
+            "3M": -2.77,
+            "6M": 4.62,
+            "1Y": null
+          },
+          "volatility": 27.96,
+          "maxDrawdown": -26.88,
+          "volume": 439500,
+          "lastUpdate": "2026-02-16T22:34:52.103933"
+        },
+        {
+          "ticker": "SOXX",
+          "name": "iShares Semiconductor ETF",
+          "price": 354.66,
+          "priceChange": 3.16,
+          "priceChangePct": 0.9,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 20971747328,
+          "dividendYield": 0.5,
+          "returns": {
+            "1M": 5.17,
+            "3M": 22.74,
+            "6M": 43.33,
+            "1Y": null
+          },
+          "volatility": 40.12,
+          "maxDrawdown": -32.9,
+          "volume": 5958200,
+          "lastUpdate": "2026-02-16T22:34:53.223674"
+        },
+        {
+          "ticker": "SMH",
+          "name": "VanEck Semiconductor ETF",
+          "price": 407.72,
+          "priceChange": 1.61,
+          "priceChangePct": 0.4,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 44065882112,
+          "dividendYield": 0.27,
+          "returns": {
+            "1M": 2.85,
+            "3M": 18.61,
+            "6M": 38.34,
+            "1Y": null
+          },
+          "volatility": 37.43,
+          "maxDrawdown": -30.2,
+          "volume": 6476700,
+          "lastUpdate": "2026-02-16T22:34:54.195321"
+        },
+        {
+          "ticker": "ARKK",
+          "name": "ARK Innovation ETF",
+          "price": 70.25,
+          "priceChange": 1.8,
+          "priceChangePct": 2.63,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 6676811776,
+          "dividendYield": 0.0,
+          "returns": {
+            "1M": -14.26,
+            "3M": -8.87,
+            "6M": -8.78,
+            "1Y": null
+          },
+          "volatility": 44.93,
+          "maxDrawdown": -39.06,
+          "volume": 14791900,
+          "lastUpdate": "2026-02-16T22:34:55.162653"
+        },
+        {
+          "ticker": "IGV",
+          "name": "iShares Expanded Tech-Software Sector ETF",
+          "price": 82.77,
+          "priceChange": 1.81,
+          "priceChangePct": 2.24,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 6058692096,
+          "dividendYield": 0.0,
+          "returns": {
+            "1M": -17.05,
+            "3M": -22.53,
+            "6M": -24.14,
+            "1Y": null
+          },
+          "volatility": 28.83,
+          "maxDrawdown": -32.36,
+          "volume": 27091100,
+          "lastUpdate": "2026-02-16T22:34:56.152669"
+        }
+      ]
+    },
+    "미국_배당": {
+      "description": "고배당 및 배당 성장주에 투자하는 ETF",
+      "country": "US",
+      "etfs": [
+        {
+          "ticker": "VYM",
+          "name": "Vanguard High Dividend Yield Index Fund ETF Shares",
+          "price": 155.37,
+          "priceChange": 0.78,
+          "priceChangePct": 0.5,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 88506867712,
+          "dividendYield": 2.33,
+          "returns": {
+            "1M": 4.48,
+            "3M": 10.73,
+            "6M": 14.85,
+            "1Y": null
+          },
+          "volatility": 15.51,
+          "maxDrawdown": -14.46,
+          "volume": 1671400,
+          "lastUpdate": "2026-02-16T22:34:57.147392"
+        },
+        {
+          "ticker": "SCHD",
+          "name": "Schwab U.S. Dividend Equity ETF",
+          "price": 31.61,
+          "priceChange": 0.27,
+          "priceChangePct": 0.86,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 78399782912,
+          "dividendYield": 3.51,
+          "returns": {
+            "1M": 8.89,
+            "3M": 17.32,
+            "6M": 17.96,
+            "1Y": null
+          },
+          "volatility": 16.29,
+          "maxDrawdown": -14.02,
+          "volume": 29061200,
+          "lastUpdate": "2026-02-16T22:34:58.150269"
+        },
+        {
+          "ticker": "HDV",
+          "name": "iShares Core High Dividend ETF",
+          "price": 138.76,
+          "priceChange": 0.37,
+          "priceChangePct": 0.27,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 12827713536,
+          "dividendYield": 2.96,
+          "returns": {
+            "1M": 9.33,
+            "3M": 14.95,
+            "6M": 16.43,
+            "1Y": null
+          },
+          "volatility": 13.0,
+          "maxDrawdown": -10.49,
+          "volume": 597500,
+          "lastUpdate": "2026-02-16T22:34:59.145050"
+        },
+        {
+          "ticker": "DVY",
+          "name": "iShares Select Dividend ETF",
+          "price": 157.93,
+          "priceChange": 1.59,
+          "priceChangePct": 1.02,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 21941575680,
+          "dividendYield": 3.42,
+          "returns": {
+            "1M": 6.82,
+            "3M": 13.32,
+            "6M": 16.61,
+            "1Y": null
+          },
+          "volatility": 16.08,
+          "maxDrawdown": -13.61,
+          "volume": 806200,
+          "lastUpdate": "2026-02-16T22:35:00.143210"
+        },
+        {
+          "ticker": "VIG",
+          "name": "Vanguard Dividend Appreciation Index Fund ETF Shares",
+          "price": 227.26,
+          "priceChange": 0.74,
+          "priceChangePct": 0.33,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 121513558016,
+          "dividendYield": 1.59,
+          "returns": {
+            "1M": 0.94,
+            "3M": 4.81,
+            "6M": 9.36,
+            "1Y": null
+          },
+          "volatility": 15.57,
+          "maxDrawdown": -14.95,
+          "volume": 1848500,
+          "lastUpdate": "2026-02-16T22:35:01.280014"
+        },
+        {
+          "ticker": "DGRO",
+          "name": "iShares Core Dividend Growth ETF",
+          "price": 73.62,
+          "priceChange": 0.34,
+          "priceChangePct": 0.46,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 37496946688,
+          "dividendYield": 2.02,
+          "returns": {
+            "1M": 2.98,
+            "3M": 8.02,
+            "6M": 12.69,
+            "1Y": null
+          },
+          "volatility": 14.75,
+          "maxDrawdown": -13.85,
+          "volume": 2168600,
+          "lastUpdate": "2026-02-16T22:35:02.256603"
+        },
+        {
+          "ticker": "DGRW",
+          "name": "WisdomTree U.S. Quality Dividend Growth Fund",
+          "price": 92.62,
+          "priceChange": 0.11,
+          "priceChangePct": 0.12,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 16156988416,
+          "dividendYield": 1.42,
+          "returns": {
+            "1M": 1.66,
+            "3M": 4.69,
+            "6M": 7.16,
+            "1Y": null
+          },
+          "volatility": 15.56,
+          "maxDrawdown": -15.24,
+          "volume": 901400,
+          "lastUpdate": "2026-02-16T22:35:03.243672"
+        },
+        {
+          "ticker": "JEPI",
+          "name": "JPMorgan Equity Premium Income ETF",
+          "price": 59.31,
+          "priceChange": 0.3,
+          "priceChangePct": 0.51,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 43150049280,
+          "dividendYield": 8.06,
+          "returns": {
+            "1M": 2.11,
+            "3M": 6.39,
+            "6M": 8.74,
+            "1Y": null
+          },
+          "volatility": 13.36,
+          "maxDrawdown": -13.26,
+          "volume": 5638000,
+          "lastUpdate": "2026-02-16T22:35:04.206200"
+        },
+        {
+          "ticker": "JEPQ",
+          "name": "JPMorgan Nasdaq Equity Premium Income ETF",
+          "price": 57.51,
+          "priceChange": 0.07,
+          "priceChangePct": 0.12,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 34284236800,
+          "dividendYield": 10.31,
+          "returns": {
+            "1M": -1.57,
+            "3M": 2.3,
+            "6M": 8.45,
+            "1Y": null
+          },
+          "volatility": 19.19,
+          "maxDrawdown": -20.07,
+          "volume": 5345400,
+          "lastUpdate": "2026-02-16T22:35:05.163222"
+        },
+        {
+          "ticker": "SPYD",
+          "name": "State Street SPDR Portfolio S&P 500 High Dividend ETF",
+          "price": 48.07,
+          "priceChange": 0.51,
+          "priceChangePct": 1.07,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 7496434688,
+          "dividendYield": 4.32,
+          "returns": {
+            "1M": 6.59,
+            "3M": 13.0,
+            "6M": 12.31,
+            "1Y": null
+          },
+          "volatility": 16.1,
+          "maxDrawdown": -13.24,
+          "volume": 1907100,
+          "lastUpdate": "2026-02-16T22:35:06.143949"
+        },
+        {
+          "ticker": "NOBL",
+          "name": "ProShares S&P 500 Dividend Aristocrats ETF",
+          "price": 114.0,
+          "priceChange": 0.72,
+          "priceChangePct": 0.64,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 11510596608,
+          "dividendYield": 2.02,
+          "returns": {
+            "1M": 3.85,
+            "3M": 11.08,
+            "6M": 10.71,
+            "1Y": null
+          },
+          "volatility": 15.55,
+          "maxDrawdown": -12.68,
+          "volume": 778400,
+          "lastUpdate": "2026-02-16T22:35:07.112459"
+        },
+        {
+          "ticker": "SDY",
+          "name": "State Street SPDR S&P Dividend ETF",
+          "price": 155.25,
+          "priceChange": 1.14,
+          "priceChangePct": 0.74,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 21069246464,
+          "dividendYield": 2.45,
+          "returns": {
+            "1M": 5.86,
+            "3M": 12.81,
+            "6M": 12.2,
+            "1Y": null
+          },
+          "volatility": 14.29,
+          "maxDrawdown": -11.79,
+          "volume": 246800,
+          "lastUpdate": "2026-02-16T22:35:08.120547"
+        }
+      ]
+    },
+    "한국_KOSPI": {
+      "description": "코스피 200 지수를 추종하는 ETF",
+      "country": "KR",
+      "etfs": [
+        {
+          "ticker": "069500",
+          "name": "KODEX 200",
+          "price": 81860.0,
+          "priceChange": -115.0,
+          "priceChangePct": -0.14,
+          "currency": "KRW",
+          "returns": {
+            "1M": 15.82,
+            "3M": 45.01,
+            "6M": 89.04,
+            "1Y": null
+          },
+          "volatility": 25.69,
+          "maxDrawdown": -13.51,
+          "volume": 18091480,
+          "lastUpdate": "2026-02-16T22:35:09.131065"
+        },
+        {
+          "ticker": "102110",
+          "name": "Mirae Asset TIGER 200 ETF",
+          "price": 81835.0,
+          "priceChange": -110.0,
+          "priceChangePct": -0.13,
+          "currency": "KRW",
+          "returns": {
+            "1M": 15.79,
+            "3M": 45.21,
+            "6M": 89.25,
+            "1Y": null
+          },
+          "volatility": 25.82,
+          "maxDrawdown": -13.59,
+          "volume": 4175643,
+          "lastUpdate": "2026-02-16T22:35:10.219773"
+        },
+        {
+          "ticker": "278530",
+          "name": "Samsung Kodex 200 Total Return ETF",
+          "price": 29465.0,
+          "priceChange": -20.0,
+          "priceChangePct": -0.07,
+          "currency": "KRW",
+          "returns": {
+            "1M": 15.87,
+            "3M": 45.29,
+            "6M": 89.42,
+            "1Y": null
+          },
+          "volatility": 25.43,
+          "maxDrawdown": -13.54,
+          "volume": 1815444,
+          "lastUpdate": "2026-02-16T22:35:11.131858"
+        }
+      ]
+    },
+    "한국_KOSDAQ": {
+      "description": "코스닥 150 지수를 추종하는 ETF",
+      "country": "KR",
+      "etfs": [
+        {
+          "ticker": "229200",
+          "name": "KODEX KOSDAQ 150",
+          "price": 18955.0,
+          "priceChange": -390.0,
+          "priceChangePct": -2.02,
+          "currency": "KRW",
+          "returns": {
+            "1M": 18.69,
+            "3M": 20.69,
+            "6M": 40.1,
+            "1Y": null
+          },
+          "volatility": 30.64,
+          "maxDrawdown": -19.53,
+          "volume": 33590540,
+          "lastUpdate": "2026-02-16T22:35:12.094716"
+        },
+        {
+          "ticker": "091180",
+          "name": "Kodex Autos",
+          "price": 32615.0,
+          "priceChange": -315.0,
+          "priceChangePct": -0.96,
+          "currency": "KRW",
+          "returns": {
+            "1M": 10.18,
+            "3M": 46.53,
+            "6M": 68.65,
+            "1Y": null
+          },
+          "volatility": 31.08,
+          "maxDrawdown": -16.47,
+          "volume": 972546,
+          "lastUpdate": "2026-02-16T22:35:13.196385"
+        }
+      ]
+    },
+    "한국_산업별": {
+      "description": "반도체, 2차전지, 배당 등 산업별 테마 ETF",
+      "country": "KR",
+      "etfs": [
+        {
+          "ticker": "091160",
+          "name": "Kodex Semicon",
+          "price": 88745.0,
+          "priceChange": -655.0,
+          "priceChangePct": -0.73,
+          "currency": "KRW",
+          "returns": {
+            "1M": 23.82,
+            "3M": 58.19,
+            "6M": 136.46,
+            "1Y": null
+          },
+          "volatility": 38.42,
+          "maxDrawdown": -24.5,
+          "volume": 3819770,
+          "lastUpdate": "2026-02-16T22:35:14.162750"
+        },
+        {
+          "ticker": "381180",
+          "name": "Mirae Asset Maps Management - Tiger PHLX Semiconductor Sector Nasdaq ETF",
+          "price": 30715.0,
+          "priceChange": -720.0,
+          "priceChangePct": -2.29,
+          "currency": "KRW",
+          "returns": {
+            "1M": 0.14,
+            "3M": 18.57,
+            "6M": 48.79,
+            "1Y": null
+          },
+          "volatility": 40.22,
+          "maxDrawdown": -35.61,
+          "volume": 2189282,
+          "lastUpdate": "2026-02-16T22:35:15.122777"
+        },
+        {
+          "ticker": "305540",
+          "name": "Mirae Asset Management - Tiger Secondary Battery ETF",
+          "price": 20720.0,
+          "priceChange": -610.0,
+          "priceChangePct": -2.86,
+          "currency": "KRW",
+          "returns": {
+            "1M": 16.83,
+            "3M": 4.65,
+            "6M": 29.54,
+            "1Y": null
+          },
+          "volatility": 43.24,
+          "maxDrawdown": -33.51,
+          "volume": 4417538,
+          "lastUpdate": "2026-02-16T22:35:16.110320"
+        },
+        {
+          "ticker": "371460",
+          "name": "Mirae Asset Management - Tiger China Electric Vehicle Fund",
+          "price": 12500.0,
+          "priceChange": -90.0,
+          "priceChangePct": -0.71,
+          "currency": "KRW",
+          "returns": {
+            "1M": -4.69,
+            "3M": -5.53,
+            "6M": 32.49,
+            "1Y": null
+          },
+          "volatility": 27.35,
+          "maxDrawdown": -20.97,
+          "volume": 794751,
+          "lastUpdate": "2026-02-16T22:35:17.054055"
+        },
+        {
+          "ticker": "308620",
+          "name": "Samsung KODEX Energy & chemicals Securities ETF-Kodex Treasury Note Futures Fund",
+          "price": 12375.0,
+          "priceChange": 75.0,
+          "priceChangePct": 0.61,
+          "currency": "KRW",
+          "returns": {
+            "1M": -1.24,
+            "3M": -0.23,
+            "6M": 5.93,
+            "1Y": null
+          },
+          "volatility": 10.91,
+          "maxDrawdown": -10.37,
+          "volume": 94728,
+          "lastUpdate": "2026-02-16T22:35:18.009318"
+        },
+        {
+          "ticker": "458730",
+          "name": "Mirae Asset Tiger U.S. Dividend Equity Etf",
+          "price": 14455.0,
+          "priceChange": -155.0,
+          "priceChangePct": -1.06,
+          "currency": "KRW",
+          "returns": {
+            "1M": 6.0,
+            "3M": 15.7,
+            "6M": 23.75,
+            "1Y": null
+          },
+          "volatility": 17.68,
+          "maxDrawdown": -13.12,
+          "volume": 2392382,
+          "lastUpdate": "2026-02-16T22:35:18.962166"
+        },
+        {
+          "ticker": "091220",
+          "name": "Mirae Asset TIGER Banks ETF",
+          "price": 17695.0,
+          "priceChange": -435.0,
+          "priceChangePct": -2.4,
+          "currency": "KRW",
+          "returns": {
+            "1M": 33.07,
+            "3M": 33.77,
+            "6M": 47.2,
+            "1Y": null
+          },
+          "volatility": 26.92,
+          "maxDrawdown": -12.14,
+          "volume": 419649,
+          "lastUpdate": "2026-02-16T22:35:19.953670"
+        },
+        {
+          "ticker": "334690",
+          "name": "KB Asset Management Co. Ltd - Kbstar Palladium Futures Etf",
+          "price": 7865.0,
+          "priceChange": -315.0,
+          "priceChangePct": -3.85,
+          "currency": "KRW",
+          "returns": {
+            "1M": -8.23,
+            "3M": 11.76,
+            "6M": 39.88,
+            "1Y": null
+          },
+          "volatility": 50.84,
+          "maxDrawdown": -26.11,
+          "volume": 25516,
+          "lastUpdate": "2026-02-16T22:35:20.944666"
+        },
+        {
+          "ticker": "360750",
+          "name": "Mirae Asset Maps Management - Mirae Asset Tiger S&P500 ETF",
+          "price": 24435.0,
+          "priceChange": -465.0,
+          "priceChangePct": -1.87,
+          "currency": "KRW",
+          "returns": {
+            "1M": -3.94,
+            "3M": 0.57,
+            "6M": 11.43,
+            "1Y": null
+          },
+          "volatility": 20.05,
+          "maxDrawdown": -19.1,
+          "volume": 14354470,
+          "lastUpdate": "2026-02-16T22:35:21.897409"
+        },
+        {
+          "ticker": "133690",
+          "name": "Mirae Asset TIGER USA NASDAQ 100 ETF",
+          "price": 157705.0,
+          "priceChange": -3495.0,
+          "priceChangePct": -2.17,
+          "currency": "KRW",
+          "returns": {
+            "1M": -5.83,
+            "3M": -2.11,
+            "6M": 8.71,
+            "1Y": null
+          },
+          "volatility": 24.19,
+          "maxDrawdown": -24.26,
+          "volume": 880879,
+          "lastUpdate": "2026-02-16T22:35:22.860297"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "lastUpdate": "2026-02-16T22:35:23.161335",
+    "totalETFs": 47,
+    "failedETFs": 0,
+    "categories": 8,
+    "version": "1.0"
+  }
+}
