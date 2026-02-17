@@ -4,7 +4,7 @@ import path from 'path'
 
 export async function GET() {
   try {
-    const dataPath = path.join(process.cwd(), '..', 'data', 'etf_database.json')
+    const dataPath = path.join(process.cwd(), 'public', 'data', 'etf_database.json')
     const raw = fs.readFileSync(dataPath, 'utf-8')
     const data = JSON.parse(raw)
     return NextResponse.json(data)

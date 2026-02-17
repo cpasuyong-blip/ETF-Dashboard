@@ -32,6 +32,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/etf_database.json
+          git add frontend/public/data/etf_database.json
           git diff --staged --quiet || git commit -m "Update ETF data $(date +'%Y-%m-%d %H:%M')"
           git push

@@ -258,7 +258,7 @@ def main():
     }
     
     # JSON 파일로 저장
-    output_file = '../data/etf_database.json'
+    output_file = '../frontend/public/data/etf_database.json'
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(database, f, ensure_ascii=False, indent=2)
     
