@@ -94,7 +94,7 @@ def fetch_us_etf(ticker):
         
         etf = yf.Ticker(ticker)
         info = etf.info
-        history = etf.history(period="1y")
+        history = etf.history(period="2y")
         
         if len(history) == 0:
             print("❌ 데이터 없음")
@@ -150,7 +150,7 @@ def fetch_kr_etf_basic(code):
         # 한국 ETF는 .KS 붙여서 조회
         ticker = f"{code}.KS"
         etf = yf.Ticker(ticker)
-        history = etf.history(period="1y")
+        history = etf.history(period="2y")
         
         if len(history) == 0:
             print("❌ 데이터 없음")

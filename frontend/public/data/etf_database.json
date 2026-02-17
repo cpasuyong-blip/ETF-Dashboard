@@ -18,12 +18,12 @@
             "1M": -1.52,
             "3M": 1.74,
             "6M": 6.56,
-            "1Y": null
+            "1Y": 13.12
           },
-          "volatility": 19.46,
+          "volatility": 16.4,
           "maxDrawdown": -18.76,
           "volume": 96150400,
-          "lastUpdate": "2026-02-17T12:00:53.596020"
+          "lastUpdate": "2026-02-17T22:03:21.148702"
         },
         {
           "ticker": "VOO",
@@ -39,12 +39,12 @@
             "1M": -1.53,
             "3M": 1.73,
             "6M": 6.57,
-            "1Y": null
+            "1Y": 13.19
           },
-          "volatility": 18.51,
+          "volatility": 15.85,
           "maxDrawdown": -18.69,
           "volume": 9302800,
-          "lastUpdate": "2026-02-17T12:00:54.377238"
+          "lastUpdate": "2026-02-17T22:03:22.045733"
         },
         {
           "ticker": "IVV",
@@ -60,12 +60,12 @@
             "1M": -1.52,
             "3M": 1.74,
             "6M": 6.59,
-            "1Y": null
+            "1Y": 13.2
           },
-          "volatility": 18.71,
+          "volatility": 15.96,
           "maxDrawdown": -18.75,
           "volume": 5508700,
-          "lastUpdate": "2026-02-17T12:00:55.180656"
+          "lastUpdate": "2026-02-17T22:03:22.956784"
         },
         {
           "ticker": "SPLG",
@@ -81,12 +81,12 @@
             "1M": -1.52,
             "3M": 1.74,
             "6M": 6.33,
-            "1Y": null
+            "1Y": 14.38
           },
-          "volatility": 18.72,
+          "volatility": 15.95,
           "maxDrawdown": -18.72,
           "volume": 11640247,
-          "lastUpdate": "2026-02-17T12:00:55.992627"
+          "lastUpdate": "2026-02-17T22:03:23.871176"
         }
       ]
     },
@@ -108,12 +108,12 @@
             "1M": -3.19,
             "3M": -0.94,
             "6M": 4.51,
-            "1Y": null
+            "1Y": 12.89
           },
-          "volatility": 23.44,
+          "volatility": 20.99,
           "maxDrawdown": -22.77,
           "volume": 69152700,
-          "lastUpdate": "2026-02-17T12:00:56.831517"
+          "lastUpdate": "2026-02-17T22:03:24.880731"
         },
         {
           "ticker": "QQQM",
@@ -129,12 +129,12 @@
             "1M": -3.19,
             "3M": -0.93,
             "6M": 4.54,
-            "1Y": null
+            "1Y": 12.97
           },
-          "volatility": 23.16,
+          "volatility": 20.81,
           "maxDrawdown": -22.7,
           "volume": 5637800,
-          "lastUpdate": "2026-02-17T12:00:57.603637"
+          "lastUpdate": "2026-02-17T22:03:25.846993"
         },
         {
           "ticker": "QQQE",
@@ -150,12 +150,12 @@
             "1M": -1.72,
             "3M": 2.02,
             "6M": 4.81,
-            "1Y": null
+            "1Y": 6.77
           },
-          "volatility": 20.93,
+          "volatility": 18.12,
           "maxDrawdown": -21.38,
           "volume": 154600,
-          "lastUpdate": "2026-02-17T12:00:58.457633"
+          "lastUpdate": "2026-02-17T22:03:26.738843"
         },
         {
           "ticker": "QQQJ",
@@ -171,12 +171,12 @@
             "1M": -2.93,
             "3M": 5.12,
             "6M": 12.19,
-            "1Y": null
+            "1Y": 18.17
           },
-          "volatility": 22.26,
+          "volatility": 19.04,
           "maxDrawdown": -22.46,
           "volume": 216800,
-          "lastUpdate": "2026-02-17T12:00:59.244729"
+          "lastUpdate": "2026-02-17T22:03:27.645989"
         },
         {
           "ticker": "ONEQ",
@@ -192,12 +192,12 @@
             "1M": -4.1,
             "3M": -1.17,
             "6M": 4.58,
-            "1Y": null
+            "1Y": 13.75
           },
-          "volatility": 24.03,
-          "maxDrawdown": -23.65,
+          "volatility": 21.33,
+          "maxDrawdown": -24.09,
           "volume": 186400,
-          "lastUpdate": "2026-02-17T12:01:00.017605"
+          "lastUpdate": "2026-02-17T22:03:28.535372"
         },
         {
           "ticker": "TQQQ",
@@ -213,12 +213,12 @@
             "1M": -10.87,
             "3M": -7.23,
             "6M": 4.21,
-            "1Y": null
+            "1Y": 10.08
           },
-          "volatility": 69.51,
-          "maxDrawdown": -56.84,
+          "volatility": 62.39,
+          "maxDrawdown": -58.04,
           "volume": 122897400,
-          "lastUpdate": "2026-02-17T12:01:00.882709"
+          "lastUpdate": "2026-02-17T22:03:29.517459"
         },
         {
           "ticker": "PSQ",
@@ -234,12 +234,12 @@
             "1M": 3.58,
             "3M": 2.07,
             "6M": -2.16,
-            "1Y": null
+            "1Y": -9.61
           },
-          "volatility": 23.25,
+          "volatility": 20.9,
           "maxDrawdown": -33.97,
           "volume": 11878200,
-          "lastUpdate": "2026-02-17T12:01:01.692907"
+          "lastUpdate": "2026-02-17T22:03:30.511623"
         }
       ]
     },
@@ -261,12 +261,12 @@
             "1M": 1.1,
             "3M": 1.86,
             "6M": 4.09,
-            "1Y": null
+            "1Y": 7.89
           },
-          "volatility": 4.32,
-          "maxDrawdown": -2.43,
+          "volatility": 4.8,
+          "maxDrawdown": -4.82,
           "volume": 5927000,
-          "lastUpdate": "2026-02-17T12:01:02.519140"
+          "lastUpdate": "2026-02-17T22:03:31.493686"
         },
         {
           "ticker": "TLT",
@@ -282,12 +282,12 @@
             "1M": 1.99,
             "3M": 1.52,
             "6M": 6.17,
-            "1Y": null
+            "1Y": 5.7
           },
-          "volatility": 11.6,
-          "maxDrawdown": -9.23,
+          "volatility": 12.7,
+          "maxDrawdown": -14.79,
           "volume": 56740600,
-          "lastUpdate": "2026-02-17T12:01:03.348274"
+          "lastUpdate": "2026-02-17T22:03:32.426820"
         },
         {
           "ticker": "SHY",
@@ -303,12 +303,12 @@
             "1M": 0.6,
             "3M": 1.23,
             "6M": 2.35,
-            "1Y": null
+            "1Y": 5.21
           },
-          "volatility": 1.39,
-          "maxDrawdown": -0.73,
+          "volatility": 1.52,
+          "maxDrawdown": -0.97,
           "volume": 3563900,
-          "lastUpdate": "2026-02-17T12:01:04.189052"
+          "lastUpdate": "2026-02-17T22:03:33.437851"
         }
       ]
     },
@@ -330,12 +330,12 @@
             "1M": -4.06,
             "3M": -2.46,
             "6M": 5.35,
-            "1Y": null
+            "1Y": 17.44
           },
-          "volatility": 27.63,
+          "volatility": 25.32,
           "maxDrawdown": -25.66,
           "volume": 26635800,
-          "lastUpdate": "2026-02-17T12:01:04.989778"
+          "lastUpdate": "2026-02-17T22:03:34.436008"
         },
         {
           "ticker": "VGT",
@@ -351,12 +351,12 @@
             "1M": -3.76,
             "3M": -2.77,
             "6M": 4.62,
-            "1Y": null
+            "1Y": 15.25
           },
-          "volatility": 27.96,
-          "maxDrawdown": -26.88,
+          "volatility": 25.28,
+          "maxDrawdown": -27.23,
           "volume": 439500,
-          "lastUpdate": "2026-02-17T12:01:05.772760"
+          "lastUpdate": "2026-02-17T22:03:35.338393"
         },
         {
           "ticker": "SOXX",
@@ -372,12 +372,12 @@
             "1M": 5.17,
             "3M": 22.74,
             "6M": 43.33,
-            "1Y": null
+            "1Y": 60.28
           },
-          "volatility": 40.12,
-          "maxDrawdown": -32.9,
+          "volatility": 37.67,
+          "maxDrawdown": -41.36,
           "volume": 5958200,
-          "lastUpdate": "2026-02-17T12:01:06.566566"
+          "lastUpdate": "2026-02-17T22:03:36.393277"
         },
         {
           "ticker": "SMH",
@@ -393,12 +393,12 @@
             "1M": 2.85,
             "3M": 18.61,
             "6M": 38.34,
-            "1Y": null
+            "1Y": 62.35
           },
-          "volatility": 37.43,
-          "maxDrawdown": -30.2,
+          "volatility": 36.79,
+          "maxDrawdown": -35.74,
           "volume": 6476700,
-          "lastUpdate": "2026-02-17T12:01:07.339611"
+          "lastUpdate": "2026-02-17T22:03:37.314990"
         },
         {
           "ticker": "ARKK",
@@ -414,12 +414,12 @@
             "1M": -14.26,
             "3M": -8.87,
             "6M": -8.78,
-            "1Y": null
+            "1Y": 8.44
           },
-          "volatility": 44.93,
-          "maxDrawdown": -39.06,
+          "volatility": 40.22,
+          "maxDrawdown": -39.56,
           "volume": 14791900,
-          "lastUpdate": "2026-02-17T12:01:08.090354"
+          "lastUpdate": "2026-02-17T22:03:38.154765"
         },
         {
           "ticker": "IGV",
@@ -435,12 +435,12 @@
             "1M": -17.05,
             "3M": -22.53,
             "6M": -24.14,
-            "1Y": null
+            "1Y": -22.41
           },
-          "volatility": 28.83,
+          "volatility": 25.47,
           "maxDrawdown": -32.36,
           "volume": 27091100,
-          "lastUpdate": "2026-02-17T12:01:08.821213"
+          "lastUpdate": "2026-02-17T22:03:38.978221"
         }
       ]
     },
@@ -462,12 +462,12 @@
             "1M": 4.48,
             "3M": 10.73,
             "6M": 14.85,
-            "1Y": null
+            "1Y": 19.02
           },
-          "volatility": 15.51,
+          "volatility": 13.4,
           "maxDrawdown": -14.46,
           "volume": 1671400,
-          "lastUpdate": "2026-02-17T12:01:09.574944"
+          "lastUpdate": "2026-02-17T22:03:39.879282"
         },
         {
           "ticker": "SCHD",
@@ -483,12 +483,12 @@
             "1M": 8.89,
             "3M": 17.32,
             "6M": 17.96,
-            "1Y": null
+            "1Y": 17.95
           },
-          "volatility": 16.29,
-          "maxDrawdown": -14.02,
+          "volatility": 14.04,
+          "maxDrawdown": -16.12,
           "volume": 29061200,
-          "lastUpdate": "2026-02-17T12:01:10.323928"
+          "lastUpdate": "2026-02-17T22:03:40.773312"
         },
         {
           "ticker": "HDV",
@@ -504,12 +504,12 @@
             "1M": 9.33,
             "3M": 14.95,
             "6M": 16.43,
-            "1Y": null
+            "1Y": 22.34
           },
-          "volatility": 13.0,
+          "volatility": 11.61,
           "maxDrawdown": -10.49,
           "volume": 597500,
-          "lastUpdate": "2026-02-17T12:01:11.068815"
+          "lastUpdate": "2026-02-17T22:03:41.679403"
         },
         {
           "ticker": "DVY",
@@ -525,12 +525,12 @@
             "1M": 6.82,
             "3M": 13.32,
             "6M": 16.61,
-            "1Y": null
+            "1Y": 20.78
           },
-          "volatility": 16.08,
-          "maxDrawdown": -13.61,
+          "volatility": 14.31,
+          "maxDrawdown": -16.0,
           "volume": 806200,
-          "lastUpdate": "2026-02-17T12:01:11.814838"
+          "lastUpdate": "2026-02-17T22:03:42.575253"
         },
         {
           "ticker": "VIG",
@@ -546,12 +546,12 @@
             "1M": 0.94,
             "3M": 4.81,
             "6M": 9.36,
-            "1Y": null
+            "1Y": 12.97
           },
-          "volatility": 15.57,
+          "volatility": 13.23,
           "maxDrawdown": -14.95,
           "volume": 1848500,
-          "lastUpdate": "2026-02-17T12:01:12.547983"
+          "lastUpdate": "2026-02-17T22:03:43.477346"
         },
         {
           "ticker": "DGRO",
@@ -567,12 +567,12 @@
             "1M": 2.98,
             "3M": 8.02,
             "6M": 12.69,
-            "1Y": null
+            "1Y": 17.46
           },
-          "volatility": 14.75,
-          "maxDrawdown": -13.85,
+          "volatility": 12.56,
+          "maxDrawdown": -14.03,
           "volume": 2168600,
-          "lastUpdate": "2026-02-17T12:01:13.372142"
+          "lastUpdate": "2026-02-17T22:03:44.481182"
         },
         {
           "ticker": "DGRW",
@@ -588,12 +588,12 @@
             "1M": 1.66,
             "3M": 4.69,
             "6M": 7.16,
-            "1Y": null
+            "1Y": 11.88
           },
-          "volatility": 15.56,
-          "maxDrawdown": -15.24,
+          "volatility": 13.4,
+          "maxDrawdown": -16.21,
           "volume": 901400,
-          "lastUpdate": "2026-02-17T12:01:14.229150"
+          "lastUpdate": "2026-02-17T22:03:45.391630"
         },
         {
           "ticker": "JEPI",
@@ -609,12 +609,12 @@
             "1M": 2.11,
             "3M": 6.39,
             "6M": 8.74,
-            "1Y": null
+            "1Y": 8.73
           },
-          "volatility": 13.36,
+          "volatility": 10.91,
           "maxDrawdown": -13.26,
           "volume": 5638000,
-          "lastUpdate": "2026-02-17T12:01:14.952095"
+          "lastUpdate": "2026-02-17T22:03:46.270322"
         },
         {
           "ticker": "JEPQ",
@@ -630,12 +630,12 @@
             "1M": -1.57,
             "3M": 2.3,
             "6M": 8.45,
-            "1Y": null
+            "1Y": 10.58
           },
-          "volatility": 19.19,
+          "volatility": 16.45,
           "maxDrawdown": -20.07,
           "volume": 5345400,
-          "lastUpdate": "2026-02-17T12:01:15.694044"
+          "lastUpdate": "2026-02-17T22:03:47.146651"
         },
         {
           "ticker": "SPYD",
@@ -651,12 +651,12 @@
             "1M": 6.59,
             "3M": 13.0,
             "6M": 12.31,
-            "1Y": null
+            "1Y": 13.91
           },
-          "volatility": 16.1,
-          "maxDrawdown": -13.24,
+          "volatility": 14.3,
+          "maxDrawdown": -16.13,
           "volume": 1907100,
-          "lastUpdate": "2026-02-17T12:01:16.425641"
+          "lastUpdate": "2026-02-17T22:03:48.061794"
         },
         {
           "ticker": "NOBL",
@@ -672,12 +672,12 @@
             "1M": 3.85,
             "3M": 11.08,
             "6M": 10.71,
-            "1Y": null
+            "1Y": 14.34
           },
-          "volatility": 15.55,
-          "maxDrawdown": -12.68,
+          "volatility": 13.26,
+          "maxDrawdown": -15.36,
           "volume": 778400,
-          "lastUpdate": "2026-02-17T12:01:17.182750"
+          "lastUpdate": "2026-02-17T22:03:48.959691"
         },
         {
           "ticker": "SDY",
@@ -693,12 +693,12 @@
             "1M": 5.86,
             "3M": 12.81,
             "6M": 12.2,
-            "1Y": null
+            "1Y": 18.2
           },
-          "volatility": 14.29,
-          "maxDrawdown": -11.79,
+          "volatility": 12.5,
+          "maxDrawdown": -14.39,
           "volume": 246800,
-          "lastUpdate": "2026-02-17T12:01:17.984493"
+          "lastUpdate": "2026-02-17T22:03:49.872049"
         }
       ]
     },
@@ -717,12 +717,12 @@
             "1M": 15.82,
             "3M": 45.01,
             "6M": 89.04,
-            "1Y": null
+            "1Y": 148.14
           },
-          "volatility": 25.69,
-          "maxDrawdown": -13.51,
+          "volatility": 23.46,
+          "maxDrawdown": -19.79,
           "volume": 18091480,
-          "lastUpdate": "2026-02-17T12:01:18.768631"
+          "lastUpdate": "2026-02-17T22:03:50.704019"
         },
         {
           "ticker": "102110",
@@ -735,12 +735,12 @@
             "1M": 15.79,
             "3M": 45.21,
             "6M": 89.25,
-            "1Y": null
+            "1Y": 148.38
           },
-          "volatility": 25.82,
-          "maxDrawdown": -13.59,
+          "volatility": 23.56,
+          "maxDrawdown": -19.9,
           "volume": 4175643,
-          "lastUpdate": "2026-02-17T12:01:19.490662"
+          "lastUpdate": "2026-02-17T22:03:51.680099"
         },
         {
           "ticker": "278530",
@@ -753,12 +753,12 @@
             "1M": 15.87,
             "3M": 45.29,
             "6M": 89.42,
-            "1Y": null
+            "1Y": 148.75
           },
-          "volatility": 25.43,
-          "maxDrawdown": -13.54,
+          "volatility": 23.22,
+          "maxDrawdown": -21.42,
           "volume": 1815444,
-          "lastUpdate": "2026-02-17T12:01:20.239414"
+          "lastUpdate": "2026-02-17T22:03:52.500255"
         }
       ]
     },
@@ -777,12 +777,12 @@
             "1M": 18.69,
             "3M": 20.69,
             "6M": 40.1,
-            "1Y": null
+            "1Y": 52.03
           },
-          "volatility": 30.64,
-          "maxDrawdown": -19.53,
+          "volatility": 29.51,
+          "maxDrawdown": -31.54,
           "volume": 33590540,
-          "lastUpdate": "2026-02-17T12:01:20.982692"
+          "lastUpdate": "2026-02-17T22:03:53.339520"
         },
         {
           "ticker": "091180",
@@ -795,12 +795,12 @@
             "1M": 10.18,
             "3M": 46.53,
             "6M": 68.65,
-            "1Y": null
+            "1Y": 86.31
           },
-          "volatility": 31.08,
-          "maxDrawdown": -16.47,
+          "volatility": 28.31,
+          "maxDrawdown": -26.54,
           "volume": 972546,
-          "lastUpdate": "2026-02-17T12:01:21.711337"
+          "lastUpdate": "2026-02-17T22:03:54.202783"
         }
       ]
     },
@@ -819,12 +819,12 @@
             "1M": 23.82,
             "3M": 58.19,
             "6M": 136.46,
-            "1Y": null
+            "1Y": 174.46
           },
-          "volatility": 38.42,
-          "maxDrawdown": -24.5,
+          "volatility": 37.23,
+          "maxDrawdown": -41.11,
           "volume": 3819770,
-          "lastUpdate": "2026-02-17T12:01:22.455116"
+          "lastUpdate": "2026-02-17T22:03:55.042891"
         },
         {
           "ticker": "381180",
@@ -837,12 +837,12 @@
             "1M": 0.14,
             "3M": 18.57,
             "6M": 48.79,
-            "1Y": null
+            "1Y": 59.45
           },
-          "volatility": 40.22,
-          "maxDrawdown": -35.61,
+          "volatility": 39.11,
+          "maxDrawdown": -38.07,
           "volume": 2189282,
-          "lastUpdate": "2026-02-17T12:01:23.217272"
+          "lastUpdate": "2026-02-17T22:03:55.853340"
         },
         {
           "ticker": "305540",
@@ -855,12 +855,12 @@
             "1M": 16.83,
             "3M": 4.65,
             "6M": 29.54,
-            "1Y": null
+            "1Y": 41.59
           },
-          "volatility": 43.24,
-          "maxDrawdown": -33.51,
+          "volatility": 40.78,
+          "maxDrawdown": -58.56,
           "volume": 4417538,
-          "lastUpdate": "2026-02-17T12:01:23.972656"
+          "lastUpdate": "2026-02-17T22:03:56.723993"
         },
         {
           "ticker": "371460",
@@ -873,12 +873,12 @@
             "1M": -4.69,
             "3M": -5.53,
             "6M": 32.49,
-            "1Y": null
+            "1Y": 30.1
           },
-          "volatility": 27.35,
-          "maxDrawdown": -20.97,
+          "volatility": 29.16,
+          "maxDrawdown": -21.99,
           "volume": 794751,
-          "lastUpdate": "2026-02-17T12:01:24.780712"
+          "lastUpdate": "2026-02-17T22:03:57.565852"
         },
         {
           "ticker": "308620",
@@ -891,12 +891,12 @@
             "1M": -1.24,
             "3M": -0.23,
             "6M": 5.93,
-            "1Y": null
+            "1Y": 4.78
           },
-          "volatility": 10.91,
+          "volatility": 9.63,
           "maxDrawdown": -10.37,
           "volume": 94728,
-          "lastUpdate": "2026-02-17T12:01:25.559648"
+          "lastUpdate": "2026-02-17T22:03:58.390295"
         },
         {
           "ticker": "458730",
@@ -909,12 +909,12 @@
             "1M": 6.0,
             "3M": 15.7,
             "6M": 23.75,
-            "1Y": null
+            "1Y": 16.35
           },
-          "volatility": 17.68,
+          "volatility": 15.35,
           "maxDrawdown": -13.12,
           "volume": 2392382,
-          "lastUpdate": "2026-02-17T12:01:26.279439"
+          "lastUpdate": "2026-02-17T22:03:59.223095"
         },
         {
           "ticker": "091220",
@@ -927,12 +927,12 @@
             "1M": 33.07,
             "3M": 33.77,
             "6M": 47.2,
-            "1Y": null
+            "1Y": 106.04
           },
-          "volatility": 26.92,
-          "maxDrawdown": -12.14,
+          "volatility": 28.13,
+          "maxDrawdown": -17.73,
           "volume": 419649,
-          "lastUpdate": "2026-02-17T12:01:27.060964"
+          "lastUpdate": "2026-02-17T22:04:00.050578"
         },
         {
           "ticker": "334690",
@@ -945,12 +945,12 @@
             "1M": -8.23,
             "3M": 11.76,
             "6M": 39.88,
-            "1Y": null
+            "1Y": 52.14
           },
-          "volatility": 50.84,
-          "maxDrawdown": -26.11,
+          "volatility": 44.08,
+          "maxDrawdown": -28.4,
           "volume": 25516,
-          "lastUpdate": "2026-02-17T12:01:27.816382"
+          "lastUpdate": "2026-02-17T22:04:00.955882"
         },
         {
           "ticker": "360750",
@@ -963,12 +963,12 @@
             "1M": -3.94,
             "3M": 0.57,
             "6M": 11.43,
-            "1Y": null
+            "1Y": 13.05
           },
-          "volatility": 20.05,
-          "maxDrawdown": -19.1,
+          "volatility": 17.22,
+          "maxDrawdown": -19.15,
           "volume": 14354470,
-          "lastUpdate": "2026-02-17T12:01:28.607581"
+          "lastUpdate": "2026-02-17T22:04:01.771881"
         },
         {
           "ticker": "133690",
@@ -981,18 +981,18 @@
             "1M": -5.83,
             "3M": -2.11,
             "6M": 8.71,
-            "1Y": null
+            "1Y": 13.59
           },
-          "volatility": 24.19,
+          "volatility": 22.03,
           "maxDrawdown": -24.26,
           "volume": 880879,
-          "lastUpdate": "2026-02-17T12:01:29.394049"
+          "lastUpdate": "2026-02-17T22:04:02.673192"
         }
       ]
     }
   },
   "metadata": {
-    "lastUpdate": "2026-02-17T12:01:29.694253",
+    "lastUpdate": "2026-02-17T22:04:02.974118",
     "totalETFs": 47,
     "failedETFs": 0,
     "categories": 8,
