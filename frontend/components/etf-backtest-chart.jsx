@@ -19,7 +19,7 @@ export default function ETFBacktestChart() {
   const [allEtfs, setAllEtfs] = useState([]);
   const [categories, setCategories] = useState({});
   const [selectedETFs, setSelectedETFs] = useState(['QQQ', 'SCHD', 'SPY']);
-  const [selectedPeriod, setSelectedPeriod] = useState('6M');
+  const [selectedPeriod, setSelectedPeriod] = useState('1Y');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [expandedCats, setExpandedCats] = useState({ '미국_나스닥': true, '미국_배당': true, '미국_S&P500': true });
