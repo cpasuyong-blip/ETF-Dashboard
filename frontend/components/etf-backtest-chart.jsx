@@ -5,6 +5,7 @@ import {
   ResponsiveContainer, Cell, ReferenceLine
 } from 'recharts';
 import { TrendingUp, TrendingDown, Activity, Percent } from 'lucide-react';
+import Navigation from './Navigation';
 
 const COLOR_PALETTE = ['#8b5cf6', '#10b981', '#3b82f6', '#f43f5e', '#f59e0b'];
 
@@ -112,7 +113,9 @@ export default function ETFBacktestChart() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
     }}>
+      <Navigation />
       <div style={{ color: '#8b5cf6', fontSize: '1.25rem' }}>데이터 로딩 중...</div>
     </div>
   );
@@ -122,7 +125,9 @@ export default function ETFBacktestChart() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
     }}>
+      <Navigation />
       <div style={{ color: '#ef4444', fontSize: '1.25rem' }}>오류: {error}</div>
     </div>
   );
@@ -132,8 +137,9 @@ export default function ETFBacktestChart() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%)',
       fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
-      padding: '2rem 1rem',
+      padding: '5rem 1rem 2rem',
     }}>
+      <Navigation />
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
 
         {/* Header */}

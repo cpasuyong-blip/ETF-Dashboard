@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { TrendingUp, ArrowUpRight, ArrowDownRight, BarChart3, Star } from 'lucide-react';
+import { TrendingUp, ArrowUpRight, ArrowDownRight, BarChart3, Star, X, Activity, Percent } from 'lucide-react';
+import Navigation from './Navigation';
 
 // 카테고리명 → 테마 매핑
 const categoryToTheme = {
@@ -58,6 +59,11 @@ function transformData(database) {
         theme,
         category,
         country: etf.currency === 'KRW' ? 'KR' : 'US',
+        currency: etf.currency,
+        volatility: etf.volatility,
+        maxDrawdown: etf.maxDrawdown,
+        dividendYield: etf.dividendYield,
+        expenseRatio: etf.expenseRatio,
       });
     }
   }
@@ -87,6 +93,14 @@ export default function ETFDashboard() {
   const [loading, setLoading] = useState(true);
   const [metadata, setMetadata] = useState(null);
   const [error, setError] = useState(null);
+  const [selectedEtf, setSelectedEtf] = useState(null);
+
+  // 모달 Escape 키 닫기
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === 'Escape') setSelectedEtf(null); };
+    if (selectedEtf) window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [selectedEtf]);
 
   useEffect(() => {
     fetch('/api/etf-data')
@@ -174,10 +188,11 @@ export default function ETFDashboard() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%)',
       fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
-      padding: '2rem 1rem',
+      padding: '5rem 1rem 2rem',
       position: 'relative',
       overflow: 'hidden'
     }}>
+      <Navigation />
       {/* 배경 장식 */}
       <div style={{
         position: 'absolute', top: '-10%', right: '-5%',
@@ -460,6 +475,7 @@ export default function ETFDashboard() {
                   <div style={{ fontSize: '1rem', fontWeight: '700', color: '#fff' }}>{etf.aum}</div>
                 </div>
                 <button
+                  onClick={(e) => { e.stopPropagation(); setSelectedEtf(etf); }}
                   style={{ padding: '0.625rem 1.25rem', background: 'rgba(139, 92, 246, 0.15)', border: '1px solid rgba(139, 92, 246, 0.3)', borderRadius: '10px', color: '#c4b5fd', fontSize: '0.875rem', fontWeight: '600', cursor: 'pointer', transition: 'all 0.3s ease', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                   onMouseEnter={(e) => { e.currentTarget.style.background = 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'; e.currentTarget.style.color = '#fff'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(139, 92, 246, 0.15)'; e.currentTarget.style.color = '#c4b5fd'; }}
@@ -498,7 +514,8 @@ export default function ETFDashboard() {
                 {sortedData.map((etf, index) => (
                   <tr
                     key={etf.ticker}
-                    style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.05)', transition: 'background 0.2s ease' }}
+                    onClick={() => setSelectedEtf(etf)}
+                    style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.05)', transition: 'background 0.2s ease', cursor: 'pointer' }}
                     onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(139, 92, 246, 0.1)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
                   >
@@ -555,7 +572,165 @@ export default function ETFDashboard() {
           from { opacity: 0; transform: translateY(30px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes modalIn {
+          from { opacity: 0; transform: scale(0.95) translateY(10px); }
+          to { opacity: 1; transform: scale(1) translateY(0); }
+        }
       `}</style>
+
+      {/* ETF 상세 팝업 모달 */}
+      {selectedEtf && (
+        <div
+          onClick={() => setSelectedEtf(null)}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 200,
+            background: 'rgba(0, 0, 0, 0.75)',
+            backdropFilter: 'blur(6px)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: '1rem',
+          }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{
+              background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+              borderRadius: '24px',
+              padding: '2rem',
+              width: '100%', maxWidth: '480px',
+              position: 'relative',
+              animation: 'modalIn 0.25s ease-out',
+            }}
+          >
+            {/* 닫기 버튼 */}
+            <button
+              onClick={() => setSelectedEtf(null)}
+              style={{
+                position: 'absolute', top: '1.25rem', right: '1.25rem',
+                background: 'rgba(255,255,255,0.08)', border: 'none',
+                borderRadius: '50%', width: '32px', height: '32px',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                cursor: 'pointer', color: '#94a3b8',
+              }}
+            >
+              <X size={16} />
+            </button>
+
+            {/* 상단 색상 바 */}
+            <div style={{
+              position: 'absolute', top: 0, left: 0, right: 0, height: '4px',
+              background: getGradient(selectedEtf.theme, '90deg'),
+              borderRadius: '24px 24px 0 0',
+            }} />
+
+            {/* 티커 + 뱃지 */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '0.375rem' }}>
+              <h2 style={{ fontSize: '2rem', fontWeight: '800', color: '#fff', margin: 0 }}>
+                {selectedEtf.ticker}
+              </h2>
+              <span style={{ fontSize: '0.75rem', padding: '0.25rem 0.625rem', background: 'rgba(139,92,246,0.2)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '6px', color: '#c4b5fd', fontWeight: '600' }}>
+                {selectedEtf.country}
+              </span>
+              <span style={{ fontSize: '0.75rem', padding: '0.25rem 0.625rem', background: getGradient(selectedEtf.theme), borderRadius: '6px', color: '#fff', fontWeight: '600' }}>
+                {selectedEtf.theme}
+              </span>
+            </div>
+
+            {/* 이름 */}
+            <p style={{ fontSize: '0.875rem', color: '#64748b', margin: '0 0 1.25rem', lineHeight: '1.4' }}>
+              {selectedEtf.name}
+            </p>
+
+            {/* 현재가 + 등락 */}
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '1.5rem' }}>
+              <span style={{ fontSize: '2.25rem', fontWeight: '700', color: '#fff', fontVariantNumeric: 'tabular-nums' }}>
+                {selectedEtf.country === 'US' ? '$' : '₩'}{selectedEtf.price.toLocaleString()}
+              </span>
+              <div style={{
+                display: 'flex', alignItems: 'center', gap: '0.25rem',
+                padding: '0.25rem 0.625rem', borderRadius: '6px',
+                background: selectedEtf.change >= 0 ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)',
+                border: `1px solid ${selectedEtf.change >= 0 ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}`,
+              }}>
+                {selectedEtf.change >= 0 ? <ArrowUpRight size={14} color="#22c55e" /> : <ArrowDownRight size={14} color="#ef4444" />}
+                <span style={{ fontSize: '0.9rem', fontWeight: '700', color: selectedEtf.change >= 0 ? '#22c55e' : '#ef4444' }}>
+                  {selectedEtf.change >= 0 ? '+' : ''}{selectedEtf.change}%
+                </span>
+              </div>
+            </div>
+
+            {/* 기간별 수익률 */}
+            <div style={{
+              display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
+              gap: '0.75rem', padding: '1.25rem',
+              background: 'rgba(0,0,0,0.25)', borderRadius: '12px',
+              border: '1px solid rgba(255,255,255,0.06)', marginBottom: '1.25rem',
+            }}>
+              {['1M', '3M', '6M', '1Y'].map(period => {
+                const val = selectedEtf.returns?.[period];
+                return (
+                  <div key={period} style={{ textAlign: 'center' }}>
+                    <div style={{ fontSize: '0.7rem', color: '#64748b', marginBottom: '0.375rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{period}</div>
+                    <div style={{ fontSize: '1.125rem', fontWeight: '700', color: val == null ? '#64748b' : val >= 0 ? '#22c55e' : '#ef4444', fontVariantNumeric: 'tabular-nums' }}>
+                      {val == null ? '-' : `${val >= 0 ? '+' : ''}${val}%`}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* 리스크 지표 */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.25rem' }}>
+              {[
+                { icon: <Activity size={15} color="#94a3b8" />, label: '변동성 (연환산)', value: selectedEtf.volatility != null ? `${selectedEtf.volatility}%` : '-', color: '#fff' },
+                { icon: <TrendingUp size={15} color="#94a3b8" />, label: '최대 낙폭 (MDD)', value: selectedEtf.maxDrawdown != null ? `${selectedEtf.maxDrawdown}%` : '-', color: '#ef4444' },
+                { icon: <Percent size={15} color="#94a3b8" />, label: '배당 수익률', value: selectedEtf.dividendYield != null ? `${selectedEtf.dividendYield}%` : '-', color: '#22c55e' },
+                { icon: <BarChart3 size={15} color="#94a3b8" />, label: '총보수 (비용비율)', value: selectedEtf.expenseRatio != null ? `${selectedEtf.expenseRatio}%` : '-', color: '#fff' },
+              ].map(({ icon, label, value, color }) => (
+                <div key={label} style={{
+                  padding: '0.875rem', background: 'rgba(0,0,0,0.2)', borderRadius: '10px',
+                  display: 'flex', flexDirection: 'column', gap: '0.375rem',
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
+                    {icon}
+                    <span style={{ fontSize: '0.75rem', color: '#64748b' }}>{label}</span>
+                  </div>
+                  <span style={{ fontSize: '1.125rem', fontWeight: '700', color }}>{value}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* AUM */}
+            <div style={{
+              padding: '0.875rem 1.25rem',
+              background: 'rgba(0,0,0,0.2)', borderRadius: '10px',
+              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+              marginBottom: '1.5rem',
+            }}>
+              <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>운용자산 (AUM)</span>
+              <span style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fff' }}>{selectedEtf.aum}</span>
+            </div>
+
+            {/* 백테스트 이동 버튼 */}
+            <a
+              href={`/backtest`}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
+                padding: '0.875rem',
+                background: 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
+                border: 'none', borderRadius: '12px',
+                color: '#fff', fontSize: '0.9375rem', fontWeight: '700',
+                textDecoration: 'none', cursor: 'pointer',
+                transition: 'opacity 0.2s ease',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.85'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.opacity = '1'; }}
+            >
+              백테스트에서 비교하기 <ArrowUpRight size={16} />
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
