@@ -5,7 +5,8 @@ ETF 데이터 수집 스크립트
 
 import yfinance as yf
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 import time
 
 # ETF 리스트 정의
@@ -15,7 +16,7 @@ US_ETFS = {
         'description': '미국 대형주 500개 기업을 추종하는 ETF'
     },
     '나스닥': {
-        'tickers': ['QQQ', 'QQQM', 'QQQE', 'QQQJ', 'ONEQ', 'TQQQ', 'PSQ'],
+        'tickers': ['QQQ', 'QQQM', 'QQQE', 'QQQJ', 'ONEQ', 'TQQQ', 'PSQ', 'ARKW'],
         'description': '기술주 중심의 나스닥 지수 추종 ETF'
     },
     '채권': {
@@ -27,9 +28,17 @@ US_ETFS = {
         'description': '기술 섹터 및 반도체 중심 투자 ETF'
     },
     '배당': {
-        'tickers': ['VYM', 'SCHD', 'HDV', 'DVY', 'VIG', 'DGRO', 
+        'tickers': ['VYM', 'SCHD', 'HDV', 'DVY', 'VIG', 'DGRO',
                    'DGRW', 'JEPI', 'JEPQ', 'SPYD', 'NOBL', 'SDY'],
         'description': '고배당 및 배당 성장주에 투자하는 ETF'
+    },
+    '금/원자재': {
+        'tickers': ['GLD', 'SLV', 'USO'],
+        'description': '금, 은, 원유 등 원자재에 투자하는 ETF'
+    },
+    '우주/항공': {
+        'tickers': ['ARKX', 'UFO', 'ROKT'],
+        'description': '우주 탐사 및 항공우주 산업에 투자하는 ETF'
     }
 }
 
@@ -67,23 +76,57 @@ def fetch_kr_etf_name(code):
         pass
     return None
 
-def calculate_returns(history, periods):
-    """수익률 계산"""
+def calculate_returns(history):
+    """달력 날짜 기준 수익률 계산 (Yahoo Finance 방식)"""
     if history is None or len(history) == 0:
-        return {}
-    
+        return {}, {}
+
     current_price = history['Close'].iloc[-1]
+    last_date = history.index[-1]
     returns = {}
-    
-    for period_name, days in periods.items():
-        if len(history) >= days:
-            start_price = history['Close'].iloc[-days]
-            ret = ((current_price / start_price) - 1) * 100
-            returns[period_name] = round(ret, 2)
+    cagr = {}
+
+    # 기간 정의: (이름, relativedelta 오프셋, 연수)
+    period_defs = [
+        ('1M', relativedelta(months=1), 1/12),
+        ('3M', relativedelta(months=3), 3/12),
+        ('6M', relativedelta(months=6), 6/12),
+        ('1Y', relativedelta(years=1), 1),
+        ('3Y', relativedelta(years=3), 3),
+        ('5Y', relativedelta(years=5), 5),
+    ]
+
+    for name, delta, years in period_defs:
+        target_date = last_date - delta
+        # target_date 이전 마지막 거래일 찾기 (Yahoo Finance 방식)
+        mask = history.index <= target_date
+        if mask.any():
+            start_price = history['Close'].loc[mask].iloc[-1]
+            cumulative = ((current_price / start_price) - 1) * 100
+            returns[name] = round(cumulative, 2)
+            # 3Y, 5Y는 CAGR도 계산
+            if years >= 3:
+                cagr_val = ((current_price / start_price) ** (1 / years) - 1) * 100
+                cagr[name] = round(cagr_val, 2)
         else:
-            returns[period_name] = None
-    
-    return returns
+            returns[name] = None
+
+    return returns, cagr
+
+def calculate_dividend_yield(etf_obj, current_price):
+    """TTM(최근 12개월) 배당수익률 직접 계산"""
+    try:
+        divs = etf_obj.dividends
+        if len(divs) == 0 or current_price <= 0:
+            return 0
+        one_year_ago = datetime.now() - timedelta(days=365)
+        recent = divs[divs.index >= str(one_year_ago.date())]
+        if len(recent) == 0:
+            return 0
+        ttm_div = recent.sum()
+        return round((ttm_div / current_price) * 100, 2)
+    except Exception:
+        return 0
 
 def calculate_volatility(history):
     """변동성 계산 (연환산)"""
@@ -122,19 +165,16 @@ def fetch_us_etf(ticker):
         price_change = current_price - prev_close
         price_change_pct = (price_change / prev_close * 100) if prev_close != 0 else 0
         
-        # 수익률 계산
-        periods = {'1M': 21, '3M': 63, '6M': 126, '1Y': 252, '3Y': 756, '5Y': 1260}
-        returns = calculate_returns(history, periods)
+        # 수익률 계산 (달력 날짜 기준)
+        returns, cagr = calculate_returns(history)
 
         # 리스크 지표
         volatility = calculate_volatility(history)
         max_dd = calculate_max_drawdown(history)
 
-        # 배당 수익률
-        dividend_yield = info.get('yield', 0)
-        if dividend_yield:
-            dividend_yield = round(dividend_yield * 100, 2)
-        
+        # 배당 수익률 (TTM 직접 계산)
+        dividend_yield = calculate_dividend_yield(etf, current_price)
+
         data = {
             'ticker': ticker,
             'name': info.get('longName', ticker),
@@ -146,6 +186,7 @@ def fetch_us_etf(ticker):
             'aum': info.get('totalAssets'),
             'dividendYield': dividend_yield,
             'returns': returns,
+            'cagr': cagr,
             'volatility': volatility,
             'maxDrawdown': max_dd,
             'volume': int(history['Volume'].iloc[-1]) if len(history) > 0 else 0,
@@ -179,9 +220,8 @@ def fetch_kr_etf_basic(code):
         price_change = current_price - prev_close
         price_change_pct = (price_change / prev_close * 100) if prev_close != 0 else 0
         
-        # 수익률 계산
-        periods = {'1M': 21, '3M': 63, '6M': 126, '1Y': 252, '3Y': 756, '5Y': 1260}
-        returns = calculate_returns(history, periods)
+        # 수익률 계산 (달력 날짜 기준)
+        returns, cagr = calculate_returns(history)
 
         # 리스크 지표
         volatility = calculate_volatility(history)
@@ -190,6 +230,9 @@ def fetch_kr_etf_basic(code):
         # NAVER 금융에서 공식 한글 이름 조회 (KRX 교차검증)
         kr_name = fetch_kr_etf_name(code) or info.get('longName', f'ETF_{code}')
 
+        # 배당 수익률 (TTM 직접 계산)
+        dividend_yield = calculate_dividend_yield(etf, current_price)
+
         data = {
             'ticker': code,
             'name': kr_name,
@@ -197,7 +240,9 @@ def fetch_kr_etf_basic(code):
             'priceChange': round(price_change, 0),
             'priceChangePct': round(price_change_pct, 2),
             'currency': 'KRW',
+            'dividendYield': dividend_yield,
             'returns': returns,
+            'cagr': cagr,
             'volatility': volatility,
             'maxDrawdown': max_dd,
             'volume': int(history['Volume'].iloc[-1]) if len(history) > 0 else 0,

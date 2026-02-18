@@ -11,6 +11,8 @@ const categoryToTheme = {
   '미국_채권': '채권',
   '미국_기술주': '섹터-기술',
   '미국_배당': '배당주',
+  '미국_금/원자재': '원자재',
+  '미국_우주/항공': '우주/항공',
   '한국_KOSPI': '대형주',
   '한국_KOSDAQ': '성장주',
   '한국_산업별': '테마',
@@ -23,13 +25,18 @@ const categoryLabels = {
   '미국_채권': '채권',
   '미국_기술주': '기술주',
   '미국_배당': '배당',
+  '미국_금/원자재': '금/원자재',
+  '미국_우주/항공': '우주/항공',
   '한국_KOSPI': 'KOSPI',
   '한국_KOSDAQ': 'KOSDAQ',
-  '한국_산업별': '산업테마',
+  '한국_산업별': '한국산업',
 };
 
-const US_CATEGORIES = ['미국_S&P500', '미국_나스닥', '미국_채권', '미국_기술주', '미국_배당'];
-const KR_CATEGORIES = ['한국_KOSPI', '한국_KOSDAQ', '한국_산업별'];
+const US_CATEGORIES = ['미국_S&P500', '미국_나스닥', '미국_채권', '미국_배당'];
+const KR_CATEGORIES = ['한국_KOSPI', '한국_KOSDAQ'];
+
+// 산업테마 하위 소분류
+const THEME_SUBCATEGORIES = ['미국_기술주', '미국_금/원자재', '미국_우주/항공', '한국_산업별'];
 
 // AUM 숫자 → 포맷 문자열
 function formatAUM(aum, currency) {
@@ -58,6 +65,7 @@ function transformData(database) {
         price: etf.price,
         change: etf.priceChangePct,
         returns: etf.returns,
+        cagr: etf.cagr || {},
         aum: formatAUM(etf.aum, etf.currency),
         theme,
         category,
@@ -120,8 +128,8 @@ export default function ETFDashboard() {
       });
   }, []);
 
-  const periods = ['1M', '3M', '6M', '1Y'];
-  const themes = ['전체', '성장주', '배당주', '대형주', '테마', '섹터-기술', '채권'];
+  const periods = ['1M', '3M', '6M', '1Y', '3Y', '5Y'];
+  const themes = ['전체', '성장주', '배당주', '대형주', '테마', '섹터-기술', '채권', '원자재', '우주/항공'];
 
   // 국가 탭에 따라 보여줄 카테고리 탭 목록
   const visibleCategories =
@@ -459,17 +467,25 @@ export default function ETFDashboard() {
               </div>
 
               {/* 수익률 그리드 */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', padding: '1.25rem', background: 'rgba(0, 0, 0, 0.2)', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
-                {Object.entries(etf.returns).map(([period, value]) => (
-                  <div key={period} style={{ textAlign: 'center' }}>
-                    <div style={{ fontSize: '0.75rem', color: '#64748b', marginBottom: '0.375rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                      {period}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', padding: '1.25rem', background: 'rgba(0, 0, 0, 0.2)', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                {Object.entries(etf.returns).map(([period, value]) => {
+                  const cagrVal = etf.cagr?.[period];
+                  return (
+                    <div key={period} style={{ textAlign: 'center' }}>
+                      <div style={{ fontSize: '0.75rem', color: '#64748b', marginBottom: '0.375rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                        {period}
+                      </div>
+                      <div style={{ fontSize: '1.125rem', fontWeight: '700', color: value == null ? '#64748b' : value >= 0 ? '#22c55e' : '#ef4444', fontVariantNumeric: 'tabular-nums' }}>
+                        {value == null ? '-' : `${value >= 0 ? '+' : ''}${value}%`}
+                      </div>
+                      {cagrVal != null && (
+                        <div style={{ fontSize: '0.7rem', color: '#94a3b8', marginTop: '0.2rem', fontVariantNumeric: 'tabular-nums' }}>
+                          연 {cagrVal >= 0 ? '+' : ''}{cagrVal}%
+                        </div>
+                      )}
                     </div>
-                    <div style={{ fontSize: '1.125rem', fontWeight: '700', color: value == null ? '#64748b' : value >= 0 ? '#22c55e' : '#ef4444', fontVariantNumeric: 'tabular-nums' }}>
-                      {value == null ? '-' : `${value >= 0 ? '+' : ''}${value}%`}
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div style={{ marginTop: '1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -510,6 +526,8 @@ export default function ETFDashboard() {
                   <th style={tableHeaderStyle}>3개월</th>
                   <th style={tableHeaderStyle}>6개월</th>
                   <th style={tableHeaderStyle}>1년</th>
+                  <th style={tableHeaderStyle}>3년</th>
+                  <th style={tableHeaderStyle}>5년</th>
                   <th style={tableHeaderStyle}>테마</th>
                 </tr>
               </thead>
@@ -536,17 +554,28 @@ export default function ETFDashboard() {
                         {etf.country === 'US' ? '$' : '₩'}{etf.price.toLocaleString()}
                       </span>
                     </td>
-                    {['1M', '3M', '6M', '1Y'].map(period => (
-                      <td key={period} style={tableCellStyle}>
-                        {etf.returns[period] == null ? (
-                          <span style={{ color: '#64748b' }}>-</span>
-                        ) : (
-                          <span style={{ color: etf.returns[period] >= 0 ? '#22c55e' : '#ef4444', fontWeight: '700', fontVariantNumeric: 'tabular-nums' }}>
-                            {etf.returns[period] >= 0 ? '+' : ''}{etf.returns[period]}%
-                          </span>
-                        )}
-                      </td>
-                    ))}
+                    {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(period => {
+                      const val = etf.returns[period];
+                      const cagrVal = etf.cagr?.[period];
+                      return (
+                        <td key={period} style={tableCellStyle}>
+                          {val == null ? (
+                            <span style={{ color: '#64748b' }}>-</span>
+                          ) : (
+                            <div>
+                              <span style={{ color: val >= 0 ? '#22c55e' : '#ef4444', fontWeight: '700', fontVariantNumeric: 'tabular-nums' }}>
+                                {val >= 0 ? '+' : ''}{val}%
+                              </span>
+                              {cagrVal != null && (
+                                <div style={{ fontSize: '0.7rem', color: '#94a3b8', marginTop: '0.125rem' }}>
+                                  연 {cagrVal >= 0 ? '+' : ''}{cagrVal}%
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </td>
+                      );
+                    })}
                     <td style={tableCellStyle}>
                       <span style={{ padding: '0.375rem 0.75rem', background: getGradient(etf.theme), borderRadius: '6px', fontSize: '0.75rem', fontWeight: '600', whiteSpace: 'nowrap' }}>
                         {etf.theme}
@@ -664,19 +693,25 @@ export default function ETFDashboard() {
 
             {/* 기간별 수익률 */}
             <div style={{
-              display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
+              display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
               gap: '0.75rem', padding: '1.25rem',
               background: 'rgba(0,0,0,0.25)', borderRadius: '12px',
               border: '1px solid rgba(255,255,255,0.06)', marginBottom: '1.25rem',
             }}>
-              {['1M', '3M', '6M', '1Y'].map(period => {
+              {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(period => {
                 const val = selectedEtf.returns?.[period];
+                const cagrVal = selectedEtf.cagr?.[period];
                 return (
                   <div key={period} style={{ textAlign: 'center' }}>
                     <div style={{ fontSize: '0.7rem', color: '#64748b', marginBottom: '0.375rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{period}</div>
                     <div style={{ fontSize: '1.125rem', fontWeight: '700', color: val == null ? '#64748b' : val >= 0 ? '#22c55e' : '#ef4444', fontVariantNumeric: 'tabular-nums' }}>
                       {val == null ? '-' : `${val >= 0 ? '+' : ''}${val}%`}
                     </div>
+                    {cagrVal != null && (
+                      <div style={{ fontSize: '0.65rem', color: '#94a3b8', marginTop: '0.2rem' }}>
+                        연 {cagrVal >= 0 ? '+' : ''}{cagrVal}%
+                      </div>
+                    )}
                   </div>
                 );
               })}

@@ -599,6 +599,28 @@ export default function ETFBacktestChart() {
           </div>
         )}
 
+        {/* Disclaimer */}
+        <footer style={{
+          marginTop: '3rem',
+          padding: '1.5rem 2rem',
+          borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+          color: '#475569',
+          fontSize: '0.7rem',
+          lineHeight: '1.7',
+          letterSpacing: '0.01em',
+        }}>
+          <p style={{ margin: '0 0 0.5rem', fontWeight: '600', color: '#64748b', fontSize: '0.75rem' }}>
+            Data Methodology
+          </p>
+          <p style={{ margin: 0 }}>
+            수익률은 Yahoo Finance(yfinance)에서 제공하는 배당·분할 조정 종가(Adjusted Close) 기준 Total Return으로 계산됩니다.
+            기간 산출은 달력 날짜 기준이며, 해당 일자가 비거래일인 경우 직전 마지막 거래일 종가를 사용합니다(Yahoo Finance 동일 방식).
+            3년·5년 수익률에 표기된 연환산(CAGR)은 복리 기준 연평균 수익률입니다.
+            변동성은 일별 수익률의 표준편차를 연환산(×√252)한 값이며, 최대 낙폭(MDD)은 누적 수익률 고점 대비 최대 하락폭입니다.
+            본 데이터는 투자 참고용이며, 투자 판단의 최종 책임은 이용자 본인에게 있습니다.
+          </p>
+        </footer>
+
       </div>
     </div>
   );
