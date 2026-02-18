@@ -7,110 +7,110 @@
         {
           "ticker": "SPY",
           "name": "State Street SPDR S&P 500 ETF Trust",
-          "price": 682.85,
-          "priceChange": 1.1,
-          "priceChangePct": 0.16,
+          "price": 686.29,
+          "priceChange": 3.44,
+          "priceChangePct": 0.5,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 708919230464,
-          "dividendYield": 1.07,
+          "dividendYield": 1.06,
           "returns": {
-            "1M": -1.27,
-            "3M": 2.88,
-            "6M": 6.73,
-            "1Y": 13.31,
-            "3Y": 74.43,
-            "5Y": 86.42
+            "1M": -0.78,
+            "3M": 4.28,
+            "6M": 7.29,
+            "1Y": 13.55,
+            "3Y": 75.3,
+            "5Y": 88.16
           },
           "cagr": {
-            "3Y": 20.38,
-            "5Y": 13.27
+            "3Y": 20.58,
+            "5Y": 13.48
           },
           "volatility": 17.88,
           "maxDrawdown": -33.72,
-          "volume": 81244100,
-          "lastUpdate": "2026-02-18T15:07:49.026126"
+          "volume": 72720473,
+          "lastUpdate": "2026-02-18T23:04:26.021969"
         },
         {
           "ticker": "VOO",
           "name": "Vanguard S&P 500 ETF",
-          "price": 627.99,
-          "priceChange": 1.1,
-          "priceChangePct": 0.18,
+          "price": 631.15,
+          "priceChange": 3.16,
+          "priceChangePct": 0.5,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 1509873025024,
-          "dividendYield": 1.13,
+          "dividendYield": 1.12,
           "returns": {
-            "1M": -1.27,
-            "3M": 2.9,
-            "6M": 6.76,
-            "1Y": 13.38,
-            "3Y": 74.88,
-            "5Y": 87.0
+            "1M": -0.78,
+            "3M": 4.27,
+            "6M": 7.34,
+            "1Y": 13.62,
+            "3Y": 75.76,
+            "5Y": 88.75
           },
           "cagr": {
-            "3Y": 20.48,
-            "5Y": 13.34
+            "3Y": 20.68,
+            "5Y": 13.55
           },
-          "volatility": 17.95,
+          "volatility": 17.96,
           "maxDrawdown": -33.99,
-          "volume": 8708500,
-          "lastUpdate": "2026-02-18T15:07:50.363971"
+          "volume": 9495872,
+          "lastUpdate": "2026-02-18T23:04:26.938566"
         },
         {
           "ticker": "IVV",
           "name": "iShares Core S&P 500 ETF",
-          "price": 685.84,
-          "priceChange": 1.08,
-          "priceChangePct": 0.16,
+          "price": 689.35,
+          "priceChange": 3.51,
+          "priceChangePct": 0.51,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 763643363328,
           "dividendYield": 1.17,
           "returns": {
-            "1M": -1.27,
-            "3M": 2.88,
-            "6M": 6.75,
+            "1M": -0.76,
+            "3M": 4.27,
+            "6M": 7.35,
+            "1Y": 13.63,
+            "3Y": 75.75,
+            "5Y": 88.74
+          },
+          "cagr": {
+            "3Y": 20.68,
+            "5Y": 13.55
+          },
+          "volatility": 18.0,
+          "maxDrawdown": -33.9,
+          "volume": 7364801,
+          "lastUpdate": "2026-02-18T23:04:28.103704"
+        },
+        {
+          "ticker": "SPLG",
+          "name": "State Street SPDR Portfolio S&P 500 ETF",
+          "price": 80.33,
+          "priceChange": 0.13,
+          "priceChangePct": 0.16,
+          "currency": "USD",
+          "expenseRatio": 0,
+          "aum": 97328324608,
+          "dividendYield": 1.13,
+          "returns": {
+            "1M": -1.29,
+            "3M": 2.87,
+            "6M": 6.74,
             "1Y": 13.38,
-            "3Y": 74.86,
+            "3Y": 74.85,
             "5Y": 86.98
           },
           "cagr": {
             "3Y": 20.47,
             "5Y": 13.33
           },
-          "volatility": 18.0,
-          "maxDrawdown": -33.9,
-          "volume": 7331600,
-          "lastUpdate": "2026-02-18T15:07:52.038590"
-        },
-        {
-          "ticker": "SPLG",
-          "name": "State Street SPDR Portfolio S&P 500 ETF",
-          "price": 80.2,
-          "priceChange": 0.04,
-          "priceChangePct": 0.05,
-          "currency": "USD",
-          "expenseRatio": 0,
-          "aum": 97328324608,
-          "dividendYield": 1.13,
-          "returns": {
-            "1M": -1.74,
-            "3M": 1.74,
-            "6M": 6.36,
-            "1Y": 13.18,
-            "3Y": 72.23,
-            "5Y": 86.59
-          },
-          "cagr": {
-            "3Y": 19.87,
-            "5Y": 13.29
-          },
           "volatility": 17.97,
           "maxDrawdown": -33.87,
-          "volume": 11640247,
-          "lastUpdate": "2026-02-18T15:07:53.443335"
+          "volume": 11550969,
+          "lastUpdate": "2026-02-18T23:04:29.139663"
         }
       ]
     },
@@ -121,218 +121,218 @@
         {
           "ticker": "QQQ",
           "name": "Invesco QQQ Trust",
-          "price": 601.3,
-          "priceChange": -0.62,
-          "priceChangePct": -0.1,
+          "price": 605.79,
+          "priceChange": 4.49,
+          "priceChangePct": 0.75,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 411780087808,
           "dividendYield": 0.46,
           "returns": {
-            "1M": -3.21,
-            "3M": -0.26,
-            "6M": 4.41,
-            "1Y": 12.3,
-            "3Y": 103.26,
-            "5Y": 85.55
+            "1M": -2.49,
+            "3M": 1.72,
+            "6M": 5.23,
+            "1Y": 12.88,
+            "3Y": 104.78,
+            "5Y": 87.76
           },
           "cagr": {
-            "3Y": 26.67,
-            "5Y": 13.16
+            "3Y": 26.99,
+            "5Y": 13.43
           },
           "volatility": 22.2,
           "maxDrawdown": -35.12,
-          "volume": 68730900,
-          "lastUpdate": "2026-02-18T15:07:54.981705"
+          "volume": 63830303,
+          "lastUpdate": "2026-02-18T23:04:30.276354"
         },
         {
           "ticker": "QQQM",
           "name": "Invesco NASDAQ 100 ETF",
-          "price": 247.57,
-          "priceChange": -0.26,
-          "priceChangePct": -0.1,
+          "price": 249.38,
+          "priceChange": 1.81,
+          "priceChangePct": 0.73,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 73416523776,
-          "dividendYield": 0.51,
+          "dividendYield": 0.5,
           "returns": {
-            "1M": -3.18,
-            "3M": -0.26,
-            "6M": 4.43,
-            "1Y": 12.36,
-            "3Y": 103.74,
-            "5Y": 86.19
+            "1M": -2.48,
+            "3M": 1.71,
+            "6M": 5.23,
+            "1Y": 12.91,
+            "3Y": 105.23,
+            "5Y": 88.35
           },
           "cagr": {
-            "3Y": 26.77,
-            "5Y": 13.24
+            "3Y": 27.08,
+            "5Y": 13.5
           },
-          "volatility": 22.31,
+          "volatility": 22.3,
           "maxDrawdown": -35.04,
-          "volume": 10192800,
-          "lastUpdate": "2026-02-18T15:07:56.162837"
+          "volume": 4924383,
+          "lastUpdate": "2026-02-18T23:04:31.134516"
         },
         {
           "ticker": "QQQE",
           "name": "Direxion NASDAQ-100 Equal Weighted Index Shares",
-          "price": 102.33,
-          "priceChange": -0.35,
-          "priceChangePct": -0.34,
+          "price": 103.17,
+          "priceChange": 0.84,
+          "priceChangePct": 0.82,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 1225758464,
-          "dividendYield": 0.52,
+          "dividendYield": 0.51,
           "returns": {
-            "1M": -1.87,
-            "3M": 3.01,
-            "6M": 4.45,
-            "1Y": 6.27,
-            "3Y": 47.66,
-            "5Y": 37.06
+            "1M": -1.06,
+            "3M": 4.37,
+            "6M": 5.14,
+            "1Y": 5.86,
+            "3Y": 48.87,
+            "5Y": 38.71
           },
           "cagr": {
-            "3Y": 13.87,
-            "5Y": 6.51
+            "3Y": 14.18,
+            "5Y": 6.76
           },
           "volatility": 20.68,
           "maxDrawdown": -32.15,
-          "volume": 219500,
-          "lastUpdate": "2026-02-18T15:07:57.582512"
+          "volume": 148057,
+          "lastUpdate": "2026-02-18T23:04:32.111002"
         },
         {
           "ticker": "QQQJ",
           "name": "Invesco NASDAQ Next Gen 100 ETF",
-          "price": 38.03,
-          "priceChange": -0.01,
-          "priceChangePct": -0.03,
+          "price": 38.45,
+          "priceChange": 0.42,
+          "priceChangePct": 1.1,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 883644352,
-          "dividendYield": 0.82,
+          "dividendYield": 0.81,
           "returns": {
-            "1M": -2.79,
-            "3M": 6.68,
-            "6M": 12.16,
-            "1Y": 17.52,
-            "3Y": 48.59,
-            "5Y": 15.6
+            "1M": -1.71,
+            "3M": 8.32,
+            "6M": 12.75,
+            "1Y": 18.1,
+            "3Y": 50.23,
+            "5Y": 17.57
           },
           "cagr": {
-            "3Y": 14.11,
-            "5Y": 2.94
+            "3Y": 14.53,
+            "5Y": 3.29
           },
-          "volatility": 22.02,
+          "volatility": 22.01,
           "maxDrawdown": -39.58,
-          "volume": 261600,
-          "lastUpdate": "2026-02-18T15:07:58.766257"
+          "volume": 185626,
+          "lastUpdate": "2026-02-18T23:04:32.986474"
         },
         {
           "ticker": "ONEQ",
           "name": "Fidelity Nasdaq Composite Index ETF",
-          "price": 88.84,
-          "priceChange": 0.09,
-          "priceChangePct": 0.1,
+          "price": 89.54,
+          "priceChange": 0.7,
+          "priceChangePct": 0.79,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 9389847552,
           "dividendYield": 0.55,
           "returns": {
-            "1M": -3.92,
-            "3M": -0.43,
-            "6M": 4.69,
-            "1Y": 13.36,
-            "3Y": 96.11,
-            "5Y": 70.13
+            "1M": -3.16,
+            "3M": 1.66,
+            "6M": 5.55,
+            "1Y": 14.34,
+            "3Y": 97.65,
+            "5Y": 73.01
           },
           "cagr": {
-            "3Y": 25.17,
-            "5Y": 11.21
+            "3Y": 25.5,
+            "5Y": 11.59
           },
           "volatility": 21.6,
           "maxDrawdown": -35.23,
-          "volume": 262000,
-          "lastUpdate": "2026-02-18T15:08:00.278242"
+          "volume": 198375,
+          "lastUpdate": "2026-02-18T23:04:34.136504"
         },
         {
           "ticker": "TQQQ",
           "name": "ProShares UltraPro QQQ",
-          "price": 48.35,
-          "priceChange": -0.12,
-          "priceChangePct": -0.25,
+          "price": 49.39,
+          "priceChange": 1.04,
+          "priceChangePct": 2.15,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 28960600064,
-          "dividendYield": 0.71,
+          "dividendYield": 0.69,
           "returns": {
-            "1M": -10.69,
-            "3M": -5.09,
-            "6M": 3.95,
-            "1Y": 8.54,
-            "3Y": 318.28,
-            "5Y": 87.75
+            "1M": -8.77,
+            "3M": 0.58,
+            "6M": 6.32,
+            "1Y": 10.19,
+            "3Y": 327.27,
+            "5Y": 94.41
           },
           "cagr": {
-            "3Y": 61.12,
-            "5Y": 13.43
+            "3Y": 62.27,
+            "5Y": 14.22
           },
           "volatility": 65.68,
           "maxDrawdown": -81.66,
-          "volume": 116543800,
-          "lastUpdate": "2026-02-18T15:08:01.966357"
+          "volume": 80713993,
+          "lastUpdate": "2026-02-18T23:04:34.945515"
         },
         {
           "ticker": "PSQ",
           "name": "ProShares Short QQQ",
-          "price": 31.02,
-          "priceChange": 0.05,
-          "priceChangePct": 0.16,
+          "price": 30.78,
+          "priceChange": -0.24,
+          "priceChangePct": -0.77,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 511553344,
-          "dividendYield": 4.84,
+          "dividendYield": 4.88,
           "returns": {
-            "1M": 3.54,
-            "3M": 1.34,
-            "6M": -2.0,
-            "1Y": -9.19,
-            "3Y": -43.84,
-            "5Y": -45.36
+            "1M": 2.74,
+            "3M": -0.63,
+            "6M": -2.79,
+            "1Y": -9.69,
+            "3Y": -44.27,
+            "5Y": -46.02
           },
           "cagr": {
-            "3Y": -17.5,
-            "5Y": -11.39
+            "3Y": -17.71,
+            "5Y": -11.6
           },
           "volatility": 22.15,
           "maxDrawdown": -87.58,
-          "volume": 10450400,
-          "lastUpdate": "2026-02-18T15:08:03.370811"
+          "volume": 9920880,
+          "lastUpdate": "2026-02-18T23:04:35.815275"
         },
         {
           "ticker": "ARKW",
           "name": "ARK Next Generation Internet ETF",
-          "price": 122.33,
-          "priceChange": -0.91,
-          "priceChangePct": -0.74,
+          "price": 123.62,
+          "priceChange": 1.29,
+          "priceChangePct": 1.05,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 1833877760,
-          "dividendYield": 1.92,
+          "dividendYield": 1.9,
           "returns": {
-            "1M": -17.67,
-            "3M": -17.13,
-            "6M": -22.22,
-            "1Y": -1.13,
-            "3Y": 134.03,
-            "5Y": -30.95
+            "1M": -16.8,
+            "3M": -15.75,
+            "6M": -21.44,
+            "1Y": 1.35,
+            "3Y": 136.49,
+            "5Y": -28.86
           },
           "cagr": {
-            "3Y": 32.77,
-            "5Y": -7.14
+            "3Y": 33.23,
+            "5Y": -6.58
           },
           "volatility": 37.36,
           "maxDrawdown": -80.01,
-          "volume": 154700,
-          "lastUpdate": "2026-02-18T15:08:04.715893"
+          "volume": 85311,
+          "lastUpdate": "2026-02-18T23:04:36.861715"
         }
       ]
     },
@@ -343,83 +343,83 @@
         {
           "ticker": "AGG",
           "name": "iShares Core U.S. Aggregate Bond ETF",
-          "price": 101.0,
-          "priceChange": 0.01,
-          "priceChangePct": 0.01,
+          "price": 100.86,
+          "priceChange": -0.14,
+          "priceChangePct": -0.14,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 138324639744,
           "dividendYield": 3.85,
           "returns": {
-            "1M": 1.28,
-            "3M": 1.98,
-            "6M": 4.1,
-            "1Y": 7.5,
-            "3Y": 14.92,
-            "5Y": 0.94
+            "1M": 1.14,
+            "3M": 1.77,
+            "6M": 4.08,
+            "1Y": 7.78,
+            "3Y": 14.76,
+            "5Y": 0.85
           },
           "cagr": {
-            "3Y": 4.74,
-            "5Y": 0.19
+            "3Y": 4.7,
+            "5Y": 0.17
           },
           "volatility": 5.37,
           "maxDrawdown": -18.43,
-          "volume": 6587300,
-          "lastUpdate": "2026-02-18T15:08:06.150336"
+          "volume": 5460089,
+          "lastUpdate": "2026-02-18T23:04:38.133096"
         },
         {
           "ticker": "TLT",
           "name": "iShares 20+ Year Treasury Bond ETF",
-          "price": 89.87,
-          "priceChange": 0.15,
-          "priceChangePct": 0.17,
+          "price": 89.53,
+          "priceChange": -0.34,
+          "priceChangePct": -0.38,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 45213560832,
-          "dividendYield": 4.32,
+          "dividendYield": 4.33,
           "returns": {
-            "1M": 2.75,
-            "3M": 2.02,
-            "6M": 6.35,
-            "1Y": 5.32,
-            "3Y": -1.11,
-            "5Y": -27.72
+            "1M": 2.36,
+            "3M": 1.67,
+            "6M": 6.25,
+            "1Y": 6.17,
+            "3Y": -1.48,
+            "5Y": -27.7
           },
           "cagr": {
-            "3Y": -0.37,
-            "5Y": -6.29
+            "3Y": -0.5,
+            "5Y": -6.28
           },
           "volatility": 14.93,
           "maxDrawdown": -48.35,
-          "volume": 32314800,
-          "lastUpdate": "2026-02-18T15:08:07.763821"
+          "volume": 35068053,
+          "lastUpdate": "2026-02-18T23:04:39.137502"
         },
         {
           "ticker": "SHY",
           "name": "iShares 1-3 Year Treasury Bond ETF",
-          "price": 83.03,
-          "priceChange": -0.03,
-          "priceChangePct": -0.04,
+          "price": 82.98,
+          "priceChange": -0.05,
+          "priceChangePct": -0.06,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 24251971584,
           "dividendYield": 3.77,
           "returns": {
-            "1M": 0.59,
-            "3M": 1.17,
-            "6M": 2.31,
-            "1Y": 5.03,
-            "3Y": 14.0,
-            "5Y": 9.0
+            "1M": 0.53,
+            "3M": 1.05,
+            "6M": 2.25,
+            "1Y": 5.06,
+            "3Y": 13.94,
+            "5Y": 8.93
           },
           "cagr": {
-            "3Y": 4.47,
-            "5Y": 1.74
+            "3Y": 4.44,
+            "5Y": 1.73
           },
           "volatility": 1.56,
           "maxDrawdown": -5.71,
-          "volume": 3291800,
-          "lastUpdate": "2026-02-18T15:08:09.243644"
+          "volume": 2144839,
+          "lastUpdate": "2026-02-18T23:04:40.194696"
         }
       ]
     },
@@ -430,164 +430,164 @@
         {
           "ticker": "XLK",
           "name": "State Street Technology Select Sector SPDR ETF",
-          "price": 139.48,
-          "priceChange": -0.08,
-          "priceChangePct": -0.06,
+          "price": 140.91,
+          "priceChange": 1.43,
+          "priceChangePct": 1.03,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 91643199488,
           "dividendYield": 0.56,
           "returns": {
-            "1M": -4.22,
-            "3M": -1.5,
-            "6M": 5.28,
-            "1Y": 16.97,
-            "3Y": 103.89,
-            "5Y": 111.85
+            "1M": -3.23,
+            "3M": 1.15,
+            "6M": 6.14,
+            "1Y": 17.1,
+            "3Y": 105.98,
+            "5Y": 115.08
           },
           "cagr": {
-            "3Y": 26.8,
-            "5Y": 16.2
+            "3Y": 27.23,
+            "5Y": 16.55
           },
           "volatility": 24.22,
           "maxDrawdown": -33.56,
-          "volume": 25741800,
-          "lastUpdate": "2026-02-18T15:08:10.773735"
+          "volume": 13172426,
+          "lastUpdate": "2026-02-18T23:04:41.140621"
         },
         {
           "ticker": "VGT",
           "name": "Vanguard Information Technology Index Fund ETF Shares",
-          "price": 731.08,
-          "priceChange": 0.28,
-          "priceChangePct": 0.04,
+          "price": 737.84,
+          "priceChange": 6.76,
+          "priceChangePct": 0.92,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 130278727680,
-          "dividendYield": 0.42,
+          "dividendYield": 0.41,
           "returns": {
-            "1M": -3.67,
-            "3M": -1.6,
-            "6M": 4.66,
-            "1Y": 14.77,
-            "3Y": 106.55,
-            "5Y": 101.68
+            "1M": -2.78,
+            "3M": 0.82,
+            "6M": 5.32,
+            "1Y": 15.07,
+            "3Y": 108.46,
+            "5Y": 104.48
           },
           "cagr": {
-            "3Y": 27.35,
-            "5Y": 15.06
+            "3Y": 27.74,
+            "5Y": 15.38
           },
           "volatility": 24.37,
           "maxDrawdown": -35.07,
-          "volume": 421200,
-          "lastUpdate": "2026-02-18T15:08:12.345550"
+          "volume": 364178,
+          "lastUpdate": "2026-02-18T23:04:42.038369"
         },
         {
           "ticker": "SOXX",
           "name": "iShares Semiconductor ETF",
-          "price": 354.1,
-          "priceChange": -0.56,
-          "priceChangePct": -0.16,
+          "price": 357.92,
+          "priceChange": 3.82,
+          "priceChangePct": 1.08,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 20971747328,
-          "dividendYield": 0.49,
+          "dividendYield": 0.48,
           "returns": {
-            "1M": 3.4,
-            "3M": 25.06,
-            "6M": 43.11,
-            "1Y": 59.86,
-            "3Y": 161.28,
-            "5Y": 156.49
+            "1M": 4.51,
+            "3M": 29.41,
+            "6M": 44.23,
+            "1Y": 58.95,
+            "3Y": 164.1,
+            "5Y": 161.95
           },
           "cagr": {
-            "3Y": 37.73,
-            "5Y": 20.73
+            "3Y": 38.23,
+            "5Y": 21.24
           },
           "volatility": 32.73,
           "maxDrawdown": -45.75,
-          "volume": 4045800,
-          "lastUpdate": "2026-02-18T15:08:13.819396"
+          "volume": 5585271,
+          "lastUpdate": "2026-02-18T23:04:43.161519"
         },
         {
           "ticker": "SMH",
           "name": "VanEck Semiconductor ETF",
-          "price": 407.51,
-          "priceChange": -0.21,
-          "priceChangePct": -0.05,
+          "price": 412.55,
+          "priceChange": 5.04,
+          "priceChangePct": 1.24,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 44065882112,
           "dividendYield": 0.27,
           "returns": {
-            "1M": 1.78,
-            "3M": 20.12,
-            "6M": 38.26,
-            "1Y": 61.84,
-            "3Y": 240.29,
-            "5Y": 234.45
+            "1M": 3.04,
+            "3M": 24.17,
+            "6M": 39.4,
+            "1Y": 61.51,
+            "3Y": 244.5,
+            "5Y": 242.22
           },
           "cagr": {
-            "3Y": 50.41,
-            "5Y": 27.31
+            "3Y": 51.03,
+            "5Y": 27.9
           },
           "volatility": 32.08,
           "maxDrawdown": -45.3,
-          "volume": 7286000,
-          "lastUpdate": "2026-02-18T15:08:15.176275"
+          "volume": 5768660,
+          "lastUpdate": "2026-02-18T23:04:44.185083"
         },
         {
           "ticker": "ARKK",
           "name": "ARK Innovation ETF",
-          "price": 70.3,
-          "priceChange": 0.05,
-          "priceChangePct": 0.07,
+          "price": 71.39,
+          "priceChange": 1.09,
+          "priceChangePct": 1.55,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 6676811776,
           "dividendYield": 0,
           "returns": {
-            "1M": -13.93,
-            "3M": -6.88,
-            "6M": -8.71,
-            "1Y": 4.89,
-            "3Y": 69.34,
-            "5Y": -53.03
+            "1M": -12.6,
+            "3M": -4.78,
+            "6M": -7.42,
+            "1Y": 7.39,
+            "3Y": 71.97,
+            "5Y": -51.35
           },
           "cagr": {
-            "3Y": 19.19,
-            "5Y": -14.03
+            "3Y": 19.81,
+            "5Y": -13.42
           },
           "volatility": 39.98,
           "maxDrawdown": -80.91,
-          "volume": 10605000,
-          "lastUpdate": "2026-02-18T15:08:16.425804"
+          "volume": 8014559,
+          "lastUpdate": "2026-02-18T23:04:45.214944"
         },
         {
           "ticker": "IGV",
           "name": "iShares Expanded Tech-Software Sector ETF",
-          "price": 80.96,
-          "priceChange": -1.81,
-          "priceChangePct": -2.19,
+          "price": 82.0,
+          "priceChange": 1.04,
+          "priceChangePct": 1.28,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 6058692096,
           "dividendYield": 0,
           "returns": {
-            "1M": -17.65,
-            "3M": -23.25,
-            "6M": -25.8,
-            "1Y": -24.17,
-            "3Y": 42.17,
-            "5Y": 6.24
+            "1M": -16.59,
+            "3M": -21.46,
+            "6M": -25.05,
+            "1Y": -23.95,
+            "3Y": 44.0,
+            "5Y": 7.92
           },
           "cagr": {
-            "3Y": 12.44,
-            "5Y": 1.22
+            "3Y": 12.92,
+            "5Y": 1.54
           },
-          "volatility": 25.74,
+          "volatility": 25.73,
           "maxDrawdown": -45.85,
-          "volume": 21424000,
-          "lastUpdate": "2026-02-18T15:08:17.963238"
+          "volume": 19932199,
+          "lastUpdate": "2026-02-18T23:04:46.278940"
         }
       ]
     },
@@ -598,325 +598,325 @@
         {
           "ticker": "VYM",
           "name": "Vanguard High Dividend Yield Index Fund ETF Shares",
-          "price": 155.13,
-          "priceChange": -0.24,
-          "priceChangePct": -0.15,
+          "price": 155.6,
+          "priceChange": 0.47,
+          "priceChangePct": 0.3,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 88506867712,
-          "dividendYield": 2.26,
+          "dividendYield": 2.25,
           "returns": {
-            "1M": 4.21,
-            "3M": 11.91,
-            "6M": 14.67,
-            "1Y": 19.0,
-            "3Y": 54.14,
-            "5Y": 86.42
+            "1M": 4.52,
+            "3M": 12.27,
+            "6M": 15.01,
+            "1Y": 18.71,
+            "3Y": 54.6,
+            "5Y": 87.75
           },
           "cagr": {
-            "3Y": 15.51,
-            "5Y": 13.27
+            "3Y": 15.63,
+            "5Y": 13.43
           },
           "volatility": 16.33,
           "maxDrawdown": -35.21,
-          "volume": 1838800,
-          "lastUpdate": "2026-02-18T15:08:19.295262"
+          "volume": 1278526,
+          "lastUpdate": "2026-02-18T23:04:47.384019"
         },
         {
           "ticker": "SCHD",
           "name": "Schwab U.S. Dividend Equity ETF",
-          "price": 31.42,
-          "priceChange": -0.19,
-          "priceChangePct": -0.6,
+          "price": 31.56,
+          "priceChange": 0.14,
+          "priceChangePct": 0.45,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 78399782912,
-          "dividendYield": 3.33,
+          "dividendYield": 3.32,
           "returns": {
-            "1M": 8.72,
-            "3M": 17.56,
-            "6M": 17.25,
-            "1Y": 17.5,
-            "3Y": 37.03,
-            "5Y": 66.67
+            "1M": 9.2,
+            "3M": 17.39,
+            "6M": 18.08,
+            "1Y": 17.18,
+            "3Y": 37.64,
+            "5Y": 67.99
           },
           "cagr": {
-            "3Y": 11.07,
-            "5Y": 10.76
+            "3Y": 11.24,
+            "5Y": 10.93
           },
           "volatility": 16.71,
           "maxDrawdown": -33.37,
-          "volume": 32680800,
-          "lastUpdate": "2026-02-18T15:08:20.793261"
+          "volume": 18542211,
+          "lastUpdate": "2026-02-18T23:04:48.516356"
         },
         {
           "ticker": "HDV",
           "name": "iShares Core High Dividend ETF",
-          "price": 137.62,
-          "priceChange": -1.14,
-          "priceChangePct": -0.82,
+          "price": 138.25,
+          "priceChange": 0.63,
+          "priceChangePct": 0.46,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 12827713536,
-          "dividendYield": 2.84,
+          "dividendYield": 2.83,
           "returns": {
-            "1M": 8.24,
-            "3M": 14.34,
-            "6M": 15.48,
-            "1Y": 21.8,
-            "3Y": 48.32,
-            "5Y": 80.86
+            "1M": 8.74,
+            "3M": 14.41,
+            "6M": 16.44,
+            "1Y": 21.81,
+            "3Y": 49.0,
+            "5Y": 82.21
           },
           "cagr": {
-            "3Y": 14.04,
-            "5Y": 12.58
+            "3Y": 14.22,
+            "5Y": 12.75
           },
           "volatility": 15.7,
           "maxDrawdown": -37.04,
-          "volume": 751000,
-          "lastUpdate": "2026-02-18T15:08:22.216699"
+          "volume": 494931,
+          "lastUpdate": "2026-02-18T23:04:49.698806"
         },
         {
           "ticker": "DVY",
           "name": "iShares Select Dividend ETF",
-          "price": 156.97,
-          "priceChange": -0.96,
-          "priceChangePct": -0.61,
+          "price": 156.48,
+          "priceChange": -0.49,
+          "priceChangePct": -0.31,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 21941575680,
-          "dividendYield": 3.28,
+          "dividendYield": 3.29,
           "returns": {
-            "1M": 6.41,
-            "3M": 14.29,
-            "6M": 15.9,
-            "1Y": 20.07,
-            "3Y": 40.98,
-            "5Y": 79.99
+            "1M": 6.07,
+            "3M": 13.38,
+            "6M": 15.8,
+            "1Y": 18.49,
+            "3Y": 40.54,
+            "5Y": 80.1
           },
           "cagr": {
-            "3Y": 12.13,
-            "5Y": 12.47
+            "3Y": 12.01,
+            "5Y": 12.49
           },
           "volatility": 18.02,
           "maxDrawdown": -41.59,
-          "volume": 410500,
-          "lastUpdate": "2026-02-18T15:08:23.606741"
+          "volume": 336177,
+          "lastUpdate": "2026-02-18T23:04:50.864355"
         },
         {
           "ticker": "VIG",
           "name": "Vanguard Dividend Appreciation Index Fund ETF Shares",
-          "price": 227.18,
-          "priceChange": -0.08,
-          "priceChangePct": -0.04,
+          "price": 227.95,
+          "priceChange": 0.77,
+          "priceChangePct": 0.34,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 121513558016,
-          "dividendYield": 1.57,
+          "dividendYield": 1.56,
           "returns": {
-            "1M": 0.68,
-            "3M": 6.08,
-            "6M": 9.32,
-            "1Y": 13.36,
-            "3Y": 53.86,
-            "5Y": 74.18
+            "1M": 1.02,
+            "3M": 6.78,
+            "6M": 9.67,
+            "1Y": 13.5,
+            "3Y": 54.38,
+            "5Y": 75.52
           },
           "cagr": {
-            "3Y": 15.45,
-            "5Y": 11.74
+            "3Y": 15.58,
+            "5Y": 11.91
           },
           "volatility": 16.03,
           "maxDrawdown": -31.72,
-          "volume": 1865100,
-          "lastUpdate": "2026-02-18T15:08:25.075870"
+          "volume": 1162069,
+          "lastUpdate": "2026-02-18T23:04:52.269494"
         },
         {
           "ticker": "DGRO",
           "name": "iShares Core Dividend Growth ETF",
-          "price": 73.5,
-          "priceChange": -0.12,
-          "priceChangePct": -0.16,
+          "price": 73.75,
+          "priceChange": 0.25,
+          "priceChangePct": 0.34,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 37496946688,
           "dividendYield": 1.97,
           "returns": {
-            "1M": 2.77,
-            "3M": 9.05,
-            "6M": 12.5,
-            "1Y": 17.75,
-            "3Y": 53.95,
-            "5Y": 78.32
+            "1M": 3.12,
+            "3M": 9.57,
+            "6M": 12.92,
+            "1Y": 17.62,
+            "3Y": 54.48,
+            "5Y": 79.27
           },
           "cagr": {
-            "3Y": 15.47,
-            "5Y": 12.26
+            "3Y": 15.6,
+            "5Y": 12.38
           },
           "volatility": 16.63,
           "maxDrawdown": -35.1,
-          "volume": 1926200,
-          "lastUpdate": "2026-02-18T15:08:26.267969"
+          "volume": 1835462,
+          "lastUpdate": "2026-02-18T23:04:53.225435"
         },
         {
           "ticker": "DGRW",
           "name": "WisdomTree U.S. Quality Dividend Growth Fund",
-          "price": 92.61,
-          "priceChange": -0.01,
-          "priceChangePct": -0.01,
+          "price": 92.98,
+          "priceChange": 0.37,
+          "priceChangePct": 0.4,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 16156988416,
           "dividendYield": 1.4,
           "returns": {
-            "1M": 1.79,
-            "3M": 5.77,
-            "6M": 7.14,
-            "1Y": 12.2,
-            "3Y": 55.21,
-            "5Y": 84.59
+            "1M": 2.19,
+            "3M": 6.59,
+            "6M": 7.61,
+            "1Y": 12.26,
+            "3Y": 55.83,
+            "5Y": 85.77
           },
           "cagr": {
-            "3Y": 15.78,
-            "5Y": 13.04
+            "3Y": 15.94,
+            "5Y": 13.19
           },
           "volatility": 16.18,
           "maxDrawdown": -32.04,
-          "volume": 1119300,
-          "lastUpdate": "2026-02-18T15:08:27.626592"
+          "volume": 919187,
+          "lastUpdate": "2026-02-18T23:04:54.105427"
         },
         {
           "ticker": "JEPI",
           "name": "JPMorgan Equity Premium Income ETF",
-          "price": 59.2,
-          "priceChange": -0.11,
-          "priceChangePct": -0.19,
+          "price": 59.33,
+          "priceChange": 0.13,
+          "priceChangePct": 0.22,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 43150049280,
-          "dividendYield": 8.01,
+          "dividendYield": 7.99,
           "returns": {
-            "1M": 1.95,
-            "3M": 7.07,
-            "6M": 8.54,
-            "1Y": 8.73,
-            "3Y": 36.88,
-            "5Y": 61.17
+            "1M": 2.18,
+            "3M": 7.5,
+            "6M": 8.68,
+            "1Y": 8.64,
+            "3Y": 37.18,
+            "5Y": 61.33
           },
           "cagr": {
-            "3Y": 11.03,
-            "5Y": 10.02
+            "3Y": 11.11,
+            "5Y": 10.04
           },
           "volatility": 10.86,
           "maxDrawdown": -13.71,
-          "volume": 5301400,
-          "lastUpdate": "2026-02-18T15:08:28.965987"
+          "volume": 4186170,
+          "lastUpdate": "2026-02-18T23:04:54.820656"
         },
         {
           "ticker": "JEPQ",
           "name": "JPMorgan Nasdaq Equity Premium Income ETF",
-          "price": 57.47,
-          "priceChange": -0.04,
-          "priceChangePct": -0.07,
+          "price": 57.89,
+          "priceChange": 0.42,
+          "priceChangePct": 0.73,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 34284236800,
-          "dividendYield": 10.68,
+          "dividendYield": 10.6,
           "returns": {
-            "1M": -1.69,
-            "3M": 2.82,
-            "6M": 8.38,
-            "1Y": 10.19,
-            "3Y": 82.9,
+            "1M": -0.97,
+            "3M": 4.78,
+            "6M": 9.05,
+            "1Y": 10.79,
+            "3Y": 84.24,
             "5Y": null
           },
           "cagr": {
-            "3Y": 22.29
+            "3Y": 22.59
           },
-          "volatility": 16.86,
+          "volatility": 16.85,
           "maxDrawdown": -20.07,
-          "volume": 5765700,
-          "lastUpdate": "2026-02-18T15:08:30.133139"
+          "volume": 4650770,
+          "lastUpdate": "2026-02-18T23:04:55.482753"
         },
         {
           "ticker": "SPYD",
           "name": "State Street SPDR Portfolio S&P 500 High Dividend ETF",
-          "price": 47.81,
-          "priceChange": -0.26,
-          "priceChangePct": -0.54,
+          "price": 47.78,
+          "priceChange": -0.03,
+          "priceChangePct": -0.06,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 7496434688,
-          "dividendYield": 4.09,
+          "dividendYield": 4.1,
           "returns": {
-            "1M": 6.43,
-            "3M": 14.11,
-            "6M": 11.7,
-            "1Y": 13.53,
-            "3Y": 32.14,
-            "5Y": 63.25
+            "1M": 6.37,
+            "3M": 13.53,
+            "6M": 11.99,
+            "1Y": 12.56,
+            "3Y": 32.06,
+            "5Y": 64.23
           },
           "cagr": {
-            "3Y": 9.74,
-            "5Y": 10.3
+            "3Y": 9.71,
+            "5Y": 10.43
           },
           "volatility": 19.86,
           "maxDrawdown": -46.42,
-          "volume": 2080900,
-          "lastUpdate": "2026-02-18T15:08:31.473098"
+          "volume": 1712118,
+          "lastUpdate": "2026-02-18T23:04:56.179016"
         },
         {
           "ticker": "NOBL",
           "name": "ProShares S&P 500 Dividend Aristocrats ETF",
-          "price": 113.17,
-          "priceChange": -0.83,
-          "priceChangePct": -0.73,
+          "price": 113.58,
+          "priceChange": 0.41,
+          "priceChangePct": 0.36,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 11510596608,
-          "dividendYield": 1.97,
+          "dividendYield": 1.96,
           "returns": {
-            "1M": 3.52,
-            "3M": 11.51,
-            "6M": 9.9,
-            "1Y": 14.12,
-            "3Y": 29.69,
-            "5Y": 53.95
+            "1M": 3.9,
+            "3M": 11.77,
+            "6M": 10.57,
+            "1Y": 14.07,
+            "3Y": 30.16,
+            "5Y": 54.92
           },
           "cagr": {
-            "3Y": 9.05,
-            "5Y": 9.01
+            "3Y": 9.18,
+            "5Y": 9.15
           },
           "volatility": 16.59,
           "maxDrawdown": -35.43,
-          "volume": 709400,
-          "lastUpdate": "2026-02-18T15:08:32.777408"
+          "volume": 676177,
+          "lastUpdate": "2026-02-18T23:04:57.159638"
         },
         {
           "ticker": "SDY",
           "name": "State Street SPDR S&P Dividend ETF",
-          "price": 154.55,
-          "priceChange": -0.7,
-          "priceChangePct": -0.45,
+          "price": 154.44,
+          "priceChange": -0.11,
+          "priceChangePct": -0.07,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 21069246464,
           "dividendYield": 2.35,
           "returns": {
-            "1M": 5.49,
-            "3M": 13.54,
-            "6M": 11.69,
-            "1Y": 18.22,
-            "3Y": 29.34,
-            "5Y": 57.53
+            "1M": 5.41,
+            "3M": 13.26,
+            "6M": 11.92,
+            "1Y": 17.38,
+            "3Y": 29.25,
+            "5Y": 57.97
           },
           "cagr": {
-            "3Y": 8.95,
-            "5Y": 9.51
+            "3Y": 8.93,
+            "5Y": 9.58
           },
           "volatility": 17.09,
           "maxDrawdown": -36.7,
-          "volume": 208200,
-          "lastUpdate": "2026-02-18T15:08:34.220690"
+          "volume": 200130,
+          "lastUpdate": "2026-02-18T23:04:58.430890"
         }
       ]
     },
@@ -927,83 +927,83 @@
         {
           "ticker": "GLD",
           "name": "SPDR Gold Shares",
-          "price": 448.2,
-          "priceChange": -14.42,
-          "priceChangePct": -3.12,
+          "price": 458.28,
+          "priceChange": 10.08,
+          "priceChangePct": 2.25,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 174068531200,
           "dividendYield": 0,
           "returns": {
-            "1M": 6.39,
-            "3M": 20.6,
-            "6M": 45.79,
-            "1Y": 68.31,
-            "3Y": 161.71,
-            "5Y": 169.46
+            "1M": 8.78,
+            "3M": 22.42,
+            "6M": 49.3,
+            "1Y": 69.29,
+            "3Y": 167.59,
+            "5Y": 175.54
           },
           "cagr": {
-            "3Y": 37.81,
-            "5Y": 21.93
+            "3Y": 38.83,
+            "5Y": 22.47
           },
-          "volatility": 15.53,
+          "volatility": 15.54,
           "maxDrawdown": -22.0,
-          "volume": 10906500,
-          "lastUpdate": "2026-02-18T15:08:35.642236"
+          "volume": 10100750,
+          "lastUpdate": "2026-02-18T23:04:59.375762"
         },
         {
           "ticker": "SLV",
           "name": "iShares Silver Trust",
-          "price": 66.37,
-          "priceChange": -3.35,
-          "priceChangePct": -4.8,
+          "price": 70.09,
+          "priceChange": 3.72,
+          "priceChangePct": 5.6,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 51481948160,
           "dividendYield": 0,
           "returns": {
-            "1M": -18.08,
-            "3M": 45.96,
-            "6M": 92.38,
-            "1Y": 126.44,
-            "3Y": 231.68,
-            "5Y": 161.3
+            "1M": -13.49,
+            "3M": 52.04,
+            "6M": 102.87,
+            "1Y": 134.34,
+            "3Y": 250.27,
+            "5Y": 179.69
           },
           "cagr": {
-            "3Y": 49.13,
-            "5Y": 21.18
+            "3Y": 51.87,
+            "5Y": 22.84
           },
-          "volatility": 30.62,
+          "volatility": 30.67,
           "maxDrawdown": -42.81,
-          "volume": 81611200,
-          "lastUpdate": "2026-02-18T15:08:37.027908"
+          "volume": 61399856,
+          "lastUpdate": "2026-02-18T23:05:00.185636"
         },
         {
           "ticker": "USO",
           "name": "United States Oil Fund, LP",
-          "price": 75.73,
-          "priceChange": -0.49,
-          "priceChangePct": -0.64,
+          "price": 79.4,
+          "priceChange": 3.67,
+          "priceChangePct": 4.85,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 1042921600,
           "dividendYield": 0,
           "returns": {
-            "1M": 5.69,
-            "3M": 6.21,
-            "6M": 4.02,
-            "1Y": -0.12,
-            "3Y": 13.0,
-            "5Y": 85.2
+            "1M": 10.82,
+            "3M": 9.52,
+            "6M": 8.51,
+            "1Y": 3.17,
+            "3Y": 18.47,
+            "5Y": 97.17
           },
           "cagr": {
-            "3Y": 4.16,
-            "5Y": 13.12
+            "3Y": 5.81,
+            "5Y": 14.54
           },
-          "volatility": 37.83,
+          "volatility": 37.85,
           "maxDrawdown": -86.75,
-          "volume": 9312900,
-          "lastUpdate": "2026-02-18T15:08:38.314224"
+          "volume": 10190829,
+          "lastUpdate": "2026-02-18T23:05:01.040588"
         }
       ]
     },
@@ -1014,82 +1014,82 @@
         {
           "ticker": "ARKX",
           "name": "ARK Space & Defense Innovation ETF",
-          "price": 31.62,
-          "priceChange": 0.24,
-          "priceChangePct": 0.76,
+          "price": 32.25,
+          "priceChange": 0.63,
+          "priceChangePct": 1.99,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 821020800,
           "dividendYield": 0,
           "returns": {
-            "1M": -10.09,
-            "3M": 16.64,
-            "6M": 18.96,
-            "1Y": 51.8,
-            "3Y": 121.58,
+            "1M": -8.3,
+            "3M": 20.2,
+            "6M": 21.38,
+            "1Y": 52.7,
+            "3Y": 126.0,
             "5Y": null
           },
           "cagr": {
-            "3Y": 30.37
+            "3Y": 31.23
           },
           "volatility": 26.98,
           "maxDrawdown": -43.61,
-          "volume": 743000,
-          "lastUpdate": "2026-02-18T15:08:39.430378"
+          "volume": 854998,
+          "lastUpdate": "2026-02-18T23:05:01.665897"
         },
         {
           "ticker": "UFO",
           "name": "Procure Space ETF",
-          "price": 43.72,
-          "priceChange": 0.18,
-          "priceChangePct": 0.41,
+          "price": 44.81,
+          "priceChange": 1.08,
+          "priceChangePct": 2.48,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 366888096,
           "dividendYield": 0.4,
           "returns": {
-            "1M": -7.69,
-            "3M": 34.98,
-            "6M": 42.83,
-            "1Y": 72.19,
-            "3Y": 119.65,
-            "5Y": 52.36
+            "1M": -5.39,
+            "3M": 37.42,
+            "6M": 45.67,
+            "1Y": 74.82,
+            "3Y": 125.1,
+            "5Y": 60.77
           },
           "cagr": {
-            "3Y": 29.99,
-            "5Y": 8.79
+            "3Y": 31.06,
+            "5Y": 9.96
           },
-          "volatility": 29.99,
+          "volatility": 30.0,
           "maxDrawdown": -50.33,
-          "volume": 322800,
-          "lastUpdate": "2026-02-18T15:08:40.840354"
+          "volume": 643158,
+          "lastUpdate": "2026-02-18T23:05:02.381453"
         },
         {
           "ticker": "ROKT",
           "name": "State Street SPDR S&P Kensho Final Frontiers ETF",
-          "price": 99.79,
-          "priceChange": -0.14,
-          "priceChangePct": -0.14,
+          "price": 101.78,
+          "priceChange": 1.99,
+          "priceChangePct": 1.99,
           "currency": "USD",
           "expenseRatio": 0,
           "aum": 66455488,
-          "dividendYield": 0.35,
+          "dividendYield": 0.34,
           "returns": {
-            "1M": -2.99,
-            "3M": 33.18,
-            "6M": 44.56,
-            "1Y": 75.07,
-            "3Y": 135.95,
-            "5Y": 155.31
+            "1M": -1.06,
+            "3M": 34.97,
+            "6M": 46.89,
+            "1Y": 76.98,
+            "3Y": 140.66,
+            "5Y": 163.45
           },
           "cagr": {
-            "3Y": 33.13,
-            "5Y": 20.62
+            "3Y": 34.01,
+            "5Y": 21.38
           },
           "volatility": 24.62,
           "maxDrawdown": -43.16,
-          "volume": 11500,
-          "lastUpdate": "2026-02-18T15:08:42.042166"
+          "volume": 11280,
+          "lastUpdate": "2026-02-18T23:05:03.133786"
         }
       ]
     },
@@ -1120,7 +1120,7 @@
           "volatility": 18.9,
           "maxDrawdown": -38.08,
           "volume": 18091480,
-          "lastUpdate": "2026-02-18T15:08:44.172567"
+          "lastUpdate": "2026-02-18T23:05:05.046426"
         },
         {
           "ticker": "102110",
@@ -1145,7 +1145,7 @@
           "volatility": 18.83,
           "maxDrawdown": -37.86,
           "volume": 4175643,
-          "lastUpdate": "2026-02-18T15:08:46.354661"
+          "lastUpdate": "2026-02-18T23:05:06.656515"
         },
         {
           "ticker": "278530",
@@ -1170,7 +1170,7 @@
           "volatility": 20.06,
           "maxDrawdown": -38.14,
           "volume": 1815444,
-          "lastUpdate": "2026-02-18T15:08:48.380044"
+          "lastUpdate": "2026-02-18T23:05:07.954973"
         }
       ]
     },
@@ -1201,7 +1201,7 @@
           "volatility": 27.88,
           "maxDrawdown": -57.22,
           "volume": 33590540,
-          "lastUpdate": "2026-02-18T15:08:50.662919"
+          "lastUpdate": "2026-02-18T23:05:09.584122"
         },
         {
           "ticker": "091180",
@@ -1226,7 +1226,7 @@
           "volatility": 25.8,
           "maxDrawdown": -53.38,
           "volume": 972546,
-          "lastUpdate": "2026-02-18T15:08:53.501456"
+          "lastUpdate": "2026-02-18T23:05:11.025391"
         }
       ]
     },
@@ -1257,7 +1257,7 @@
           "volatility": 30.04,
           "maxDrawdown": -45.4,
           "volume": 3819770,
-          "lastUpdate": "2026-02-18T15:08:57.086367"
+          "lastUpdate": "2026-02-18T23:05:12.721846"
         },
         {
           "ticker": "381180",
@@ -1281,7 +1281,7 @@
           "volatility": 33.2,
           "maxDrawdown": -38.07,
           "volume": 2189282,
-          "lastUpdate": "2026-02-18T15:08:59.281481"
+          "lastUpdate": "2026-02-18T23:05:14.059457"
         },
         {
           "ticker": "305540",
@@ -1306,7 +1306,7 @@
           "volatility": 38.13,
           "maxDrawdown": -71.74,
           "volume": 4417538,
-          "lastUpdate": "2026-02-18T15:09:02.323941"
+          "lastUpdate": "2026-02-18T23:05:15.452958"
         },
         {
           "ticker": "371460",
@@ -1331,7 +1331,7 @@
           "volatility": 32.55,
           "maxDrawdown": -69.3,
           "volume": 794751,
-          "lastUpdate": "2026-02-18T15:09:04.977685"
+          "lastUpdate": "2026-02-18T23:05:16.990610"
         },
         {
           "ticker": "308620",
@@ -1356,7 +1356,7 @@
           "volatility": 9.81,
           "maxDrawdown": -18.36,
           "volume": 94728,
-          "lastUpdate": "2026-02-18T15:09:07.409330"
+          "lastUpdate": "2026-02-18T23:05:18.339450"
         },
         {
           "ticker": "458730",
@@ -1378,7 +1378,7 @@
           "volatility": 14.52,
           "maxDrawdown": -13.12,
           "volume": 2392382,
-          "lastUpdate": "2026-02-18T15:09:09.886380"
+          "lastUpdate": "2026-02-18T23:05:19.834716"
         },
         {
           "ticker": "091220",
@@ -1403,7 +1403,7 @@
           "volatility": 25.28,
           "maxDrawdown": -57.3,
           "volume": 419649,
-          "lastUpdate": "2026-02-18T15:09:12.410778"
+          "lastUpdate": "2026-02-18T23:05:21.589100"
         },
         {
           "ticker": "334690",
@@ -1428,7 +1428,7 @@
           "volatility": 41.38,
           "maxDrawdown": -75.86,
           "volume": 25516,
-          "lastUpdate": "2026-02-18T15:09:14.349165"
+          "lastUpdate": "2026-02-18T23:05:23.067853"
         },
         {
           "ticker": "360750",
@@ -1453,7 +1453,7 @@
           "volatility": 16.04,
           "maxDrawdown": -19.15,
           "volume": 14354470,
-          "lastUpdate": "2026-02-18T15:09:16.429574"
+          "lastUpdate": "2026-02-18T23:05:24.664398"
         },
         {
           "ticker": "133690",
@@ -1478,13 +1478,13 @@
           "volatility": 20.22,
           "maxDrawdown": -31.02,
           "volume": 880879,
-          "lastUpdate": "2026-02-18T15:09:19.181650"
+          "lastUpdate": "2026-02-18T23:05:26.110450"
         }
       ]
     }
   },
   "metadata": {
-    "lastUpdate": "2026-02-18T15:09:19.481821",
+    "lastUpdate": "2026-02-18T23:05:26.410613",
     "totalETFs": 54,
     "failedETFs": 0,
     "categories": 10,
