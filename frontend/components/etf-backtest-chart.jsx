@@ -20,6 +20,7 @@ export default function ETFBacktestChart() {
   const [categories, setCategories] = useState({});
   const [selectedETFs, setSelectedETFs] = useState(['QQQ', 'SCHD', 'SPY']);
   const [selectedPeriod, setSelectedPeriod] = useState('1Y');
+  const [viewMode, setViewMode] = useState('price'); // 'price' | 'dividend'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [expandedCats, setExpandedCats] = useState({ '미국_나스닥': true, '미국_배당': true, '미국_S&P500': true });
@@ -60,14 +61,17 @@ export default function ETFBacktestChart() {
 
   const toggleCat = (cat) => setExpandedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
 
-  // 차트 데이터: 선택 ETF를 수익률 순으로 정렬
+  // 차트 데이터: viewMode에 따라 주가수익률 또는 배당수익률
   const chartData = selectedETFs
     .map(ticker => {
       const etf = allEtfs.find(e => e.ticker === ticker);
       if (!etf) return null;
+      const value = viewMode === 'dividend'
+        ? (etf.dividendYield ?? null)
+        : (etf.returns?.[selectedPeriod] ?? null);
       return {
         ticker,
-        return: etf.returns?.[selectedPeriod] ?? null,
+        return: value,
         color: getColor(ticker),
       };
     })
@@ -100,7 +104,7 @@ export default function ETFBacktestChart() {
             {d.return >= 0 ? '+' : ''}{d.return.toFixed(2)}%
           </div>
           <div style={{ color: '#94a3b8', fontSize: '0.75rem', marginTop: '0.25rem' }}>
-            {selectedPeriod} 수익률
+            {viewMode === 'dividend' ? '연간 배당 수익률' : `${selectedPeriod} 주가 수익률`}
           </div>
         </div>
       );
@@ -154,37 +158,66 @@ export default function ETFBacktestChart() {
             marginBottom: '0.5rem',
             letterSpacing: '-0.02em',
           }}>
-            ETF 수익률 비교
+            ETF 수익률 데이터
           </h1>
           <p style={{ fontSize: '1rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto' }}>
-            실제 시장 데이터 기반 기간별 수익률 · 리스크 비교 분석
+            실제 시장 데이터 기반 주가·배당 수익률 비교 분석
           </p>
         </header>
 
-        {/* 기간 탭 */}
-        <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', marginBottom: '2rem' }}>
-          {['1M', '3M', '6M', '1Y'].map(p => (
+        {/* 주가/배당 토글 */}
+        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '1rem' }}>
+          {[
+            { key: 'price', label: '주가 수익률' },
+            { key: 'dividend', label: '배당 수익률' },
+          ].map(({ key, label }) => (
             <button
-              key={p}
-              onClick={() => setSelectedPeriod(p)}
+              key={key}
+              onClick={() => setViewMode(key)}
               style={{
-                padding: '0.625rem 1.5rem',
-                border: 'none',
-                borderRadius: '10px',
-                background: selectedPeriod === p
-                  ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
-                  : 'rgba(255, 255, 255, 0.05)',
-                color: selectedPeriod === p ? '#fff' : '#94a3b8',
+                padding: '0.5rem 1.25rem',
+                border: viewMode === key ? '1px solid #8b5cf6' : '1px solid rgba(255,255,255,0.15)',
+                borderRadius: '20px',
+                background: viewMode === key ? 'rgba(139,92,246,0.15)' : 'transparent',
+                color: viewMode === key ? '#c4b5fd' : '#64748b',
                 fontSize: '0.875rem',
-                fontWeight: '700',
+                fontWeight: '600',
                 cursor: 'pointer',
-                transition: 'all 0.3s ease',
+                transition: 'all 0.2s ease',
               }}
             >
-              {p}
+              {label}
             </button>
           ))}
         </div>
+
+        {/* 기간 탭 (주가 수익률 모드에서만 표시) */}
+        {viewMode === 'price' && (
+          <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+            {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
+              <button
+                key={p}
+                onClick={() => setSelectedPeriod(p)}
+                style={{
+                  padding: '0.625rem 1.5rem',
+                  border: 'none',
+                  borderRadius: '10px',
+                  background: selectedPeriod === p
+                    ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  color: selectedPeriod === p ? '#fff' : '#94a3b8',
+                  fontSize: '0.875rem',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+        )}
+        {viewMode === 'dividend' && <div style={{ marginBottom: '2rem' }} />}
 
         {/* 메인 레이아웃: ETF 선택 (좌) + 차트 (우) */}
         <div style={{
@@ -243,7 +276,7 @@ export default function ETFBacktestChart() {
                 {/* ETF 목록 */}
                 {expandedCats[catKey] && cat.etfs.map(etf => {
                   const isSelected = selectedETFs.includes(etf.ticker);
-                  const ret = etf.returns?.[selectedPeriod];
+                  const ret = viewMode === 'dividend' ? (etf.dividendYield ?? null) : (etf.returns?.[selectedPeriod] ?? null);
                   const color = getColor(etf.ticker);
                   return (
                     <button
@@ -298,9 +331,9 @@ export default function ETFBacktestChart() {
             backdropFilter: 'blur(20px)',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-              <TrendingUp size={24} color="#8b5cf6" />
+              {viewMode === 'dividend' ? <Percent size={24} color="#8b5cf6" /> : <TrendingUp size={24} color="#8b5cf6" />}
               <h2 style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fff', margin: 0 }}>
-                {selectedPeriod} 수익률 비교
+                {viewMode === 'dividend' ? '배당 수익률 비교' : `${selectedPeriod} 주가 수익률 비교`}
               </h2>
             </div>
 
@@ -393,6 +426,20 @@ export default function ETFBacktestChart() {
                 </div>
 
                 <div style={{ display: 'grid', gap: '0.75rem' }}>
+                  {/* 배당 수익률 */}
+                  <div style={{
+                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                    padding: '0.625rem 0.75rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px',
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Percent size={15} color="#94a3b8" />
+                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>배당 수익률</span>
+                    </div>
+                    <span style={{ fontSize: '1rem', fontWeight: '700', color: '#22c55e' }}>
+                      {etf.dividendYield != null ? `${etf.dividendYield}%` : 'N/A'}
+                    </span>
+                  </div>
+
                   {/* 변동성 */}
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -440,19 +487,20 @@ export default function ETFBacktestChart() {
               marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', margin: '0 0 1rem',
             }}>
               <TrendingUp size={24} color="#8b5cf6" />
-              {selectedPeriod} 수익률 인사이트
+              {viewMode === 'dividend' ? '배당 수익률 인사이트' : `${selectedPeriod} 주가 수익률 인사이트`}
             </h3>
             <div style={{ display: 'grid', gap: '0.875rem', color: '#cbd5e1', fontSize: '0.9375rem', lineHeight: '1.6' }}>
               {best && (
                 <p style={{ margin: 0 }}>
                   • <strong style={{ color: getColor(best.ticker) }}>{best.ticker}</strong>가{' '}
                   <strong style={{ color: '#22c55e' }}>+{best.return.toFixed(1)}%</strong>로{' '}
-                  {selectedPeriod} 최고 수익률을 기록했습니다.
+                  {viewMode === 'dividend' ? '최고 배당 수익률' : `${selectedPeriod} 최고 수익률`}을 기록했습니다.
                 </p>
               )}
               {worst && worst.ticker !== best?.ticker && (
                 <p style={{ margin: 0 }}>
-                  • <strong style={{ color: getColor(worst.ticker) }}>{worst.ticker}</strong>의 수익률은{' '}
+                  • <strong style={{ color: getColor(worst.ticker) }}>{worst.ticker}</strong>의{' '}
+                  {viewMode === 'dividend' ? '배당 수익률' : '수익률'}은{' '}
                   <strong style={{ color: worst.return >= 0 ? '#22c55e' : '#ef4444' }}>
                     {worst.return >= 0 ? '+' : ''}{worst.return.toFixed(1)}%
                   </strong>

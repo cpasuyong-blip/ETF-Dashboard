@@ -6,7 +6,7 @@ export default function Navigation() {
 
   const links = [
     { href: '/', label: '대시보드' },
-    { href: '/backtest', label: '백테스트 비교' },
+    { href: '/backtest', label: '수익률 데이터' },
   ]
 
   return (

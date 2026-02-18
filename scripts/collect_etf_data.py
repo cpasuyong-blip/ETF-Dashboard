@@ -43,11 +43,30 @@ KR_ETFS = {
         'description': '코스닥 150 지수를 추종하는 ETF'
     },
     '산업별': {
-        'codes': ['091160', '381180', '305540', '371460', 
-                 '308620', '458730', '091220', '334690', 
+        'codes': ['091160', '381180', '305540', '371460',
+                 '308620', '458730', '091220', '334690',
                  '360750', '133690'],
         'description': '반도체, 2차전지, 배당 등 산업별 테마 ETF'
     }
+}
+
+# 한국 ETF 한글 이름 매핑
+KR_ETF_NAMES = {
+    '069500': 'KODEX 200',
+    '102110': 'TIGER 200',
+    '278530': 'KODEX 200TR',
+    '229200': 'KODEX 코스닥150',
+    '091180': 'KODEX 자동차',
+    '091160': 'KODEX 반도체',
+    '381180': 'TIGER 미국필라델피아반도체',
+    '305540': 'TIGER 2차전지테마',
+    '371460': 'TIGER 차이나전기차',
+    '308620': 'KODEX 에너지화학',
+    '458730': 'TIGER 미국배당다우존스',
+    '091220': 'TIGER 은행',
+    '334690': 'KBSTAR 팔라듐선물',
+    '360750': 'TIGER 미국S&P500',
+    '133690': 'TIGER 미국나스닥100',
 }
 
 def calculate_returns(history, periods):
@@ -94,7 +113,7 @@ def fetch_us_etf(ticker):
         
         etf = yf.Ticker(ticker)
         info = etf.info
-        history = etf.history(period="2y")
+        history = etf.history(period="10y")
         
         if len(history) == 0:
             print("❌ 데이터 없음")
@@ -106,13 +125,13 @@ def fetch_us_etf(ticker):
         price_change_pct = (price_change / prev_close * 100) if prev_close != 0 else 0
         
         # 수익률 계산
-        periods = {'1M': 21, '3M': 63, '6M': 126, '1Y': 252}
+        periods = {'1M': 21, '3M': 63, '6M': 126, '1Y': 252, '3Y': 756, '5Y': 1260}
         returns = calculate_returns(history, periods)
-        
+
         # 리스크 지표
         volatility = calculate_volatility(history)
         max_dd = calculate_max_drawdown(history)
-        
+
         # 배당 수익률
         dividend_yield = info.get('yield', 0)
         if dividend_yield:
@@ -150,7 +169,7 @@ def fetch_kr_etf_basic(code):
         # 한국 ETF는 .KS 붙여서 조회
         ticker = f"{code}.KS"
         etf = yf.Ticker(ticker)
-        history = etf.history(period="2y")
+        history = etf.history(period="10y")
         
         if len(history) == 0:
             print("❌ 데이터 없음")
@@ -163,16 +182,16 @@ def fetch_kr_etf_basic(code):
         price_change_pct = (price_change / prev_close * 100) if prev_close != 0 else 0
         
         # 수익률 계산
-        periods = {'1M': 21, '3M': 63, '6M': 126, '1Y': 252}
+        periods = {'1M': 21, '3M': 63, '6M': 126, '1Y': 252, '3Y': 756, '5Y': 1260}
         returns = calculate_returns(history, periods)
-        
+
         # 리스크 지표
         volatility = calculate_volatility(history)
         max_dd = calculate_max_drawdown(history)
-        
+
         data = {
             'ticker': code,
-            'name': info.get('longName', f'ETF_{code}'),
+            'name': KR_ETF_NAMES.get(code, info.get('longName', f'ETF_{code}')),
             'price': round(current_price, 0),
             'priceChange': round(price_change, 0),
             'priceChangePct': round(price_change_pct, 2),
