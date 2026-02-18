@@ -88,7 +88,28 @@ function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
             />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
             <ReferenceLine x={0} stroke="rgba(255,255,255,0.2)" />
-            <Bar dataKey="return" radius={[0, 6, 6, 0]} maxBarSize={36}>
+            <Bar
+              dataKey="return"
+              radius={[0, 6, 6, 0]}
+              maxBarSize={36}
+              label={({ x, y, width, height, value }) => {
+                const label = `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
+                const isNarrow = Math.abs(width) < 60;
+                return (
+                  <text
+                    x={isNarrow ? x + width + (value >= 0 ? 6 : -6) : x + width - (value >= 0 ? 8 : -8)}
+                    y={y + height / 2}
+                    fill={isNarrow ? '#94a3b8' : '#fff'}
+                    fontSize={12}
+                    fontWeight={700}
+                    textAnchor={isNarrow ? (value >= 0 ? 'start' : 'end') : (value >= 0 ? 'end' : 'start')}
+                    dominantBaseline="central"
+                  >
+                    {label}
+                  </text>
+                );
+              }}
+            >
               {data.map((entry) => (
                 <Cell key={entry.ticker} fill={entry.color} />
               ))}
