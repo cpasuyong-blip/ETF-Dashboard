@@ -50,24 +50,22 @@ KR_ETFS = {
     }
 }
 
-# 한국 ETF 한글 이름 매핑
-KR_ETF_NAMES = {
-    '069500': 'KODEX 200',
-    '102110': 'TIGER 200',
-    '278530': 'KODEX 200TR',
-    '229200': 'KODEX 코스닥150',
-    '091180': 'KODEX 자동차',
-    '091160': 'KODEX 반도체',
-    '381180': 'TIGER 미국필라델피아반도체',
-    '305540': 'TIGER 2차전지테마',
-    '371460': 'TIGER 차이나전기차',
-    '308620': 'KODEX 에너지화학',
-    '458730': 'TIGER 미국배당다우존스',
-    '091220': 'TIGER 은행',
-    '334690': 'KBSTAR 팔라듐선물',
-    '360750': 'TIGER 미국S&P500',
-    '133690': 'TIGER 미국나스닥100',
-}
+import requests as _requests
+
+def fetch_kr_etf_name(code):
+    """NAVER 금융 API에서 한국 ETF 공식 한글 이름 조회"""
+    try:
+        r = _requests.get(
+            f'https://m.stock.naver.com/api/stock/{code}/basic',
+            timeout=5
+        )
+        data = r.json()
+        name = data.get('stockName')
+        if name:
+            return name
+    except Exception:
+        pass
+    return None
 
 def calculate_returns(history, periods):
     """수익률 계산"""
@@ -189,9 +187,12 @@ def fetch_kr_etf_basic(code):
         volatility = calculate_volatility(history)
         max_dd = calculate_max_drawdown(history)
 
+        # NAVER 금융에서 공식 한글 이름 조회 (KRX 교차검증)
+        kr_name = fetch_kr_etf_name(code) or info.get('longName', f'ETF_{code}')
+
         data = {
             'ticker': code,
-            'name': KR_ETF_NAMES.get(code, info.get('longName', f'ETF_{code}')),
+            'name': kr_name,
             'price': round(current_price, 0),
             'priceChange': round(price_change, 0),
             'priceChangePct': round(price_change_pct, 2),

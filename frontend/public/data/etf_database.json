@@ -18,12 +18,14 @@
             "1M": -1.27,
             "3M": 1.93,
             "6M": 6.76,
-            "1Y": 13.31
+            "1Y": 13.31,
+            "3Y": 74.09,
+            "5Y": 87.53
           },
-          "volatility": 16.42,
-          "maxDrawdown": -18.76,
+          "volatility": 17.88,
+          "maxDrawdown": -33.72,
           "volume": 75784826,
-          "lastUpdate": "2026-02-17T23:05:32.978820"
+          "lastUpdate": "2026-02-18T11:27:56.943491"
         },
         {
           "ticker": "VOO",
@@ -39,12 +41,14 @@
             "1M": -1.27,
             "3M": 1.93,
             "6M": 6.8,
-            "1Y": 13.38
+            "1Y": 13.38,
+            "3Y": 74.51,
+            "5Y": 88.12
           },
-          "volatility": 15.87,
-          "maxDrawdown": -18.69,
+          "volatility": 17.95,
+          "maxDrawdown": -33.99,
           "volume": 8698230,
-          "lastUpdate": "2026-02-17T23:05:33.657248"
+          "lastUpdate": "2026-02-18T11:27:58.634708"
         },
         {
           "ticker": "IVV",
@@ -60,12 +64,14 @@
             "1M": -1.27,
             "3M": 1.92,
             "6M": 6.8,
-            "1Y": 13.38
+            "1Y": 13.38,
+            "3Y": 74.51,
+            "5Y": 88.11
           },
-          "volatility": 15.98,
-          "maxDrawdown": -18.75,
+          "volatility": 18.0,
+          "maxDrawdown": -33.9,
           "volume": 7016054,
-          "lastUpdate": "2026-02-17T23:05:34.340934"
+          "lastUpdate": "2026-02-18T11:28:00.573173"
         },
         {
           "ticker": "SPLG",
@@ -81,12 +87,14 @@
             "1M": -1.52,
             "3M": 1.74,
             "6M": 6.33,
-            "1Y": 14.38
+            "1Y": 14.38,
+            "3Y": 73.05,
+            "5Y": 87.57
           },
-          "volatility": 15.98,
-          "maxDrawdown": -18.72,
+          "volatility": 17.97,
+          "maxDrawdown": -33.87,
           "volume": 11640247,
-          "lastUpdate": "2026-02-17T23:05:34.967390"
+          "lastUpdate": "2026-02-18T11:28:02.570566"
         }
       ]
     },
@@ -108,12 +116,14 @@
             "1M": -3.21,
             "3M": -1.11,
             "6M": 4.45,
-            "1Y": 12.3
+            "1Y": 12.3,
+            "3Y": 104.25,
+            "5Y": 86.21
           },
-          "volatility": 21.01,
-          "maxDrawdown": -22.77,
+          "volatility": 22.2,
+          "maxDrawdown": -35.12,
           "volume": 68037597,
-          "lastUpdate": "2026-02-17T23:05:35.981892"
+          "lastUpdate": "2026-02-18T11:28:04.528755"
         },
         {
           "ticker": "QQQM",
@@ -129,12 +139,14 @@
             "1M": -3.18,
             "3M": -1.1,
             "6M": 4.47,
-            "1Y": 12.36
+            "1Y": 12.36,
+            "3Y": 104.69,
+            "5Y": 86.96
           },
-          "volatility": 20.83,
-          "maxDrawdown": -22.7,
+          "volatility": 22.31,
+          "maxDrawdown": -35.04,
           "volume": 10179362,
-          "lastUpdate": "2026-02-17T23:05:36.521977"
+          "lastUpdate": "2026-02-18T11:28:06.539172"
         },
         {
           "ticker": "QQQE",
@@ -150,12 +162,14 @@
             "1M": -1.87,
             "3M": 1.87,
             "6M": 4.28,
-            "1Y": 6.27
+            "1Y": 6.27,
+            "3Y": 49.2,
+            "5Y": 38.06
           },
-          "volatility": 18.14,
-          "maxDrawdown": -21.38,
+          "volatility": 20.68,
+          "maxDrawdown": -32.15,
           "volume": 219476,
-          "lastUpdate": "2026-02-17T23:05:37.136527"
+          "lastUpdate": "2026-02-18T11:28:08.797512"
         },
         {
           "ticker": "QQQJ",
@@ -171,12 +185,14 @@
             "1M": -2.79,
             "3M": 5.53,
             "6M": 11.52,
-            "1Y": 17.52
+            "1Y": 17.52,
+            "3Y": 49.79,
+            "5Y": 15.74
           },
-          "volatility": 18.99,
-          "maxDrawdown": -22.46,
+          "volatility": 22.02,
+          "maxDrawdown": -39.58,
           "volume": 261101,
-          "lastUpdate": "2026-02-17T23:05:37.790230"
+          "lastUpdate": "2026-02-18T11:28:10.547199"
         },
         {
           "ticker": "ONEQ",
@@ -192,12 +208,14 @@
             "1M": -3.92,
             "3M": -1.19,
             "6M": 4.72,
-            "1Y": 13.36
+            "1Y": 13.36,
+            "3Y": 97.25,
+            "5Y": 70.12
           },
-          "volatility": 21.35,
-          "maxDrawdown": -24.09,
+          "volatility": 21.6,
+          "maxDrawdown": -35.23,
           "volume": 211720,
-          "lastUpdate": "2026-02-17T23:05:38.516395"
+          "lastUpdate": "2026-02-18T11:28:12.594441"
         },
         {
           "ticker": "TQQQ",
@@ -213,12 +231,14 @@
             "1M": -10.69,
             "3M": -7.53,
             "6M": 4.08,
-            "1Y": 8.54
+            "1Y": 8.54,
+            "3Y": 322.14,
+            "5Y": 89.72
           },
-          "volatility": 62.45,
-          "maxDrawdown": -58.04,
+          "volatility": 65.68,
+          "maxDrawdown": -81.66,
           "volume": 116330903,
-          "lastUpdate": "2026-02-17T23:05:39.172169"
+          "lastUpdate": "2026-02-18T11:28:14.547492"
         },
         {
           "ticker": "PSQ",
@@ -234,12 +254,14 @@
             "1M": 3.54,
             "3M": 2.23,
             "6M": -2.03,
-            "1Y": -9.19
+            "1Y": -9.19,
+            "3Y": -44.05,
+            "5Y": -45.56
           },
-          "volatility": 20.92,
-          "maxDrawdown": -33.97,
+          "volatility": 22.15,
+          "maxDrawdown": -87.58,
           "volume": 10448045,
-          "lastUpdate": "2026-02-17T23:05:39.762654"
+          "lastUpdate": "2026-02-18T11:28:16.650483"
         }
       ]
     },
@@ -261,12 +283,14 @@
             "1M": 1.28,
             "3M": 2.0,
             "6M": 4.22,
-            "1Y": 7.5
+            "1Y": 7.5,
+            "3Y": 14.43,
+            "5Y": 0.31
           },
-          "volatility": 4.8,
-          "maxDrawdown": -4.82,
+          "volatility": 5.37,
+          "maxDrawdown": -18.43,
           "volume": 6587220,
-          "lastUpdate": "2026-02-17T23:05:40.394711"
+          "lastUpdate": "2026-02-18T11:28:18.732206"
         },
         {
           "ticker": "TLT",
@@ -282,12 +306,14 @@
             "1M": 2.75,
             "3M": 2.27,
             "6M": 6.65,
-            "1Y": 5.32
+            "1Y": 5.32,
+            "3Y": -2.07,
+            "5Y": -29.65
           },
-          "volatility": 12.72,
-          "maxDrawdown": -14.79,
+          "volatility": 14.93,
+          "maxDrawdown": -48.35,
           "volume": 31987036,
-          "lastUpdate": "2026-02-17T23:05:40.990493"
+          "lastUpdate": "2026-02-18T11:28:20.688416"
         },
         {
           "ticker": "SHY",
@@ -303,12 +329,14 @@
             "1M": 0.59,
             "3M": 1.16,
             "6M": 2.31,
-            "1Y": 5.03
+            "1Y": 5.03,
+            "3Y": 13.92,
+            "5Y": 9.0
           },
-          "volatility": 1.52,
-          "maxDrawdown": -0.97,
+          "volatility": 1.56,
+          "maxDrawdown": -5.71,
           "volume": 3286716,
-          "lastUpdate": "2026-02-17T23:05:41.577134"
+          "lastUpdate": "2026-02-18T11:28:22.684592"
         }
       ]
     },
@@ -330,12 +358,14 @@
             "1M": -4.22,
             "3M": -3.04,
             "6M": 5.06,
-            "1Y": 16.97
+            "1Y": 16.97,
+            "3Y": 103.07,
+            "5Y": 112.69
           },
-          "volatility": 25.34,
-          "maxDrawdown": -25.66,
+          "volatility": 24.22,
+          "maxDrawdown": -33.56,
           "volume": 25643902,
-          "lastUpdate": "2026-02-17T23:05:42.170888"
+          "lastUpdate": "2026-02-18T11:28:24.725730"
         },
         {
           "ticker": "VGT",
@@ -351,12 +381,14 @@
             "1M": -3.67,
             "3M": -3.23,
             "6M": 4.36,
-            "1Y": 14.77
+            "1Y": 14.77,
+            "3Y": 106.23,
+            "5Y": 102.05
           },
-          "volatility": 25.3,
-          "maxDrawdown": -27.23,
+          "volatility": 24.37,
+          "maxDrawdown": -35.07,
           "volume": 420964,
-          "lastUpdate": "2026-02-17T23:05:42.762654"
+          "lastUpdate": "2026-02-18T11:28:26.682215"
         },
         {
           "ticker": "SOXX",
@@ -372,12 +404,14 @@
             "1M": 3.4,
             "3M": 22.91,
             "6M": 42.69,
-            "1Y": 59.86
+            "1Y": 59.86,
+            "3Y": 160.27,
+            "5Y": 165.37
           },
-          "volatility": 37.72,
-          "maxDrawdown": -41.36,
+          "volatility": 32.73,
+          "maxDrawdown": -45.75,
           "volume": 4016350,
-          "lastUpdate": "2026-02-17T23:05:43.378046"
+          "lastUpdate": "2026-02-18T11:28:28.755231"
         },
         {
           "ticker": "SMH",
@@ -393,12 +427,14 @@
             "1M": 1.78,
             "3M": 18.49,
             "6M": 37.7,
-            "1Y": 61.84
+            "1Y": 61.84,
+            "3Y": 238.56,
+            "5Y": 245.72
           },
-          "volatility": 36.83,
-          "maxDrawdown": -35.74,
+          "volatility": 32.08,
+          "maxDrawdown": -45.3,
           "volume": 7047419,
-          "lastUpdate": "2026-02-17T23:05:44.001303"
+          "lastUpdate": "2026-02-18T11:28:30.799262"
         },
         {
           "ticker": "ARKK",
@@ -414,12 +450,14 @@
             "1M": -13.93,
             "3M": -8.61,
             "6M": -8.83,
-            "1Y": 4.89
+            "1Y": 4.89,
+            "3Y": 81.06,
+            "5Y": -53.32
           },
-          "volatility": 40.15,
-          "maxDrawdown": -39.56,
+          "volatility": 39.98,
+          "maxDrawdown": -80.91,
           "volume": 10490385,
-          "lastUpdate": "2026-02-17T23:05:44.621917"
+          "lastUpdate": "2026-02-18T11:28:32.740809"
         },
         {
           "ticker": "IGV",
@@ -435,12 +473,14 @@
             "1M": -17.65,
             "3M": -24.65,
             "6M": -26.0,
-            "1Y": -24.17
+            "1Y": -24.17,
+            "3Y": 42.18,
+            "5Y": 6.43
           },
-          "volatility": 25.52,
-          "maxDrawdown": -32.36,
+          "volatility": 25.74,
+          "maxDrawdown": -45.85,
           "volume": 21352910,
-          "lastUpdate": "2026-02-17T23:05:45.241640"
+          "lastUpdate": "2026-02-18T11:28:34.775683"
         }
       ]
     },
@@ -462,12 +502,14 @@
             "1M": 4.21,
             "3M": 10.74,
             "6M": 14.67,
-            "1Y": 19.0
+            "1Y": 19.0,
+            "3Y": 53.73,
+            "5Y": 88.41
           },
-          "volatility": 13.39,
-          "maxDrawdown": -14.46,
+          "volatility": 16.33,
+          "maxDrawdown": -35.21,
           "volume": 1838352,
-          "lastUpdate": "2026-02-17T23:05:45.824082"
+          "lastUpdate": "2026-02-18T11:28:36.831997"
         },
         {
           "ticker": "SCHD",
@@ -483,12 +525,14 @@
             "1M": 8.72,
             "3M": 16.52,
             "6M": 17.55,
-            "1Y": 17.5
+            "1Y": 17.5,
+            "3Y": 37.23,
+            "5Y": 67.97
           },
-          "volatility": 14.06,
-          "maxDrawdown": -16.12,
+          "volatility": 16.71,
+          "maxDrawdown": -33.37,
           "volume": 32637479,
-          "lastUpdate": "2026-02-17T23:05:46.498901"
+          "lastUpdate": "2026-02-18T11:28:39.515045"
         },
         {
           "ticker": "HDV",
@@ -504,12 +548,14 @@
             "1M": 8.24,
             "3M": 13.72,
             "6M": 15.91,
-            "1Y": 21.8
+            "1Y": 21.8,
+            "3Y": 46.25,
+            "5Y": 82.89
           },
-          "volatility": 11.6,
-          "maxDrawdown": -10.49,
+          "volatility": 15.7,
+          "maxDrawdown": -37.04,
           "volume": 751044,
-          "lastUpdate": "2026-02-17T23:05:47.101073"
+          "lastUpdate": "2026-02-18T11:28:41.389549"
         },
         {
           "ticker": "DVY",
@@ -525,12 +571,14 @@
             "1M": 6.41,
             "3M": 12.87,
             "6M": 16.16,
-            "1Y": 20.07
+            "1Y": 20.07,
+            "3Y": 41.15,
+            "5Y": 82.22
           },
-          "volatility": 14.3,
-          "maxDrawdown": -16.0,
+          "volatility": 18.02,
+          "maxDrawdown": -41.59,
           "volume": 408370,
-          "lastUpdate": "2026-02-17T23:05:47.688868"
+          "lastUpdate": "2026-02-18T11:28:43.463659"
         },
         {
           "ticker": "VIG",
@@ -546,12 +594,14 @@
             "1M": 0.68,
             "3M": 5.1,
             "6M": 9.3,
-            "1Y": 13.36
+            "1Y": 13.36,
+            "3Y": 54.49,
+            "5Y": 74.44
           },
-          "volatility": 13.24,
-          "maxDrawdown": -14.95,
+          "volatility": 16.03,
+          "maxDrawdown": -31.72,
           "volume": 1860194,
-          "lastUpdate": "2026-02-17T23:05:48.383330"
+          "lastUpdate": "2026-02-18T11:28:45.531158"
         },
         {
           "ticker": "DGRO",
@@ -567,12 +617,14 @@
             "1M": 2.77,
             "3M": 8.1,
             "6M": 12.54,
-            "1Y": 17.75
+            "1Y": 17.75,
+            "3Y": 53.89,
+            "5Y": 79.29
           },
-          "volatility": 12.56,
-          "maxDrawdown": -14.03,
+          "volatility": 16.63,
+          "maxDrawdown": -35.1,
           "volume": 1912093,
-          "lastUpdate": "2026-02-17T23:05:48.935914"
+          "lastUpdate": "2026-02-18T11:28:47.537214"
         },
         {
           "ticker": "DGRW",
@@ -588,12 +640,14 @@
             "1M": 1.79,
             "3M": 4.67,
             "6M": 7.18,
-            "1Y": 12.2
+            "1Y": 12.2,
+            "3Y": 55.71,
+            "5Y": 85.1
           },
-          "volatility": 13.41,
-          "maxDrawdown": -16.22,
+          "volatility": 16.18,
+          "maxDrawdown": -32.04,
           "volume": 1116622,
-          "lastUpdate": "2026-02-17T23:05:49.524414"
+          "lastUpdate": "2026-02-18T11:28:49.552969"
         },
         {
           "ticker": "JEPI",
@@ -609,12 +663,14 @@
             "1M": 1.95,
             "3M": 6.41,
             "6M": 8.44,
-            "1Y": 8.73
+            "1Y": 8.73,
+            "3Y": 37.21,
+            "5Y": 61.35
           },
-          "volatility": 10.93,
-          "maxDrawdown": -13.26,
+          "volatility": 10.86,
+          "maxDrawdown": -13.71,
           "volume": 5278997,
-          "lastUpdate": "2026-02-17T23:05:50.211432"
+          "lastUpdate": "2026-02-18T11:28:51.590080"
         },
         {
           "ticker": "JEPQ",
@@ -630,12 +686,14 @@
             "1M": -1.69,
             "3M": 2.13,
             "6M": 8.26,
-            "1Y": 10.19
+            "1Y": 10.19,
+            "3Y": 84.1,
+            "5Y": null
           },
-          "volatility": 16.47,
+          "volatility": 16.86,
           "maxDrawdown": -20.07,
           "volume": 5736648,
-          "lastUpdate": "2026-02-17T23:05:50.747539"
+          "lastUpdate": "2026-02-18T11:28:53.261773"
         },
         {
           "ticker": "SPYD",
@@ -651,12 +709,14 @@
             "1M": 6.43,
             "3M": 12.68,
             "6M": 12.06,
-            "1Y": 13.53
+            "1Y": 13.53,
+            "3Y": 32.08,
+            "5Y": 65.16
           },
-          "volatility": 14.26,
-          "maxDrawdown": -16.13,
+          "volatility": 19.86,
+          "maxDrawdown": -46.42,
           "volume": 2080724,
-          "lastUpdate": "2026-02-17T23:05:51.362607"
+          "lastUpdate": "2026-02-18T11:28:55.505882"
         },
         {
           "ticker": "NOBL",
@@ -672,12 +732,14 @@
             "1M": 3.52,
             "3M": 10.73,
             "6M": 10.17,
-            "1Y": 14.12
+            "1Y": 14.12,
+            "3Y": 30.82,
+            "5Y": 53.59
           },
-          "volatility": 13.28,
-          "maxDrawdown": -15.36,
+          "volatility": 16.59,
+          "maxDrawdown": -35.43,
           "volume": 709394,
-          "lastUpdate": "2026-02-17T23:05:51.929886"
+          "lastUpdate": "2026-02-18T11:28:57.513096"
         },
         {
           "ticker": "SDY",
@@ -693,12 +755,14 @@
             "1M": 5.49,
             "3M": 12.63,
             "6M": 12.0,
-            "1Y": 18.22
+            "1Y": 18.22,
+            "3Y": 30.49,
+            "5Y": 57.91
           },
-          "volatility": 12.5,
-          "maxDrawdown": -14.39,
+          "volatility": 17.09,
+          "maxDrawdown": -36.7,
           "volume": 204214,
-          "lastUpdate": "2026-02-17T23:05:52.588284"
+          "lastUpdate": "2026-02-18T11:28:59.509320"
         }
       ]
     },
@@ -717,16 +781,18 @@
             "1M": 15.82,
             "3M": 45.01,
             "6M": 89.04,
-            "1Y": 148.14
+            "1Y": 148.14,
+            "3Y": 178.5,
+            "5Y": 160.37
           },
-          "volatility": 23.46,
-          "maxDrawdown": -19.79,
+          "volatility": 18.9,
+          "maxDrawdown": -38.08,
           "volume": 18091480,
-          "lastUpdate": "2026-02-17T23:05:53.226534"
+          "lastUpdate": "2026-02-18T11:29:01.877241"
         },
         {
           "ticker": "102110",
-          "name": "Mirae Asset TIGER 200 ETF",
+          "name": "TIGER 200",
           "price": 81835.0,
           "priceChange": -110.0,
           "priceChangePct": -0.13,
@@ -735,16 +801,18 @@
             "1M": 15.79,
             "3M": 45.21,
             "6M": 89.25,
-            "1Y": 148.38
+            "1Y": 148.38,
+            "3Y": 179.4,
+            "5Y": 162.67
           },
-          "volatility": 23.56,
-          "maxDrawdown": -19.9,
+          "volatility": 18.83,
+          "maxDrawdown": -37.86,
           "volume": 4175643,
-          "lastUpdate": "2026-02-17T23:05:53.813657"
+          "lastUpdate": "2026-02-18T11:29:04.568526"
         },
         {
           "ticker": "278530",
-          "name": "Samsung Kodex 200 Total Return ETF",
+          "name": "KODEX 200TR",
           "price": 29465.0,
           "priceChange": -20.0,
           "priceChangePct": -0.07,
@@ -753,12 +821,14 @@
             "1M": 15.87,
             "3M": 45.29,
             "6M": 89.42,
-            "1Y": 148.75
+            "1Y": 148.75,
+            "3Y": 183.18,
+            "5Y": 169.21
           },
-          "volatility": 23.22,
-          "maxDrawdown": -21.42,
+          "volatility": 20.06,
+          "maxDrawdown": -38.14,
           "volume": 1815444,
-          "lastUpdate": "2026-02-17T23:05:54.376680"
+          "lastUpdate": "2026-02-18T11:29:07.190129"
         }
       ]
     },
@@ -768,7 +838,7 @@
       "etfs": [
         {
           "ticker": "229200",
-          "name": "KODEX KOSDAQ 150",
+          "name": "KODEX 코스닥150",
           "price": 18955.0,
           "priceChange": -390.0,
           "priceChangePct": -2.02,
@@ -777,16 +847,18 @@
             "1M": 18.69,
             "3M": 20.69,
             "6M": 40.1,
-            "1Y": 52.03
+            "1Y": 52.03,
+            "3Y": 88.28,
+            "5Y": 45.75
           },
-          "volatility": 29.51,
-          "maxDrawdown": -31.54,
+          "volatility": 27.88,
+          "maxDrawdown": -57.22,
           "volume": 33590540,
-          "lastUpdate": "2026-02-17T23:05:54.912405"
+          "lastUpdate": "2026-02-18T11:29:09.795132"
         },
         {
           "ticker": "091180",
-          "name": "Kodex Autos",
+          "name": "KODEX 자동차",
           "price": 32615.0,
           "priceChange": -315.0,
           "priceChangePct": -0.96,
@@ -795,12 +867,14 @@
             "1M": 10.18,
             "3M": 46.53,
             "6M": 68.65,
-            "1Y": 86.31
+            "1Y": 86.31,
+            "3Y": 128.32,
+            "5Y": 104.65
           },
-          "volatility": 28.31,
-          "maxDrawdown": -26.54,
+          "volatility": 25.8,
+          "maxDrawdown": -53.38,
           "volume": 972546,
-          "lastUpdate": "2026-02-17T23:05:55.536472"
+          "lastUpdate": "2026-02-18T11:29:12.503614"
         }
       ]
     },
@@ -810,7 +884,7 @@
       "etfs": [
         {
           "ticker": "091160",
-          "name": "Kodex Semicon",
+          "name": "KODEX 반도체",
           "price": 88745.0,
           "priceChange": -655.0,
           "priceChangePct": -0.73,
@@ -819,16 +893,18 @@
             "1M": 23.82,
             "3M": 58.19,
             "6M": 136.46,
-            "1Y": 174.46
+            "1Y": 174.46,
+            "3Y": 281.65,
+            "5Y": 218.39
           },
-          "volatility": 37.23,
-          "maxDrawdown": -41.11,
+          "volatility": 30.04,
+          "maxDrawdown": -45.4,
           "volume": 3819770,
-          "lastUpdate": "2026-02-17T23:05:56.141552"
+          "lastUpdate": "2026-02-18T11:29:15.144624"
         },
         {
           "ticker": "381180",
-          "name": "Mirae Asset Maps Management - Tiger PHLX Semiconductor Sector Nasdaq ETF",
+          "name": "TIGER 미국필라델피아반도체나스닥",
           "price": 30715.0,
           "priceChange": -720.0,
           "priceChangePct": -2.29,
@@ -837,16 +913,18 @@
             "1M": 0.14,
             "3M": 18.57,
             "6M": 48.79,
-            "1Y": 59.45
+            "1Y": 59.45,
+            "3Y": 221.99,
+            "5Y": null
           },
-          "volatility": 39.11,
+          "volatility": 33.2,
           "maxDrawdown": -38.07,
           "volume": 2189282,
-          "lastUpdate": "2026-02-17T23:05:56.674016"
+          "lastUpdate": "2026-02-18T11:29:17.462133"
         },
         {
           "ticker": "305540",
-          "name": "Mirae Asset Management - Tiger Secondary Battery ETF",
+          "name": "TIGER 2차전지테마",
           "price": 20720.0,
           "priceChange": -610.0,
           "priceChangePct": -2.86,
@@ -855,16 +933,18 @@
             "1M": 16.83,
             "3M": 4.65,
             "6M": 29.54,
-            "1Y": 41.59
+            "1Y": 41.59,
+            "3Y": 12.73,
+            "5Y": 70.85
           },
-          "volatility": 40.78,
-          "maxDrawdown": -58.56,
+          "volatility": 38.13,
+          "maxDrawdown": -71.74,
           "volume": 4417538,
-          "lastUpdate": "2026-02-17T23:05:57.197719"
+          "lastUpdate": "2026-02-18T11:29:20.121676"
         },
         {
           "ticker": "371460",
-          "name": "Mirae Asset Tiger China Electric Vehicle Fund",
+          "name": "TIGER 차이나전기차SOLACTIVE",
           "price": 12500.0,
           "priceChange": -90.0,
           "priceChangePct": -0.71,
@@ -873,16 +953,18 @@
             "1M": -4.69,
             "3M": -5.53,
             "6M": 32.49,
-            "1Y": 30.1
+            "1Y": 30.1,
+            "3Y": -0.16,
+            "5Y": null
           },
-          "volatility": 29.16,
-          "maxDrawdown": -21.99,
+          "volatility": 32.55,
+          "maxDrawdown": -69.3,
           "volume": 794751,
-          "lastUpdate": "2026-02-17T23:05:57.772224"
+          "lastUpdate": "2026-02-18T11:29:22.471486"
         },
         {
           "ticker": "308620",
-          "name": "Samsung KODEX Energy & chemicals Securities ETF-Kodex Treasury Note Futures Fund",
+          "name": "KODEX 미국10년국채선물",
           "price": 12375.0,
           "priceChange": 75.0,
           "priceChangePct": 0.61,
@@ -891,16 +973,18 @@
             "1M": -1.24,
             "3M": -0.23,
             "6M": 5.93,
-            "1Y": 4.78
+            "1Y": 4.78,
+            "3Y": 10.7,
+            "5Y": 7.7
           },
-          "volatility": 9.63,
-          "maxDrawdown": -10.37,
+          "volatility": 9.81,
+          "maxDrawdown": -18.36,
           "volume": 94728,
-          "lastUpdate": "2026-02-17T23:05:58.373273"
+          "lastUpdate": "2026-02-18T11:29:24.773340"
         },
         {
           "ticker": "458730",
-          "name": "Mirae Asset Tiger U.S. Dividend Equity Etf",
+          "name": "TIGER 미국배당다우존스",
           "price": 14455.0,
           "priceChange": -155.0,
           "priceChangePct": -1.06,
@@ -909,16 +993,18 @@
             "1M": 6.0,
             "3M": 15.7,
             "6M": 23.75,
-            "1Y": 16.35
+            "1Y": 16.35,
+            "3Y": null,
+            "5Y": null
           },
-          "volatility": 15.35,
+          "volatility": 14.52,
           "maxDrawdown": -13.12,
           "volume": 2392382,
-          "lastUpdate": "2026-02-17T23:05:58.918320"
+          "lastUpdate": "2026-02-18T11:29:27.024123"
         },
         {
           "ticker": "091220",
-          "name": "Mirae Asset TIGER Banks ETF",
+          "name": "TIGER 은행",
           "price": 17695.0,
           "priceChange": -435.0,
           "priceChangePct": -2.4,
@@ -927,16 +1013,18 @@
             "1M": 33.07,
             "3M": 33.77,
             "6M": 47.2,
-            "1Y": 106.04
+            "1Y": 106.04,
+            "3Y": 203.1,
+            "5Y": 248.67
           },
-          "volatility": 28.13,
-          "maxDrawdown": -17.73,
+          "volatility": 25.28,
+          "maxDrawdown": -57.3,
           "volume": 419649,
-          "lastUpdate": "2026-02-17T23:05:59.479937"
+          "lastUpdate": "2026-02-18T11:29:29.640243"
         },
         {
           "ticker": "334690",
-          "name": "KB Asset Management Co. Ltd - Kbstar Palladium Futures Etf",
+          "name": "RISE 팔라듐선물(H)",
           "price": 7865.0,
           "priceChange": -315.0,
           "priceChangePct": -3.85,
@@ -945,16 +1033,18 @@
             "1M": -8.23,
             "3M": 11.76,
             "6M": 39.88,
-            "1Y": 52.14
+            "1Y": 52.14,
+            "3Y": -24.3,
+            "5Y": -42.47
           },
-          "volatility": 44.08,
-          "maxDrawdown": -28.4,
+          "volatility": 41.38,
+          "maxDrawdown": -75.86,
           "volume": 25516,
-          "lastUpdate": "2026-02-17T23:06:00.058185"
+          "lastUpdate": "2026-02-18T11:29:32.034447"
         },
         {
           "ticker": "360750",
-          "name": "Mirae Asset Maps Management - Mirae Asset Tiger S&P500 ETF",
+          "name": "TIGER 미국S&P500",
           "price": 24435.0,
           "priceChange": -465.0,
           "priceChangePct": -1.87,
@@ -963,16 +1053,18 @@
             "1M": -3.94,
             "3M": 0.57,
             "6M": 11.43,
-            "1Y": 13.05
+            "1Y": 13.05,
+            "3Y": 93.86,
+            "5Y": 156.63
           },
-          "volatility": 17.22,
+          "volatility": 16.04,
           "maxDrawdown": -19.15,
           "volume": 14354470,
-          "lastUpdate": "2026-02-17T23:06:00.646960"
+          "lastUpdate": "2026-02-18T11:29:34.437306"
         },
         {
           "ticker": "133690",
-          "name": "Mirae Asset TIGER USA NASDAQ 100 ETF",
+          "name": "TIGER 미국나스닥100",
           "price": 157705.0,
           "priceChange": -3495.0,
           "priceChangePct": -2.17,
@@ -981,18 +1073,20 @@
             "1M": -5.83,
             "3M": -2.11,
             "6M": 8.71,
-            "1Y": 13.59
+            "1Y": 13.59,
+            "3Y": 133.43,
+            "5Y": 171.33
           },
-          "volatility": 22.03,
-          "maxDrawdown": -24.26,
+          "volatility": 20.22,
+          "maxDrawdown": -31.02,
           "volume": 880879,
-          "lastUpdate": "2026-02-17T23:06:01.582562"
+          "lastUpdate": "2026-02-18T11:29:37.534934"
         }
       ]
     }
   },
   "metadata": {
-    "lastUpdate": "2026-02-17T23:06:01.882751",
+    "lastUpdate": "2026-02-18T11:29:37.835503",
     "totalETFs": 47,
     "failedETFs": 0,
     "categories": 8,
