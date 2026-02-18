@@ -80,20 +80,20 @@ function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
         </div>
       ) : (
         <ResponsiveContainer width="100%" height={Math.max(150, data.length * 50 + 40)}>
-          <BarChart data={data} layout="vertical" margin={{ top: 0, right: 40, left: 10, bottom: 0 }}>
+          <BarChart data={data} layout="vertical" margin={{ top: 0, right: 30, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
             <XAxis
               type="number"
               stroke="#64748b"
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#64748b', fontSize: 11 }}
               tickFormatter={(v) => `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`}
             />
             <YAxis
               type="category"
               dataKey="ticker"
               stroke="#64748b"
-              tick={{ fill: '#94a3b8', fontSize: 11, fontWeight: 600 }}
-              width={120}
+              tick={{ fill: '#94a3b8', fontSize: 10, fontWeight: 600 }}
+              width={80}
             />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
             <ReferenceLine x={0} stroke="rgba(255,255,255,0.2)" />
@@ -230,7 +230,7 @@ export default function ETFBacktestChart() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%)',
       fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
-      padding: '5rem 1rem 2rem',
+      padding: '4rem 0.75rem 2rem',
     }}>
       <Navigation />
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
@@ -249,19 +249,19 @@ export default function ETFBacktestChart() {
           }}>
             ETF 수익률 데이터
           </h1>
-          <p style={{ fontSize: '1rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto' }}>
+          <p style={{ fontSize: 'clamp(0.8rem, 2.5vw, 1rem)', color: '#94a3b8', maxWidth: '600px', margin: '0 auto', padding: '0 0.5rem' }}>
             실제 시장 데이터 기반 Total Return · 주가 · 배당 수익률 비교 분석
           </p>
         </header>
 
         {/* 기간 탭 */}
-        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '0.375rem', justifyContent: 'center', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
           {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
             <button
               key={p}
               onClick={() => setSelectedPeriod(p)}
               style={{
-                padding: '0.625rem 1.5rem',
+                padding: '0.5rem 1rem',
                 border: 'none',
                 borderRadius: '10px',
                 background: selectedPeriod === p
@@ -279,14 +279,17 @@ export default function ETFBacktestChart() {
           ))}
         </div>
 
+        <style>{`
+          .backtest-layout { display: grid; gap: 1rem; margin-bottom: 2rem; align-items: start; }
+          @media (min-width: 769px) { .backtest-layout { grid-template-columns: 260px 1fr; } }
+          @media (max-width: 768px) { .backtest-layout { grid-template-columns: 1fr; } }
+          .sub-charts { display: grid; gap: 1rem; }
+          @media (min-width: 769px) { .sub-charts { grid-template-columns: 1fr 1fr; } }
+          @media (max-width: 768px) { .sub-charts { grid-template-columns: 1fr; } }
+        `}</style>
+
         {/* 메인 레이아웃: ETF 선택 (좌) + 차트 (우) */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '280px 1fr',
-          gap: '1.5rem',
-          marginBottom: '2rem',
-          alignItems: 'start',
-        }}>
+        <div className="backtest-layout">
           {/* ETF 선택 패널 */}
           <div style={{
             background: 'rgba(255, 255, 255, 0.03)',
@@ -394,7 +397,7 @@ export default function ETFBacktestChart() {
             />
 
             {/* 2+3. 주가수익률 / 배당수익률 나란히 */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+            <div className="sub-charts">
               <HorizontalBarChart
                 data={priceData}
                 title={`${selectedPeriod} 주가 수익률`}
@@ -415,8 +418,8 @@ export default function ETFBacktestChart() {
         {/* 통계 카드 */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-          gap: '1.5rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
+          gap: '1rem',
           marginBottom: '2rem',
         }}>
           {statsData.map(etf => {
@@ -534,8 +537,8 @@ export default function ETFBacktestChart() {
           <div style={{
             background: 'linear-gradient(135deg, rgba(139,92,246,0.1) 0%, rgba(99,102,241,0.1) 100%)',
             border: '1px solid rgba(139,92,246,0.3)',
-            borderRadius: '20px',
-            padding: '2rem',
+            borderRadius: '16px',
+            padding: '1.25rem',
             backdropFilter: 'blur(20px)',
           }}>
             <h3 style={{
@@ -545,7 +548,7 @@ export default function ETFBacktestChart() {
               <TrendingUp size={24} color="#8b5cf6" />
               {selectedPeriod} 수익률 인사이트
             </h3>
-            <div style={{ display: 'grid', gap: '0.875rem', color: '#cbd5e1', fontSize: '0.9375rem', lineHeight: '1.6' }}>
+            <div style={{ display: 'grid', gap: '0.75rem', color: '#cbd5e1', fontSize: 'clamp(0.8rem, 2vw, 0.9375rem)', lineHeight: '1.6' }}>
               {best && (
                 <p style={{ margin: 0 }}>
                   • <strong style={{ color: getColor(best.ticker) }}>{best.ticker}</strong>가{' '}

@@ -31,3 +31,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(139, 92, 246, 0.8);
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .mobile-hide-col {
+    display: none !important;
+  }
+}

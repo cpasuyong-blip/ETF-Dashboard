@@ -199,21 +199,21 @@ export default function ETFDashboard() {
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%)',
       fontFamily: '"DM Sans", -apple-system, BlinkMacSystemFont, sans-serif',
-      padding: '5rem 1rem 2rem',
+      padding: '4rem 0.75rem 2rem',
       position: 'relative',
       overflow: 'hidden'
     }}>
       <Navigation />
-      {/* 배경 장식 */}
+      {/* 배경 장식 - 모바일에서 축소 */}
       <div style={{
         position: 'absolute', top: '-10%', right: '-5%',
-        width: '600px', height: '600px',
+        width: '300px', height: '300px',
         background: 'radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%)',
         borderRadius: '50%', filter: 'blur(80px)', pointerEvents: 'none'
       }} />
       <div style={{
         position: 'absolute', bottom: '-10%', left: '-5%',
-        width: '500px', height: '500px',
+        width: '250px', height: '250px',
         background: 'radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%)',
         borderRadius: '50%', filter: 'blur(80px)', pointerEvents: 'none'
       }} />
@@ -221,16 +221,16 @@ export default function ETFDashboard() {
       <div style={{ maxWidth: '1400px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
 
         {/* 헤더 */}
-        <header style={{ marginBottom: '3rem', textAlign: 'center' }}>
+        <header style={{ marginBottom: '2rem', textAlign: 'center' }}>
           <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
-            marginBottom: '1rem', padding: '0.5rem 1.5rem',
+            display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+            marginBottom: '0.75rem', padding: '0.4rem 1rem',
             background: 'rgba(139, 92, 246, 0.1)',
             border: '1px solid rgba(139, 92, 246, 0.3)',
             borderRadius: '100px', backdropFilter: 'blur(10px)'
           }}>
-            <BarChart3 size={20} color="#a78bfa" />
-            <span style={{ fontSize: '0.875rem', color: '#c4b5fd', fontWeight: '600', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+            <BarChart3 size={16} color="#a78bfa" />
+            <span style={{ fontSize: '0.75rem', color: '#c4b5fd', fontWeight: '600', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
               Premium ETF Analytics
             </span>
           </div>
@@ -242,7 +242,7 @@ export default function ETFDashboard() {
           }}>
             ETF Performance Hub
           </h1>
-          <p style={{ fontSize: '1.125rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6' }}>
+          <p style={{ fontSize: 'clamp(0.85rem, 2.5vw, 1.125rem)', color: '#94a3b8', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6', padding: '0 0.5rem' }}>
             미국과 한국 주요 ETF의 실시간 성과 분석과 투자 인사이트
           </p>
           {metadata && (
@@ -265,9 +265,9 @@ export default function ETFDashboard() {
                 key={key}
                 onClick={() => handleCountryChange(key)}
                 style={{
-                  padding: '0.625rem 1.5rem',
+                  padding: '0.5rem 1rem',
                   borderRadius: '100px',
-                  fontSize: '0.9rem',
+                  fontSize: 'clamp(0.75rem, 2vw, 0.9rem)',
                   fontWeight: '700',
                   cursor: 'pointer',
                   transition: 'all 0.25s ease',
@@ -287,23 +287,28 @@ export default function ETFDashboard() {
 
         {/* 2단: 카테고리 탭 */}
         <div style={{
-          display: 'flex', justifyContent: 'center', flexWrap: 'wrap',
-          gap: '0.4rem', marginBottom: '2rem',
-          padding: '0.75rem 1rem',
+          display: 'flex', justifyContent: 'flex-start', flexWrap: 'nowrap',
+          gap: '0.4rem', marginBottom: '1.5rem',
+          padding: '0.625rem 0.75rem',
           background: 'rgba(0,0,0,0.2)',
           borderRadius: '16px',
           border: '1px solid rgba(255,255,255,0.06)',
+          overflowX: 'auto',
+          WebkitOverflowScrolling: 'touch',
+          msOverflowStyle: 'none',
+          scrollbarWidth: 'none',
         }}>
           <button
             onClick={() => setSelectedCategory('전체')}
             style={{
-              padding: '0.4rem 1rem',
+              padding: '0.4rem 0.75rem',
               borderRadius: '8px',
-              fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer',
+              fontSize: '0.75rem', fontWeight: '600', cursor: 'pointer',
               transition: 'all 0.2s ease',
               background: selectedCategory === '전체' ? 'rgba(139,92,246,0.3)' : 'transparent',
               color: selectedCategory === '전체' ? '#c4b5fd' : '#64748b',
               border: selectedCategory === '전체' ? '1px solid rgba(139,92,246,0.5)' : '1px solid transparent',
+              whiteSpace: 'nowrap', flexShrink: 0,
             }}
           >
             전체
@@ -316,10 +321,11 @@ export default function ETFDashboard() {
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 style={{
-                  padding: '0.4rem 1rem',
+                  padding: '0.4rem 0.75rem',
                   borderRadius: '8px',
-                  fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer',
+                  fontSize: '0.75rem', fontWeight: '600', cursor: 'pointer',
                   transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap', flexShrink: 0,
                   background: active
                     ? isKR ? 'rgba(59,130,246,0.3)' : 'rgba(139,92,246,0.3)'
                     : 'transparent',
@@ -338,27 +344,26 @@ export default function ETFDashboard() {
         </div>
 
         {/* 3단: 기간 + 테마 필터 */}
-        <div style={{ display: 'flex', gap: '2rem', marginBottom: '2.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-          <div>
-            <label style={{ display: 'block', fontSize: '0.875rem', color: '#94a3b8', marginBottom: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+        <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-end' }}>
+          <div style={{ flex: '1 1 auto', minWidth: 0 }}>
+            <label style={{ display: 'block', fontSize: '0.75rem', color: '#94a3b8', marginBottom: '0.5rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               기간
             </label>
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <div style={{ display: 'flex', gap: '0.375rem', overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               {periods.map(period => (
                 <button
                   key={period}
                   onClick={() => setSelectedPeriod(period)}
                   style={{
-                    padding: '0.625rem 1.25rem',
-                    borderRadius: '12px',
-                    fontSize: '0.875rem', fontWeight: '600', cursor: 'pointer',
+                    padding: '0.5rem 0.875rem',
+                    borderRadius: '10px',
+                    fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer',
                     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                     background: selectedPeriod === period ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)' : 'rgba(255, 255, 255, 0.05)',
                     color: selectedPeriod === period ? '#fff' : '#94a3b8',
-                    backdropFilter: 'blur(10px)',
                     border: selectedPeriod === period ? '1px solid rgba(139, 92, 246, 0.5)' : '1px solid rgba(255, 255, 255, 0.1)',
-                    transform: selectedPeriod === period ? 'translateY(-2px)' : 'none',
-                    boxShadow: selectedPeriod === period ? '0 8px 20px rgba(139, 92, 246, 0.3)' : 'none'
+                    boxShadow: selectedPeriod === period ? '0 4px 12px rgba(139, 92, 246, 0.3)' : 'none',
+                    whiteSpace: 'nowrap', flexShrink: 0,
                   }}
                 >
                   {period}
@@ -367,19 +372,19 @@ export default function ETFDashboard() {
             </div>
           </div>
 
-          <div>
-            <label style={{ display: 'block', fontSize: '0.875rem', color: '#94a3b8', marginBottom: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ flexShrink: 0 }}>
+            <label style={{ display: 'block', fontSize: '0.75rem', color: '#94a3b8', marginBottom: '0.5rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               테마
             </label>
             <select
               value={selectedTheme}
               onChange={(e) => setSelectedTheme(e.target.value)}
               style={{
-                padding: '0.625rem 1rem', borderRadius: '12px',
+                padding: '0.5rem 0.75rem', borderRadius: '10px',
                 border: '1px solid rgba(255, 255, 255, 0.1)',
                 background: 'rgba(255, 255, 255, 0.05)', color: '#fff',
-                fontSize: '0.875rem', fontWeight: '600', cursor: 'pointer',
-                backdropFilter: 'blur(10px)', outline: 'none', minWidth: '180px'
+                fontSize: '0.8rem', fontWeight: '600', cursor: 'pointer',
+                outline: 'none', minWidth: '120px'
               }}
             >
               {themes.map(theme => (
@@ -390,14 +395,14 @@ export default function ETFDashboard() {
         </div>
 
         {/* TOP 3 카드 */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 340px), 1fr))', gap: '1rem', marginBottom: '2rem' }}>
           {sortedData.slice(0, 3).map((etf, index) => (
             <div
               key={etf.ticker}
               style={{
                 background: 'rgba(255, 255, 255, 0.03)',
                 border: '1px solid rgba(255, 255, 255, 0.1)',
-                borderRadius: '20px', padding: '1.75rem',
+                borderRadius: '16px', padding: '1.25rem',
                 backdropFilter: 'blur(20px)', position: 'relative',
                 overflow: 'hidden', transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 cursor: 'pointer', animation: `slideUp 0.6s ease-out ${index * 0.1}s both`
@@ -448,8 +453,8 @@ export default function ETFDashboard() {
                   </span>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginTop: '1rem' }}>
-                  <span style={{ fontSize: '2rem', fontWeight: '700', color: '#fff', fontVariantNumeric: 'tabular-nums' }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: '700', color: '#fff', fontVariantNumeric: 'tabular-nums' }}>
                     {etf.country === 'US' ? '$' : '₩'}{etf.price.toLocaleString()}
                   </span>
                   <div style={{
@@ -467,7 +472,7 @@ export default function ETFDashboard() {
               </div>
 
               {/* 수익률 그리드 */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', padding: '1.25rem', background: 'rgba(0, 0, 0, 0.2)', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.625rem', padding: '1rem', background: 'rgba(0, 0, 0, 0.2)', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
                 {Object.entries(etf.returns).map(([period, value]) => {
                   const cagrVal = etf.cagr?.[period];
                   return (
@@ -589,7 +594,7 @@ export default function ETFDashboard() {
         </div>
 
         {/* 푸터 */}
-        <footer style={{ marginTop: '4rem', textAlign: 'center', padding: '2rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)', color: '#64748b', fontSize: '0.875rem' }}>
+        <footer style={{ marginTop: '3rem', textAlign: 'center', padding: '1.5rem 0.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)', color: '#64748b', fontSize: '0.75rem' }}>
           <p style={{ margin: '0 0 0.5rem 0' }}>
             데이터는 실시간으로 업데이트됩니다 • 투자 결정 시 참고용으로만 활용하세요
           </p>
@@ -627,9 +632,11 @@ export default function ETFDashboard() {
             style={{
               background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
               border: '1px solid rgba(255, 255, 255, 0.15)',
-              borderRadius: '24px',
-              padding: '2rem',
+              borderRadius: '20px',
+              padding: '1.5rem',
               width: '100%', maxWidth: '480px',
+              maxHeight: '90vh',
+              overflowY: 'auto',
               position: 'relative',
               animation: 'modalIn 0.25s ease-out',
             }}
@@ -674,8 +681,8 @@ export default function ETFDashboard() {
             </p>
 
             {/* 현재가 + 등락 */}
-            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.75rem', marginBottom: '1.5rem' }}>
-              <span style={{ fontSize: '2.25rem', fontWeight: '700', color: '#fff', fontVariantNumeric: 'tabular-nums' }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
+              <span style={{ fontSize: 'clamp(1.5rem, 5vw, 2.25rem)', fontWeight: '700', color: '#fff', fontVariantNumeric: 'tabular-nums' }}>
                 {selectedEtf.country === 'US' ? '$' : '₩'}{selectedEtf.price.toLocaleString()}
               </span>
               <div style={{
@@ -774,18 +781,20 @@ export default function ETFDashboard() {
 }
 
 const tableHeaderStyle = {
-  padding: '1rem',
-  fontSize: '0.75rem',
+  padding: '0.75rem 0.5rem',
+  fontSize: '0.7rem',
   fontWeight: '700',
   color: '#94a3b8',
   textTransform: 'uppercase',
   letterSpacing: '0.05em',
-  textAlign: 'center'
+  textAlign: 'center',
+  whiteSpace: 'nowrap',
 };
 
 const tableCellStyle = {
-  padding: '1.25rem 1rem',
-  fontSize: '0.875rem',
+  padding: '0.875rem 0.5rem',
+  fontSize: '0.8rem',
   color: '#fff',
-  textAlign: 'center'
+  textAlign: 'center',
+  whiteSpace: 'nowrap',
 };
