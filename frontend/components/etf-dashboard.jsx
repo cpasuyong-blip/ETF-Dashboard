@@ -49,16 +49,19 @@ function transformData(database) {
   for (const [category, info] of Object.entries(database.categories)) {
     const theme = categoryToTheme[category] || '기타';
     for (const etf of info.etfs) {
+      const isKR = etf.currency === 'KRW';
       result.push({
         ticker: etf.ticker,
         name: etf.name,
+        displayPrimary: isKR ? etf.name : etf.ticker,
+        displaySecondary: isKR ? etf.ticker : etf.name,
         price: etf.price,
         change: etf.priceChangePct,
         returns: etf.returns,
         aum: formatAUM(etf.aum, etf.currency),
         theme,
         category,
-        country: etf.currency === 'KRW' ? 'KR' : 'US',
+        country: isKR ? 'KR' : 'US',
         currency: etf.currency,
         volatility: etf.volatility,
         maxDrawdown: etf.maxDrawdown,
@@ -422,14 +425,14 @@ export default function ETFDashboard() {
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
                       <h3 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#fff', margin: 0 }}>
-                        {etf.ticker}
+                        {etf.displayPrimary}
                       </h3>
                       <span style={{ fontSize: '0.75rem', padding: '0.25rem 0.625rem', background: 'rgba(139, 92, 246, 0.2)', border: '1px solid rgba(139, 92, 246, 0.3)', borderRadius: '6px', color: '#c4b5fd', fontWeight: '600' }}>
                         {etf.country}
                       </span>
                     </div>
                     <p style={{ fontSize: '0.875rem', color: '#64748b', margin: 0, lineHeight: '1.4' }}>
-                      {etf.name}
+                      {etf.displaySecondary}
                     </p>
                   </div>
                   <span style={{ fontSize: '0.75rem', padding: '0.375rem 0.75rem', background: getGradient(etf.theme), borderRadius: '8px', color: '#fff', fontWeight: '600', whiteSpace: 'nowrap' }}>
@@ -525,8 +528,8 @@ export default function ETFDashboard() {
                       </div>
                     </td>
                     <td style={{ ...tableCellStyle, textAlign: 'left' }}>
-                      <div style={{ fontWeight: '700', fontSize: '1rem', marginBottom: '0.25rem' }}>{etf.ticker}</div>
-                      <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{etf.name}</div>
+                      <div style={{ fontWeight: '700', fontSize: '1rem', marginBottom: '0.25rem' }}>{etf.displayPrimary}</div>
+                      <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{etf.displaySecondary}</div>
                     </td>
                     <td style={tableCellStyle}>
                       <span style={{ fontWeight: '600', fontVariantNumeric: 'tabular-nums' }}>
@@ -623,10 +626,10 @@ export default function ETFDashboard() {
               borderRadius: '24px 24px 0 0',
             }} />
 
-            {/* 티커 + 뱃지 */}
+            {/* 이름 + 뱃지 */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '0.375rem' }}>
               <h2 style={{ fontSize: '2rem', fontWeight: '800', color: '#fff', margin: 0 }}>
-                {selectedEtf.ticker}
+                {selectedEtf.displayPrimary}
               </h2>
               <span style={{ fontSize: '0.75rem', padding: '0.25rem 0.625rem', background: 'rgba(139,92,246,0.2)', border: '1px solid rgba(139,92,246,0.3)', borderRadius: '6px', color: '#c4b5fd', fontWeight: '600' }}>
                 {selectedEtf.country}
@@ -636,9 +639,9 @@ export default function ETFDashboard() {
               </span>
             </div>
 
-            {/* 이름 */}
+            {/* 부 표시 */}
             <p style={{ fontSize: '0.875rem', color: '#64748b', margin: '0 0 1.25rem', lineHeight: '1.4' }}>
-              {selectedEtf.name}
+              {selectedEtf.displaySecondary}
             </p>
 
             {/* 현재가 + 등락 */}

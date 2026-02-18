@@ -17,6 +17,15 @@ const CATEGORY_LABELS = {
 
 const PERIOD_YEARS = { '1M': 1/12, '3M': 3/12, '6M': 6/12, '1Y': 1, '3Y': 3, '5Y': 5 };
 
+// 한국 ETF: 이름이 primary, 코드가 secondary / 미국 ETF: 티커가 primary, 이름이 secondary
+const getDisplayLabel = (etf) => {
+  const isKR = etf.currency === 'KRW';
+  return {
+    primary: isKR ? etf.name : etf.ticker,
+    secondary: isKR ? etf.ticker : etf.name,
+  };
+};
+
 // 재사용 가능한 수평 바 차트 컴포넌트
 function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
   const CustomTooltip = ({ active, payload }) => {
@@ -83,8 +92,8 @@ function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
               type="category"
               dataKey="ticker"
               stroke="#64748b"
-              tick={{ fill: '#94a3b8', fontSize: 13, fontWeight: 600 }}
-              width={65}
+              tick={{ fill: '#94a3b8', fontSize: 11, fontWeight: 600 }}
+              width={120}
             />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
             <ReferenceLine x={0} stroke="rgba(255,255,255,0.2)" />
@@ -172,7 +181,8 @@ export default function ETFBacktestChart() {
         const etf = allEtfs.find(e => e.ticker === ticker);
         if (!etf) return null;
         const value = getValue(etf);
-        return { ticker, return: value, color: getColor(ticker) };
+        const { primary } = getDisplayLabel(etf);
+        return { ticker: primary, return: value, color: getColor(ticker) };
       })
       .filter(d => d && d.return !== null)
       .sort((a, b) => b.return - a.return);
@@ -326,6 +336,7 @@ export default function ETFBacktestChart() {
                   const isSelected = selectedETFs.includes(etf.ticker);
                   const ret = etf.returns?.[selectedPeriod];
                   const color = getColor(etf.ticker);
+                  const { primary } = getDisplayLabel(etf);
                   return (
                     <button
                       key={etf.ticker}
@@ -348,11 +359,11 @@ export default function ETFBacktestChart() {
                         textAlign: 'left',
                       }}
                     >
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', minWidth: 0 }}>
                         {isSelected && (
                           <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: color, flexShrink: 0 }} />
                         )}
-                        <span>{etf.ticker}</span>
+                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{primary}</span>
                       </div>
                       {ret != null && (
                         <span style={{
@@ -415,6 +426,7 @@ export default function ETFBacktestChart() {
             const totalRet = priceRet != null
               ? Math.round((priceRet + divYield * PERIOD_YEARS[selectedPeriod]) * 100) / 100
               : null;
+            const { primary, secondary } = getDisplayLabel(etf);
             return (
               <div
                 key={etf.ticker}
@@ -434,10 +446,10 @@ export default function ETFBacktestChart() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.25rem' }}>
                   <div>
                     <h3 style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fff', margin: 0 }}>
-                      {etf.ticker}
+                      {primary}
                     </h3>
                     <p style={{ fontSize: '0.75rem', color: '#64748b', margin: '0.25rem 0 0', maxWidth: '160px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {etf.name}
+                      {secondary}
                     </p>
                   </div>
                   {totalRet != null && (
@@ -553,9 +565,10 @@ export default function ETFBacktestChart() {
               {(() => {
                 const bestDiv = [...(statsData.filter(e => e.dividendYield))].sort((a, b) => b.dividendYield - a.dividendYield)[0];
                 if (bestDiv && bestDiv.dividendYield > 0) {
+                  const { primary: divPrimary } = getDisplayLabel(bestDiv);
                   return (
                     <p style={{ margin: 0 }}>
-                      • 배당 수익률은 <strong style={{ color: getColor(bestDiv.ticker) }}>{bestDiv.ticker}</strong>가{' '}
+                      • 배당 수익률은 <strong style={{ color: getColor(bestDiv.ticker) }}>{divPrimary}</strong>가{' '}
                       <strong style={{ color: '#22c55e' }}>{bestDiv.dividendYield}%</strong>로 가장 높습니다.
                     </p>
                   );
@@ -566,11 +579,13 @@ export default function ETFBacktestChart() {
                 const highVol = [...statsData].sort((a, b) => (b.volatility || 0) - (a.volatility || 0))[0];
                 const lowVol = [...statsData].sort((a, b) => (a.volatility || 999) - (b.volatility || 999))[0];
                 if (highVol && lowVol && highVol.ticker !== lowVol.ticker && highVol.volatility && lowVol.volatility) {
+                  const { primary: hvName } = getDisplayLabel(highVol);
+                  const { primary: lvName } = getDisplayLabel(lowVol);
                   return (
                     <p style={{ margin: 0 }}>
-                      • 변동성은 <strong style={{ color: getColor(highVol.ticker) }}>{highVol.ticker}</strong>{' '}
+                      • 변동성은 <strong style={{ color: getColor(highVol.ticker) }}>{hvName}</strong>{' '}
                       ({highVol.volatility}%)가 가장 높고,{' '}
-                      <strong style={{ color: getColor(lowVol.ticker) }}>{lowVol.ticker}</strong>{' '}
+                      <strong style={{ color: getColor(lowVol.ticker) }}>{lvName}</strong>{' '}
                       ({lowVol.volatility}%)가 가장 낮아 안정적입니다.
                     </p>
                   );
