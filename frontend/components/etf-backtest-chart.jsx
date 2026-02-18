@@ -15,12 +15,96 @@ const CATEGORY_LABELS = {
   '한국_KOSPI': 'KOSPI', '한국_KOSDAQ': 'KOSDAQ', '한국_산업별': '산업테마',
 };
 
+const PERIOD_YEARS = { '1M': 1/12, '3M': 3/12, '6M': 6/12, '1Y': 1, '3Y': 3, '5Y': 5 };
+
+// 재사용 가능한 수평 바 차트 컴포넌트
+function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
+  const CustomTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      const d = payload[0].payload;
+      return (
+        <div style={{
+          background: 'rgba(15, 15, 30, 0.95)',
+          border: `1px solid ${d.color}50`,
+          borderRadius: '12px',
+          padding: '1rem',
+          backdropFilter: 'blur(10px)',
+        }}>
+          <div style={{ color: d.color, fontWeight: 700, marginBottom: '0.5rem', fontSize: '1rem' }}>
+            {d.ticker}
+          </div>
+          <div style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 700 }}>
+            {d.return >= 0 ? '+' : ''}{d.return.toFixed(2)}%
+          </div>
+          <div style={{ color: '#94a3b8', fontSize: '0.75rem', marginTop: '0.25rem' }}>
+            {tooltipLabel}
+          </div>
+        </div>
+      );
+    }
+    return null;
+  };
+
+  return (
+    <div style={{
+      background: 'rgba(255, 255, 255, 0.03)',
+      border: '1px solid rgba(255, 255, 255, 0.1)',
+      borderRadius: '20px',
+      padding: '1.5rem',
+      backdropFilter: 'blur(20px)',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.25rem' }}>
+        {icon}
+        <h2 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#fff', margin: 0 }}>
+          {title}
+        </h2>
+      </div>
+      {subtitle && (
+        <p style={{ fontSize: '0.75rem', color: '#64748b', margin: '0 0 1rem', paddingLeft: '2.25rem' }}>
+          {subtitle}
+        </p>
+      )}
+
+      {data.length === 0 ? (
+        <div style={{ height: 120, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b' }}>
+          선택한 기간의 데이터가 없습니다.
+        </div>
+      ) : (
+        <ResponsiveContainer width="100%" height={Math.max(150, data.length * 50 + 40)}>
+          <BarChart data={data} layout="vertical" margin={{ top: 0, right: 40, left: 10, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
+            <XAxis
+              type="number"
+              stroke="#64748b"
+              tick={{ fill: '#64748b', fontSize: 12 }}
+              tickFormatter={(v) => `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`}
+            />
+            <YAxis
+              type="category"
+              dataKey="ticker"
+              stroke="#64748b"
+              tick={{ fill: '#94a3b8', fontSize: 13, fontWeight: 600 }}
+              width={65}
+            />
+            <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
+            <ReferenceLine x={0} stroke="rgba(255,255,255,0.2)" />
+            <Bar dataKey="return" radius={[0, 6, 6, 0]} maxBarSize={36}>
+              {data.map((entry) => (
+                <Cell key={entry.ticker} fill={entry.color} />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      )}
+    </div>
+  );
+}
+
 export default function ETFBacktestChart() {
   const [allEtfs, setAllEtfs] = useState([]);
   const [categories, setCategories] = useState({});
   const [selectedETFs, setSelectedETFs] = useState(['QQQ', 'SCHD', 'SPY']);
   const [selectedPeriod, setSelectedPeriod] = useState('1Y');
-  const [viewMode, setViewMode] = useState('price'); // 'price' | 'dividend'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [expandedCats, setExpandedCats] = useState({ '미국_나스닥': true, '미국_배당': true, '미국_S&P500': true });
@@ -37,7 +121,6 @@ export default function ETFBacktestChart() {
         });
         setAllEtfs(etfs);
         setCategories(cats);
-        // 기본 선택: QQQ, SCHD, SPY (있는 것만)
         const defaults = ['QQQ', 'SCHD', 'SPY'].filter(t => etfs.some(e => e.ticker === t));
         if (defaults.length > 0) setSelectedETFs(defaults);
         else setSelectedETFs(etfs.slice(0, 3).map(e => e.ticker));
@@ -61,56 +144,31 @@ export default function ETFBacktestChart() {
 
   const toggleCat = (cat) => setExpandedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
 
-  // 차트 데이터: viewMode에 따라 주가수익률 또는 배당수익률
-  const chartData = selectedETFs
-    .map(ticker => {
-      const etf = allEtfs.find(e => e.ticker === ticker);
-      if (!etf) return null;
-      const value = viewMode === 'dividend'
-        ? (etf.dividendYield ?? null)
-        : (etf.returns?.[selectedPeriod] ?? null);
-      return {
-        ticker,
-        return: value,
-        color: getColor(ticker),
-      };
-    })
-    .filter(d => d && d.return !== null)
-    .sort((a, b) => b.return - a.return);
-
-  // 통계 카드용 ETF 정보
-  const statsData = selectedETFs.map(ticker => allEtfs.find(e => e.ticker === ticker)).filter(Boolean);
-
-  // 동적 인사이트
-  const best = chartData[0];
-  const worst = chartData[chartData.length - 1];
-
-  // 커스텀 툴팁
-  const CustomTooltip = ({ active, payload }) => {
-    if (active && payload && payload.length) {
-      const d = payload[0].payload;
-      return (
-        <div style={{
-          background: 'rgba(15, 15, 30, 0.95)',
-          border: `1px solid ${d.color}50`,
-          borderRadius: '12px',
-          padding: '1rem',
-          backdropFilter: 'blur(10px)',
-        }}>
-          <div style={{ color: d.color, fontWeight: 700, marginBottom: '0.5rem', fontSize: '1rem' }}>
-            {d.ticker}
-          </div>
-          <div style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 700 }}>
-            {d.return >= 0 ? '+' : ''}{d.return.toFixed(2)}%
-          </div>
-          <div style={{ color: '#94a3b8', fontSize: '0.75rem', marginTop: '0.25rem' }}>
-            {viewMode === 'dividend' ? '연간 배당 수익률' : `${selectedPeriod} 주가 수익률`}
-          </div>
-        </div>
-      );
-    }
-    return null;
+  // 3가지 차트 데이터 생성
+  const buildChartData = (getValue) => {
+    return selectedETFs
+      .map(ticker => {
+        const etf = allEtfs.find(e => e.ticker === ticker);
+        if (!etf) return null;
+        const value = getValue(etf);
+        return { ticker, return: value, color: getColor(ticker) };
+      })
+      .filter(d => d && d.return !== null)
+      .sort((a, b) => b.return - a.return);
   };
+
+  const priceData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
+  const dividendData = buildChartData(etf => etf.dividendYield ?? null);
+  const totalReturnData = buildChartData(etf => {
+    const priceRet = etf.returns?.[selectedPeriod];
+    const divYield = etf.dividendYield || 0;
+    if (priceRet == null) return null;
+    return Math.round((priceRet + divYield * PERIOD_YEARS[selectedPeriod]) * 100) / 100;
+  });
+
+  const statsData = selectedETFs.map(ticker => allEtfs.find(e => e.ticker === ticker)).filter(Boolean);
+  const best = totalReturnData[0];
+  const worst = totalReturnData[totalReturnData.length - 1];
 
   if (loading) return (
     <div style={{
@@ -161,63 +219,34 @@ export default function ETFBacktestChart() {
             ETF 수익률 데이터
           </h1>
           <p style={{ fontSize: '1rem', color: '#94a3b8', maxWidth: '600px', margin: '0 auto' }}>
-            실제 시장 데이터 기반 주가·배당 수익률 비교 분석
+            실제 시장 데이터 기반 Total Return · 주가 · 배당 수익률 비교 분석
           </p>
         </header>
 
-        {/* 주가/배당 토글 */}
-        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '1rem' }}>
-          {[
-            { key: 'price', label: '주가 수익률' },
-            { key: 'dividend', label: '배당 수익률' },
-          ].map(({ key, label }) => (
+        {/* 기간 탭 */}
+        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
             <button
-              key={key}
-              onClick={() => setViewMode(key)}
+              key={p}
+              onClick={() => setSelectedPeriod(p)}
               style={{
-                padding: '0.5rem 1.25rem',
-                border: viewMode === key ? '1px solid #8b5cf6' : '1px solid rgba(255,255,255,0.15)',
-                borderRadius: '20px',
-                background: viewMode === key ? 'rgba(139,92,246,0.15)' : 'transparent',
-                color: viewMode === key ? '#c4b5fd' : '#64748b',
+                padding: '0.625rem 1.5rem',
+                border: 'none',
+                borderRadius: '10px',
+                background: selectedPeriod === p
+                  ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
+                  : 'rgba(255, 255, 255, 0.05)',
+                color: selectedPeriod === p ? '#fff' : '#94a3b8',
                 fontSize: '0.875rem',
-                fontWeight: '600',
+                fontWeight: '700',
                 cursor: 'pointer',
-                transition: 'all 0.2s ease',
+                transition: 'all 0.3s ease',
               }}
             >
-              {label}
+              {p}
             </button>
           ))}
         </div>
-
-        {/* 기간 탭 (주가 수익률 모드에서만 표시) */}
-        {viewMode === 'price' && (
-          <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
-              <button
-                key={p}
-                onClick={() => setSelectedPeriod(p)}
-                style={{
-                  padding: '0.625rem 1.5rem',
-                  border: 'none',
-                  borderRadius: '10px',
-                  background: selectedPeriod === p
-                    ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  color: selectedPeriod === p ? '#fff' : '#94a3b8',
-                  fontSize: '0.875rem',
-                  fontWeight: '700',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                }}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        )}
-        {viewMode === 'dividend' && <div style={{ marginBottom: '2rem' }} />}
 
         {/* 메인 레이아웃: ETF 선택 (좌) + 차트 (우) */}
         <div style={{
@@ -248,7 +277,6 @@ export default function ETFBacktestChart() {
 
             {Object.entries(categories).map(([catKey, cat]) => (
               <div key={catKey} style={{ marginBottom: '0.5rem' }}>
-                {/* 카테고리 헤더 */}
                 <button
                   onClick={() => toggleCat(catKey)}
                   style={{
@@ -273,10 +301,9 @@ export default function ETFBacktestChart() {
                   </span>
                 </button>
 
-                {/* ETF 목록 */}
                 {expandedCats[catKey] && cat.etfs.map(etf => {
                   const isSelected = selectedETFs.includes(etf.ticker);
-                  const ret = viewMode === 'dividend' ? (etf.dividendYield ?? null) : (etf.returns?.[selectedPeriod] ?? null);
+                  const ret = etf.returns?.[selectedPeriod];
                   const color = getColor(etf.ticker);
                   return (
                     <button
@@ -322,56 +349,34 @@ export default function ETFBacktestChart() {
             ))}
           </div>
 
-          {/* 수익률 비교 차트 */}
-          <div style={{
-            background: 'rgba(255, 255, 255, 0.03)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
-            borderRadius: '20px',
-            padding: '2rem',
-            backdropFilter: 'blur(20px)',
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-              {viewMode === 'dividend' ? <Percent size={24} color="#8b5cf6" /> : <TrendingUp size={24} color="#8b5cf6" />}
-              <h2 style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fff', margin: 0 }}>
-                {viewMode === 'dividend' ? '배당 수익률 비교' : `${selectedPeriod} 주가 수익률 비교`}
-              </h2>
+          {/* 차트 영역: 3개 차트 */}
+          <div style={{ display: 'grid', gap: '1.5rem' }}>
+
+            {/* 1. Total Return 차트 (메인) */}
+            <HorizontalBarChart
+              data={totalReturnData}
+              title={`${selectedPeriod} Total Return`}
+              icon={<TrendingUp size={24} color="#8b5cf6" />}
+              subtitle="주가 수익률 + 배당 수익률 (기간 비례 환산)"
+              tooltipLabel={`${selectedPeriod} Total Return`}
+            />
+
+            {/* 2+3. 주가수익률 / 배당수익률 나란히 */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              <HorizontalBarChart
+                data={priceData}
+                title={`${selectedPeriod} 주가 수익률`}
+                icon={<TrendingUp size={20} color="#3b82f6" />}
+                tooltipLabel={`${selectedPeriod} 주가 수익률`}
+              />
+              <HorizontalBarChart
+                data={dividendData}
+                title="배당 수익률 (연간)"
+                icon={<Percent size={20} color="#10b981" />}
+                tooltipLabel="연간 배당 수익률"
+              />
             </div>
 
-            {chartData.length === 0 ? (
-              <div style={{ height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b' }}>
-                선택한 기간의 데이터가 없습니다.
-              </div>
-            ) : (
-              <ResponsiveContainer width="100%" height={Math.max(200, chartData.length * 60 + 80)}>
-                <BarChart
-                  data={chartData}
-                  layout="vertical"
-                  margin={{ top: 0, right: 40, left: 10, bottom: 0 }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
-                  <XAxis
-                    type="number"
-                    stroke="#64748b"
-                    tick={{ fill: '#64748b', fontSize: 12 }}
-                    tickFormatter={(v) => `${v >= 0 ? '+' : ''}${v.toFixed(0)}%`}
-                  />
-                  <YAxis
-                    type="category"
-                    dataKey="ticker"
-                    stroke="#64748b"
-                    tick={{ fill: '#94a3b8', fontSize: 13, fontWeight: 600 }}
-                    width={65}
-                  />
-                  <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-                  <ReferenceLine x={0} stroke="rgba(255,255,255,0.2)" />
-                  <Bar dataKey="return" radius={[0, 6, 6, 0]} maxBarSize={40}>
-                    {chartData.map((entry) => (
-                      <Cell key={entry.ticker} fill={entry.color} />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
-            )}
           </div>
         </div>
 
@@ -384,7 +389,11 @@ export default function ETFBacktestChart() {
         }}>
           {statsData.map(etf => {
             const color = getColor(etf.ticker);
-            const ret = etf.returns?.[selectedPeriod];
+            const priceRet = etf.returns?.[selectedPeriod];
+            const divYield = etf.dividendYield || 0;
+            const totalRet = priceRet != null
+              ? Math.round((priceRet + divYield * PERIOD_YEARS[selectedPeriod]) * 100) / 100
+              : null;
             return (
               <div
                 key={etf.ticker}
@@ -410,22 +419,36 @@ export default function ETFBacktestChart() {
                       {etf.name}
                     </p>
                   </div>
-                  {ret != null && (
+                  {totalRet != null && (
                     <div style={{
                       padding: '0.5rem 1rem',
                       background: `${color}20`,
                       border: `1px solid ${color}40`,
                       borderRadius: '8px',
-                      color: ret >= 0 ? '#22c55e' : '#ef4444',
+                      color: totalRet >= 0 ? '#22c55e' : '#ef4444',
                       fontSize: '1.125rem',
                       fontWeight: '700',
                     }}>
-                      {ret >= 0 ? '+' : ''}{ret.toFixed(1)}%
+                      {totalRet >= 0 ? '+' : ''}{totalRet.toFixed(1)}%
                     </div>
                   )}
                 </div>
 
                 <div style={{ display: 'grid', gap: '0.75rem' }}>
+                  {/* 주가 수익률 */}
+                  <div style={{
+                    display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                    padding: '0.625rem 0.75rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px',
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <TrendingUp size={15} color="#94a3b8" />
+                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>주가 수익률 ({selectedPeriod})</span>
+                    </div>
+                    <span style={{ fontSize: '1rem', fontWeight: '700', color: priceRet != null && priceRet >= 0 ? '#22c55e' : '#ef4444' }}>
+                      {priceRet != null ? `${priceRet >= 0 ? '+' : ''}${priceRet.toFixed(1)}%` : 'N/A'}
+                    </span>
+                  </div>
+
                   {/* 배당 수익률 */}
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
@@ -433,7 +456,7 @@ export default function ETFBacktestChart() {
                   }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <Percent size={15} color="#94a3b8" />
-                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>배당 수익률</span>
+                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>배당 수익률 (연간)</span>
                     </div>
                     <span style={{ fontSize: '1rem', fontWeight: '700', color: '#22c55e' }}>
                       {etf.dividendYield != null ? `${etf.dividendYield}%` : 'N/A'}
@@ -474,7 +497,7 @@ export default function ETFBacktestChart() {
         </div>
 
         {/* 동적 인사이트 */}
-        {chartData.length >= 2 && (
+        {totalReturnData.length >= 2 && (
           <div style={{
             background: 'linear-gradient(135deg, rgba(139,92,246,0.1) 0%, rgba(99,102,241,0.1) 100%)',
             border: '1px solid rgba(139,92,246,0.3)',
@@ -484,29 +507,40 @@ export default function ETFBacktestChart() {
           }}>
             <h3 style={{
               fontSize: '1.25rem', fontWeight: '700', color: '#fff',
-              marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', margin: '0 0 1rem',
+              display: 'flex', alignItems: 'center', gap: '0.75rem', margin: '0 0 1rem',
             }}>
               <TrendingUp size={24} color="#8b5cf6" />
-              {viewMode === 'dividend' ? '배당 수익률 인사이트' : `${selectedPeriod} 주가 수익률 인사이트`}
+              {selectedPeriod} 수익률 인사이트
             </h3>
             <div style={{ display: 'grid', gap: '0.875rem', color: '#cbd5e1', fontSize: '0.9375rem', lineHeight: '1.6' }}>
               {best && (
                 <p style={{ margin: 0 }}>
                   • <strong style={{ color: getColor(best.ticker) }}>{best.ticker}</strong>가{' '}
                   <strong style={{ color: '#22c55e' }}>+{best.return.toFixed(1)}%</strong>로{' '}
-                  {viewMode === 'dividend' ? '최고 배당 수익률' : `${selectedPeriod} 최고 수익률`}을 기록했습니다.
+                  {selectedPeriod} 최고 Total Return을 기록했습니다.
                 </p>
               )}
               {worst && worst.ticker !== best?.ticker && (
                 <p style={{ margin: 0 }}>
-                  • <strong style={{ color: getColor(worst.ticker) }}>{worst.ticker}</strong>의{' '}
-                  {viewMode === 'dividend' ? '배당 수익률' : '수익률'}은{' '}
+                  • <strong style={{ color: getColor(worst.ticker) }}>{worst.ticker}</strong>의 Total Return은{' '}
                   <strong style={{ color: worst.return >= 0 ? '#22c55e' : '#ef4444' }}>
                     {worst.return >= 0 ? '+' : ''}{worst.return.toFixed(1)}%
                   </strong>
                   로 비교 대상 중 가장 낮습니다.
                 </p>
               )}
+              {(() => {
+                const bestDiv = [...(statsData.filter(e => e.dividendYield))].sort((a, b) => b.dividendYield - a.dividendYield)[0];
+                if (bestDiv && bestDiv.dividendYield > 0) {
+                  return (
+                    <p style={{ margin: 0 }}>
+                      • 배당 수익률은 <strong style={{ color: getColor(bestDiv.ticker) }}>{bestDiv.ticker}</strong>가{' '}
+                      <strong style={{ color: '#22c55e' }}>{bestDiv.dividendYield}%</strong>로 가장 높습니다.
+                    </p>
+                  );
+                }
+                return null;
+              })()}
               {(() => {
                 const highVol = [...statsData].sort((a, b) => (b.volatility || 0) - (a.volatility || 0))[0];
                 const lowVol = [...statsData].sort((a, b) => (a.volatility || 999) - (b.volatility || 999))[0];
