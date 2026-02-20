@@ -11,7 +11,7 @@
           "priceChange": 3.44,
           "priceChangePct": 0.5,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.0945,
           "aum": 708919230464,
           "dividendYield": 1.06,
           "returns": {
@@ -39,7 +39,7 @@
           "priceChange": 3.16,
           "priceChangePct": 0.5,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 1509873025024,
           "dividendYield": 1.12,
           "returns": {
@@ -67,7 +67,7 @@
           "priceChange": 3.51,
           "priceChangePct": 0.51,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 763643363328,
           "dividendYield": 1.17,
           "returns": {
@@ -95,7 +95,7 @@
           "priceChange": 0.13,
           "priceChangePct": 0.16,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.02,
           "aum": 97328324608,
           "dividendYield": 1.13,
           "returns": {
@@ -129,7 +129,7 @@
           "priceChange": 4.49,
           "priceChangePct": 0.75,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.2,
           "aum": 411780087808,
           "dividendYield": 0.46,
           "returns": {
@@ -157,7 +157,7 @@
           "priceChange": 1.81,
           "priceChangePct": 0.73,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 73416523776,
           "dividendYield": 0.5,
           "returns": {
@@ -185,7 +185,7 @@
           "priceChange": 0.7,
           "priceChangePct": 0.79,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.21,
           "aum": 9389847552,
           "dividendYield": 0.55,
           "returns": {
@@ -213,7 +213,7 @@
           "priceChange": 1.04,
           "priceChangePct": 2.15,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.88,
           "aum": 28960600064,
           "dividendYield": 0.69,
           "returns": {
@@ -247,7 +247,7 @@
           "priceChange": 1.76,
           "priceChangePct": 0.52,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 2095260762112,
           "dividendYield": 1.11,
           "returns": {
@@ -275,7 +275,7 @@
           "priceChange": 0.15,
           "priceChangePct": 0.57,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 38809067520,
           "dividendYield": 1.1,
           "returns": {
@@ -303,7 +303,7 @@
           "priceChange": 0.76,
           "priceChangePct": 0.51,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 82588540928,
           "dividendYield": 1.1,
           "returns": {
@@ -331,7 +331,7 @@
           "priceChange": 0.72,
           "priceChangePct": 0.49,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.07,
           "aum": 80635674624,
           "dividendYield": 1.75,
           "returns": {
@@ -359,7 +359,7 @@
           "priceChange": 1.15,
           "priceChangePct": 0.23,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.16,
           "aum": 43532476416,
           "dividendYield": 1.39,
           "returns": {
@@ -387,7 +387,7 @@
           "priceChange": 1.05,
           "priceChangePct": 0.52,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.2,
           "aum": 82734399488,
           "dividendYield": 1.54,
           "returns": {
@@ -421,7 +421,7 @@
           "priceChange": 0.95,
           "priceChangePct": 0.36,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.19,
           "aum": 73893019648,
           "dividendYield": 0.97,
           "returns": {
@@ -449,7 +449,7 @@
           "priceChange": 1.97,
           "priceChangePct": 0.53,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 46718480384,
           "dividendYield": 0.99,
           "returns": {
@@ -477,7 +477,7 @@
           "priceChange": 0.3,
           "priceChangePct": 0.42,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.05,
           "aum": 107248566272,
           "dividendYield": 1.25,
           "returns": {
@@ -505,7 +505,7 @@
           "priceChange": 0.37,
           "priceChangePct": 0.28,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.06,
           "aum": 93349199872,
           "dividendYield": 1.32,
           "returns": {
@@ -533,7 +533,7 @@
           "priceChange": 1.97,
           "priceChangePct": 0.71,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.05,
           "aum": 169095053312,
           "dividendYield": 1.24,
           "returns": {
@@ -561,7 +561,7 @@
           "priceChange": 1.85,
           "priceChangePct": 0.61,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.04,
           "aum": 202880679936,
           "dividendYield": 1.46,
           "returns": {
@@ -595,7 +595,7 @@
           "priceChange": 1.43,
           "priceChangePct": 1.03,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 91643199488,
           "dividendYield": 0.56,
           "returns": {
@@ -623,7 +623,7 @@
           "priceChange": 6.76,
           "priceChangePct": 0.92,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.1,
           "aum": 130278727680,
           "dividendYield": 0.41,
           "returns": {
@@ -651,7 +651,7 @@
           "priceChange": 3.82,
           "priceChangePct": 1.08,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 20971747328,
           "dividendYield": 0.48,
           "returns": {
@@ -679,7 +679,7 @@
           "priceChange": 5.04,
           "priceChangePct": 1.24,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 44065882112,
           "dividendYield": 0.27,
           "returns": {
@@ -707,7 +707,7 @@
           "priceChange": 1.09,
           "priceChangePct": 1.55,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.75,
           "aum": 6676811776,
           "dividendYield": 0,
           "returns": {
@@ -735,7 +735,7 @@
           "priceChange": 1.04,
           "priceChangePct": 1.28,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.41,
           "aum": 6058692096,
           "dividendYield": 0,
           "returns": {
@@ -769,7 +769,7 @@
           "priceChange": 0.39,
           "priceChangePct": 0.75,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 55285882880,
           "dividendYield": 1.37,
           "returns": {
@@ -797,7 +797,7 @@
           "priceChange": 0.3,
           "priceChangePct": 0.19,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 40979546112,
           "dividendYield": 1.57,
           "returns": {
@@ -825,7 +825,7 @@
           "priceChange": 1.03,
           "priceChangePct": 1.92,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 32989736960,
           "dividendYield": 2.67,
           "returns": {
@@ -853,7 +853,7 @@
           "priceChange": -0.04,
           "priceChangePct": -0.02,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 27983443968,
           "dividendYield": 1.14,
           "returns": {
@@ -881,7 +881,7 @@
           "priceChange": -0.16,
           "priceChangePct": -0.18,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 16153370624,
           "dividendYield": 2.43,
           "returns": {
@@ -909,7 +909,7 @@
           "priceChange": 0.98,
           "priceChangePct": 0.84,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 23873112064,
           "dividendYield": 0.81,
           "returns": {
@@ -937,7 +937,7 @@
           "priceChange": -0.77,
           "priceChangePct": -1.66,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 22197571584,
           "dividendYield": 2.54,
           "returns": {
@@ -965,7 +965,7 @@
           "priceChange": 0.32,
           "priceChangePct": 0.61,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 6124725248,
           "dividendYield": 1.64,
           "returns": {
@@ -993,7 +993,7 @@
           "priceChange": 0.19,
           "priceChangePct": 0.17,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 27958808576,
           "dividendYield": 1.16,
           "returns": {
@@ -1021,7 +1021,7 @@
           "priceChange": -0.59,
           "priceChangePct": -1.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 7204753920,
           "dividendYield": 3.21,
           "returns": {
@@ -1049,7 +1049,7 @@
           "priceChange": 0.74,
           "priceChangePct": 0.43,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.44,
           "aum": 8534385664,
           "dividendYield": 0.22,
           "returns": {
@@ -1077,7 +1077,7 @@
           "priceChange": 2.15,
           "priceChangePct": 0.9,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.39,
           "aum": 14808289280,
           "dividendYield": 0.49,
           "returns": {
@@ -1105,7 +1105,7 @@
           "priceChange": -0.15,
           "priceChangePct": -0.21,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 4302375936,
           "dividendYield": 2.22,
           "returns": {
@@ -1139,7 +1139,7 @@
           "priceChange": -0.14,
           "priceChangePct": -0.14,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 138324639744,
           "dividendYield": 3.85,
           "returns": {
@@ -1167,7 +1167,7 @@
           "priceChange": -0.34,
           "priceChangePct": -0.38,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 45213560832,
           "dividendYield": 4.33,
           "returns": {
@@ -1195,7 +1195,7 @@
           "priceChange": -0.05,
           "priceChangePct": -0.06,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 24251971584,
           "dividendYield": 3.77,
           "returns": {
@@ -1223,7 +1223,7 @@
           "priceChange": -0.08,
           "priceChangePct": -0.11,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.03,
           "aum": 389220368384,
           "dividendYield": 3.83,
           "returns": {
@@ -1251,7 +1251,7 @@
           "priceChange": -0.11,
           "priceChangePct": -0.1,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.14,
           "aum": 28512378880,
           "dividendYield": 4.44,
           "returns": {
@@ -1279,7 +1279,7 @@
           "priceChange": 0.1,
           "priceChangePct": 0.12,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.48,
           "aum": 18062870528,
           "dividendYield": 5.74,
           "returns": {
@@ -1307,7 +1307,7 @@
           "priceChange": 0.14,
           "priceChangePct": 0.14,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.4,
           "aum": 7936343040,
           "dividendYield": 6.54,
           "returns": {
@@ -1335,7 +1335,7 @@
           "priceChange": -0.07,
           "priceChangePct": -0.06,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.19,
           "aum": 13832998912,
           "dividendYield": 3.42,
           "returns": {
@@ -1363,7 +1363,7 @@
           "priceChange": -0.2,
           "priceChangePct": -0.21,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 46835224576,
           "dividendYield": 3.75,
           "returns": {
@@ -1391,7 +1391,7 @@
           "priceChange": 0.02,
           "priceChangePct": 0.02,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 70885670912,
           "dividendYield": 4.04,
           "returns": {
@@ -1419,7 +1419,7 @@
           "priceChange": 0.01,
           "priceChangePct": 0.01,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.14,
           "aum": 42207805440,
           "dividendYield": 4.06,
           "returns": {
@@ -1447,7 +1447,7 @@
           "priceChange": 0.04,
           "priceChangePct": 0.04,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.39,
           "aum": 16872182784,
           "dividendYield": 4.88,
           "returns": {
@@ -1481,7 +1481,7 @@
           "priceChange": 0.47,
           "priceChangePct": 0.3,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.06,
           "aum": 88506867712,
           "dividendYield": 2.25,
           "returns": {
@@ -1509,7 +1509,7 @@
           "priceChange": 0.14,
           "priceChangePct": 0.45,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.06,
           "aum": 78399782912,
           "dividendYield": 3.32,
           "returns": {
@@ -1537,7 +1537,7 @@
           "priceChange": 0.63,
           "priceChangePct": 0.46,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.08,
           "aum": 12827713536,
           "dividendYield": 2.83,
           "returns": {
@@ -1565,7 +1565,7 @@
           "priceChange": -0.49,
           "priceChangePct": -0.31,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.38,
           "aum": 21941575680,
           "dividendYield": 3.29,
           "returns": {
@@ -1593,7 +1593,7 @@
           "priceChange": 0.77,
           "priceChangePct": 0.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.06,
           "aum": 121513558016,
           "dividendYield": 1.56,
           "returns": {
@@ -1621,7 +1621,7 @@
           "priceChange": 0.25,
           "priceChangePct": 0.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.08,
           "aum": 37496946688,
           "dividendYield": 1.97,
           "returns": {
@@ -1649,7 +1649,7 @@
           "priceChange": 0.37,
           "priceChangePct": 0.4,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.28,
           "aum": 16156988416,
           "dividendYield": 1.4,
           "returns": {
@@ -1677,7 +1677,7 @@
           "priceChange": 0.13,
           "priceChangePct": 0.22,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 43150049280,
           "dividendYield": 7.99,
           "returns": {
@@ -1705,7 +1705,7 @@
           "priceChange": 0.42,
           "priceChangePct": 0.73,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 34284236800,
           "dividendYield": 10.6,
           "returns": {
@@ -1732,7 +1732,7 @@
           "priceChange": -0.03,
           "priceChangePct": -0.06,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.07,
           "aum": 7496434688,
           "dividendYield": 4.1,
           "returns": {
@@ -1760,7 +1760,7 @@
           "priceChange": 0.41,
           "priceChangePct": 0.36,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 11510596608,
           "dividendYield": 1.96,
           "returns": {
@@ -1788,7 +1788,7 @@
           "priceChange": -0.11,
           "priceChangePct": -0.07,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.35,
           "aum": 21069246464,
           "dividendYield": 2.35,
           "returns": {
@@ -1822,7 +1822,7 @@
           "priceChange": 2.95,
           "priceChangePct": 0.64,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.04,
           "aum": 349897195520,
           "dividendYield": 0.43,
           "returns": {
@@ -1850,7 +1850,7 @@
           "priceChange": 0.69,
           "priceChangePct": 0.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.04,
           "aum": 227377659904,
           "dividendYield": 1.89,
           "returns": {
@@ -1878,7 +1878,7 @@
           "priceChange": 2.82,
           "priceChangePct": 0.63,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.19,
           "aum": 119848017920,
           "dividendYield": 0.37,
           "returns": {
@@ -1906,7 +1906,7 @@
           "priceChange": 1.11,
           "priceChangePct": 0.5,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.19,
           "aum": 68495839232,
           "dividendYield": 1.59,
           "returns": {
@@ -1934,7 +1934,7 @@
           "priceChange": 0.18,
           "priceChangePct": 0.59,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.04,
           "aum": 52363624448,
           "dividendYield": 0.38,
           "returns": {
@@ -1962,7 +1962,7 @@
           "priceChange": 0.13,
           "priceChangePct": 0.41,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.04,
           "aum": 14945342464,
           "dividendYield": 1.86,
           "returns": {
@@ -1990,7 +1990,7 @@
           "priceChange": 1.25,
           "priceChangePct": 0.62,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 49900929024,
           "dividendYield": 0.91,
           "returns": {
@@ -2018,7 +2018,7 @@
           "priceChange": 0.19,
           "priceChangePct": 0.2,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.15,
           "aum": 23066968064,
           "dividendYield": 1.46,
           "returns": {
@@ -2052,7 +2052,7 @@
           "priceChange": 0.28,
           "priceChangePct": 0.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.07,
           "aum": 606211080192,
           "dividendYield": 2.91,
           "returns": {
@@ -2080,7 +2080,7 @@
           "priceChange": 0.23,
           "priceChangePct": 0.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.05,
           "aum": 287011897344,
           "dividendYield": 2.92,
           "returns": {
@@ -2108,7 +2108,7 @@
           "priceChange": 0.16,
           "priceChangePct": 0.28,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.08,
           "aum": 151758454784,
           "dividendYield": 2.59,
           "returns": {
@@ -2136,7 +2136,7 @@
           "priceChange": 0.06,
           "priceChangePct": 0.06,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.07,
           "aum": 172425854976,
           "dividendYield": 3.26,
           "returns": {
@@ -2164,7 +2164,7 @@
           "priceChange": 0.4,
           "priceChangePct": 0.54,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 138763321344,
           "dividendYield": 2.46,
           "returns": {
@@ -2192,7 +2192,7 @@
           "priceChange": 0.12,
           "priceChangePct": 0.12,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.32,
           "aum": 74337837056,
           "dividendYield": 3.11,
           "returns": {
@@ -2220,7 +2220,7 @@
           "priceChange": 0.32,
           "priceChangePct": 0.53,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.68,
           "aum": 26953179136,
           "dividendYield": 1.99,
           "returns": {
@@ -2248,7 +2248,7 @@
           "priceChange": 0.34,
           "priceChangePct": 0.56,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.59,
           "aum": 7936064512,
           "dividendYield": 2.09,
           "returns": {
@@ -2276,7 +2276,7 @@
           "priceChange": -0.49,
           "priceChangePct": -0.53,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.5,
           "aum": 16692872192,
           "dividendYield": 4.0,
           "returns": {
@@ -2304,7 +2304,7 @@
           "priceChange": 0.17,
           "priceChangePct": 0.52,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.67,
           "aum": 8650681344,
           "dividendYield": 6.37,
           "returns": {
@@ -2332,7 +2332,7 @@
           "priceChange": 0.3,
           "priceChangePct": 0.34,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.09,
           "aum": 39261249536,
           "dividendYield": 2.67,
           "returns": {
@@ -2360,7 +2360,7 @@
           "priceChange": 0.29,
           "priceChangePct": 0.77,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.57,
           "aum": 8748250112,
           "dividendYield": 4.33,
           "returns": {
@@ -2394,7 +2394,7 @@
           "priceChange": 10.08,
           "priceChangePct": 2.25,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.4,
           "aum": 174068531200,
           "dividendYield": 0,
           "returns": {
@@ -2422,7 +2422,7 @@
           "priceChange": 3.72,
           "priceChangePct": 5.6,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.5,
           "aum": 51481948160,
           "dividendYield": 0,
           "returns": {
@@ -2450,7 +2450,7 @@
           "priceChange": 2.03,
           "priceChangePct": 2.21,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.25,
           "aum": 79747129344,
           "dividendYield": 0,
           "returns": {
@@ -2478,7 +2478,7 @@
           "priceChange": 2.11,
           "priceChangePct": 2.19,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.1,
           "aum": 31124531200,
           "dividendYield": 0,
           "returns": {
@@ -2506,7 +2506,7 @@
           "priceChange": 2.31,
           "priceChangePct": 2.3,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.51,
           "aum": 28887650304,
           "dividendYield": 0.62,
           "returns": {
@@ -2534,7 +2534,7 @@
           "priceChange": 0.62,
           "priceChangePct": 2.63,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.85,
           "aum": 1363049984,
           "dividendYield": 3.07,
           "returns": {
@@ -2562,7 +2562,7 @@
           "priceChange": 3.67,
           "priceChangePct": 4.85,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.79,
           "aum": 1042921600,
           "dividendYield": 0,
           "returns": {
@@ -2596,7 +2596,7 @@
           "priceChange": -1.12,
           "priceChangePct": -1.17,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.12,
           "aum": 65742073856,
           "dividendYield": 3.68,
           "returns": {
@@ -2624,7 +2624,7 @@
           "priceChange": -1.2,
           "priceChangePct": -1.19,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.39,
           "aum": 4078068992,
           "dividendYield": 2.33,
           "returns": {
@@ -2652,7 +2652,7 @@
           "priceChange": -0.39,
           "priceChangePct": -1.69,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.07,
           "aum": 9125376000,
           "dividendYield": 2.81,
           "returns": {
@@ -2686,7 +2686,7 @@
           "priceChange": 1.29,
           "priceChangePct": 1.05,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.75,
           "aum": 1833877760,
           "dividendYield": 1.9,
           "returns": {
@@ -2714,7 +2714,7 @@
           "priceChange": 0.63,
           "priceChangePct": 1.99,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.75,
           "aum": 821020800,
           "dividendYield": 0,
           "returns": {
@@ -2741,7 +2741,7 @@
           "priceChange": 1.08,
           "priceChangePct": 2.48,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.75,
           "aum": 366888096,
           "dividendYield": 0.4,
           "returns": {
@@ -2769,7 +2769,7 @@
           "priceChange": 1.99,
           "priceChangePct": 1.99,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.75,
           "aum": 66455488,
           "dividendYield": 0.34,
           "returns": {
@@ -2797,7 +2797,7 @@
           "priceChange": 0.39,
           "priceChangePct": 0.6,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.4,
           "aum": 10601723904,
           "dividendYield": 0.46,
           "returns": {
@@ -2825,7 +2825,7 @@
           "priceChange": -0.26,
           "priceChangePct": -0.67,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.68,
           "aum": 3368571648,
           "dividendYield": 0.62,
           "returns": {
@@ -2853,7 +2853,7 @@
           "priceChange": 0.3,
           "priceChangePct": 1.6,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.4,
           "aum": 2084318592,
           "dividendYield": 1.41,
           "returns": {
@@ -2881,7 +2881,7 @@
           "priceChange": 1.37,
           "priceChangePct": 1.89,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.75,
           "aum": 1669999744,
           "dividendYield": 0.43,
           "returns": {
@@ -2909,7 +2909,7 @@
           "priceChange": -0.85,
           "priceChangePct": -2.21,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.25,
           "aum": 64803766272,
           "dividendYield": 0,
           "returns": {
@@ -2940,7 +2940,7 @@
           "priceChange": -0.24,
           "priceChangePct": -0.77,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.95,
           "aum": 511553344,
           "dividendYield": 4.88,
           "returns": {
@@ -2968,7 +2968,7 @@
           "priceChange": -1.56,
           "priceChangePct": -2.14,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.95,
           "aum": 2089519488,
           "dividendYield": 8.99,
           "returns": {
@@ -2996,7 +2996,7 @@
           "priceChange": 3.28,
           "priceChangePct": 1.51,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.95,
           "aum": 5704446464,
           "dividendYield": 0.69,
           "returns": {
@@ -3024,7 +3024,7 @@
           "priceChange": -0.53,
           "priceChangePct": -1.49,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.95,
           "aum": 313950208,
           "dividendYield": 4.97,
           "returns": {
@@ -3052,7 +3052,7 @@
           "priceChange": 0.58,
           "priceChangePct": 1.01,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.89,
           "aum": 8123518976,
           "dividendYield": 0.68,
           "returns": {
@@ -3080,7 +3080,7 @@
           "priceChange": -0.69,
           "priceChangePct": -1.0,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.89,
           "aum": 338908096,
           "dividendYield": 5.9,
           "returns": {
@@ -3108,7 +3108,7 @@
           "priceChange": 1.94,
           "priceChangePct": 3.01,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.95,
           "aum": 11859658752,
           "dividendYield": 0.22,
           "returns": {
@@ -3136,7 +3136,7 @@
           "priceChange": -0.06,
           "priceChangePct": -3.39,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 1.01,
           "aum": 1117646592,
           "dividendYield": 19.77,
           "returns": {
@@ -3164,7 +3164,7 @@
           "priceChange": 1.71,
           "priceChangePct": 1.5,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.92,
           "aum": 4754718720,
           "dividendYield": 0.84,
           "returns": {
@@ -3192,7 +3192,7 @@
           "priceChange": -0.18,
           "priceChangePct": -0.5,
           "currency": "USD",
-          "expenseRatio": 0,
+          "expenseRatio": 0.89,
           "aum": 1044337984,
           "dividendYield": 4.49,
           "returns": {
@@ -3243,7 +3243,8 @@
           "volatility": 18.93,
           "maxDrawdown": -38.08,
           "volume": 12618786,
-          "lastUpdate": "2026-02-19T13:57:25.435430"
+          "lastUpdate": "2026-02-19T13:57:25.435430",
+          "expenseRatio": 0.15
         },
         {
           "ticker": "102110",
@@ -3269,7 +3270,8 @@
           "volatility": 18.86,
           "maxDrawdown": -37.86,
           "volume": 2692147,
-          "lastUpdate": "2026-02-19T13:57:27.693729"
+          "lastUpdate": "2026-02-19T13:57:27.693729",
+          "expenseRatio": 0.05
         },
         {
           "ticker": "278530",
@@ -3295,7 +3297,8 @@
           "volatility": 20.08,
           "maxDrawdown": -38.14,
           "volume": 1315757,
-          "lastUpdate": "2026-02-19T13:57:29.662078"
+          "lastUpdate": "2026-02-19T13:57:29.662078",
+          "expenseRatio": 0.05
         },
         {
           "ticker": "229200",
@@ -3321,7 +3324,8 @@
           "volatility": 27.95,
           "maxDrawdown": -57.22,
           "volume": 45029992,
-          "lastUpdate": "2026-02-19T13:57:31.688389"
+          "lastUpdate": "2026-02-19T13:57:31.688389",
+          "expenseRatio": 0.15
         },
         {
           "ticker": "091180",
@@ -3347,7 +3351,8 @@
           "volatility": 25.82,
           "maxDrawdown": -53.38,
           "volume": 2076023,
-          "lastUpdate": "2026-02-19T13:57:33.991313"
+          "lastUpdate": "2026-02-19T13:57:33.991313",
+          "expenseRatio": 0.25
         },
         {
           "ticker": "122630",
@@ -3373,7 +3378,8 @@
           "volatility": 37.59,
           "maxDrawdown": -66.22,
           "volume": 13429471,
-          "lastUpdate": "2026-02-19T13:57:35.948661"
+          "lastUpdate": "2026-02-19T13:57:35.948661",
+          "expenseRatio": 0.67
         },
         {
           "ticker": "252670",
@@ -3399,7 +3405,8 @@
           "volatility": 39.01,
           "maxDrawdown": -97.55,
           "volume": 1845032863,
-          "lastUpdate": "2026-02-19T13:57:37.776810"
+          "lastUpdate": "2026-02-19T13:57:37.776810",
+          "expenseRatio": 0.64
         }
       ]
     },
@@ -3431,7 +3438,8 @@
           "volatility": 30.05,
           "maxDrawdown": -45.4,
           "volume": 2792902,
-          "lastUpdate": "2026-02-19T13:57:39.922815"
+          "lastUpdate": "2026-02-19T13:57:39.922815",
+          "expenseRatio": 0.45
         },
         {
           "ticker": "381180",
@@ -3456,7 +3464,8 @@
           "volatility": 33.2,
           "maxDrawdown": -38.07,
           "volume": 1727998,
-          "lastUpdate": "2026-02-19T13:57:41.739898"
+          "lastUpdate": "2026-02-19T13:57:41.739898",
+          "expenseRatio": 0.49
         }
       ]
     },
@@ -3488,7 +3497,8 @@
           "volatility": 38.15,
           "maxDrawdown": -71.74,
           "volume": 1993167,
-          "lastUpdate": "2026-02-19T13:57:43.729187"
+          "lastUpdate": "2026-02-19T13:57:43.729187",
+          "expenseRatio": 0.4
         },
         {
           "ticker": "371460",
@@ -3514,7 +3524,8 @@
           "volatility": 32.54,
           "maxDrawdown": -69.3,
           "volume": 449406,
-          "lastUpdate": "2026-02-19T13:57:45.678530"
+          "lastUpdate": "2026-02-19T13:57:45.678530",
+          "expenseRatio": 0.49
         },
         {
           "ticker": "364980",
@@ -3540,7 +3551,8 @@
           "volatility": 39.04,
           "maxDrawdown": -73.56,
           "volume": 3028810,
-          "lastUpdate": "2026-02-19T13:57:47.462441"
+          "lastUpdate": "2026-02-19T13:57:47.462441",
+          "expenseRatio": 0.4
         }
       ]
     },
@@ -3572,7 +3584,8 @@
           "volatility": 9.81,
           "maxDrawdown": -18.36,
           "volume": 98962,
-          "lastUpdate": "2026-02-19T13:57:49.538502"
+          "lastUpdate": "2026-02-19T13:57:49.538502",
+          "expenseRatio": 0.3
         },
         {
           "ticker": "114820",
@@ -3598,7 +3611,8 @@
           "volatility": 1.95,
           "maxDrawdown": -5.85,
           "volume": 3950,
-          "lastUpdate": "2026-02-19T13:57:51.649463"
+          "lastUpdate": "2026-02-19T13:57:51.649463",
+          "expenseRatio": 0.15
         },
         {
           "ticker": "157450",
@@ -3624,7 +3638,8 @@
           "volatility": 1.65,
           "maxDrawdown": -3.5,
           "volume": 19781,
-          "lastUpdate": "2026-02-19T13:57:53.713485"
+          "lastUpdate": "2026-02-19T13:57:53.713485",
+          "expenseRatio": 0.05
         }
       ]
     },
@@ -3653,7 +3668,8 @@
           "volatility": 14.51,
           "maxDrawdown": -13.12,
           "volume": 1891572,
-          "lastUpdate": "2026-02-19T13:58:03.383212"
+          "lastUpdate": "2026-02-19T13:58:03.383212",
+          "expenseRatio": 0.09
         },
         {
           "ticker": "091220",
@@ -3679,7 +3695,8 @@
           "volatility": 25.26,
           "maxDrawdown": -57.3,
           "volume": 207677,
-          "lastUpdate": "2026-02-19T13:58:05.477003"
+          "lastUpdate": "2026-02-19T13:58:05.477003",
+          "expenseRatio": 0.5
         },
         {
           "ticker": "334690",
@@ -3705,7 +3722,8 @@
           "volatility": 41.4,
           "maxDrawdown": -75.86,
           "volume": 15955,
-          "lastUpdate": "2026-02-19T13:58:07.309192"
+          "lastUpdate": "2026-02-19T13:58:07.309192",
+          "expenseRatio": 0.5
         }
       ]
     },
@@ -3737,7 +3755,8 @@
           "volatility": 16.05,
           "maxDrawdown": -19.15,
           "volume": 8404852,
-          "lastUpdate": "2026-02-19T13:57:55.591080"
+          "lastUpdate": "2026-02-19T13:57:55.591080",
+          "expenseRatio": 0.07
         },
         {
           "ticker": "379800",
@@ -3762,7 +3781,8 @@
           "volatility": 16.06,
           "maxDrawdown": -19.16,
           "volume": 8469067,
-          "lastUpdate": "2026-02-19T13:57:57.615046"
+          "lastUpdate": "2026-02-19T13:57:57.615046",
+          "expenseRatio": 0.05
         }
       ]
     },
@@ -3793,7 +3813,8 @@
           "volatility": 25.41,
           "maxDrawdown": -40.59,
           "volume": 1381394,
-          "lastUpdate": "2026-02-19T13:57:59.425382"
+          "lastUpdate": "2026-02-19T13:57:59.425382",
+          "expenseRatio": 0.49
         },
         {
           "ticker": "133690",
@@ -3819,7 +3840,8 @@
           "volatility": 20.2,
           "maxDrawdown": -31.02,
           "volume": 505393,
-          "lastUpdate": "2026-02-19T13:58:01.512334"
+          "lastUpdate": "2026-02-19T13:58:01.512334",
+          "expenseRatio": 0.07
         }
       ]
     }

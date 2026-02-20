@@ -11,6 +11,72 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 import time
 
+# 총보수 (%) 하드코딩 - yfinance가 이 값을 제공하지 않음
+# 출처: 각 운용사 공식 사이트 / ETF.com (2025년 기준)
+EXPENSE_RATIOS = {
+    # ── 미국 ETF ──────────────────────────────────
+    # S&P500
+    'SPY': 0.0945, 'VOO': 0.03, 'IVV': 0.03, 'SPLG': 0.02,
+    # 나스닥
+    'QQQ': 0.20, 'QQQM': 0.15, 'ONEQ': 0.21, 'TQQQ': 0.88,
+    # 전체시장
+    'VTI': 0.03, 'SCHB': 0.03, 'ITOT': 0.03, 'VT': 0.07,
+    'DIA': 0.16, 'RSP': 0.20,
+    # 소형/중형
+    'IWM': 0.19, 'IWB': 0.15, 'IJH': 0.05, 'IJR': 0.06,
+    'VB': 0.05, 'VO': 0.04,
+    # 기술주
+    'XLK': 0.09, 'VGT': 0.10, 'SOXX': 0.35, 'SMH': 0.35,
+    'ARKK': 0.75, 'IGV': 0.41,
+    # 섹터
+    'XLF': 0.09, 'XLV': 0.09, 'XLE': 0.09, 'XLI': 0.09,
+    'XLP': 0.09, 'XLY': 0.09, 'XLU': 0.09, 'XLB': 0.09,
+    'XLC': 0.09, 'XLRE': 0.09, 'IBB': 0.44, 'ITA': 0.39, 'KRE': 0.35,
+    # 채권
+    'AGG': 0.03, 'TLT': 0.15, 'SHY': 0.15, 'BND': 0.03,
+    'LQD': 0.14, 'HYG': 0.48, 'JNK': 0.40, 'TIP': 0.19,
+    'IEF': 0.15, 'SGOV': 0.09, 'BIL': 0.14, 'EMB': 0.39,
+    # 배당
+    'VYM': 0.06, 'SCHD': 0.06, 'HDV': 0.08, 'DVY': 0.38,
+    'VIG': 0.06, 'DGRO': 0.08, 'DGRW': 0.28,
+    'JEPI': 0.35, 'JEPQ': 0.35, 'SPYD': 0.07, 'NOBL': 0.35, 'SDY': 0.35,
+    # 성장/가치
+    'VUG': 0.04, 'VTV': 0.04, 'IWF': 0.19, 'IWD': 0.19,
+    'SCHG': 0.04, 'SCHV': 0.04, 'QUAL': 0.15, 'USMV': 0.15,
+    # 국제
+    'VXUS': 0.07, 'VEA': 0.05, 'VWO': 0.08, 'IEFA': 0.07,
+    'IEMG': 0.09, 'EFA': 0.32, 'EEM': 0.68, 'MCHI': 0.59,
+    'EWJ': 0.50, 'KWEB': 0.67, 'VGK': 0.09, 'EWZ': 0.57,
+    # 금/원자재
+    'GLD': 0.40, 'SLV': 0.50, 'IAU': 0.25, 'GLDM': 0.10,
+    'GDX': 0.51, 'DBC': 0.85, 'USO': 0.79,
+    # 리츠
+    'VNQ': 0.12, 'IYR': 0.39, 'SCHH': 0.07,
+    # 테마
+    'ARKW': 0.75, 'ARKX': 0.75, 'UFO': 0.75, 'ROKT': 0.75,
+    'CIBR': 0.40, 'BOTZ': 0.68, 'ICLN': 0.40, 'LIT': 0.75, 'IBIT': 0.25,
+    # 레버리지/인버스
+    'PSQ': 0.95, 'SQQQ': 0.95, 'SPXL': 0.95, 'SPXS': 0.95,
+    'SSO': 0.89, 'SDS': 0.89, 'SOXL': 0.95, 'SOXS': 1.01,
+    'UPRO': 0.92, 'SH': 0.89,
+    # ── 한국 ETF (연보수, %) ──────────────────────
+    # 주식시장
+    '069500': 0.15, '102110': 0.05, '278530': 0.05,
+    '229200': 0.15, '091180': 0.25, '122630': 0.67, '252670': 0.64,
+    # 반도체/AI
+    '091160': 0.45, '381180': 0.49,
+    # 2차전지
+    '305540': 0.40, '371460': 0.49, '364980': 0.40,
+    # 채권
+    '308620': 0.30, '114820': 0.15, '157450': 0.05,
+    # S&P500 (KR)
+    '360750': 0.07, '379800': 0.05,
+    # 나스닥 (KR)
+    '381170': 0.49, '133690': 0.07,
+    # 기타
+    '458730': 0.09, '091220': 0.50, '334690': 0.50,
+}
+
 # 미국 ETF 리스트 정의 (AUM $1B+ 기준)
 US_ETFS = {
     'S&P500': {
@@ -280,7 +346,7 @@ def fetch_us_etf(ticker):
             'priceChange': round(price_change, 2),
             'priceChangePct': round(price_change_pct, 2),
             'currency': 'USD',
-            'expenseRatio': round(info.get('expenseRatio', 0) * 100, 3) if info.get('expenseRatio') else 0,
+            'expenseRatio': EXPENSE_RATIOS.get(ticker),
             'aum': info.get('totalAssets'),
             'dividendYield': dividend_yield,
             'returns': returns,
@@ -338,6 +404,7 @@ def fetch_kr_etf_basic(code):
             'priceChange': round(price_change, 0),
             'priceChangePct': round(price_change_pct, 2),
             'currency': 'KRW',
+            'expenseRatio': EXPENSE_RATIOS.get(code),
             'dividendYield': dividend_yield,
             'returns': returns,
             'cagr': cagr,
