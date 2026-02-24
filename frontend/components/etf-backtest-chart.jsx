@@ -209,12 +209,8 @@ export default function ETFBacktestChart() {
 
   const priceData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
   const dividendData = buildChartData(etf => etf.dividendYield ?? null);
-  const totalReturnData = buildChartData(etf => {
-    const priceRet = etf.returns?.[selectedPeriod];
-    const divYield = etf.dividendYield || 0;
-    if (priceRet == null) return null;
-    return Math.round((priceRet + divYield * PERIOD_YEARS[selectedPeriod]) * 100) / 100;
-  });
+  // adj close 자체가 배당 재투자 포함 TR이므로 별도 배당 추가 불필요
+  const totalReturnData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
 
   const statsData = selectedETFs.map(ticker => allEtfs.find(e => e.ticker === ticker)).filter(Boolean);
   const best = totalReturnData[0];
@@ -460,10 +456,8 @@ export default function ETFBacktestChart() {
           {statsData.map(etf => {
             const color = getColor(etf.ticker);
             const priceRet = etf.returns?.[selectedPeriod];
-            const divYield = etf.dividendYield || 0;
-            const totalRet = priceRet != null
-              ? Math.round((priceRet + divYield * PERIOD_YEARS[selectedPeriod]) * 100) / 100
-              : null;
+            // adj close 자체가 배당 재투자 포함 TR — 별도 배당 추가 불필요
+            const totalRet = priceRet ?? null;
             const { primary, secondary } = getDisplayLabel(etf);
             return (
               <div
@@ -513,7 +507,7 @@ export default function ETFBacktestChart() {
                   }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <TrendingUp size={15} color="#94a3b8" />
-                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>주가 수익률 ({selectedPeriod})</span>
+                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>수익률 adj. ({selectedPeriod})</span>
                     </div>
                     <span style={{ fontSize: '1rem', fontWeight: '700', color: priceRet != null && priceRet >= 0 ? '#22c55e' : '#ef4444' }}>
                       {priceRet != null ? `${priceRet >= 0 ? '+' : ''}${priceRet.toFixed(1)}%` : 'N/A'}
