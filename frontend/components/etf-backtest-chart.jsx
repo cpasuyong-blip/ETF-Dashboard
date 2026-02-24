@@ -207,7 +207,11 @@ export default function ETFBacktestChart() {
       .sort((a, b) => b.return - a.return);
   };
 
-  const priceData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
+  const priceData = buildChartData(etf => {
+    const tr = etf.returns?.[selectedPeriod];
+    if (tr == null) return null;
+    return tr - (etf.dividendYield ?? 0) * PERIOD_YEARS[selectedPeriod];
+  });
   const dividendData = buildChartData(etf => etf.dividendYield ?? null);
   // adj close 자체가 배당 재투자 포함 TR이므로 별도 배당 추가 불필요
   const totalReturnData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
@@ -423,7 +427,7 @@ export default function ETFBacktestChart() {
               data={totalReturnData}
               title={`${selectedPeriod} Total Return`}
               icon={<TrendingUp size={24} color="#8b5cf6" />}
-              subtitle="주가 수익률 + 배당 수익률 (기간 비례 환산)"
+              subtitle="배당 재투자 가정 (adj. close 기준)"
               tooltipLabel={`${selectedPeriod} Total Return`}
             />
 
@@ -431,15 +435,15 @@ export default function ETFBacktestChart() {
             <div className="sub-charts">
               <HorizontalBarChart
                 data={priceData}
-                title={`${selectedPeriod} 주가 수익률`}
+                title={`${selectedPeriod} 주가 순수익`}
                 icon={<TrendingUp size={20} color="#3b82f6" />}
-                tooltipLabel={`${selectedPeriod} 주가 수익률`}
+                tooltipLabel={`${selectedPeriod} 주가 순수익`}
               />
               <HorizontalBarChart
                 data={dividendData}
-                title="배당 수익률 (연간)"
+                title="연간 배당수익률 (평균)"
                 icon={<Percent size={20} color="#10b981" />}
-                tooltipLabel="연간 배당 수익률"
+                tooltipLabel="연간 배당수익률 (평균)"
               />
             </div>
 
@@ -500,18 +504,23 @@ export default function ETFBacktestChart() {
                 </div>
 
                 <div style={{ display: 'grid', gap: '0.75rem' }}>
-                  {/* 주가 수익률 */}
+                  {/* 주가 순수익 */}
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     padding: '0.625rem 0.75rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px',
                   }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <TrendingUp size={15} color="#94a3b8" />
-                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>수익률 adj. ({selectedPeriod})</span>
+                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>주가 순수익 ({selectedPeriod})</span>
                     </div>
-                    <span style={{ fontSize: '1rem', fontWeight: '700', color: priceRet != null && priceRet >= 0 ? '#22c55e' : '#ef4444' }}>
-                      {priceRet != null ? `${priceRet >= 0 ? '+' : ''}${priceRet.toFixed(1)}%` : 'N/A'}
-                    </span>
+                    {(() => {
+                      const purePrice = priceRet != null ? priceRet - (etf.dividendYield ?? 0) * PERIOD_YEARS[selectedPeriod] : null;
+                      return (
+                        <span style={{ fontSize: '1rem', fontWeight: '700', color: purePrice != null && purePrice >= 0 ? '#22c55e' : '#ef4444' }}>
+                          {purePrice != null ? `${purePrice >= 0 ? '+' : ''}${purePrice.toFixed(1)}%` : 'N/A'}
+                        </span>
+                      );
+                    })()}
                   </div>
 
                   {/* 배당 수익률 */}
@@ -521,7 +530,7 @@ export default function ETFBacktestChart() {
                   }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <Percent size={15} color="#94a3b8" />
-                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>배당 수익률 (연간)</span>
+                      <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>연간 배당수익률 (평균)</span>
                     </div>
                     <span style={{ fontSize: '1rem', fontWeight: '700', color: '#22c55e' }}>
                       {etf.dividendYield != null ? `${etf.dividendYield}%` : 'N/A'}
