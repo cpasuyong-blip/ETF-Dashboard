@@ -16,7 +16,7 @@ import time
 EXPENSE_RATIOS = {
     # ── 미국 ETF ──────────────────────────────────
     # S&P500
-    'SPY': 0.0945, 'VOO': 0.03, 'IVV': 0.03, 'SPLG': 0.02,
+    'SPY': 0.0945, 'VOO': 0.03, 'IVV': 0.03, 'SPLG': 0.02, 'SPYM': 0.03,
     # 나스닥
     'QQQ': 0.20, 'QQQM': 0.15, 'ONEQ': 0.21, 'TQQQ': 0.88,
     # 전체시장
@@ -71,7 +71,7 @@ EXPENSE_RATIOS = {
     # 채권
     '308620': 0.30, '114820': 0.15, '157450': 0.05,
     # S&P500 (KR)
-    '360750': 0.07, '379800': 0.05,
+    '360750': 0.07, '379800': 0.05, '360200': 0.07,
     # 나스닥 (KR)
     '381170': 0.49, '133690': 0.07,
     # 기타
@@ -81,7 +81,7 @@ EXPENSE_RATIOS = {
 # 미국 ETF 리스트 정의 (AUM $1B+ 기준)
 US_ETFS = {
     'S&P500': {
-        'tickers': ['SPY', 'VOO', 'IVV', 'SPLG'],
+        'tickers': ['SPY', 'VOO', 'IVV', 'SPLG', 'SPYM'],
         'description': '미국 대형주 500개 기업을 추종하는 ETF'
     },
     '나스닥': {
@@ -480,7 +480,7 @@ def main():
 
     # KR S&P500/나스닥 ETF → 미국 카테고리에 통합
     print("\n[KR 지수 추종 ETF → 미국 카테고리 통합]")
-    for code in ['360750', '379800']:
+    for code in ['360750', '379800', '360200']:
         print(f"  S&P500 통합: {code}")
         data = fetch_kr_etf_basic(code)
         if data:
