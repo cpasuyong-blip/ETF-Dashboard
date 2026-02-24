@@ -34,7 +34,6 @@ const CATEGORY_LABELS = {
   '한국_기타': '기타',
 };
 
-const PERIOD_YEARS = { '1M': 1/12, '3M': 3/12, '6M': 6/12, '1Y': 1, '3Y': 3, '5Y': 5 };
 
 // 한국 ETF: 이름이 primary, 코드가 secondary / 미국 ETF: 티커가 primary, 이름이 secondary
 const getDisplayLabel = (etf) => {
@@ -207,11 +206,7 @@ export default function ETFBacktestChart() {
       .sort((a, b) => b.return - a.return);
   };
 
-  const priceData = buildChartData(etf => {
-    const tr = etf.returns?.[selectedPeriod];
-    if (tr == null) return null;
-    return tr - (etf.dividendYield ?? 0) * PERIOD_YEARS[selectedPeriod];
-  });
+  const priceData = buildChartData(etf => etf.priceReturns?.[selectedPeriod] ?? null);
   const dividendData = buildChartData(etf => etf.dividendYield ?? null);
   // adj close 자체가 배당 재투자 포함 TR이므로 별도 배당 추가 불필요
   const totalReturnData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
@@ -514,7 +509,7 @@ export default function ETFBacktestChart() {
                       <span style={{ fontSize: '0.875rem', color: '#94a3b8' }}>주가 순수익 ({selectedPeriod})</span>
                     </div>
                     {(() => {
-                      const purePrice = priceRet != null ? priceRet - (etf.dividendYield ?? 0) * PERIOD_YEARS[selectedPeriod] : null;
+                      const purePrice = etf.priceReturns?.[selectedPeriod] ?? null;
                       return (
                         <span style={{ fontSize: '1rem', fontWeight: '700', color: purePrice != null && purePrice >= 0 ? '#22c55e' : '#ef4444' }}>
                           {purePrice != null ? `${purePrice >= 0 ? '+' : ''}${purePrice.toFixed(1)}%` : 'N/A'}

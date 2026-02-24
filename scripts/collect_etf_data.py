@@ -315,7 +315,8 @@ def fetch_us_etf(ticker):
 
         etf = yf.Ticker(ticker)
         info = etf.info
-        history = etf.history(period="10y")
+        history = etf.history(period="10y")              # adj close (TR, 배당 재투자)
+        history_raw = etf.history(period="10y", auto_adjust=False)  # raw close (순수 주가)
 
         if len(history) == 0:
             print("SKIP 데이터 없음")
@@ -328,6 +329,7 @@ def fetch_us_etf(ticker):
 
         # 수익률 계산 (달력 날짜 기준)
         returns, cagr = calculate_returns(history)
+        price_returns, _ = calculate_returns(history_raw)  # 순수 주가 수익률
 
         # 리스크 지표
         volatility = calculate_volatility(history)
@@ -347,6 +349,7 @@ def fetch_us_etf(ticker):
             'aum': info.get('totalAssets'),
             'dividendYield': dividend_yield,
             'returns': returns,
+            'priceReturns': price_returns,
             'cagr': cagr,
             'volatility': volatility,
             'maxDrawdown': max_dd,
@@ -369,7 +372,8 @@ def fetch_kr_etf_basic(code):
         # 한국 ETF는 .KS 붙여서 조회
         ticker = f"{code}.KS"
         etf = yf.Ticker(ticker)
-        history = etf.history(period="10y")
+        history = etf.history(period="10y")              # adj close (TR, 배당 재투자)
+        history_raw = etf.history(period="10y", auto_adjust=False)  # raw close (순수 주가)
 
         if len(history) == 0:
             print("SKIP 데이터 없음")
@@ -383,6 +387,7 @@ def fetch_kr_etf_basic(code):
 
         # 수익률 계산 (달력 날짜 기준)
         returns, cagr = calculate_returns(history)
+        price_returns, _ = calculate_returns(history_raw)  # 순수 주가 수익률
 
         # 리스크 지표
         volatility = calculate_volatility(history)
@@ -404,6 +409,7 @@ def fetch_kr_etf_basic(code):
             'expenseRatio': EXPENSE_RATIOS.get(code),
             'dividendYield': dividend_yield,
             'returns': returns,
+            'priceReturns': price_returns,
             'cagr': cagr,
             'volatility': volatility,
             'maxDrawdown': max_dd,
