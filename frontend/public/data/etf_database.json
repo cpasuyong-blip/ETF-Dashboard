@@ -1671,61 +1671,6 @@
           "lastUpdate": "2026-02-19T13:56:04.297296"
         },
         {
-          "ticker": "JEPI",
-          "name": "JPMorgan Equity Premium Income ETF",
-          "price": 59.33,
-          "priceChange": 0.13,
-          "priceChangePct": 0.22,
-          "currency": "USD",
-          "expenseRatio": 0.35,
-          "aum": 43150049280,
-          "dividendYield": 7.99,
-          "returns": {
-            "1W": 0.1,
-            "1M": 2.18,
-            "3M": 7.5,
-            "6M": 8.68,
-            "1Y": 8.64,
-            "3Y": 37.18,
-            "5Y": 61.33
-          },
-          "cagr": {
-            "3Y": 11.11,
-            "5Y": 10.04
-          },
-          "volatility": 10.86,
-          "maxDrawdown": -13.71,
-          "volume": 4269000,
-          "lastUpdate": "2026-02-19T13:56:05.627308"
-        },
-        {
-          "ticker": "JEPQ",
-          "name": "JPMorgan Nasdaq Equity Premium Income ETF",
-          "price": 57.89,
-          "priceChange": 0.42,
-          "priceChangePct": 0.73,
-          "currency": "USD",
-          "expenseRatio": 0.35,
-          "aum": 34284236800,
-          "dividendYield": 10.6,
-          "returns": {
-            "1W": -0.89,
-            "1M": -0.97,
-            "3M": 4.78,
-            "6M": 9.05,
-            "1Y": 10.79,
-            "3Y": 84.24,
-            "5Y": null
-          },
-          "cagr": {
-            "3Y": 22.59
-          },
-          "volatility": 16.85,
-          "maxDrawdown": -20.07,
-          "volume": 4680700,
-          "lastUpdate": "2026-02-19T13:56:07.030475"
-        },
-        {
           "ticker": "SPYD",
           "name": "State Street SPDR Portfolio S&P 500 High Dividend ETF",
           "price": 47.78,
@@ -1808,6 +1753,123 @@
           "maxDrawdown": -36.7,
           "volume": 200100,
           "lastUpdate": "2026-02-19T13:56:11.773734"
+        }
+      ]
+    },
+    "미국_커버드콜": {
+      "country": "US",
+      "description": "S&P500, 나스닥100 커버드콜 전략 ETF (옵션 프리미엄 수익)",
+      "etfs": [
+        {
+          "ticker": "JEPI",
+          "name": "JPMorgan Equity Premium Income ETF",
+          "price": 59.33,
+          "priceChange": 0.13,
+          "priceChangePct": 0.22,
+          "currency": "USD",
+          "expenseRatio": 0.35,
+          "aum": 43150049280,
+          "dividendYield": 7.99,
+          "returns": {
+            "1W": 0.1,
+            "1M": 2.18,
+            "3M": 7.5,
+            "6M": 8.68,
+            "1Y": 8.64,
+            "3Y": 37.18,
+            "5Y": 61.33
+          },
+          "cagr": {
+            "3Y": 11.11,
+            "5Y": 10.04
+          },
+          "volatility": 10.86,
+          "maxDrawdown": -13.71,
+          "volume": 4269000,
+          "lastUpdate": "2026-02-19T13:56:05.627308"
+        },
+        {
+          "ticker": "JEPQ",
+          "name": "JPMorgan Nasdaq Equity Premium Income ETF",
+          "price": 57.89,
+          "priceChange": 0.42,
+          "priceChangePct": 0.73,
+          "currency": "USD",
+          "expenseRatio": 0.35,
+          "aum": 34284236800,
+          "dividendYield": 10.6,
+          "returns": {
+            "1W": -0.89,
+            "1M": -0.97,
+            "3M": 4.78,
+            "6M": 9.05,
+            "1Y": 10.79,
+            "3Y": 84.24,
+            "5Y": null
+          },
+          "cagr": {
+            "3Y": 22.59
+          },
+          "volatility": 16.85,
+          "maxDrawdown": -20.07,
+          "volume": 4680700,
+          "lastUpdate": "2026-02-19T13:56:07.030475"
+        },
+        {
+          "ticker": "XYLD",
+          "name": "Global X S&P 500 Covered Call ETF",
+          "price": 40.53,
+          "priceChange": -0.53,
+          "priceChangePct": -1.29,
+          "currency": "USD",
+          "expenseRatio": 0.6,
+          "aum": 3167809536,
+          "dividendYield": 10.51,
+          "returns": {
+            "1W": -0.2,
+            "1M": -0.22,
+            "3M": 3.88,
+            "6M": 9.03,
+            "1Y": 6.68,
+            "3Y": 37.97,
+            "5Y": 48.24
+          },
+          "cagr": {
+            "3Y": 11.33,
+            "5Y": 8.19
+          },
+          "volatility": 14.21,
+          "maxDrawdown": -33.46,
+          "volume": 1341700,
+          "lastUpdate": "2026-02-24T20:12:04.084637"
+        },
+        {
+          "ticker": "QYLD",
+          "name": "Global X NASDAQ 100 Covered Call ETF",
+          "price": 17.43,
+          "priceChange": -0.3,
+          "priceChangePct": -1.69,
+          "currency": "USD",
+          "expenseRatio": 0.6,
+          "aum": 8308945408,
+          "dividendYield": 11.66,
+          "returns": {
+            "1W": -0.68,
+            "1M": -1.91,
+            "3M": 3.78,
+            "6M": 10.08,
+            "1Y": 5.99,
+            "3Y": 51.33,
+            "5Y": 40.01
+          },
+          "cagr": {
+            "3Y": 14.81,
+            "5Y": 6.96
+          },
+          "volatility": 15.45,
+          "maxDrawdown": -24.75,
+          "volume": 8480100,
+          "lastUpdate": "2026-02-24T20:12:05.870488"
         }
       ]
     },
@@ -3847,8 +3909,8 @@
     }
   },
   "metadata": {
-    "lastUpdate": "2026-02-19T14:27:31.355293",
-    "totalETFs": 134,
+    "lastUpdate": "2026-02-24T20:12:06.399043",
+    "totalETFs": 136,
     "failedETFs": 0,
     "categories": 20,
     "version": "2.0"

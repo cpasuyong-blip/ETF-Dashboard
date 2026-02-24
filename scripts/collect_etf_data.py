@@ -40,6 +40,7 @@ EXPENSE_RATIOS = {
     'VYM': 0.06, 'SCHD': 0.06, 'HDV': 0.08, 'DVY': 0.38,
     'VIG': 0.06, 'DGRO': 0.08, 'DGRW': 0.28,
     'JEPI': 0.35, 'JEPQ': 0.35, 'SPYD': 0.07, 'NOBL': 0.35, 'SDY': 0.35,
+    'XYLD': 0.60, 'QYLD': 0.60,
     # 성장/가치
     'VUG': 0.04, 'VTV': 0.04, 'IWF': 0.19, 'IWD': 0.19,
     'SCHG': 0.04, 'SCHV': 0.04, 'QUAL': 0.15, 'USMV': 0.15,
@@ -108,8 +109,12 @@ US_ETFS = {
         'description': '국채, 회사채 등 채권에 투자하는 ETF'
     },
     '배당': {
-        'tickers': ['VYM', 'SCHD', 'HDV', 'DVY', 'VIG', 'DGRO', 'DGRW', 'JEPI', 'JEPQ', 'SPYD', 'NOBL', 'SDY'],
+        'tickers': ['VYM', 'SCHD', 'HDV', 'DVY', 'VIG', 'DGRO', 'DGRW', 'SPYD', 'NOBL', 'SDY'],
         'description': '고배당 및 배당 성장주에 투자하는 ETF'
+    },
+    '커버드콜': {
+        'tickers': ['JEPI', 'JEPQ', 'XYLD', 'QYLD'],
+        'description': 'S&P500, 나스닥100 커버드콜 전략 ETF (옵션 프리미엄 수익)'
     },
     '성장/가치': {
         'tickers': ['VUG', 'VTV', 'IWF', 'IWD', 'SCHG', 'SCHV', 'QUAL', 'USMV'],

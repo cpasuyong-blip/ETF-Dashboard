@@ -29,6 +29,7 @@ const categoryToTheme = {
   '한국_S&P500': '대형주',
   '한국_나스닥': '성장주',
   '한국_기타': '기타',
+  '미국_커버드콜': '배당주',
 };
 
 // 카테고리 표시 레이블
@@ -56,11 +57,12 @@ const categoryLabels = {
   '한국_S&P500': 'KR S&P500',
   '한국_나스닥': 'KR 나스닥',
   '한국_기타': '기타',
+  '미국_커버드콜': '커버드콜',
 };
 
 const US_CATEGORIES = [
   '미국_S&P500', '미국_나스닥', '미국_전체시장', '미국_소형중형',
-  '미국_기술주', '미국_섹터', '미국_채권', '미국_배당',
+  '미국_기술주', '미국_섹터', '미국_채권', '미국_배당', '미국_커버드콜',
   '미국_성장/가치', '미국_국제', '미국_금/원자재', '미국_리츠',
   '미국_테마', '미국_레버리지/인버스',
 ];
@@ -68,6 +70,12 @@ const KR_CATEGORIES = [
   '한국_주식시장', '한국_반도체/AI', '한국_2차전지',
   '한국_채권', '한국_S&P500', '한국_나스닥', '한국_기타',
 ];
+
+// KR 하위항목 매핑 (전체 뷰에서 US 상위항목 바로 아래 표시)
+const SUB_CATEGORIES = {
+  '미국_S&P500': '한국_S&P500',
+  '미국_나스닥': '한국_나스닥',
+};
 
 // 산업테마 하위 소분류
 const THEME_SUBCATEGORIES = [
@@ -175,10 +183,23 @@ export default function ETFDashboard() {
   const themes = ['전체', '대형주', '성장주', '배당주', '채권', '섹터-기술', '섹터', '원자재', '국제', '리츠', '테마', '레버리지'];
 
   // 국가 탭에 따라 보여줄 카테고리 탭 목록
+  // 전체 뷰: US 카테고리 순서 유지하되, 하위항목(KR S&P500, KR 나스닥)을 부모 바로 뒤에 삽입
+  const subCatSet = new Set(Object.values(SUB_CATEGORIES));
+  const allCategoriesFlattened = (() => {
+    const result = [];
+    for (const cat of US_CATEGORIES) {
+      result.push(cat);
+      if (SUB_CATEGORIES[cat]) result.push(SUB_CATEGORIES[cat]);
+    }
+    for (const cat of KR_CATEGORIES) {
+      if (!subCatSet.has(cat)) result.push(cat);
+    }
+    return result;
+  })();
   const visibleCategories =
     selectedCountry === 'US' ? US_CATEGORIES :
     selectedCountry === 'KR' ? KR_CATEGORIES :
-    [...US_CATEGORIES, ...KR_CATEGORIES];
+    allCategoriesFlattened;
 
   // 국가 탭 변경 시 카테고리 리셋 핸들러
   const handleCountryChange = (country) => {
@@ -359,28 +380,32 @@ export default function ETFDashboard() {
           {visibleCategories.map(cat => {
             const active = selectedCategory === cat;
             const isKR = KR_CATEGORIES.includes(cat);
+            const isSub = subCatSet.has(cat) && selectedCountry !== 'KR';
             return (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 style={{
-                  padding: '0.4rem 0.75rem',
+                  padding: isSub ? '0.25rem 0.6rem' : '0.4rem 0.75rem',
                   borderRadius: '8px',
-                  fontSize: '0.75rem', fontWeight: '600', cursor: 'pointer',
+                  fontSize: isSub ? '0.7rem' : '0.75rem',
+                  fontWeight: '600', cursor: 'pointer',
                   transition: 'all 0.2s ease',
                   whiteSpace: 'nowrap', flexShrink: 0,
+                  marginLeft: isSub ? '0.1rem' : '0',
+                  opacity: isSub && !active ? 0.75 : 1,
                   background: active
                     ? isKR ? 'rgba(59,130,246,0.3)' : 'rgba(139,92,246,0.3)'
                     : 'transparent',
                   color: active
                     ? isKR ? '#93c5fd' : '#c4b5fd'
-                    : '#64748b',
+                    : isSub ? '#4a7fa5' : '#64748b',
                   border: active
                     ? isKR ? '1px solid rgba(59,130,246,0.5)' : '1px solid rgba(139,92,246,0.5)'
                     : '1px solid transparent',
                 }}
               >
-                {categoryLabels[cat]}
+                {isSub ? `└ ${categoryLabels[cat]}` : categoryLabels[cat]}
               </button>
             );
           })}
