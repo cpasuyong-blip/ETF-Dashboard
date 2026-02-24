@@ -187,7 +187,7 @@ export default function ETFBacktestChart() {
     if (selectedETFs.includes(ticker)) {
       if (selectedETFs.length > 1) setSelectedETFs(prev => prev.filter(t => t !== ticker));
     } else {
-      if (selectedETFs.length < 5) setSelectedETFs(prev => [...prev, ticker]);
+      if (selectedETFs.length < 10) setSelectedETFs(prev => [...prev, ticker]);
     }
   };
 
@@ -317,15 +317,31 @@ export default function ETFBacktestChart() {
             padding: '1.25rem',
             backdropFilter: 'blur(20px)',
           }}>
-            <div style={{
-              fontSize: '0.75rem',
-              color: '#94a3b8',
-              marginBottom: '1rem',
-              fontWeight: '600',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase',
-            }}>
-              ETF 선택 ({selectedETFs.length}/5)
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+              <div style={{
+                fontSize: '0.75rem',
+                color: '#94a3b8',
+                fontWeight: '600',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+              }}>
+                ETF 선택 ({selectedETFs.length}/10)
+              </div>
+              <button
+                onClick={() => setSelectedETFs(['SPY'])}
+                style={{
+                  padding: '0.25rem 0.6rem',
+                  borderRadius: '6px',
+                  fontSize: '0.7rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  background: 'rgba(239,68,68,0.15)',
+                  color: '#f87171',
+                  border: '1px solid rgba(239,68,68,0.3)',
+                }}
+              >
+                초기화
+              </button>
             </div>
 
             {Object.entries(categories).map(([catKey, cat]) => (
