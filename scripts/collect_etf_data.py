@@ -160,14 +160,6 @@ KR_ETFS = {
         'codes': ['308620', '114820', '157450'],
         'description': '국내 채권 및 단기 금리 ETF'
     },
-    'S&P500': {
-        'codes': ['360750', '379800'],
-        'description': '미국 S&P500 지수를 추종하는 한국 상장 ETF'
-    },
-    '나스닥': {
-        'codes': ['381170', '133690'],
-        'description': '미국 나스닥100 지수를 추종하는 한국 상장 ETF'
-    },
     '기타': {
         'codes': ['458730', '091220', '334690'],
         'description': '원유, 기타 테마 ETF'
@@ -485,6 +477,27 @@ def main():
             'country': 'KR',
             'etfs': etfs_data
         }
+
+    # KR S&P500/나스닥 ETF → 미국 카테고리에 통합
+    print("\n[KR 지수 추종 ETF → 미국 카테고리 통합]")
+    for code in ['360750', '379800']:
+        print(f"  S&P500 통합: {code}")
+        data = fetch_kr_etf_basic(code)
+        if data:
+            database['categories']['미국_S&P500']['etfs'].append(data)
+            total_success += 1
+        else:
+            total_failed += 1
+        time.sleep(0.3)
+    for code in ['381170', '133690']:
+        print(f"  나스닥 통합: {code}")
+        data = fetch_kr_etf_basic(code)
+        if data:
+            database['categories']['미국_나스닥']['etfs'].append(data)
+            total_success += 1
+        else:
+            total_failed += 1
+        time.sleep(0.3)
 
     # 주요 지수 수집
     print("\n[주요 지수 수집]")

@@ -115,6 +115,59 @@
           "maxDrawdown": -33.87,
           "volume": 11550969,
           "lastUpdate": "2026-02-19T13:54:42.318546"
+        },
+        {
+          "ticker": "360750",
+          "name": "TIGER 미국S&P500",
+          "price": 24775.0,
+          "priceChange": 340.0,
+          "priceChangePct": 1.39,
+          "currency": "KRW",
+          "dividendYield": 1.06,
+          "returns": {
+            "1W": -0.5,
+            "1M": -1.82,
+            "3M": 3.29,
+            "6M": 12.07,
+            "1Y": 14.18,
+            "3Y": 93.71,
+            "5Y": 139.84
+          },
+          "cagr": {
+            "3Y": 24.66,
+            "5Y": 19.12
+          },
+          "volatility": 16.05,
+          "maxDrawdown": -19.15,
+          "volume": 8404852,
+          "lastUpdate": "2026-02-19T13:57:55.591080",
+          "expenseRatio": 0.07
+        },
+        {
+          "ticker": "379800",
+          "name": "KODEX 미국S&P500",
+          "price": 22640.0,
+          "priceChange": 315.0,
+          "priceChangePct": 1.41,
+          "currency": "KRW",
+          "dividendYield": 1.72,
+          "returns": {
+            "1W": -0.35,
+            "1M": -1.52,
+            "3M": 3.31,
+            "6M": 12.08,
+            "1Y": 14.3,
+            "3Y": 95.0,
+            "5Y": null
+          },
+          "cagr": {
+            "3Y": 24.93
+          },
+          "volatility": 16.06,
+          "maxDrawdown": -19.16,
+          "volume": 8469067,
+          "lastUpdate": "2026-02-19T13:57:57.615046",
+          "expenseRatio": 0.05
         }
       ]
     },
@@ -233,6 +286,59 @@
           "maxDrawdown": -81.66,
           "volume": 80935300,
           "lastUpdate": "2026-02-19T13:54:48.203384"
+        },
+        {
+          "ticker": "381170",
+          "name": "TIGER 미국테크TOP10 INDXX",
+          "price": 28730.0,
+          "priceChange": 300.0,
+          "priceChangePct": 1.06,
+          "currency": "KRW",
+          "dividendYield": 0.27,
+          "returns": {
+            "1W": -1.83,
+            "1M": -5.48,
+            "3M": -4.03,
+            "6M": 6.5,
+            "1Y": 15.46,
+            "3Y": 191.51,
+            "5Y": null
+          },
+          "cagr": {
+            "3Y": 42.85
+          },
+          "volatility": 25.41,
+          "maxDrawdown": -40.59,
+          "volume": 1381394,
+          "lastUpdate": "2026-02-19T13:57:59.425382",
+          "expenseRatio": 0.49
+        },
+        {
+          "ticker": "133690",
+          "name": "TIGER 미국나스닥100",
+          "price": 160205.0,
+          "priceChange": 2500.0,
+          "priceChangePct": 1.59,
+          "currency": "KRW",
+          "dividendYield": 0.65,
+          "returns": {
+            "1W": -0.62,
+            "1M": -3.0,
+            "3M": 0.91,
+            "6M": 10.03,
+            "1Y": 13.63,
+            "3Y": 126.95,
+            "5Y": 143.22
+          },
+          "cagr": {
+            "3Y": 31.42,
+            "5Y": 19.45
+          },
+          "volatility": 20.2,
+          "maxDrawdown": -31.02,
+          "volume": 505393,
+          "lastUpdate": "2026-02-19T13:58:01.512334",
+          "expenseRatio": 0.07
         }
       ]
     },
@@ -3786,124 +3892,6 @@
           "volume": 15955,
           "lastUpdate": "2026-02-19T13:58:07.309192",
           "expenseRatio": 0.5
-        }
-      ]
-    },
-    "한국_S&P500": {
-      "country": "KR",
-      "description": "미국 S&P500 지수를 추종하는 한국 상장 ETF",
-      "etfs": [
-        {
-          "ticker": "360750",
-          "name": "TIGER 미국S&P500",
-          "price": 24775.0,
-          "priceChange": 340.0,
-          "priceChangePct": 1.39,
-          "currency": "KRW",
-          "dividendYield": 1.06,
-          "returns": {
-            "1W": -0.5,
-            "1M": -1.82,
-            "3M": 3.29,
-            "6M": 12.07,
-            "1Y": 14.18,
-            "3Y": 93.71,
-            "5Y": 139.84
-          },
-          "cagr": {
-            "3Y": 24.66,
-            "5Y": 19.12
-          },
-          "volatility": 16.05,
-          "maxDrawdown": -19.15,
-          "volume": 8404852,
-          "lastUpdate": "2026-02-19T13:57:55.591080",
-          "expenseRatio": 0.07
-        },
-        {
-          "ticker": "379800",
-          "name": "KODEX 미국S&P500",
-          "price": 22640.0,
-          "priceChange": 315.0,
-          "priceChangePct": 1.41,
-          "currency": "KRW",
-          "dividendYield": 1.72,
-          "returns": {
-            "1W": -0.35,
-            "1M": -1.52,
-            "3M": 3.31,
-            "6M": 12.08,
-            "1Y": 14.3,
-            "3Y": 95.0,
-            "5Y": null
-          },
-          "cagr": {
-            "3Y": 24.93
-          },
-          "volatility": 16.06,
-          "maxDrawdown": -19.16,
-          "volume": 8469067,
-          "lastUpdate": "2026-02-19T13:57:57.615046",
-          "expenseRatio": 0.05
-        }
-      ]
-    },
-    "한국_나스닥": {
-      "country": "KR",
-      "description": "미국 나스닥100 지수를 추종하는 한국 상장 ETF",
-      "etfs": [
-        {
-          "ticker": "381170",
-          "name": "TIGER 미국테크TOP10 INDXX",
-          "price": 28730.0,
-          "priceChange": 300.0,
-          "priceChangePct": 1.06,
-          "currency": "KRW",
-          "dividendYield": 0.27,
-          "returns": {
-            "1W": -1.83,
-            "1M": -5.48,
-            "3M": -4.03,
-            "6M": 6.5,
-            "1Y": 15.46,
-            "3Y": 191.51,
-            "5Y": null
-          },
-          "cagr": {
-            "3Y": 42.85
-          },
-          "volatility": 25.41,
-          "maxDrawdown": -40.59,
-          "volume": 1381394,
-          "lastUpdate": "2026-02-19T13:57:59.425382",
-          "expenseRatio": 0.49
-        },
-        {
-          "ticker": "133690",
-          "name": "TIGER 미국나스닥100",
-          "price": 160205.0,
-          "priceChange": 2500.0,
-          "priceChangePct": 1.59,
-          "currency": "KRW",
-          "dividendYield": 0.65,
-          "returns": {
-            "1W": -0.62,
-            "1M": -3.0,
-            "3M": 0.91,
-            "6M": 10.03,
-            "1Y": 13.63,
-            "3Y": 126.95,
-            "5Y": 143.22
-          },
-          "cagr": {
-            "3Y": 31.42,
-            "5Y": 19.45
-          },
-          "volatility": 20.2,
-          "maxDrawdown": -31.02,
-          "volume": 505393,
-          "lastUpdate": "2026-02-19T13:58:01.512334",
-          "expenseRatio": 0.07
         }
       ]
     }
