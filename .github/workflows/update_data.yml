@@ -35,3 +35,12 @@ jobs:
           git add frontend/public/data/etf_database.json
           git diff --staged --quiet || git commit -m "Update ETF data $(date +'%Y-%m-%d %H:%M')"
           git push
+
+      - name: Deploy to Vercel
+        run: |
+          npm install -g vercel
+          DEPLOY_URL=$(vercel --prod --token ${{ secrets.VERCEL_TOKEN }} --yes 2>&1 | grep "Production:" | awk '{print $2}')
+          vercel alias $DEPLOY_URL etf-hub.vercel.app --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: team_n6131nX1byKbcojrjBtoIuKh
+          VERCEL_PROJECT_ID: prj_Jv8uSttA6EGClbSAVd0mgPHklVqx
