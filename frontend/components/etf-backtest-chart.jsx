@@ -7,7 +7,18 @@ import {
 import { TrendingUp, TrendingDown, Activity, Percent } from 'lucide-react';
 import Navigation from './Navigation';
 
-const COLOR_PALETTE = ['#8b5cf6', '#10b981', '#3b82f6', '#f43f5e', '#f59e0b'];
+const COLOR_PALETTE = [
+  '#8b5cf6', // purple
+  '#10b981', // emerald
+  '#3b82f6', // blue
+  '#f43f5e', // rose
+  '#f59e0b', // amber
+  '#06b6d4', // cyan
+  '#f97316', // orange
+  '#ec4899', // pink
+  '#84cc16', // lime
+  '#14b8a6', // teal
+];
 
 const CATEGORY_LABELS = {
   // 미국 ETF
@@ -178,8 +189,8 @@ export default function ETFBacktestChart() {
   }, []);
 
   const getColor = (ticker) => {
-    const idx = allEtfs.findIndex(e => e.ticker === ticker);
-    return COLOR_PALETTE[idx % COLOR_PALETTE.length];
+    const idx = selectedETFs.indexOf(ticker);
+    return COLOR_PALETTE[idx >= 0 ? idx : 0];
   };
 
   const toggleETF = (ticker) => {
