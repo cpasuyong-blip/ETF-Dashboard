@@ -151,14 +151,14 @@ function IndexCard({ group, etfMap, indicesMap, period }) {
         {relatedEtfs.map(etf => (
           <div key={etf.ticker} style={{
             display: 'grid',
-            gridTemplateColumns: '90px 1fr 70px',
+            gridTemplateColumns: 'minmax(100px, 180px) 1fr 65px',
             alignItems: 'center',
             gap: '0.5rem',
           }}>
-            <div>
+            <div style={{ minWidth: 0 }}>
               <div style={{
                 color: '#fff', fontWeight: '600', fontSize: '0.85rem',
-                whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '85px',
+                whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
               }}>
                 {etf.isKR ? etf.name : etf.ticker}
               </div>
@@ -168,7 +168,6 @@ function IndexCard({ group, etfMap, indicesMap, period }) {
                 whiteSpace: 'nowrap',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
-                maxWidth: '85px',
               }}>
                 {etf.isKR ? etf.ticker : etf.name?.split(' ').slice(0, 3).join(' ')}
               </div>
