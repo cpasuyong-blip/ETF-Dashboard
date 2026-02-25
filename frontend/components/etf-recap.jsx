@@ -38,7 +38,7 @@ const INDEX_GROUPS = [
     primary: '229200',
     color: '#f59e0b',
     gradient: 'linear-gradient(135deg, #f59e0b, #d97706)',
-    etfs: ['229200', '232080', '301400'],
+    etfs: ['229200', '232080'],
     description: '한국 성장주',
   },
 ];
