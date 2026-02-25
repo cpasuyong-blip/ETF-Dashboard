@@ -56,7 +56,7 @@ const getDisplayLabel = (etf) => {
 };
 
 // 재사용 가능한 수평 바 차트 컴포넌트
-function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
+function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel, showCagr = false }) {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       const d = payload[0].payload;
@@ -74,6 +74,11 @@ function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
           <div style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 700 }}>
             {d.return >= 0 ? '+' : ''}{d.return.toFixed(2)}%
           </div>
+          {showCagr && d.cagr != null && (
+            <div style={{ color: '#a78bfa', fontSize: '0.85rem', fontWeight: 600, marginTop: '0.25rem' }}>
+              연평균 {d.cagr >= 0 ? '+' : ''}{d.cagr.toFixed(1)}%/yr
+            </div>
+          )}
           <div style={{ color: '#94a3b8', fontSize: '0.75rem', marginTop: '0.25rem' }}>
             {tooltipLabel}
           </div>
@@ -130,21 +135,24 @@ function HorizontalBarChart({ data, title, icon, subtitle, tooltipLabel }) {
               dataKey="return"
               radius={[0, 6, 6, 0]}
               maxBarSize={36}
-              label={({ x, y, width, height, value }) => {
+              label={({ x, y, width, height, value, index }) => {
                 const label = `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
                 const isNarrow = Math.abs(width) < 60;
+                const xPos = isNarrow ? x + width + (value >= 0 ? 6 : -6) : x + width - (value >= 0 ? 8 : -8);
+                const anchor = isNarrow ? (value >= 0 ? 'start' : 'end') : (value >= 0 ? 'end' : 'start');
+                const fill = isNarrow ? '#94a3b8' : '#fff';
+                const cagrVal = showCagr ? data[index]?.cagr : null;
                 return (
-                  <text
-                    x={isNarrow ? x + width + (value >= 0 ? 6 : -6) : x + width - (value >= 0 ? 8 : -8)}
-                    y={y + height / 2}
-                    fill={isNarrow ? '#94a3b8' : '#fff'}
-                    fontSize={12}
-                    fontWeight={700}
-                    textAnchor={isNarrow ? (value >= 0 ? 'start' : 'end') : (value >= 0 ? 'end' : 'start')}
-                    dominantBaseline="central"
-                  >
-                    {label}
-                  </text>
+                  <g>
+                    <text x={xPos} y={y + height / 2 - (cagrVal != null ? 6 : 0)} fill={fill} fontSize={12} fontWeight={700} textAnchor={anchor} dominantBaseline="central">
+                      {label}
+                    </text>
+                    {cagrVal != null && (
+                      <text x={xPos} y={y + height / 2 + 8} fill={isNarrow ? '#7c3aed' : '#a78bfa'} fontSize={10} textAnchor={anchor} dominantBaseline="central">
+                        {`${cagrVal >= 0 ? '+' : ''}${cagrVal.toFixed(1)}%/yr`}
+                      </text>
+                    )}
+                  </g>
                 );
               }}
             >
@@ -204,23 +212,27 @@ export default function ETFBacktestChart() {
   const toggleCat = (cat) => setExpandedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
 
   // 3가지 차트 데이터 생성
-  const buildChartData = (getValue) => {
+  const buildChartData = (getValue, getExtra = () => ({})) => {
     return selectedETFs
       .map(ticker => {
         const etf = allEtfs.find(e => e.ticker === ticker);
         if (!etf) return null;
         const value = getValue(etf);
         const { primary } = getDisplayLabel(etf);
-        return { ticker: primary, return: value, color: getColor(ticker) };
+        return { ticker: primary, return: value, color: getColor(ticker), ...getExtra(etf) };
       })
       .filter(d => d && d.return !== null)
       .sort((a, b) => b.return - a.return);
   };
 
+  const showCagrPeriods = ['3Y', '5Y'];
   const priceData = buildChartData(etf => etf.priceReturns?.[selectedPeriod] ?? null);
   const dividendData = buildChartData(etf => etf.dividendYield ?? null);
   // adj close 자체가 배당 재투자 포함 TR이므로 별도 배당 추가 불필요
-  const totalReturnData = buildChartData(etf => etf.returns?.[selectedPeriod] ?? null);
+  const totalReturnData = buildChartData(
+    etf => etf.returns?.[selectedPeriod] ?? null,
+    etf => ({ cagr: showCagrPeriods.includes(selectedPeriod) ? (etf.cagr?.[selectedPeriod] ?? null) : null })
+  );
 
   const statsData = selectedETFs.map(ticker => allEtfs.find(e => e.ticker === ticker)).filter(Boolean);
   const best = totalReturnData[0];
@@ -435,6 +447,7 @@ export default function ETFBacktestChart() {
               icon={<TrendingUp size={24} color="#8b5cf6" />}
               subtitle="배당 재투자 가정 (adj. close 기준)"
               tooltipLabel={`${selectedPeriod} Total Return`}
+              showCagr={showCagrPeriods.includes(selectedPeriod)}
             />
 
             {/* 2+3. 주가수익률 / 배당수익률 나란히 */}
