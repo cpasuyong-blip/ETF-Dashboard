@@ -16,7 +16,7 @@ const INDEX_GROUPS = [
   },
   {
     id: 'nasdaq',
-    label: '나스닥 100',
+    label: '나스닥',
     primary: 'QQQ',
     color: '#8b5cf6',
     gradient: 'linear-gradient(135deg, #8b5cf6, #6366f1)',
@@ -25,7 +25,7 @@ const INDEX_GROUPS = [
   },
   {
     id: 'kospi',
-    label: 'KOSPI 200',
+    label: 'KOSPI',
     primary: '069500',
     color: '#10b981',
     gradient: 'linear-gradient(135deg, #10b981, #0d9488)',
@@ -34,11 +34,11 @@ const INDEX_GROUPS = [
   },
   {
     id: 'kosdaq',
-    label: 'KOSDAQ 150',
+    label: 'KOSDAQ',
     primary: '229200',
     color: '#f59e0b',
     gradient: 'linear-gradient(135deg, #f59e0b, #d97706)',
-    etfs: ['229200', '091180'],
+    etfs: ['229200', '232080', '301400'],
     description: '한국 성장주',
   },
 ];

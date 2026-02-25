@@ -4773,6 +4773,82 @@
           "maxDrawdown": -97.83,
           "volume": 2804028000,
           "lastUpdate": "2026-02-24T23:07:24.732226"
+        },
+        {
+          "ticker": "232080",
+          "name": "TIGER 코스닥150",
+          "price": 20565.0,
+          "priceChange": -5.0,
+          "priceChangePct": -0.02,
+          "currency": "KRW",
+          "expenseRatio": 0.19,
+          "dividendYield": 0.17,
+          "returns": {
+            "1M": 21.79,
+            "3M": 36.24,
+            "6M": 50.11,
+            "1Y": 53.98,
+            "3Y": 80.67,
+            "5Y": 46.97
+          },
+          "priceReturns": {
+            "1M": 21.79,
+            "3M": 36.24,
+            "6M": 50.11,
+            "1Y": 53.53,
+            "3Y": 78.98,
+            "5Y": 45.18
+          },
+          "cagr": {
+            "1M": 965.45,
+            "3M": 244.49,
+            "6M": 125.33,
+            "1Y": 53.98,
+            "3Y": 21.79,
+            "5Y": 8.01
+          },
+          "volatility": 28.06,
+          "maxDrawdown": -57.53,
+          "volume": 2511908,
+          "lastUpdate": "2026-02-25T11:09:42.501679"
+        },
+        {
+          "ticker": "301400",
+          "name": "ARIRANG 코스닥150",
+          "price": 20340.0,
+          "priceChange": 9015.0,
+          "priceChangePct": 79.6,
+          "currency": "KRW",
+          "expenseRatio": 0.23,
+          "dividendYield": 0.0,
+          "returns": {
+            "1M": 79.6,
+            "3M": 79.6,
+            "6M": 79.6,
+            "1Y": 79.6,
+            "3Y": 79.6,
+            "5Y": 79.6
+          },
+          "priceReturns": {
+            "1M": 79.6,
+            "3M": 79.6,
+            "6M": 79.6,
+            "1Y": 79.6,
+            "3Y": 79.6,
+            "5Y": 79.6
+          },
+          "cagr": {
+            "1M": 112555.62,
+            "3M": 940.52,
+            "6M": 222.57,
+            "1Y": 79.6,
+            "3Y": 21.55,
+            "5Y": 12.42
+          },
+          "volatility": 172.38,
+          "maxDrawdown": -20.37,
+          "volume": 15437,
+          "lastUpdate": "2026-02-25T11:09:42.734791"
         }
       ]
     },
@@ -5194,7 +5270,7 @@
     }
   },
   "metadata": {
-    "lastUpdate": "2026-02-24T23:07:54.188821",
+    "lastUpdate": "2026-02-25T11:09:42.734806",
     "totalETFs": 138,
     "failedETFs": 0,
     "categories": 20,
