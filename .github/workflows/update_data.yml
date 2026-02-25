@@ -2,8 +2,8 @@ name: Update ETF Data
 
 on:
   schedule:
-    # 매일 한국시간 오전 7시 (UTC 22시) - 미국장 마감 후
-    - cron: '0 22 * * 1-5'
+    # 매일 한국시간 오전 8시 (UTC 23시, 일~목) - 미국장 마감 후
+    - cron: '0 23 * * 0-4'
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:
