@@ -318,32 +318,30 @@ export default function ETFBacktestChart() {
             ))}
           </div>
 
-          {/* 기간 탭 (막대 모드에서만 표시) */}
-          {chartView === 'bar' && (
-            <div style={{ display: 'flex', gap: '0.375rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
-                <button
-                  key={p}
-                  onClick={() => setSelectedPeriod(p)}
-                  style={{
-                    padding: '0.5rem 1rem',
-                    border: 'none',
-                    borderRadius: '10px',
-                    background: selectedPeriod === p
-                      ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
-                      : 'rgba(255, 255, 255, 0.05)',
-                    color: selectedPeriod === p ? '#fff' : '#94a3b8',
-                    fontSize: '0.875rem',
-                    fontWeight: '700',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                  }}
-                >
-                  {p}
-                </button>
-              ))}
-            </div>
-          )}
+          {/* 기간 탭 (공통) */}
+          <div style={{ display: 'flex', gap: '0.375rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
+              <button
+                key={p}
+                onClick={() => setSelectedPeriod(p)}
+                style={{
+                  padding: '0.5rem 1rem',
+                  border: 'none',
+                  borderRadius: '10px',
+                  background: selectedPeriod === p
+                    ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  color: selectedPeriod === p ? '#fff' : '#94a3b8',
+                  fontSize: '0.875rem',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
         </div>
 
         <style>{`
@@ -357,7 +355,9 @@ export default function ETFBacktestChart() {
 
         {/* 선형 차트 뷰 */}
         {chartView === 'line' && (() => {
-          const PERIODS = ['1M', '3M', '6M', '1Y', '3Y', '5Y'];
+          const ALL_PERIODS = ['1M', '3M', '6M', '1Y', '3Y', '5Y'];
+          const PERIODS = ALL_PERIODS.slice(0, ALL_PERIODS.indexOf(selectedPeriod) + 1);
+          const lastPeriod = PERIODS[PERIODS.length - 1];
           const lineData = PERIODS.map(p => {
             const point = { period: p };
             selectedETFs.forEach(ticker => {
@@ -485,13 +485,13 @@ export default function ETFBacktestChart() {
                       if (!yAxis?.scale || !xAxis?.scale) return null;
 
                       const bw = xAxis.scale.bandwidth ? xAxis.scale.bandwidth() : 0;
-                      const x5Y = xAxis.scale('5Y') + bw / 2;
+                      const x5Y = xAxis.scale(lastPeriod) + bw / 2;
 
-                      // 각 ETF의 5Y 픽셀 Y 위치 계산
+                      // 각 ETF의 마지막 기간 픽셀 Y 위치 계산
                       const labels = selectedETFs
                         .map(ticker => {
                           const etf = allEtfs.find(e => e.ticker === ticker);
-                          const value = etf?.returns?.['5Y'] ?? null;
+                          const value = etf?.returns?.[lastPeriod] ?? null;
                           if (value == null) return null;
                           const { primary } = etf ? getDisplayLabel(etf) : { primary: ticker };
                           const origY = yAxis.scale(value);
