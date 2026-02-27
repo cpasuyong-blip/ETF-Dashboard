@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, Cell, ReferenceLine,
-  LineChart, Line, Legend, Dot
+  LineChart, Line, Legend, Dot, Customized
 } from 'recharts';
 import { TrendingUp, TrendingDown, Activity, Percent } from 'lucide-react';
 import Navigation from './Navigation';
@@ -450,13 +450,13 @@ export default function ETFBacktestChart() {
                 <p style={{ fontSize: '0.75rem', color: '#64748b', margin: '0 0 1.5rem', paddingLeft: '2.25rem' }}>
                   배당 재투자 가정 (adj. close 기준)
                 </p>
-                <ResponsiveContainer width="100%" height={380}>
-                  <LineChart data={lineData} margin={{ top: 10, right: 20, left: 0, bottom: 10 }}>
+                <ResponsiveContainer width="100%" height={520}>
+                  <LineChart data={lineData} margin={{ top: 10, right: 140, left: 0, bottom: 10 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
-                    <XAxis dataKey="period" stroke="#64748b" tick={{ fill: '#94a3b8', fontSize: 12, fontWeight: 600 }} />
+                    <XAxis dataKey="period" stroke="#64748b" tick={{ fill: '#94a3b8', fontSize: 14, fontWeight: 600 }} />
                     <YAxis
                       stroke="#64748b"
-                      tick={{ fill: '#64748b', fontSize: 11 }}
+                      tick={{ fill: '#64748b', fontSize: 13 }}
                       tickFormatter={v => `${v >= 0 ? '+' : ''}${v.toFixed(0)}%`}
                     />
                     <Tooltip content={<CustomTooltip />} cursor={{ stroke: 'rgba(255,255,255,0.15)', strokeWidth: 1, strokeDasharray: '4 4' }} />
@@ -464,27 +464,73 @@ export default function ETFBacktestChart() {
                     {selectedETFs.map(ticker => {
                       const etf = allEtfs.find(e => e.ticker === ticker);
                       const { primary } = etf ? getDisplayLabel(etf) : { primary: ticker };
+                      const color = getColor(ticker);
                       return (
                         <Line
                           key={ticker}
                           type="monotone"
                           dataKey={ticker}
                           name={primary}
-                          stroke={getColor(ticker)}
+                          stroke={color}
                           strokeWidth={2.5}
-                          dot={{ fill: getColor(ticker), r: 5, strokeWidth: 0 }}
+                          dot={{ fill: color, r: 5, strokeWidth: 0 }}
                           activeDot={{ r: 7, strokeWidth: 0 }}
                           connectNulls
                         />
                       );
                     })}
-                    <Legend
-                      formatter={(value) => {
-                        const etf = allEtfs.find(e => e.ticker === value);
-                        return etf ? getDisplayLabel(etf).primary : value;
-                      }}
-                      wrapperStyle={{ fontSize: '0.8rem', color: '#94a3b8', paddingTop: '1rem' }}
-                    />
+                    <Customized component={(props) => {
+                      const yAxis = Object.values(props.yAxisMap || {})[0];
+                      const xAxis = Object.values(props.xAxisMap || {})[0];
+                      if (!yAxis?.scale || !xAxis?.scale) return null;
+
+                      const bw = xAxis.scale.bandwidth ? xAxis.scale.bandwidth() : 0;
+                      const x5Y = xAxis.scale('5Y') + bw / 2;
+
+                      // 각 ETF의 5Y 픽셀 Y 위치 계산
+                      const labels = selectedETFs
+                        .map(ticker => {
+                          const etf = allEtfs.find(e => e.ticker === ticker);
+                          const value = etf?.returns?.['5Y'] ?? null;
+                          if (value == null) return null;
+                          const { primary } = etf ? getDisplayLabel(etf) : { primary: ticker };
+                          const origY = yAxis.scale(value);
+                          return { ticker, primary, color: getColor(ticker), y: origY, origY };
+                        })
+                        .filter(Boolean)
+                        .sort((a, b) => a.y - b.y); // Y오름차순 (위→아래)
+
+                      // 겹침 방지: 위→아래 순으로 최소 간격(18px) 확보
+                      const MIN_SPACING = 18;
+                      for (let i = 1; i < labels.length; i++) {
+                        if (labels[i].y < labels[i - 1].y + MIN_SPACING) {
+                          labels[i].y = labels[i - 1].y + MIN_SPACING;
+                        }
+                      }
+
+                      return (
+                        <g>
+                          {labels.map(({ ticker, primary, color, y, origY }) => (
+                            <g key={ticker}>
+                              {Math.abs(y - origY) > 3 && (
+                                <line
+                                  x1={x5Y + 7} y1={origY}
+                                  x2={x5Y + 9} y2={y}
+                                  stroke={color} strokeWidth={1} strokeOpacity={0.45}
+                                />
+                              )}
+                              <text
+                                x={x5Y + 12} y={y}
+                                fill={color} fontSize={12} fontWeight={700}
+                                dominantBaseline="middle" textAnchor="start"
+                              >
+                                {primary}
+                              </text>
+                            </g>
+                          ))}
+                        </g>
+                      );
+                    }} />
                   </LineChart>
                 </ResponsiveContainer>
               </div>
