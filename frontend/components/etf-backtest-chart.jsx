@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
-  ResponsiveContainer, Cell, ReferenceLine
+  ResponsiveContainer, Cell, ReferenceLine,
+  LineChart, Line, Legend, Dot
 } from 'recharts';
 import { TrendingUp, TrendingDown, Activity, Percent } from 'lucide-react';
 import Navigation from './Navigation';
@@ -175,6 +176,7 @@ export default function ETFBacktestChart() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [expandedCats, setExpandedCats] = useState({});
+  const [chartView, setChartView] = useState('bar'); // 'bar' | 'line'
 
   useEffect(() => {
     fetch('/api/etf-data')
@@ -291,29 +293,57 @@ export default function ETFBacktestChart() {
           </p>
         </header>
 
-        {/* 기간 탭 */}
-        <div style={{ display: 'flex', gap: '0.375rem', justifyContent: 'center', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
-          {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
-            <button
-              key={p}
-              onClick={() => setSelectedPeriod(p)}
-              style={{
-                padding: '0.5rem 1rem',
-                border: 'none',
-                borderRadius: '10px',
-                background: selectedPeriod === p
-                  ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
-                  : 'rgba(255, 255, 255, 0.05)',
-                color: selectedPeriod === p ? '#fff' : '#94a3b8',
-                fontSize: '0.875rem',
-                fontWeight: '700',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-              }}
-            >
-              {p}
-            </button>
-          ))}
+        {/* 뷰 토글 + 기간 탭 */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          {/* 뷰 모드 토글 */}
+          <div style={{ display: 'flex', gap: '0', background: 'rgba(255,255,255,0.05)', borderRadius: '10px', padding: '3px' }}>
+            {[{ key: 'bar', label: '막대' }, { key: 'line', label: '선형' }].map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => setChartView(key)}
+                style={{
+                  padding: '0.375rem 1.25rem',
+                  border: 'none',
+                  borderRadius: '8px',
+                  background: chartView === key ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)' : 'transparent',
+                  color: chartView === key ? '#fff' : '#64748b',
+                  fontSize: '0.8125rem',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* 기간 탭 (막대 모드에서만 표시) */}
+          {chartView === 'bar' && (
+            <div style={{ display: 'flex', gap: '0.375rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {['1M', '3M', '6M', '1Y', '3Y', '5Y'].map(p => (
+                <button
+                  key={p}
+                  onClick={() => setSelectedPeriod(p)}
+                  style={{
+                    padding: '0.5rem 1rem',
+                    border: 'none',
+                    borderRadius: '10px',
+                    background: selectedPeriod === p
+                      ? 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)'
+                      : 'rgba(255, 255, 255, 0.05)',
+                    color: selectedPeriod === p ? '#fff' : '#94a3b8',
+                    fontSize: '0.875rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                  }}
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         <style>{`
@@ -325,7 +355,145 @@ export default function ETFBacktestChart() {
           @media (max-width: 768px) { .sub-charts { grid-template-columns: 1fr; } }
         `}</style>
 
-        {/* 메인 레이아웃: ETF 선택 (좌) + 차트 (우) */}
+        {/* 선형 차트 뷰 */}
+        {chartView === 'line' && (() => {
+          const PERIODS = ['1M', '3M', '6M', '1Y', '3Y', '5Y'];
+          const lineData = PERIODS.map(p => {
+            const point = { period: p };
+            selectedETFs.forEach(ticker => {
+              const etf = allEtfs.find(e => e.ticker === ticker);
+              if (etf) point[ticker] = etf.returns?.[p] ?? null;
+            });
+            return point;
+          });
+
+          const CustomTooltip = ({ active, payload, label }) => {
+            if (!active || !payload?.length) return null;
+            return (
+              <div style={{
+                background: 'rgba(15,15,30,0.95)',
+                border: '1px solid rgba(139,92,246,0.3)',
+                borderRadius: '12px',
+                padding: '0.875rem 1rem',
+                backdropFilter: 'blur(10px)',
+              }}>
+                <div style={{ color: '#a78bfa', fontWeight: '700', marginBottom: '0.5rem', fontSize: '0.85rem' }}>
+                  {label} Total Return
+                </div>
+                {[...payload].sort((a, b) => (b.value ?? -Infinity) - (a.value ?? -Infinity)).map(entry => (
+                  <div key={entry.dataKey} style={{ display: 'flex', justifyContent: 'space-between', gap: '1.5rem', fontSize: '0.85rem', marginBottom: '0.2rem' }}>
+                    <span style={{ color: entry.color, fontWeight: '600' }}>{entry.dataKey}</span>
+                    <span style={{ color: entry.value >= 0 ? '#22c55e' : '#ef4444', fontWeight: '700' }}>
+                      {entry.value != null ? `${entry.value >= 0 ? '+' : ''}${entry.value.toFixed(2)}%` : 'N/A'}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            );
+          };
+
+          return (
+            <div className="backtest-layout" style={{ marginBottom: '2rem' }}>
+              {/* ETF 선택 패널 (선형 모드에서도 동일하게 표시) */}
+              <div style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                borderRadius: '20px',
+                padding: '1.25rem',
+                backdropFilter: 'blur(20px)',
+              }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                  <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: '600', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                    ETF 선택 ({selectedETFs.length}/10)
+                  </div>
+                  <button onClick={() => setSelectedETFs(['SPY'])} style={{ padding: '0.25rem 0.6rem', borderRadius: '6px', fontSize: '0.7rem', fontWeight: '600', cursor: 'pointer', background: 'rgba(239,68,68,0.15)', color: '#f87171', border: '1px solid rgba(239,68,68,0.3)' }}>
+                    초기화
+                  </button>
+                </div>
+                {Object.entries(categories).map(([catKey, cat]) => (
+                  <div key={catKey} style={{ marginBottom: '0.5rem' }}>
+                    <button onClick={() => toggleCat(catKey)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0.75rem', background: 'rgba(255,255,255,0.05)', border: 'none', borderRadius: '8px', color: '#cbd5e1', fontSize: '0.8125rem', fontWeight: '600', cursor: 'pointer', marginBottom: expandedCats[catKey] ? '0.375rem' : '0' }}>
+                      <span>{CATEGORY_LABELS[catKey] || catKey}</span>
+                      <span style={{ fontSize: '0.75rem', color: '#64748b' }}>{expandedCats[catKey] ? '▲' : '▼'}</span>
+                    </button>
+                    {expandedCats[catKey] && cat.etfs.map(etf => {
+                      const isSelected = selectedETFs.includes(etf.ticker);
+                      const color = getColor(etf.ticker);
+                      const { primary } = getDisplayLabel(etf);
+                      return (
+                        <button key={etf.ticker} onClick={() => toggleETF(etf.ticker)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.375rem 0.75rem', marginBottom: '0.25rem', border: isSelected ? `1px solid ${color}60` : '1px solid transparent', borderRadius: '8px', background: isSelected ? `${color}15` : 'transparent', color: isSelected ? '#fff' : '#64748b', fontSize: '0.8125rem', fontWeight: isSelected ? '600' : '400', cursor: 'pointer', transition: 'all 0.2s ease', textAlign: 'left' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', minWidth: 0 }}>
+                            {isSelected && <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: color, flexShrink: 0 }} />}
+                            <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{primary}</span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                ))}
+              </div>
+
+              {/* 선형 차트 */}
+              <div style={{
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                borderRadius: '20px',
+                padding: '1.5rem',
+                backdropFilter: 'blur(20px)',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.25rem' }}>
+                  <TrendingUp size={24} color="#8b5cf6" />
+                  <h2 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#fff', margin: 0 }}>
+                    기간별 Total Return 추이
+                  </h2>
+                </div>
+                <p style={{ fontSize: '0.75rem', color: '#64748b', margin: '0 0 1.5rem', paddingLeft: '2.25rem' }}>
+                  배당 재투자 가정 (adj. close 기준)
+                </p>
+                <ResponsiveContainer width="100%" height={380}>
+                  <LineChart data={lineData} margin={{ top: 10, right: 20, left: 0, bottom: 10 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
+                    <XAxis dataKey="period" stroke="#64748b" tick={{ fill: '#94a3b8', fontSize: 12, fontWeight: 600 }} />
+                    <YAxis
+                      stroke="#64748b"
+                      tick={{ fill: '#64748b', fontSize: 11 }}
+                      tickFormatter={v => `${v >= 0 ? '+' : ''}${v.toFixed(0)}%`}
+                    />
+                    <Tooltip content={<CustomTooltip />} cursor={{ stroke: 'rgba(255,255,255,0.15)', strokeWidth: 1, strokeDasharray: '4 4' }} />
+                    <ReferenceLine y={0} stroke="rgba(255,255,255,0.2)" />
+                    {selectedETFs.map(ticker => {
+                      const etf = allEtfs.find(e => e.ticker === ticker);
+                      const { primary } = etf ? getDisplayLabel(etf) : { primary: ticker };
+                      return (
+                        <Line
+                          key={ticker}
+                          type="monotone"
+                          dataKey={ticker}
+                          name={primary}
+                          stroke={getColor(ticker)}
+                          strokeWidth={2.5}
+                          dot={{ fill: getColor(ticker), r: 5, strokeWidth: 0 }}
+                          activeDot={{ r: 7, strokeWidth: 0 }}
+                          connectNulls
+                        />
+                      );
+                    })}
+                    <Legend
+                      formatter={(value) => {
+                        const etf = allEtfs.find(e => e.ticker === value);
+                        return etf ? getDisplayLabel(etf).primary : value;
+                      }}
+                      wrapperStyle={{ fontSize: '0.8rem', color: '#94a3b8', paddingTop: '1rem' }}
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* 막대 차트 뷰 */}
+        {chartView === 'bar' && (
         <div className="backtest-layout">
           {/* ETF 선택 패널 */}
           <div style={{
@@ -468,6 +636,7 @@ export default function ETFBacktestChart() {
 
           </div>
         </div>
+        )}
 
         {/* 통계 카드 */}
         <div style={{
