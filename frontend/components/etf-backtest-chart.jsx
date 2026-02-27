@@ -177,6 +177,7 @@ export default function ETFBacktestChart() {
   const [error, setError] = useState(null);
   const [expandedCats, setExpandedCats] = useState({});
   const [chartView, setChartView] = useState('bar'); // 'bar' | 'line'
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('/api/etf-data')
@@ -212,6 +213,22 @@ export default function ETFBacktestChart() {
   };
 
   const toggleCat = (cat) => setExpandedCats(prev => ({ ...prev, [cat]: !prev[cat] }));
+
+  // 검색 필터 적용된 카테고리
+  const panelCategories = searchQuery.trim()
+    ? (() => {
+        const q = searchQuery.toLowerCase();
+        const result = {};
+        Object.entries(categories).forEach(([catKey, cat]) => {
+          const matching = cat.etfs.filter(e =>
+            e.ticker.toLowerCase().includes(q) ||
+            e.name.toLowerCase().includes(q)
+          );
+          if (matching.length > 0) result[catKey] = { ...cat, etfs: matching };
+        });
+        return result;
+      })()
+    : categories;
 
   // 3가지 차트 데이터 생성
   const buildChartData = (getValue, getExtra = () => ({})) => {
@@ -402,7 +419,7 @@ export default function ETFBacktestChart() {
                 padding: '1.25rem',
                 backdropFilter: 'blur(20px)',
               }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
                   <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: '600', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                     ETF 선택 ({selectedETFs.length}/10)
                   </div>
@@ -410,13 +427,31 @@ export default function ETFBacktestChart() {
                     초기화
                   </button>
                 </div>
-                {Object.entries(categories).map(([catKey, cat]) => (
+                {/* 검색창 */}
+                <div style={{ position: 'relative', marginBottom: '0.75rem' }}>
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    placeholder="ETF 검색 (티커/이름)"
+                    style={{ width: '100%', padding: '0.5rem 2rem 0.5rem 0.75rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '8px', color: '#e2e8f0', fontSize: '0.8125rem', outline: 'none', boxSizing: 'border-box' }}
+                  />
+                  {searchQuery && (
+                    <button onClick={() => setSearchQuery('')} style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: '0.875rem', padding: '0', lineHeight: 1 }}>✕</button>
+                  )}
+                </div>
+                {Object.keys(panelCategories).length === 0 && searchQuery && (
+                  <div style={{ color: '#64748b', fontSize: '0.8rem', textAlign: 'center', padding: '1rem 0' }}>검색 결과 없음</div>
+                )}
+                {Object.entries(panelCategories).map(([catKey, cat]) => {
+                  const isExpanded = searchQuery.trim() ? true : expandedCats[catKey];
+                  return (
                   <div key={catKey} style={{ marginBottom: '0.5rem' }}>
-                    <button onClick={() => toggleCat(catKey)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0.75rem', background: 'rgba(255,255,255,0.05)', border: 'none', borderRadius: '8px', color: '#cbd5e1', fontSize: '0.8125rem', fontWeight: '600', cursor: 'pointer', marginBottom: expandedCats[catKey] ? '0.375rem' : '0' }}>
+                    <button onClick={() => toggleCat(catKey)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0.5rem 0.75rem', background: 'rgba(255,255,255,0.05)', border: 'none', borderRadius: '8px', color: '#cbd5e1', fontSize: '0.8125rem', fontWeight: '600', cursor: 'pointer', marginBottom: isExpanded ? '0.375rem' : '0' }}>
                       <span>{CATEGORY_LABELS[catKey] || catKey}</span>
-                      <span style={{ fontSize: '0.75rem', color: '#64748b' }}>{expandedCats[catKey] ? '▲' : '▼'}</span>
+                      <span style={{ fontSize: '0.75rem', color: '#64748b' }}>{isExpanded ? '▲' : '▼'}</span>
                     </button>
-                    {expandedCats[catKey] && cat.etfs.map(etf => {
+                    {isExpanded && cat.etfs.map(etf => {
                       const isSelected = selectedETFs.includes(etf.ticker);
                       const color = getColor(etf.ticker);
                       const { primary } = getDisplayLabel(etf);
@@ -430,7 +465,8 @@ export default function ETFBacktestChart() {
                       );
                     })}
                   </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* 선형 차트 */}
@@ -549,7 +585,7 @@ export default function ETFBacktestChart() {
             padding: '1.25rem',
             backdropFilter: 'blur(20px)',
           }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
               <div style={{
                 fontSize: '0.75rem',
                 color: '#94a3b8',
@@ -576,7 +612,26 @@ export default function ETFBacktestChart() {
               </button>
             </div>
 
-            {Object.entries(categories).map(([catKey, cat]) => (
+            {/* 검색창 */}
+            <div style={{ position: 'relative', marginBottom: '0.75rem' }}>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                placeholder="ETF 검색 (티커/이름)"
+                style={{ width: '100%', padding: '0.5rem 2rem 0.5rem 0.75rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '8px', color: '#e2e8f0', fontSize: '0.8125rem', outline: 'none', boxSizing: 'border-box' }}
+              />
+              {searchQuery && (
+                <button onClick={() => setSearchQuery('')} style={{ position: 'absolute', right: '0.5rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: '0.875rem', padding: '0', lineHeight: 1 }}>✕</button>
+              )}
+            </div>
+            {Object.keys(panelCategories).length === 0 && searchQuery && (
+              <div style={{ color: '#64748b', fontSize: '0.8rem', textAlign: 'center', padding: '1rem 0' }}>검색 결과 없음</div>
+            )}
+
+            {Object.entries(panelCategories).map(([catKey, cat]) => {
+              const isExpanded = searchQuery.trim() ? true : expandedCats[catKey];
+              return (
               <div key={catKey} style={{ marginBottom: '0.5rem' }}>
                 <button
                   onClick={() => toggleCat(catKey)}
@@ -593,16 +648,16 @@ export default function ETFBacktestChart() {
                     fontSize: '0.8125rem',
                     fontWeight: '600',
                     cursor: 'pointer',
-                    marginBottom: expandedCats[catKey] ? '0.375rem' : '0',
+                    marginBottom: isExpanded ? '0.375rem' : '0',
                   }}
                 >
                   <span>{CATEGORY_LABELS[catKey] || catKey}</span>
                   <span style={{ fontSize: '0.75rem', color: '#64748b' }}>
-                    {expandedCats[catKey] ? '▲' : '▼'}
+                    {isExpanded ? '▲' : '▼'}
                   </span>
                 </button>
 
-                {expandedCats[catKey] && cat.etfs.map(etf => {
+                {isExpanded && cat.etfs.map(etf => {
                   const isSelected = selectedETFs.includes(etf.ticker);
                   const ret = etf.returns?.[selectedPeriod];
                   const color = getColor(etf.ticker);
@@ -648,7 +703,8 @@ export default function ETFBacktestChart() {
                   );
                 })}
               </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* 차트 영역: 3개 차트 */}

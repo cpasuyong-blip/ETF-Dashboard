@@ -139,6 +139,7 @@ export default function ETFDashboard() {
   const [metadata, setMetadata] = useState(null);
   const [error, setError] = useState(null);
   const [selectedEtf, setSelectedEtf] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // 모달 Escape 키 닫기
   useEffect(() => {
@@ -177,11 +178,19 @@ export default function ETFDashboard() {
     setSelectedCategory('전체');
   };
 
-  // 3단계 필터 적용
+  // 필터 적용 (검색 중이면 기존 필터 bypass)
   let filteredData = etfData;
-  if (selectedCountry !== '전체') filteredData = filteredData.filter(e => e.country === selectedCountry);
-  if (selectedCategory !== '전체') filteredData = filteredData.filter(e => e.category === selectedCategory);
-  if (selectedTheme !== '전체') filteredData = filteredData.filter(e => e.theme === selectedTheme);
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase();
+    filteredData = filteredData.filter(e =>
+      e.ticker.toLowerCase().includes(q) ||
+      e.name.toLowerCase().includes(q)
+    );
+  } else {
+    if (selectedCountry !== '전체') filteredData = filteredData.filter(e => e.country === selectedCountry);
+    if (selectedCategory !== '전체') filteredData = filteredData.filter(e => e.category === selectedCategory);
+    if (selectedTheme !== '전체') filteredData = filteredData.filter(e => e.theme === selectedTheme);
+  }
 
   const sortedData = [...filteredData].sort(
     (a, b) => (b.returns[selectedPeriod] ?? -Infinity) - (a.returns[selectedPeriod] ?? -Infinity)
@@ -286,8 +295,35 @@ export default function ETFDashboard() {
           )}
         </header>
 
+        {/* 검색창 */}
+        <div style={{ maxWidth: '480px', margin: '0 auto 1.25rem', position: 'relative' }}>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={e => setSearchQuery(e.target.value)}
+            placeholder="ETF 검색 (티커 또는 이름)"
+            style={{
+              width: '100%',
+              padding: '0.7rem 2.5rem 0.7rem 1rem',
+              background: 'rgba(255,255,255,0.05)',
+              border: '1px solid rgba(255,255,255,0.12)',
+              borderRadius: '12px',
+              color: '#e2e8f0',
+              fontSize: '0.9375rem',
+              outline: 'none',
+              boxSizing: 'border-box',
+            }}
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              style={{ position: 'absolute', right: '0.75rem', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: '1rem', padding: '0', lineHeight: 1 }}
+            >✕</button>
+          )}
+        </div>
+
         {/* 1단: 국가 탭 */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem', opacity: searchQuery ? 0.4 : 1, pointerEvents: searchQuery ? 'none' : 'auto', transition: 'opacity 0.2s' }}>
           {[
             { key: '전체', label: '전체', flag: '🌐' },
             { key: 'US',   label: '미국',  flag: '🇺🇸' },
@@ -331,6 +367,7 @@ export default function ETFDashboard() {
           WebkitOverflowScrolling: 'touch',
           msOverflowStyle: 'none',
           scrollbarWidth: 'none',
+          opacity: searchQuery ? 0.4 : 1, pointerEvents: searchQuery ? 'none' : 'auto', transition: 'opacity 0.2s',
         }}>
           <button
             onClick={() => setSelectedCategory('전체')}
