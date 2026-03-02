@@ -367,26 +367,34 @@ def build_period_table(etfs, is_kr):
 <p style="font-size:11px;color:#aaa;margin:4px 0 0;">* 수익률·CAGR: 배당 포함 총수익률 기준 | 변동성: 연환산 표준편차 | 최대낙폭: 최고점 대비 최대 손실</p>"""
 
 
-def build_etf_cards(etfs, is_kr):
-    """스크린샷 스타일 ETF 카드 그리드 (1Y 수익률 순 상위 6개)"""
-    if not etfs:
+def get_period_return(etf, period):
+    """3Y·5Y는 cagr에서, 나머지는 returns에서 수익률 반환"""
+    if period in ('3Y', '5Y'):
+        return etf.get('cagr', {}).get(period)
+    return etf.get('returns', {}).get(period)
+
+
+def build_etf_cards(etfs, is_kr, period='1Y', period_label='1년'):
+    """기간별 ETF 카드 (해당 기간 수익률 상위 3개, 같은 카드 양식)"""
+    with_p = [e for e in etfs if get_period_return(e, period) is not None]
+    if not with_p:
         return ''
-    sorted_e = sorted(etfs, key=lambda e: (e.get('returns', {}).get('1Y') or -9999), reverse=True)
-    show_e = sorted_e[:6]
-    cols = 3 if len(show_e) >= 3 else len(show_e)
+    sorted_e = sorted(with_p, key=lambda e: get_period_return(e, period), reverse=True)
+    show_e = sorted_e[:3]
+    cols = len(show_e)
 
     def make_card(etf):
         r = etf.get('returns', {})
         dname = display_name(etf, is_kr)
         ticker = etf['ticker']
-        r1y = r.get('1Y')
+        rp = get_period_return(etf, period)
         r1w = r.get('1W')
         dy = etf.get('dividendYield')
         vol = etf.get('volatility')
         mdd = etf.get('maxDrawdown')
 
-        r1y_c = '#388e3c' if (r1y or 0) >= 0 else '#d32f2f'
-        r1y_str = fmt_pct(r1y)
+        rp_c = '#388e3c' if (rp or 0) >= 0 else '#d32f2f'
+        rp_str = fmt_pct(rp)
 
         if is_kr:
             top_line = dname[:16] + '…' if len(dname) > 16 else dname
@@ -415,15 +423,15 @@ def build_etf_cards(etfs, is_kr):
             f'</tr>'
         )
         return (
-            f'<td style="padding:6px;vertical-align:top;">'
+            f'<td style="padding:6px;vertical-align:top;width:{100 // cols}%;">'
             f'<div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;">'
             f'<div style="background:#0f172a;padding:12px 14px;">'
             f'<div style="color:#f1f5f9;font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;">{top_line}</div>'
             f'<div style="color:#64748b;font-size:11px;margin-top:2px;white-space:nowrap;overflow:hidden;">{sub_line}</div>'
             f'</div>'
-            f'<div style="background:{r1y_c};padding:10px 14px;text-align:center;">'
-            f'<div style="color:rgba(255,255,255,0.75);font-size:10px;margin-bottom:3px;">1년 총 수익률</div>'
-            f'<div style="color:#fff;font-size:22px;font-weight:700;">{r1y_str}</div>'
+            f'<div style="background:{rp_c};padding:10px 14px;text-align:center;">'
+            f'<div style="color:rgba(255,255,255,0.75);font-size:10px;margin-bottom:3px;">{period_label} 수익률</div>'
+            f'<div style="color:#fff;font-size:22px;font-weight:700;">{rp_str}</div>'
             f'</div>'
             f'<div style="padding:0 12px;">'
             f'<table style="width:100%;border-collapse:collapse;">{rows_inner}</table>'
@@ -432,19 +440,15 @@ def build_etf_cards(etfs, is_kr):
             f'</td>'
         )
 
-    rows_html = ''
-    for i in range(0, len(show_e), cols):
-        chunk = show_e[i:i + cols]
-        row_tds = ''.join(make_card(e) for e in chunk)
-        for _ in range(cols - len(chunk)):
-            row_tds += '<td style="padding:6px;"></td>'
-        rows_html += f'<tr>{row_tds}</tr>'
+    row_tds = ''.join(make_card(e) for e in show_e)
+    for _ in range(3 - cols):
+        row_tds += '<td style="padding:6px;"></td>'
 
-    count_note = f' (1Y 수익률 상위 {len(show_e)}개)' if len(sorted_e) > 6 else ''
     return (
-        f'<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">'
-        f'🃏 ETF 핵심 지표 비교{count_note}</h2>'
-        f'<table style="width:100%;border-collapse:collapse;table-layout:fixed;">{rows_html}</table>'
+        f'<h3 style="font-size:15px;color:#374151;margin:20px 0 8px;padding-left:10px;'
+        f'border-left:3px solid #6366f1;">{period_label} 수익률 TOP 3</h3>'
+        f'<table style="width:100%;border-collapse:collapse;table-layout:fixed;">'
+        f'<tr>{row_tds}</tr></table>'
     )
 
 
@@ -515,9 +519,13 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     avg_c = ret_color(avg_1w)
 
     analysis_html = generate_analysis(cat_key, etfs, is_kr)
-    cards_html = build_etf_cards(etfs, is_kr)
+    _card_periods = [('1M', '1개월'), ('6M', '6개월'), ('1Y', '1년'), ('3Y', '3년'), ('5Y', '5년')]
+    cards_html = (
+        '<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">'
+        '🃏 기간별 ETF 핵심 지표 비교</h2>'
+        + ''.join(build_etf_cards(etfs, is_kr, p, pl) for p, pl in _card_periods)
+    )
     insights_html = build_1y_insights(etfs, is_kr)
-    svg_chart = build_svg_chart(etfs, is_kr)
     period_table = build_period_table(etfs, is_kr)
 
     html = f"""<!DOCTYPE html>
@@ -562,8 +570,6 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 {cards_html}
 
 {insights_html}
-
-{svg_chart}
 
 {period_table}
 
