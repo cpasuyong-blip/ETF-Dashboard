@@ -13,6 +13,12 @@ from email.mime.text import MIMEText
 KST = timezone(timedelta(hours=9))
 DATA_FILE = os.path.join(os.path.dirname(__file__), '../frontend/public/data/etf_database.json')
 
+# ─── 로테이션 기산일 ────────────────────────────────────────────────────────────
+# 이 날짜가 CATEGORY_ORDER[0] (미국_S&P500) 기준일이 됩니다.
+# 원하는 날짜로 변경하면 그 날부터 S&P500 → 나스닥 → ... 순으로 재시작됩니다.
+ROTATION_START_DATE = date(2026, 3, 3)  # ← 여기서 기산일 변경
+# ───────────────────────────────────────────────────────────────────────────────
+
 # 카테고리 순환 순서
 CATEGORY_ORDER = [
     '미국_S&P500', '미국_나스닥', '미국_전체시장', '미국_섹터별', '미국_테마',
@@ -84,9 +90,10 @@ def load_data():
 
 
 def get_today_category(available_cats):
-    """날짜 기반으로 오늘의 카테고리 결정 (결정론적 순환)"""
+    """날짜 기반으로 오늘의 카테고리 결정 (ROTATION_START_DATE 기준 순환)"""
     valid = [c for c in CATEGORY_ORDER if c in available_cats]
-    idx = date.today().toordinal() % len(valid)
+    days_elapsed = (date.today() - ROTATION_START_DATE).days
+    idx = days_elapsed % len(valid)
     return valid[idx], idx, len(valid)
 
 
