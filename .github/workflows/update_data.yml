@@ -4,6 +4,8 @@ on:
   schedule:
     # 매일 한국시간 오전 8시 (UTC 23시, 일~목) - 미국장 마감 후
     - cron: '0 23 * * 0-4'
+    # 주간 리포트: 매주 월요일 한국시간 오전 8시 (UTC 일요일 23시)
+    - cron: '0 23 * * 0'
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:
@@ -35,6 +37,16 @@ jobs:
           git add frontend/public/data/etf_database.json
           git diff --staged --quiet || git commit -m "Update ETF data $(date +'%Y-%m-%d %H:%M')"
           git push
+
+      - name: Send weekly email report (월요일만 실행)
+        if: github.event_name == 'schedule' && github.event.schedule == '0 23 * * 0'
+        run: |
+          cd scripts
+          python send_weekly_report.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
 
       - name: Deploy to Vercel
         run: |
