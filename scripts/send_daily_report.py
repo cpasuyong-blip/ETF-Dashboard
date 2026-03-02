@@ -367,6 +367,137 @@ def build_period_table(etfs, is_kr):
 <p style="font-size:11px;color:#aaa;margin:4px 0 0;">* 수익률·CAGR: 배당 포함 총수익률 기준 | 변동성: 연환산 표준편차 | 최대낙폭: 최고점 대비 최대 손실</p>"""
 
 
+def build_etf_cards(etfs, is_kr):
+    """스크린샷 스타일 ETF 카드 그리드 (1Y 수익률 순 상위 6개)"""
+    if not etfs:
+        return ''
+    sorted_e = sorted(etfs, key=lambda e: (e.get('returns', {}).get('1Y') or -9999), reverse=True)
+    show_e = sorted_e[:6]
+    cols = 3 if len(show_e) >= 3 else len(show_e)
+
+    def make_card(etf):
+        r = etf.get('returns', {})
+        dname = display_name(etf, is_kr)
+        ticker = etf['ticker']
+        r1y = r.get('1Y')
+        r1w = r.get('1W')
+        dy = etf.get('dividendYield')
+        vol = etf.get('volatility')
+        mdd = etf.get('maxDrawdown')
+
+        r1y_c = '#388e3c' if (r1y or 0) >= 0 else '#d32f2f'
+        r1y_str = fmt_pct(r1y)
+
+        if is_kr:
+            top_line = dname[:16] + '…' if len(dname) > 16 else dname
+            sub_line = ticker
+        else:
+            top_line = ticker
+            ename = etf.get('name', '')
+            sub_line = (ename[:22] + '…') if len(ename) > 22 else ename
+
+        rows_inner = (
+            f'<tr style="border-bottom:1px solid #f1f5f9;">'
+            f'<td style="padding:7px 0;font-size:12px;color:#64748b;">주간 수익률</td>'
+            f'<td style="font-size:13px;font-weight:600;color:{ret_color(r1w)};text-align:right;">{fmt_pct(r1w)}</td>'
+            f'</tr>'
+            f'<tr style="border-bottom:1px solid #f1f5f9;">'
+            f'<td style="padding:7px 0;font-size:12px;color:#64748b;">배당수익률</td>'
+            f'<td style="font-size:13px;font-weight:600;color:#16a34a;text-align:right;">{f"{dy:.2f}%" if dy else "-"}</td>'
+            f'</tr>'
+            f'<tr style="border-bottom:1px solid #f1f5f9;">'
+            f'<td style="padding:7px 0;font-size:12px;color:#64748b;">변동성 (연환산)</td>'
+            f'<td style="font-size:13px;font-weight:600;color:#7c3aed;text-align:right;">{f"{vol:.1f}%" if vol else "-"}</td>'
+            f'</tr>'
+            f'<tr>'
+            f'<td style="padding:7px 0;font-size:12px;color:#64748b;">최대 낙폭 (MDD)</td>'
+            f'<td style="font-size:13px;font-weight:600;color:#dc2626;text-align:right;">{f"{mdd:.1f}%" if mdd else "-"}</td>'
+            f'</tr>'
+        )
+        return (
+            f'<td style="padding:6px;vertical-align:top;">'
+            f'<div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;">'
+            f'<div style="background:#0f172a;padding:12px 14px;">'
+            f'<div style="color:#f1f5f9;font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;">{top_line}</div>'
+            f'<div style="color:#64748b;font-size:11px;margin-top:2px;white-space:nowrap;overflow:hidden;">{sub_line}</div>'
+            f'</div>'
+            f'<div style="background:{r1y_c};padding:10px 14px;text-align:center;">'
+            f'<div style="color:rgba(255,255,255,0.75);font-size:10px;margin-bottom:3px;">1년 총 수익률</div>'
+            f'<div style="color:#fff;font-size:22px;font-weight:700;">{r1y_str}</div>'
+            f'</div>'
+            f'<div style="padding:0 12px;">'
+            f'<table style="width:100%;border-collapse:collapse;">{rows_inner}</table>'
+            f'</div>'
+            f'</div>'
+            f'</td>'
+        )
+
+    rows_html = ''
+    for i in range(0, len(show_e), cols):
+        chunk = show_e[i:i + cols]
+        row_tds = ''.join(make_card(e) for e in chunk)
+        for _ in range(cols - len(chunk)):
+            row_tds += '<td style="padding:6px;"></td>'
+        rows_html += f'<tr>{row_tds}</tr>'
+
+    count_note = f' (1Y 수익률 상위 {len(show_e)}개)' if len(sorted_e) > 6 else ''
+    return (
+        f'<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">'
+        f'🃏 ETF 핵심 지표 비교{count_note}</h2>'
+        f'<table style="width:100%;border-collapse:collapse;table-layout:fixed;">{rows_html}</table>'
+    )
+
+
+def build_1y_insights(etfs, is_kr):
+    """1Y 수익률 기반 인사이트 불릿 리스트"""
+    with_1y = [(e, e.get('returns', {}).get('1Y')) for e in etfs if e.get('returns', {}).get('1Y') is not None]
+    if len(with_1y) < 2:
+        return ''
+
+    sorted_1y = sorted(with_1y, key=lambda x: x[1], reverse=True)
+    best_e, best_r = sorted_1y[0]
+    worst_e, worst_r = sorted_1y[-1]
+    avg_r = sum(r for _, r in sorted_1y) / len(sorted_1y)
+
+    with_dy = [(e, e.get('dividendYield')) for e in etfs if e.get('dividendYield')]
+    with_vol = [(e, e.get('volatility')) for e in etfs if e.get('volatility')]
+
+    items = [
+        f"<strong>{display_name(best_e, is_kr)}</strong>이(가) 1년 <strong style='color:#16a34a;'>{fmt_pct(best_r)}</strong>으로 카테고리 내 최고 수익률을 기록했습니다."
+    ]
+    if worst_r < 0:
+        items.append(
+            f"<strong>{display_name(worst_e, is_kr)}</strong>은(는) <strong style='color:#dc2626;'>{fmt_pct(worst_r)}</strong>로 가장 부진했습니다."
+        )
+    else:
+        items.append(
+            f"최하위 <strong>{display_name(worst_e, is_kr)}</strong>도 <strong style='color:#16a34a;'>{fmt_pct(worst_r)}</strong>를 기록해 카테고리 전반이 양호한 흐름을 보였습니다."
+        )
+    items.append(
+        f"카테고리 평균 1년 수익률은 <strong style='color:{ret_color(avg_r)};'>{fmt_pct(avg_r)}</strong>입니다."
+    )
+    if with_dy:
+        dy_e, dy_r = max(with_dy, key=lambda x: x[1])
+        items.append(
+            f"배당 측면에서는 <strong>{display_name(dy_e, is_kr)}</strong>가 연 <strong style='color:#16a34a;'>{dy_r:.2f}%</strong>로 가장 높은 배당수익률을 제공합니다."
+        )
+    if with_vol:
+        vol_e, vol_r = min(with_vol, key=lambda x: x[1])
+        items.append(
+            f"변동성이 가장 낮은 ETF는 <strong>{display_name(vol_e, is_kr)}</strong>(연환산 {vol_r:.1f}%)로, 안정성을 중시한다면 참고할 만합니다."
+        )
+
+    bullets = ''.join(
+        f'<li style="padding:5px 0;font-size:14px;color:#374151;line-height:1.7;">{item}</li>'
+        for item in items
+    )
+    return (
+        f'<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #0ea5e9;padding-left:12px;">'
+        f'💡 1Y 수익률 인사이트</h2>'
+        f'<ul style="margin:0 0 20px;padding-left:20px;list-style-type:disc;">{bullets}</ul>'
+    )
+
+
 def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     etfs = cat_data.get('etfs', [])
     label = CATEGORY_LABELS.get(cat_key, cat_key)
@@ -384,6 +515,8 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     avg_c = ret_color(avg_1w)
 
     analysis_html = generate_analysis(cat_key, etfs, is_kr)
+    cards_html = build_etf_cards(etfs, is_kr)
+    insights_html = build_1y_insights(etfs, is_kr)
     svg_chart = build_svg_chart(etfs, is_kr)
     period_table = build_period_table(etfs, is_kr)
 
@@ -425,6 +558,10 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 
 <h2 style="font-size:18px;color:#222;margin:0 0 12px;border-left:4px solid #10b981;padding-left:12px;">📝 주간 분석</h2>
 <div style="font-size:15px;color:#374151;margin:0 0 24px;line-height:1.85;">{analysis_html}</div>
+
+{cards_html}
+
+{insights_html}
 
 {svg_chart}
 
