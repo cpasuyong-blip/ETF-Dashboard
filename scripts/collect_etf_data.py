@@ -1,6 +1,6 @@
 """
 ETF 데이터 수집 스크립트
-미국 ~112개 + 한국 ~22개 = ~134개 ETF (AUM 기준 선별)
+미국 ~155개 + 한국 ~48개 = ~200개 ETF (AUM 기준 선별)
  - 미국: AUM $1B+ 기준
  - 한국: AUM 1000억원+ 기준
 """
@@ -32,30 +32,41 @@ EXPENSE_RATIOS = {
     'XLF': 0.09, 'XLV': 0.09, 'XLE': 0.09, 'XLI': 0.09,
     'XLP': 0.09, 'XLY': 0.09, 'XLU': 0.09, 'XLB': 0.09,
     'XLC': 0.09, 'XLRE': 0.09, 'IBB': 0.44, 'ITA': 0.39, 'KRE': 0.35,
+    'XBI': 0.35, 'XRT': 0.35, 'XOP': 0.35, 'XME': 0.35, 'XHB': 0.35, 'XSW': 0.35,
     # 채권
     'AGG': 0.03, 'TLT': 0.15, 'SHY': 0.15, 'BND': 0.03,
     'LQD': 0.14, 'HYG': 0.48, 'JNK': 0.40, 'TIP': 0.19,
     'IEF': 0.15, 'SGOV': 0.09, 'BIL': 0.14, 'EMB': 0.39,
+    'VCIT': 0.04, 'VCSH': 0.04, 'MUB': 0.05, 'BNDX': 0.07, 'VMBS': 0.04, 'FLOT': 0.15,
     # 배당
     'VYM': 0.06, 'SCHD': 0.06, 'HDV': 0.08, 'DVY': 0.38,
     'VIG': 0.06, 'DGRO': 0.08, 'DGRW': 0.28,
     'JEPI': 0.35, 'JEPQ': 0.35, 'SPYD': 0.07, 'NOBL': 0.35, 'SDY': 0.35,
     'XYLD': 0.60, 'QYLD': 0.60,
+    'FDVV': 0.29, 'PFFD': 0.23,
     # 성장/가치
     'VUG': 0.04, 'VTV': 0.04, 'IWF': 0.19, 'IWD': 0.19,
     'SCHG': 0.04, 'SCHV': 0.04, 'QUAL': 0.15, 'USMV': 0.15,
+    'MGK': 0.07, 'MGV': 0.07, 'AVUV': 0.25, 'DFAC': 0.18,
     # 국제
     'VXUS': 0.07, 'VEA': 0.05, 'VWO': 0.08, 'IEFA': 0.07,
     'IEMG': 0.09, 'EFA': 0.32, 'EEM': 0.68, 'MCHI': 0.59,
     'EWJ': 0.50, 'KWEB': 0.67, 'VGK': 0.09, 'EWZ': 0.57,
+    'EWY': 0.50, 'EWT': 0.57, 'EWG': 0.50, 'EWU': 0.50,
+    'EWC': 0.50, 'EWA': 0.50, 'INDA': 0.65, 'EWH': 0.50,
+    'VPL': 0.08, 'EWW': 0.50,
     # 금/원자재
     'GLD': 0.40, 'SLV': 0.50, 'IAU': 0.25, 'GLDM': 0.10,
     'GDX': 0.51, 'DBC': 0.85, 'USO': 0.79,
     # 리츠
     'VNQ': 0.12, 'IYR': 0.39, 'SCHH': 0.07,
+    'REET': 0.14, 'VNQI': 0.12, 'USRT': 0.08,
     # 테마
     'ARKW': 0.75, 'ARKX': 0.75, 'UFO': 0.75, 'ROKT': 0.75,
     'CIBR': 0.40, 'BOTZ': 0.68, 'ICLN': 0.40, 'LIT': 0.75, 'IBIT': 0.25,
+    'ARKF': 0.75, 'ARKG': 0.75, 'ARKQ': 0.75,
+    'CLOU': 0.68, 'JETS': 0.60, 'DRIV': 0.68,
+    'WCLD': 0.45, 'FINX': 0.68, 'FBTC': 0.25,
     # 레버리지/인버스
     'PSQ': 0.95, 'SQQQ': 0.95, 'SPXL': 0.95, 'SPXS': 0.95,
     'SSO': 0.89, 'SDS': 0.89, 'SOXL': 0.95, 'SOXS': 1.01,
@@ -64,16 +75,35 @@ EXPENSE_RATIOS = {
     # 주식시장
     '069500': 0.15, '102110': 0.05, '278530': 0.05,
     '229200': 0.15, '091180': 0.25, '122630': 0.67, '252670': 0.64, '232080': 0.19, '354500': 0.09,
+    '233740': 0.64, '291630': 0.64,
     # 반도체/AI
-    '091160': 0.45, '381180': 0.49,
+    '091160': 0.45, '381180': 0.49, '411380': 0.45, '445090': 0.45,
     # 2차전지
     '305540': 0.40, '371460': 0.49, '364980': 0.40,
     # 채권
     '308620': 0.30, '114820': 0.15, '157450': 0.05,
-    # S&P500 (KR)
-    '360750': 0.07, '379800': 0.05, '360200': 0.07,
-    # 나스닥 (KR)
-    '381170': 0.49, '133690': 0.07,
+    '357870': 0.05, '385560': 0.30, '148070': 0.15,
+    # S&P500 (KR) - TIGER·KODEX·ACE + 환헷지(H) 버전
+    '360750': 0.07, '379800': 0.07, '360200': 0.07,
+    '448290': 0.07, '449180': 0.07,
+    # 나스닥100 (KR) - TIGER·KODEX·ACE
+    '133690': 0.07, '379810': 0.07, '367380': 0.07,
+    # 바이오/헬스케어
+    '228800': 0.45, '143460': 0.40, '266410': 0.45,
+    # 중국/아시아
+    '099140': 0.69, '192090': 0.64,
+    # 금/원자재
+    '132030': 0.68, '319640': 0.50,
+    # 글로벌/선진국
+    '195970': 0.30, '192720': 0.30,
+    # 리츠/배당
+    '182480': 0.29, '292190': 0.12, '329200': 0.29,
+    # 인도
+    '453590': 0.49, '437080': 0.49,
+    # 미국테마 (KR)
+    '381170': 0.49, '449770': 0.49, '461900': 0.49,
+    # 글로벌/선진국 (PLUS=구ARIRANG)
+    '195980': 0.30, '213630': 0.30,
     # 기타
     '458730': 0.09, '091220': 0.50, '334690': 0.50,
 }
@@ -101,15 +131,18 @@ US_ETFS = {
         'description': '기술 섹터 및 반도체 중심 투자 ETF'
     },
     '섹터': {
-        'tickers': ['XLF', 'XLV', 'XLE', 'XLI', 'XLP', 'XLY', 'XLU', 'XLB', 'XLC', 'XLRE', 'IBB', 'ITA', 'KRE'],
-        'description': '금융, 헬스케어, 에너지 등 산업 섹터 ETF'
+        'tickers': ['XLF', 'XLV', 'XLE', 'XLI', 'XLP', 'XLY', 'XLU', 'XLB', 'XLC', 'XLRE',
+                    'IBB', 'ITA', 'KRE', 'XBI', 'XRT', 'XOP', 'XME', 'XHB', 'XSW'],
+        'description': '금융, 헬스케어, 에너지, 바이오, 리테일 등 산업 섹터 ETF'
     },
     '채권': {
-        'tickers': ['AGG', 'TLT', 'SHY', 'BND', 'LQD', 'HYG', 'JNK', 'TIP', 'IEF', 'SGOV', 'BIL', 'EMB'],
-        'description': '국채, 회사채 등 채권에 투자하는 ETF'
+        'tickers': ['AGG', 'TLT', 'SHY', 'BND', 'LQD', 'HYG', 'JNK', 'TIP', 'IEF',
+                    'SGOV', 'BIL', 'EMB', 'VCIT', 'VCSH', 'MUB', 'BNDX', 'VMBS', 'FLOT'],
+        'description': '국채, 회사채, 지방채, 국제채권 등 채권에 투자하는 ETF'
     },
     '배당': {
-        'tickers': ['VYM', 'SCHD', 'HDV', 'DVY', 'VIG', 'DGRO', 'DGRW', 'SPYD', 'NOBL', 'SDY'],
+        'tickers': ['VYM', 'SCHD', 'HDV', 'DVY', 'VIG', 'DGRO', 'DGRW', 'SPYD', 'NOBL', 'SDY',
+                    'FDVV', 'PFFD'],
         'description': '고배당 및 배당 성장주에 투자하는 ETF'
     },
     '커버드콜': {
@@ -117,24 +150,28 @@ US_ETFS = {
         'description': 'S&P500, 나스닥100 커버드콜 전략 ETF (옵션 프리미엄 수익)'
     },
     '성장/가치': {
-        'tickers': ['VUG', 'VTV', 'IWF', 'IWD', 'SCHG', 'SCHV', 'QUAL', 'USMV'],
-        'description': '성장주와 가치주, 팩터 투자 ETF'
+        'tickers': ['VUG', 'VTV', 'IWF', 'IWD', 'SCHG', 'SCHV', 'QUAL', 'USMV',
+                    'MGK', 'MGV', 'AVUV', 'DFAC'],
+        'description': '성장주와 가치주, 팩터·소형가치 투자 ETF'
     },
     '국제': {
-        'tickers': ['VXUS', 'VEA', 'VWO', 'IEFA', 'IEMG', 'EFA', 'EEM', 'MCHI', 'EWJ', 'KWEB', 'VGK', 'EWZ'],
-        'description': '미국 외 선진국 및 신흥국 시장 ETF'
+        'tickers': ['VXUS', 'VEA', 'VWO', 'IEFA', 'IEMG', 'EFA', 'EEM', 'MCHI',
+                    'EWJ', 'KWEB', 'VGK', 'EWZ',
+                    'EWY', 'EWT', 'EWG', 'EWU', 'EWC', 'EWA', 'INDA', 'EWH', 'VPL', 'EWW'],
+        'description': '미국 외 선진국·신흥국·국가별 시장 ETF'
     },
     '금/원자재': {
         'tickers': ['GLD', 'SLV', 'IAU', 'GLDM', 'GDX', 'DBC', 'USO'],
         'description': '금, 은, 원유 등 원자재에 투자하는 ETF'
     },
     '리츠': {
-        'tickers': ['VNQ', 'IYR', 'SCHH'],
-        'description': '부동산 투자신탁(REIT) ETF'
+        'tickers': ['VNQ', 'IYR', 'SCHH', 'REET', 'VNQI', 'USRT'],
+        'description': '미국·글로벌 부동산 투자신탁(REIT) ETF'
     },
     '테마': {
-        'tickers': ['ARKW', 'ARKX', 'UFO', 'ROKT', 'CIBR', 'BOTZ', 'ICLN', 'LIT', 'IBIT'],
-        'description': '사이버보안, AI, 청정에너지, 비트코인 등 테마 ETF'
+        'tickers': ['ARKW', 'ARKX', 'UFO', 'ROKT', 'CIBR', 'BOTZ', 'ICLN', 'LIT', 'IBIT',
+                    'ARKF', 'ARKG', 'ARKQ', 'CLOU', 'JETS', 'DRIV', 'WCLD', 'FINX', 'FBTC'],
+        'description': '사이버보안, AI, 클라우드, EV, 항공, 핀테크, 비트코인 등 테마 ETF'
     },
     '레버리지/인버스': {
         'tickers': ['PSQ', 'SQQQ', 'SPXL', 'SPXS', 'SSO', 'SDS', 'SOXL', 'SOXS', 'UPRO', 'SH'],
@@ -145,11 +182,12 @@ US_ETFS = {
 # 한국 ETF 리스트 정의 (AUM 1000억원+ 기준)
 KR_ETFS = {
     '주식시장': {
-        'codes': ['069500', '102110', '278530', '229200', '091180', '122630', '252670', '232080', '354500'],
+        'codes': ['069500', '102110', '278530', '229200', '091180', '122630',
+                  '252670', '232080', '354500', '233740', '291630'],
         'description': 'KOSPI200, 코스닥150 추종 및 레버리지/인버스 ETF'
     },
     '반도체/AI': {
-        'codes': ['091160', '381180'],
+        'codes': ['091160', '381180', '411380', '445090'],
         'description': '반도체 및 AI 관련 산업에 투자하는 ETF'
     },
     '2차전지': {
@@ -157,8 +195,36 @@ KR_ETFS = {
         'description': '2차전지 및 배터리 산업에 투자하는 ETF'
     },
     '채권': {
-        'codes': ['308620', '114820', '157450'],
-        'description': '국내 채권 및 단기 금리 ETF'
+        'codes': ['308620', '114820', '157450', '357870', '385560', '148070'],
+        'description': '국내외 채권 및 단기 금리 ETF'
+    },
+    '바이오/헬스케어': {
+        'codes': ['228800', '143460', '266410'],
+        'description': '바이오·헬스케어·의약품 산업에 투자하는 ETF'
+    },
+    '중국/아시아': {
+        'codes': ['099140', '192090'],
+        'description': '중국 H주, CSI300 등 아시아 시장에 투자하는 ETF'
+    },
+    '금/원자재': {
+        'codes': ['132030', '319640'],
+        'description': '금, 은 선물 등 원자재에 투자하는 국내 ETF'
+    },
+    '글로벌/선진국': {
+        'codes': ['195970', '192720', '195980', '213630'],
+        'description': '선진국 MSCI, 다우존스 등 글로벌 지수 추종 ETF (ARIRANG→PLUS 포함)'
+    },
+    '리츠/배당': {
+        'codes': ['182480', '292190', '329200'],
+        'description': '국내 부동산 인프라, 배당가치 ETF'
+    },
+    '인도': {
+        'codes': ['453590', '437080'],
+        'description': '인도 Nifty50 지수 추종 ETF'
+    },
+    '미국테마': {
+        'codes': ['381170', '449770', '461900'],
+        'description': '미국 빅테크·AI·테크TOP10 테마를 추종하는 국내 상장 ETF'
     },
     '기타': {
         'codes': ['458730', '091220', '334690'],
@@ -431,7 +497,7 @@ def main():
     print(f"시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     us_total = sum(len(v['tickers']) for v in US_ETFS.values())
     kr_total = sum(len(v['codes']) for v in KR_ETFS.values())
-    print(f"대상: 미국 {us_total}개 + 한국 {kr_total}개 = 총 {us_total + kr_total}개")
+    print(f"대상: 미국 {us_total}개 + 한국 {kr_total}개 = 총 {us_total + kr_total}개 (+ KR지수추종 5개)")
     print("=" * 60)
 
     database = {
@@ -485,8 +551,10 @@ def main():
         }
 
     # KR S&P500/나스닥 ETF → 미국 카테고리에 통합
+    # 360750=TIGER 미국S&P500, 379800=KODEX 미국S&P500, 360200=ACE 미국S&P500
+    # 448290=TIGER 미국S&P500(H), 449180=KODEX 미국S&P500(H)
     print("\n[KR 지수 추종 ETF → 미국 카테고리 통합]")
-    for code in ['360750', '379800', '360200']:
+    for code in ['360750', '379800', '360200', '448290', '449180']:
         print(f"  S&P500 통합: {code}")
         data = fetch_kr_etf_basic(code)
         if data:
@@ -495,7 +563,8 @@ def main():
         else:
             total_failed += 1
         time.sleep(0.3)
-    for code in ['381170', '133690']:
+    # 133690=TIGER 미국나스닥100, 379810=KODEX 미국나스닥100, 367380=ACE 미국나스닥100
+    for code in ['133690', '379810', '367380']:
         print(f"  나스닥 통합: {code}")
         data = fetch_kr_etf_basic(code)
         if data:
