@@ -16,7 +16,7 @@ DATA_FILE = os.path.join(os.path.dirname(__file__), '../frontend/public/data/etf
 # ─── 로테이션 기산일 ────────────────────────────────────────────────────────────
 # 이 날짜가 CATEGORY_ORDER[0] (미국_S&P500) 기준일이 됩니다.
 # 원하는 날짜로 변경하면 그 날부터 S&P500 → 나스닥 → ... 순으로 재시작됩니다.
-ROTATION_START_DATE = date(2026, 3, 3)  # ← 여기서 기산일 변경
+ROTATION_START_DATE = date(2026, 3, 2)  # ← 여기서 기산일 변경
 # ───────────────────────────────────────────────────────────────────────────────
 
 # 카테고리 순환 순서
@@ -205,6 +205,57 @@ def generate_analysis(cat_key, etfs):
 
 # ─── HTML 생성 ────────────────────────────────────────────────────────────────
 
+def build_returns_chart(sorted_etfs):
+    """1주 수익률 가로 막대 차트 (이메일·티스토리 호환 HTML/CSS)"""
+    pairs = [(e, e.get('returns', {}).get('1W')) for e in sorted_etfs]
+    pairs = [(e, r) for e, r in pairs if r is not None]
+    if not pairs:
+        return ''
+    max_abs = max(abs(r) for _, r in pairs) or 1
+    MAX_BAR = 130  # px
+
+    rows = ''
+    for etf, ret in pairs:
+        bar_w = max(2, int(abs(ret) / max_abs * MAX_BAR))
+        is_pos = ret >= 0
+        color = '#22c55e' if is_pos else '#ef4444'
+        pct_color = '#388e3c' if is_pos else '#d32f2f'
+        sign = '+' if ret > 0 else ''
+        bar = f'<div style="display:inline-block;height:18px;width:{bar_w}px;background:{color};vertical-align:middle;border-radius:{"0 3px 3px 0" if is_pos else "3px 0 0 3px"};"></div>'
+
+        if is_pos:
+            left_td  = f'<td style="width:{MAX_BAR}px;text-align:right;padding:3px 0;"></td>'
+            right_td = f'<td style="width:{MAX_BAR}px;text-align:left;padding:3px 0;">{bar}</td>'
+        else:
+            left_td  = f'<td style="width:{MAX_BAR}px;text-align:right;padding:3px 0;">{bar}</td>'
+            right_td = f'<td style="width:{MAX_BAR}px;text-align:left;padding:3px 0;"></td>'
+
+        rows += (
+            f'<tr style="border-bottom:1px solid #f5f5f5;">'
+            f'<td style="width:72px;text-align:right;padding:4px 8px;font-size:12px;font-weight:700;color:#333;white-space:nowrap;">{etf["ticker"]}</td>'
+            f'{left_td}'
+            f'<td style="width:2px;background:#e0e0e0;padding:0;"></td>'
+            f'{right_td}'
+            f'<td style="padding:4px 8px;font-size:12px;font-weight:700;color:{pct_color};white-space:nowrap;">{sign}{ret:.2f}%</td>'
+            f'</tr>'
+        )
+
+    return f"""
+<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">📊 1주 수익률 차트</h2>
+<div style="overflow-x:auto;">
+<table style="border-collapse:collapse;font-family:sans-serif;">
+  <thead><tr>
+    <td style="width:72px;"></td>
+    <td style="width:{MAX_BAR}px;text-align:right;font-size:11px;color:#bbb;padding:0 6px 6px;">하락 ←</td>
+    <td style="width:2px;"></td>
+    <td style="width:{MAX_BAR}px;font-size:11px;color:#bbb;padding:0 6px 6px;">→ 상승</td>
+    <td></td>
+  </tr></thead>
+  <tbody>{rows}</tbody>
+</table>
+</div>"""
+
+
 def td(content, align='right', extra=''):
     return f'<td style="padding:7px 10px;text-align:{align};font-size:13px;{extra}">{content}</td>'
 
@@ -288,10 +339,9 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 </table>
 <p style="font-size:11px;color:#aaa;margin:4px 0 0;">* CAGR: 복리 연평균 수익률 | 변동성: 연환산 표준편차 | 최대낙폭: 최고점 대비 최대 손실</p>"""
 
-    # ── 투자 정보 테이블
+    # ── 투자 정보 테이블 (AUM 큰 순 정렬)
     info_rows = ''
-    for etf in sorted(etfs, key=lambda e: e.get('expenseRatio') or 999):
-        er = etf.get('expenseRatio')
+    for etf in sorted(etfs, key=lambda e: e.get('aum') or 0, reverse=True):
         aum = etf.get('aum')
         dy = etf.get('dividendYield')
         name_short = etf['name'][:28] + '…' if len(etf['name']) > 28 else etf['name']
@@ -299,7 +349,6 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
             f'<tr style="border-bottom:1px solid #f0f0f0;">'
             + td(f'<strong>{etf["ticker"]}</strong>', align='left', extra='color:#1a1a1a;')
             + td(f'<span style="color:#555;">{name_short}</span>', align='left', extra='font-size:12px;')
-            + td(f'{er*100:.3f}%' if er else '-', extra='color:#333;')
             + td(fmt_aum(aum, is_kr), extra='color:#333;')
             + td(f'<span style="color:#388e3c;">{dy:.2f}%</span>' if dy else '-')
             + '</tr>'
@@ -367,6 +416,8 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 </table>
 <p style="font-size:11px;color:#aaa;margin:4px 0 0;">* 수익률은 배당 포함 총수익률 기준</p>
 
+{build_returns_chart(sorted_etfs)}
+
 {cagr_section}
 
 <h2 style="font-size:18px;color:#222;margin:32px 0 12px;border-left:4px solid #ef4444;padding-left:12px;">💼 ETF 투자 정보</h2>
@@ -374,13 +425,12 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
   <thead><tr style="background:#f3f4f6;border-bottom:2px solid #e5e7eb;">
     <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">티커</th>
     <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">이름</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">총보수(연)</th>
     <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">순자산(AUM)</th>
     <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">배당수익률</th>
   </tr></thead>
   <tbody>{info_rows}</tbody>
 </table>
-<p style="font-size:11px;color:#aaa;margin:4px 0 0;">* 총보수: 낮을수록 투자비용 효율적 | AUM: 운용자산 규모 | 배당: 최근 12개월 기준</p>
+<p style="font-size:11px;color:#aaa;margin:4px 0 0;">* AUM: 운용자산 규모(큰 순) | 배당: 최근 12개월 기준</p>
 
 <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:14px 18px;margin:28px 0 20px;">
 <p style="margin:0;font-size:13px;color:#92400e;line-height:1.7;">⚠️ <strong>투자 유의사항</strong>: 이 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 과거 수익률이 미래 성과를 보장하지 않습니다. 투자는 본인의 판단과 책임 하에 이루어져야 합니다.</p>
