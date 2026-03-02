@@ -38,6 +38,16 @@ jobs:
           git diff --staged --quiet || git commit -m "Update ETF data $(date +'%Y-%m-%d %H:%M')"
           git push
 
+      - name: Send daily category report (매일 실행)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          cd scripts
+          python send_daily_report.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+
       - name: Send weekly email report (월요일만 실행)
         if: github.event_name == 'schedule' && github.event.schedule == '0 23 * * 0'
         run: |
