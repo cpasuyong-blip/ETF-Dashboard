@@ -550,29 +550,42 @@ def main():
             'etfs': etfs_data
         }
 
-    # KR S&P500/나스닥 ETF → 미국 카테고리에 통합
+    # 한국 상장 S&P500/나스닥 추종 ETF → 별도 한국 카테고리로 분리
     # 360750=TIGER 미국S&P500, 379800=KODEX 미국S&P500, 360200=ACE 미국S&P500
     # 448290=TIGER 미국S&P500(H), 449180=KODEX 미국S&P500(H)
-    print("\n[KR 지수 추종 ETF → 미국 카테고리 통합]")
+    print("\n[KR 지수 추종 ETF → 한국 별도 카테고리]")
+    kr_sp500_etfs = []
     for code in ['360750', '379800', '360200', '448290', '449180']:
-        print(f"  S&P500 통합: {code}")
+        print(f"  한국_미국S&P500: {code}")
         data = fetch_kr_etf_basic(code)
         if data:
-            database['categories']['미국_S&P500']['etfs'].append(data)
+            kr_sp500_etfs.append(data)
             total_success += 1
         else:
             total_failed += 1
         time.sleep(0.3)
+    database['categories']['한국_미국S&P500'] = {
+        'description': '한국 거래소에 상장된 미국 S&P500 지수 추종 ETF (TIGER·KODEX·ACE 등)',
+        'country': 'KR',
+        'etfs': kr_sp500_etfs
+    }
+
     # 133690=TIGER 미국나스닥100, 379810=KODEX 미국나스닥100, 367380=ACE 미국나스닥100
+    kr_nasdaq_etfs = []
     for code in ['133690', '379810', '367380']:
-        print(f"  나스닥 통합: {code}")
+        print(f"  한국_미국나스닥: {code}")
         data = fetch_kr_etf_basic(code)
         if data:
-            database['categories']['미국_나스닥']['etfs'].append(data)
+            kr_nasdaq_etfs.append(data)
             total_success += 1
         else:
             total_failed += 1
         time.sleep(0.3)
+    database['categories']['한국_미국나스닥'] = {
+        'description': '한국 거래소에 상장된 미국 나스닥100 지수 추종 ETF (TIGER·KODEX·ACE 등)',
+        'country': 'KR',
+        'etfs': kr_nasdaq_etfs
+    }
 
     # 주요 지수 수집
     print("\n[주요 지수 수집]")
