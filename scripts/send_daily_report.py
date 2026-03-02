@@ -131,9 +131,25 @@ def fmt_aum(aum, is_kr):
     return f"${aum/1e9:.1f}B" if aum >= 1e9 else f"${aum/1e6:.0f}M"
 
 
+def display_name(etf, is_kr):
+    """한국 ETF는 종목명, 미국 ETF는 티커 반환"""
+    if is_kr:
+        return etf.get('name', etf['ticker'])
+    return etf['ticker']
+
+
+# 기간별 수익률 차트 설정
+CHART_COLORS = [
+    '#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6',
+    '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#64748b',
+]
+PERIODS     = ['1M', '3M', '6M', '1Y', '3Y', '5Y']
+PERIOD_LABELS_KO = ['1개월', '3개월', '6개월', '1년', '3년', '5년']
+
+
 # ─── 분석 텍스트 생성 ──────────────────────────────────────────────────────────
 
-def generate_analysis(cat_key, etfs):
+def generate_analysis(cat_key, etfs, is_kr=False):
     label = CATEGORY_LABELS.get(cat_key, cat_key)
     w1 = [(e, e.get('returns', {}).get('1W')) for e in etfs]
     w1 = [(e, r) for e, r in w1 if r is not None]
@@ -141,7 +157,7 @@ def generate_analysis(cat_key, etfs):
     y1 = [(e, r) for e, r in y1 if r is not None]
 
     if not w1:
-        return f"현재 {label}의 데이터를 집계 중입니다."
+        return f"<p style='margin:0'>현재 {label}의 데이터를 집계 중입니다.</p>"
 
     avg_1w = sum(r for _, r in w1) / len(w1)
     best = max(w1, key=lambda x: x[1])
@@ -150,116 +166,54 @@ def generate_analysis(cat_key, etfs):
     negative = sum(1 for _, r in w1 if r < 0)
 
     trend = "상승세" if avg_1w > 0 else "하락세"
-    trend_str = fmt_pct(avg_1w)
+    best_name = display_name(best[0], is_kr)
+    worst_name = display_name(worst[0], is_kr)
 
     lines = []
     lines.append(
-        f"이번 주 {label}는 평균 <strong>{trend_str}</strong>를 기록하며 전반적으로 {trend}를 보였습니다. "
+        f"이번 주 {label}는 평균 <strong>{fmt_pct(avg_1w)}</strong>를 기록하며 전반적으로 {trend}를 보였습니다. "
         f"총 {len(w1)}개 ETF 중 <strong style='color:#388e3c;'>{positive}개 상승</strong>, "
         f"<strong style='color:#d32f2f;'>{negative}개 하락</strong>했습니다."
     )
-
     lines.append(
-        f"가장 높은 성과를 보인 ETF는 <strong>{best[0]['ticker']}</strong> "
-        f"({best[0]['name'][:28]}{'…' if len(best[0]['name']) > 28 else ''})로 "
+        f"가장 높은 성과를 보인 ETF는 <strong>{best_name}</strong>으로 "
         f"주간 <strong style='color:#388e3c;'>{fmt_pct(best[1])}</strong>의 수익률을 기록했습니다."
     )
-
     if worst[1] is not None and worst[1] < 0:
         lines.append(
-            f"반면 <strong>{worst[0]['ticker']}</strong>는 "
-            f"<strong style='color:#d32f2f;'>{fmt_pct(worst[1])}</strong>로 "
-            f"가장 큰 조정을 받았습니다."
+            f"반면 <strong>{worst_name}</strong>는 "
+            f"<strong style='color:#d32f2f;'>{fmt_pct(worst[1])}</strong>로 가장 큰 조정을 받았습니다."
         )
 
     if y1:
         avg_1y = sum(r for _, r in y1) / len(y1)
+        best_y1 = max(y1, key=lambda x: x[1])
+        best_y1_name = display_name(best_y1[0], is_kr)
         if avg_1w > 0 and avg_1y > 0:
             lines.append(
-                f"단기(1주)와 장기(1년) 모두 양호한 성과를 보이며, "
-                f"연간 평균 수익률은 <strong>{fmt_pct(avg_1y)}</strong>를 기록하고 있습니다."
+                f"단기·장기 모두 양호한 흐름으로, 연간 평균 수익률은 <strong>{fmt_pct(avg_1y)}</strong>이며 "
+                f"1년 기준 최고 성과는 <strong>{best_y1_name}</strong> ({fmt_pct(best_y1[1])})입니다."
             )
         elif avg_1w < 0 and avg_1y > 0:
             lines.append(
-                f"최근 단기 조정이 있지만, 연간 기준으로는 "
-                f"여전히 <strong>{fmt_pct(avg_1y)}</strong>의 성과를 유지하고 있습니다."
+                f"최근 단기 조정이 있지만 연간 기준으로는 <strong>{fmt_pct(avg_1y)}</strong>를 유지하고 있습니다. "
+                f"1년 기준 최고 성과는 <strong>{best_y1_name}</strong> ({fmt_pct(best_y1[1])})입니다."
             )
         elif avg_1w > 0 and avg_1y < 0:
             lines.append(
-                f"최근 반등을 보이고 있으나, 연간 기준으로는 "
-                f"아직 <strong style='color:#d32f2f;'>{fmt_pct(avg_1y)}</strong> 수준으로 "
-                f"회복 여부를 지켜볼 필요가 있습니다."
+                f"최근 반등을 보이고 있으나 연간 기준으로는 "
+                f"<strong style='color:#d32f2f;'>{fmt_pct(avg_1y)}</strong> 수준으로 회복 여부를 주시해야 합니다."
             )
         else:
             lines.append(
-                f"단기·장기 모두 부진하며, 연간 수익률은 "
+                f"단기·장기 모두 부진한 구간으로, 연간 평균 수익률은 "
                 f"<strong style='color:#d32f2f;'>{fmt_pct(avg_1y)}</strong>입니다."
             )
-
-    # 경비율 최저 ETF 안내
-    er_etfs = [e for e in etfs if e.get('expenseRatio')]
-    if er_etfs:
-        cheapest = min(er_etfs, key=lambda e: e['expenseRatio'])
-        lines.append(
-            f"비용 측면에서는 <strong>{cheapest['ticker']}</strong>이 "
-            f"연 {cheapest['expenseRatio']*100:.3f}%의 낮은 총보수로 가장 효율적인 선택입니다."
-        )
 
     return ' '.join(f"<p style='margin:0 0 10px;'>{l}</p>" for l in lines)
 
 
 # ─── HTML 생성 ────────────────────────────────────────────────────────────────
-
-def build_returns_chart(sorted_etfs):
-    """1주 수익률 가로 막대 차트 (이메일·티스토리 호환 HTML/CSS)"""
-    pairs = [(e, e.get('returns', {}).get('1W')) for e in sorted_etfs]
-    pairs = [(e, r) for e, r in pairs if r is not None]
-    if not pairs:
-        return ''
-    max_abs = max(abs(r) for _, r in pairs) or 1
-    MAX_BAR = 130  # px
-
-    rows = ''
-    for etf, ret in pairs:
-        bar_w = max(2, int(abs(ret) / max_abs * MAX_BAR))
-        is_pos = ret >= 0
-        color = '#22c55e' if is_pos else '#ef4444'
-        pct_color = '#388e3c' if is_pos else '#d32f2f'
-        sign = '+' if ret > 0 else ''
-        bar = f'<div style="display:inline-block;height:18px;width:{bar_w}px;background:{color};vertical-align:middle;border-radius:{"0 3px 3px 0" if is_pos else "3px 0 0 3px"};"></div>'
-
-        if is_pos:
-            left_td  = f'<td style="width:{MAX_BAR}px;text-align:right;padding:3px 0;"></td>'
-            right_td = f'<td style="width:{MAX_BAR}px;text-align:left;padding:3px 0;">{bar}</td>'
-        else:
-            left_td  = f'<td style="width:{MAX_BAR}px;text-align:right;padding:3px 0;">{bar}</td>'
-            right_td = f'<td style="width:{MAX_BAR}px;text-align:left;padding:3px 0;"></td>'
-
-        rows += (
-            f'<tr style="border-bottom:1px solid #f5f5f5;">'
-            f'<td style="width:72px;text-align:right;padding:4px 8px;font-size:12px;font-weight:700;color:#333;white-space:nowrap;">{etf["ticker"]}</td>'
-            f'{left_td}'
-            f'<td style="width:2px;background:#e0e0e0;padding:0;"></td>'
-            f'{right_td}'
-            f'<td style="padding:4px 8px;font-size:12px;font-weight:700;color:{pct_color};white-space:nowrap;">{sign}{ret:.2f}%</td>'
-            f'</tr>'
-        )
-
-    return f"""
-<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">📊 1주 수익률 차트</h2>
-<div style="overflow-x:auto;">
-<table style="border-collapse:collapse;font-family:sans-serif;">
-  <thead><tr>
-    <td style="width:72px;"></td>
-    <td style="width:{MAX_BAR}px;text-align:right;font-size:11px;color:#bbb;padding:0 6px 6px;">하락 ←</td>
-    <td style="width:2px;"></td>
-    <td style="width:{MAX_BAR}px;font-size:11px;color:#bbb;padding:0 6px 6px;">→ 상승</td>
-    <td></td>
-  </tr></thead>
-  <tbody>{rows}</tbody>
-</table>
-</div>"""
-
 
 def td(content, align='right', extra=''):
     return f'<td style="padding:7px 10px;text-align:{align};font-size:13px;{extra}">{content}</td>'
@@ -268,6 +222,149 @@ def td(content, align='right', extra=''):
 def ret_td(v):
     color = ret_color(v)
     return td(fmt_pct(v), extra=f'font-weight:600;color:{color};')
+
+
+def build_svg_chart(etfs, is_kr):
+    """기간별 수익률 SVG 선형 차트 (1M ~ 5Y, 이메일·티스토리 호환)"""
+    valid = []
+    for etf in etfs:
+        r = etf.get('returns', {})
+        pts = [r.get(p) for p in PERIODS]
+        if any(v is not None for v in pts):
+            valid.append((etf, pts))
+    if not valid:
+        return ''
+
+    W, H = 580, 260
+    PL, PR, PT, PB = 54, 16, 16, 36
+    cw, ch = W - PL - PR, H - PT - PB
+    n = len(PERIODS)
+
+    all_vals = [v for _, pts in valid for v in pts if v is not None]
+    if not all_vals:
+        return ''
+    raw_min, raw_max = min(all_vals), max(all_vals)
+    span = raw_max - raw_min or 10
+    y_min, y_max = raw_min - span * 0.10, raw_max + span * 0.10
+
+    def xp(i): return PL + (i / (n - 1)) * cw
+    def yp(v): return PT + ch * (1 - (v - y_min) / (y_max - y_min))
+
+    # 배경 + 격자
+    grid = f'<rect x="{PL}" y="{PT}" width="{cw}" height="{ch}" fill="#f9fafb" rx="4"/>'
+    for s in range(6):
+        yv = y_min + (y_max - y_min) * s / 5
+        y = yp(yv)
+        is_zero = abs(yv) < (y_max - y_min) * 0.06
+        stroke, sw = ('#9ca3af' if is_zero else '#e5e7eb'), ('1.5' if is_zero else '1')
+        grid += f'<line x1="{PL}" y1="{y:.1f}" x2="{W-PR}" y2="{y:.1f}" stroke="{stroke}" stroke-width="{sw}"/>'
+        sign = '+' if yv > 0 else ''
+        grid += f'<text x="{PL-4}" y="{y+4:.1f}" text-anchor="end" font-size="10" fill="#94a3b8">{sign}{yv:.0f}%</text>'
+
+    xaxis = ''
+    for i, lab in enumerate(PERIOD_LABELS_KO):
+        x = xp(i)
+        xaxis += f'<line x1="{x:.1f}" y1="{PT}" x2="{x:.1f}" y2="{PT+ch}" stroke="#f0f0f0" stroke-width="1"/>'
+        xaxis += f'<text x="{x:.1f}" y="{H-4}" text-anchor="middle" font-size="10" fill="#94a3b8">{lab}</text>'
+
+    lines_svg = ''
+    for idx, (etf, pts) in enumerate(valid[:10]):
+        color = CHART_COLORS[idx % len(CHART_COLORS)]
+        path_d, dots = '', ''
+        last_x = last_y = last_v = None
+        for i, v in enumerate(pts):
+            if v is None:
+                continue
+            x, y = xp(i), yp(v)
+            path_d += f'{"M" if not path_d else " L"}{x:.1f},{y:.1f}'
+            dots += f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.5" fill="{color}" stroke="white" stroke-width="1.5"/>'
+            last_x, last_y, last_v = x, y, v
+        if path_d:
+            lines_svg += f'<path d="{path_d}" stroke="{color}" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+            lines_svg += dots
+        if last_v is not None:
+            fc = '#16a34a' if last_v >= 0 else '#dc2626'
+            sign = '+' if last_v > 0 else ''
+            lines_svg += f'<text x="{last_x+5:.1f}" y="{last_y+4:.1f}" font-size="9" fill="{fc}" font-weight="600">{sign}{last_v:.1f}%</text>'
+
+    # 범례
+    COLS = 3
+    legend = ''
+    for idx, (etf, _) in enumerate(valid[:10]):
+        color = CHART_COLORS[idx % len(CHART_COLORS)]
+        dname = display_name(etf, is_kr)
+        short = dname[:24] + '…' if len(dname) > 24 else dname
+        lx = PL + (idx % COLS) * ((W - PL) // COLS)
+        ly = H + 14 + (idx // COLS) * 18
+        legend += f'<rect x="{lx}" y="{ly-7}" width="16" height="3" fill="{color}" rx="1.5"/>'
+        legend += f'<text x="{lx+20}" y="{ly}" font-size="10" fill="#374151">{short}</text>'
+
+    legend_rows = (len(valid) + COLS - 1) // COLS
+    total_h = H + 14 + legend_rows * 18 + 6
+
+    return f"""
+<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">📈 기간별 수익률 추이</h2>
+<div style="overflow-x:auto;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {total_h}" style="width:100%;max-width:{W}px;display:block;">
+  {grid}{xaxis}{lines_svg}{legend}
+</svg>
+</div>"""
+
+
+def build_period_table(etfs, is_kr):
+    """1M~5Y 수익률 + 변동성 + MDD 종합 비교표"""
+    # 1Y 수익률 기준 정렬
+    sorted_e = sorted(etfs, key=lambda e: (e.get('returns', {}).get('1Y') or -9999), reverse=True)
+    rows = ''
+    for etf in sorted_e:
+        r = etf.get('returns', {})
+        c = etf.get('cagr', {})
+        vol = etf.get('volatility')
+        mdd = etf.get('maxDrawdown')
+        aum = etf.get('aum')
+        dy  = etf.get('dividendYield')
+        dname = display_name(etf, is_kr)
+        short = dname[:26] + '…' if len(dname) > 26 else dname
+        r1y = r.get('1Y')
+        bg = '#fff8f8' if (r1y or 0) < 0 else ('#f0fdf4' if (r1y or 0) > 0 else '#fafafa')
+
+        rows += (
+            f'<tr style="border-bottom:1px solid #f0f0f0;background:{bg};">'
+            + f'<td style="padding:7px 8px;font-size:12px;font-weight:600;color:#1a1a1a;white-space:nowrap;">{short}</td>'
+            + ret_td(r.get('1M'))
+            + ret_td(r.get('3M'))
+            + ret_td(r.get('6M'))
+            + ret_td(r.get('1Y'))
+            + ret_td(c.get('3Y'))
+            + ret_td(c.get('5Y'))
+            + td(f'{vol:.1f}%' if vol else '-', extra='color:#64748b;font-size:12px;')
+            + td(f'<span style="color:#dc2626;font-size:12px;">{mdd:.1f}%</span>' if mdd else '-')
+            + td(fmt_aum(aum, is_kr), extra='color:#475569;font-size:12px;')
+            + td(f'<span style="color:#16a34a;font-size:12px;">{dy:.2f}%</span>' if dy else '-')
+            + '</tr>'
+        )
+
+    return f"""
+<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #f59e0b;padding-left:12px;">📋 수익률 데이터 시트</h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;font-family:sans-serif;min-width:640px;">
+  <thead><tr style="background:#f3f4f6;border-bottom:2px solid #e5e7eb;">
+    <th style="padding:8px;text-align:left;font-size:11px;color:#666;font-weight:600;min-width:120px;">ETF명</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">1개월</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">3개월</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">6개월</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">1년</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">3년 CAGR</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">5년 CAGR</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">변동성</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">최대낙폭</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">AUM</th>
+    <th style="padding:8px;text-align:right;font-size:11px;color:#666;font-weight:600;">배당률</th>
+  </tr></thead>
+  <tbody>{rows}</tbody>
+</table>
+</div>
+<p style="font-size:11px;color:#aaa;margin:4px 0 0;">* 수익률·CAGR: 배당 포함 총수익률 기준 | 변동성: 연환산 표준편차 | 최대낙폭: 최고점 대비 최대 손실</p>"""
 
 
 def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
@@ -279,92 +376,16 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     date_str = now.strftime('%Y년 %m월 %d일')
     cycle_info = f"카테고리 로테이션 {cycle_idx + 1}/{cycle_total}"
 
-    # 수익률 계산
     w1_vals = [e.get('returns', {}).get('1W') for e in etfs if e.get('returns', {}).get('1W') is not None]
     avg_1w = sum(w1_vals) / len(w1_vals) if w1_vals else None
     positive = sum(1 for r in w1_vals if r > 0)
     negative = sum(1 for r in w1_vals if r < 0)
-
-    # 수익률 정렬 (1W 기준 내림차순)
-    sorted_etfs = sorted(etfs, key=lambda e: (e.get('returns', {}).get('1W') or -9999), reverse=True)
-
-    # ── 수익률 비교 테이블
-    ret_rows = ''
-    for etf in sorted_etfs:
-        r = etf.get('returns', {})
-        w1 = r.get('1W')
-        bg = '#fff8f8' if (w1 or 0) < 0 else ('#f0fdf4' if (w1 or 0) > 0 else '#fafafa')
-        name = etf['name']
-        name_short = name[:30] + '…' if len(name) > 30 else name
-        ret_rows += (
-            f'<tr style="border-bottom:1px solid #f0f0f0;background:{bg};">'
-            + td(f'<strong>{etf["ticker"]}</strong>', align='left', extra='color:#1a1a1a;')
-            + td(f'<span style="color:#555;">{name_short}</span>', align='left', extra='font-size:12px;')
-            + td(fmt_price(etf), extra='color:#333;')
-            + ret_td(w1)
-            + ret_td(r.get('1M'))
-            + ret_td(r.get('3M'))
-            + ret_td(r.get('6M'))
-            + ret_td(r.get('1Y'))
-            + '</tr>'
-        )
-
-    # ── 장기 성과 테이블
-    cagr_etfs = [e for e in etfs if e.get('cagr', {}).get('3Y') or e.get('cagr', {}).get('5Y')]
-    cagr_section = ''
-    if cagr_etfs:
-        cagr_rows = ''
-        for etf in sorted(cagr_etfs, key=lambda e: e.get('cagr', {}).get('3Y') or -9999, reverse=True):
-            c = etf.get('cagr', {})
-            vol = etf.get('volatility')
-            mdd = etf.get('maxDrawdown')
-            name_short = etf['name'][:28] + '…' if len(etf['name']) > 28 else etf['name']
-            cagr_rows += (
-                f'<tr style="border-bottom:1px solid #f0f0f0;">'
-                + td(f'<strong>{etf["ticker"]}</strong>', align='left', extra='color:#1a1a1a;')
-                + td(f'<span style="color:#555;">{name_short}</span>', align='left', extra='font-size:12px;')
-                + ret_td(c.get('3Y'))
-                + ret_td(c.get('5Y'))
-                + td(f'{vol:.1f}%' if vol else '-', extra='color:#666;')
-                + td(f'<span style="color:#d32f2f;">{mdd:.1f}%</span>' if mdd else '-')
-                + '</tr>'
-            )
-        cagr_section = f"""
-<h2 style="font-size:18px;color:#222;margin:32px 0 12px;border-left:4px solid #7c3aed;padding-left:12px;">⏳ 장기 성과 비교 (연평균 복리 수익률)</h2>
-<table style="width:100%;border-collapse:collapse;font-family:sans-serif;margin-bottom:6px;">
-  <thead><tr style="background:#f3f4f6;border-bottom:2px solid #e5e7eb;">
-    <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">티커</th>
-    <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">이름</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">3Y CAGR</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">5Y CAGR</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">변동성</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">최대낙폭</th>
-  </tr></thead>
-  <tbody>{cagr_rows}</tbody>
-</table>
-<p style="font-size:11px;color:#aaa;margin:4px 0 0;">* CAGR: 복리 연평균 수익률 | 변동성: 연환산 표준편차 | 최대낙폭: 최고점 대비 최대 손실</p>"""
-
-    # ── 투자 정보 테이블 (AUM 큰 순 정렬)
-    info_rows = ''
-    for etf in sorted(etfs, key=lambda e: e.get('aum') or 0, reverse=True):
-        aum = etf.get('aum')
-        dy = etf.get('dividendYield')
-        name_short = etf['name'][:28] + '…' if len(etf['name']) > 28 else etf['name']
-        info_rows += (
-            f'<tr style="border-bottom:1px solid #f0f0f0;">'
-            + td(f'<strong>{etf["ticker"]}</strong>', align='left', extra='color:#1a1a1a;')
-            + td(f'<span style="color:#555;">{name_short}</span>', align='left', extra='font-size:12px;')
-            + td(fmt_aum(aum, is_kr), extra='color:#333;')
-            + td(f'<span style="color:#388e3c;">{dy:.2f}%</span>' if dy else '-')
-            + '</tr>'
-        )
-
-    # ── 분석 텍스트
-    analysis_html = generate_analysis(cat_key, etfs)
-
-    # ── 요약 통계
     avg_str = fmt_pct(avg_1w) if avg_1w is not None else '-'
     avg_c = ret_color(avg_1w)
+
+    analysis_html = generate_analysis(cat_key, etfs, is_kr)
+    svg_chart = build_svg_chart(etfs, is_kr)
+    period_table = build_period_table(etfs, is_kr)
 
     html = f"""<!DOCTYPE html>
 <html lang="ko">
@@ -403,39 +424,11 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 </table>
 
 <h2 style="font-size:18px;color:#222;margin:0 0 12px;border-left:4px solid #10b981;padding-left:12px;">📝 주간 분석</h2>
-<div style="font-size:15px;color:#374151;margin:0 0 28px;line-height:1.85;">{analysis_html}</div>
+<div style="font-size:15px;color:#374151;margin:0 0 24px;line-height:1.85;">{analysis_html}</div>
 
-<h2 style="font-size:18px;color:#222;margin:0 0 12px;border-left:4px solid #f59e0b;padding-left:12px;">📈 ETF 수익률 비교 <span style="font-size:13px;font-weight:400;color:#aaa;">(주간 수익률 순)</span></h2>
-<table style="width:100%;border-collapse:collapse;font-family:sans-serif;margin-bottom:6px;">
-  <thead><tr style="background:#f3f4f6;border-bottom:2px solid #e5e7eb;">
-    <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">티커</th>
-    <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">이름</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">현재가</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">1주</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">1개월</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">3개월</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">6개월</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">1년</th>
-  </tr></thead>
-  <tbody>{ret_rows}</tbody>
-</table>
-<p style="font-size:11px;color:#aaa;margin:4px 0 0;">* 수익률은 배당 포함 총수익률 기준</p>
+{svg_chart}
 
-{build_returns_chart(sorted_etfs)}
-
-{cagr_section}
-
-<h2 style="font-size:18px;color:#222;margin:32px 0 12px;border-left:4px solid #ef4444;padding-left:12px;">💼 ETF 투자 정보</h2>
-<table style="width:100%;border-collapse:collapse;font-family:sans-serif;margin-bottom:6px;">
-  <thead><tr style="background:#f3f4f6;border-bottom:2px solid #e5e7eb;">
-    <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">티커</th>
-    <th style="padding:8px 10px;text-align:left;font-size:12px;color:#666;font-weight:600;">이름</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">순자산(AUM)</th>
-    <th style="padding:8px 10px;text-align:right;font-size:12px;color:#666;font-weight:600;">배당수익률</th>
-  </tr></thead>
-  <tbody>{info_rows}</tbody>
-</table>
-<p style="font-size:11px;color:#aaa;margin:4px 0 0;">* AUM: 운용자산 규모(큰 순) | 배당: 최근 12개월 기준</p>
+{period_table}
 
 <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:14px 18px;margin:28px 0 20px;">
 <p style="margin:0;font-size:13px;color:#92400e;line-height:1.7;">⚠️ <strong>투자 유의사항</strong>: 이 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 과거 수익률이 미래 성과를 보장하지 않습니다. 투자는 본인의 판단과 책임 하에 이루어져야 합니다.</p>
