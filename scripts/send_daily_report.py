@@ -657,6 +657,52 @@ def build_1y_insights(etfs, is_kr):
     )
 
 
+def build_period_insights(etfs, is_kr, period, period_label):
+    """기간별 수익률 인사이트 (카드 아래 바로 표시)"""
+    with_p = [(e, get_period_return(e, period)) for e in etfs if get_period_return(e, period) is not None]
+    if len(with_p) < 2:
+        return ''
+
+    sorted_p = sorted(with_p, key=lambda x: x[1], reverse=True)
+    best_e, best_r = sorted_p[0]
+    worst_e, worst_r = sorted_p[-1]
+    avg_r = sum(r for _, r in sorted_p) / len(sorted_p)
+
+    items = [
+        f"<strong>{display_name(best_e, is_kr)}</strong>이(가) {period_label} "
+        f"<strong style='color:#16a34a;'>{fmt_pct(best_r)}</strong>으로 가장 높은 수익률을 기록했습니다."
+    ]
+    if worst_r < 0:
+        items.append(
+            f"<strong>{display_name(worst_e, is_kr)}</strong>은(는) "
+            f"<strong style='color:#dc2626;'>{fmt_pct(worst_r)}</strong>로 가장 부진했습니다."
+        )
+    else:
+        items.append(
+            f"최하위 <strong>{display_name(worst_e, is_kr)}</strong>도 "
+            f"<strong style='color:#16a34a;'>{fmt_pct(worst_r)}</strong>를 기록해 전반적으로 양호한 흐름을 보였습니다."
+        )
+    items.append(
+        f"카테고리 평균 {period_label} 수익률은 "
+        f"<strong style='color:{ret_color(avg_r)};'>{fmt_pct(avg_r)}</strong>입니다."
+    )
+
+    # 2위·3위도 짧게 언급
+    if len(sorted_p) >= 3:
+        second_e, second_r = sorted_p[1]
+        third_e, third_r = sorted_p[2]
+        items.append(
+            f"2위 <strong>{display_name(second_e, is_kr)}</strong> {fmt_pct(second_r)}, "
+            f"3위 <strong>{display_name(third_e, is_kr)}</strong> {fmt_pct(third_r)}."
+        )
+
+    bullets = ''.join(
+        f'<li style="padding:4px 0;font-size:13px;color:#374151;line-height:1.7;">{item}</li>'
+        for item in items
+    )
+    return f'<ul style="margin:6px 0 20px;padding-left:20px;list-style-type:disc;">{bullets}</ul>'
+
+
 def build_etf_list_summary(etfs, is_kr):
     """오늘의 요약 아래 분석 ETF 목록 소개 문단"""
     if not etfs:
@@ -701,9 +747,11 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     cards_html = (
         '<h2 style="font-size:18px;color:#222;margin:28px 0 12px;border-left:4px solid #6366f1;padding-left:12px;">'
         '🃏 기간별 ETF 핵심 지표 비교</h2>'
-        + ''.join(build_etf_cards(etfs, is_kr, p, pl) for p, pl in _card_periods)
+        + ''.join(
+            build_etf_cards(etfs, is_kr, p, pl) + build_period_insights(etfs, is_kr, p, pl)
+            for p, pl in _card_periods
+        )
     )
-    insights_html = build_1y_insights(etfs, is_kr)
     period_table = build_period_table(etfs, is_kr)
 
     html = f"""<!DOCTYPE html>
@@ -747,8 +795,6 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 <div style="font-size:15px;color:#374151;margin:0 0 24px;line-height:1.85;">{analysis_html}</div>
 
 {cards_html}
-
-{insights_html}
 
 {period_table}
 
