@@ -711,15 +711,12 @@ def build_etf_list_summary(etfs, is_kr):
         return ''
     parts = []
     for etf in etfs:
-        dname = display_name(etf, is_kr)
         ticker = etf['ticker']
         if is_kr:
-            parts.append(f'<strong>{dname}</strong>({ticker})')
+            dname = display_name(etf, is_kr)
+            parts.append(f'<strong>{dname}</strong>')
         else:
-            name = etf.get('name', '')
-            short = (name[:30] + '…') if len(name) > 30 else name
-            label = f'{ticker} · {short}' if short else ticker
-            parts.append(f'<strong>{label}</strong>')
+            parts.append(f'<strong>{ticker}</strong>')
     etf_str = ',  '.join(parts)
     return (
         f'<p style="font-size:14px;color:#374151;margin:0 0 28px;line-height:1.85;'
@@ -793,7 +790,7 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 </table>
 
 {etf_list_html}
-<h2 style="font-size:18px;color:#222;margin:0 0 12px;border-left:4px solid #10b981;padding-left:12px;">📝 주간 분석</h2>
+<h2 style="font-size:18px;color:#222;margin:32px 0 12px;border-left:4px solid #10b981;padding-left:12px;">📝 주간 분석</h2>
 <div style="font-size:15px;color:#374151;margin:0 0 24px;line-height:1.85;">{analysis_html}</div>
 
 {cards_html}
@@ -818,11 +815,14 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 
 # ─── 이메일 발송 ──────────────────────────────────────────────────────────────
 
-def send_email(html_content, subject, to_addr, from_addr, app_password, attach_filename='etf_blog.html'):
+def send_email(html_content, subject, to_addrs, from_addr, app_password, attach_filename='etf_blog.html'):
+    """to_addrs: 문자열(단일) 또는 리스트(복수) 모두 지원"""
+    if isinstance(to_addrs, str):
+        to_addrs = [a.strip() for a in to_addrs.split(',') if a.strip()]
     msg = MIMEMultipart('mixed')
     msg['Subject'] = subject
     msg['From'] = from_addr
-    msg['To'] = to_addr
+    msg['To'] = ', '.join(to_addrs)
 
     # 이메일 본문 (렌더링된 HTML)
     msg.attach(MIMEText(html_content, 'html', 'utf-8'))
@@ -836,8 +836,8 @@ def send_email(html_content, subject, to_addr, from_addr, app_password, attach_f
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
         server.login(from_addr, app_password)
-        server.sendmail(from_addr, to_addr, msg.as_string())
-    print(f"이메일 발송 완료 → {to_addr}")
+        server.sendmail(from_addr, to_addrs, msg.as_string())
+    print(f"이메일 발송 완료 → {', '.join(to_addrs)}")
 
 
 # ─── 메인 ─────────────────────────────────────────────────────────────────────
