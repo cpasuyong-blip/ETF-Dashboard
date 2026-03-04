@@ -38,12 +38,18 @@ EXPENSE_RATIOS = {
     'LQD': 0.14, 'HYG': 0.48, 'JNK': 0.40, 'TIP': 0.19,
     'IEF': 0.15, 'SGOV': 0.09, 'BIL': 0.14, 'EMB': 0.39,
     'VCIT': 0.04, 'VCSH': 0.04, 'MUB': 0.05, 'BNDX': 0.07, 'VMBS': 0.04, 'FLOT': 0.15,
+    'BIV': 0.04, 'TBIL': 0.15,
     # 배당
     'VYM': 0.06, 'SCHD': 0.06, 'HDV': 0.08, 'DVY': 0.38,
     'VIG': 0.06, 'DGRO': 0.08, 'DGRW': 0.28,
     'JEPI': 0.35, 'JEPQ': 0.35, 'SPYD': 0.07, 'NOBL': 0.35, 'SDY': 0.35,
     'XYLD': 0.60, 'QYLD': 0.60,
     'FDVV': 0.29, 'PFFD': 0.23,
+    # 커버드콜 추가
+    'DIVO': 0.55, 'SPYI': 0.68, 'RYLD': 0.60,
+    # 일드맥스 (YieldMax)
+    'TSLY': 0.99, 'NVDY': 0.99, 'AMZY': 0.99, 'MSFO': 0.99,
+    'GOOGY': 0.99, 'APLY': 0.99, 'CONY': 0.99, 'YMAG': 0.29, 'YMAX': 0.29,
     # 성장/가치
     'VUG': 0.04, 'VTV': 0.04, 'IWF': 0.19, 'IWD': 0.19,
     'SCHG': 0.04, 'SCHV': 0.04, 'QUAL': 0.15, 'USMV': 0.15,
@@ -137,7 +143,7 @@ US_ETFS = {
     },
     '채권': {
         'tickers': ['AGG', 'TLT', 'SHY', 'BND', 'LQD', 'HYG', 'JNK', 'TIP', 'IEF',
-                    'SGOV', 'BIL', 'EMB', 'VCIT', 'VCSH', 'MUB', 'BNDX', 'VMBS', 'FLOT'],
+                    'SGOV', 'BIL', 'TBIL', 'EMB', 'VCIT', 'VCSH', 'BIV', 'MUB', 'BNDX', 'VMBS', 'FLOT'],
         'description': '국채, 회사채, 지방채, 국제채권 등 채권에 투자하는 ETF'
     },
     '배당': {
@@ -146,8 +152,12 @@ US_ETFS = {
         'description': '고배당 및 배당 성장주에 투자하는 ETF'
     },
     '커버드콜': {
-        'tickers': ['JEPI', 'JEPQ', 'XYLD', 'QYLD'],
-        'description': 'S&P500, 나스닥100 커버드콜 전략 ETF (옵션 프리미엄 수익)'
+        'tickers': ['JEPI', 'JEPQ', 'XYLD', 'QYLD', 'RYLD', 'DIVO', 'SPYI'],
+        'description': 'S&P500, 나스닥100, 러셀2000 커버드콜 전략 ETF (옵션 프리미엄 수익)'
+    },
+    '일드맥스': {
+        'tickers': ['TSLY', 'NVDY', 'AMZY', 'MSFO', 'GOOGY', 'APLY', 'CONY', 'YMAG', 'YMAX'],
+        'description': 'YieldMax 개별 종목 커버드콜 ETF (초고배당 월분배, 단기 투자용)'
     },
     '성장/가치': {
         'tickers': ['VUG', 'VTV', 'IWF', 'IWD', 'SCHG', 'SCHV', 'QUAL', 'USMV',
