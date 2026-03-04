@@ -16,6 +16,7 @@ const categoryToTheme = {
   '미국_채권': '채권',
   '미국_배당': '배당주',
   '미국_커버드콜': '배당주',
+  '미국_일드맥스': '배당주',
   '미국_성장/가치': '성장주',
   '미국_국제': '국제',
   '미국_금/원자재': '원자재',
@@ -51,6 +52,7 @@ const categoryLabels = {
   '미국_채권': '채권',
   '미국_배당': '배당',
   '미국_커버드콜': '커버드콜',
+  '미국_일드맥스': '일드맥스',
   '미국_성장/가치': '성장/가치',
   '미국_국제': '국제',
   '미국_금/원자재': '금/원자재',
@@ -76,7 +78,7 @@ const categoryLabels = {
 
 const US_CATEGORIES = [
   '미국_S&P500', '미국_나스닥', '미국_전체시장', '미국_소형중형',
-  '미국_기술주', '미국_섹터', '미국_채권', '미국_배당', '미국_커버드콜',
+  '미국_기술주', '미국_섹터', '미국_채권', '미국_배당', '미국_커버드콜', '미국_일드맥스',
   '미국_성장/가치', '미국_국제', '미국_금/원자재', '미국_리츠',
   '미국_테마', '미국_레버리지/인버스',
 ];
@@ -381,16 +383,12 @@ export default function ETFDashboard() {
 
         {/* 2단: 카테고리 탭 */}
         <div style={{
-          display: 'flex', justifyContent: 'flex-start', flexWrap: 'nowrap',
+          display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap',
           gap: '0.4rem', marginBottom: '1.5rem',
-          padding: '0.625rem 0.75rem',
+          padding: '0.75rem',
           background: 'rgba(0,0,0,0.2)',
           borderRadius: '16px',
           border: '1px solid rgba(255,255,255,0.06)',
-          overflowX: 'auto',
-          WebkitOverflowScrolling: 'touch',
-          msOverflowStyle: 'none',
-          scrollbarWidth: 'none',
           opacity: searchQuery ? 0.4 : 1, pointerEvents: searchQuery ? 'none' : 'auto', transition: 'opacity 0.2s',
         }}>
           <button
@@ -403,7 +401,6 @@ export default function ETFDashboard() {
               background: selectedCategory === '전체' ? 'rgba(139,92,246,0.3)' : 'transparent',
               color: selectedCategory === '전체' ? '#c4b5fd' : '#64748b',
               border: selectedCategory === '전체' ? '1px solid rgba(139,92,246,0.5)' : '1px solid transparent',
-              whiteSpace: 'nowrap', flexShrink: 0,
             }}
           >
             전체
@@ -420,7 +417,6 @@ export default function ETFDashboard() {
                   borderRadius: '8px',
                   fontSize: '0.75rem', fontWeight: '600', cursor: 'pointer',
                   transition: 'all 0.2s ease',
-                  whiteSpace: 'nowrap', flexShrink: 0,
                   background: active
                     ? isKR ? 'rgba(59,130,246,0.3)' : 'rgba(139,92,246,0.3)'
                     : 'transparent',
