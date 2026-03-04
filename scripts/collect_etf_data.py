@@ -63,7 +63,7 @@ EXPENSE_RATIOS = {
     'VPL': 0.08, 'EWW': 0.50,
     # 금/원자재
     'GLD': 0.40, 'SLV': 0.50, 'IAU': 0.25, 'GLDM': 0.10,
-    'GDX': 0.51, 'DBC': 0.85, 'USO': 0.79,
+    'GDX': 0.51, 'DBC': 0.85, 'USO': 0.79, 'REMX': 0.59,
     # 리츠
     'VNQ': 0.12, 'IYR': 0.39, 'SCHH': 0.07,
     'REET': 0.14, 'VNQI': 0.12, 'USRT': 0.08,
@@ -171,8 +171,8 @@ US_ETFS = {
         'description': '미국 외 선진국·신흥국·국가별 시장 ETF'
     },
     '금/원자재': {
-        'tickers': ['GLD', 'SLV', 'IAU', 'GLDM', 'GDX', 'DBC', 'USO'],
-        'description': '금, 은, 원유 등 원자재에 투자하는 ETF'
+        'tickers': ['GLD', 'SLV', 'IAU', 'GLDM', 'GDX', 'DBC', 'USO', 'REMX'],
+        'description': '금, 은, 원유, 희토류 등 원자재에 투자하는 ETF'
     },
     '리츠': {
         'tickers': ['VNQ', 'IYR', 'SCHH', 'REET', 'VNQI', 'USRT'],
