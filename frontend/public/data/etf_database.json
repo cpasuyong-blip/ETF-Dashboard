@@ -39,7 +39,7 @@
           "volatility": 17.87,
           "maxDrawdown": -33.72,
           "volume": 104737700,
-          "lastUpdate": "2026-03-04T13:53:09.981155"
+          "lastUpdate": "2026-03-04T14:06:44.649714"
         },
         {
           "ticker": "VOO",
@@ -76,7 +76,7 @@
           "volatility": 17.94,
           "maxDrawdown": -33.99,
           "volume": 18395300,
-          "lastUpdate": "2026-03-04T13:53:10.946145"
+          "lastUpdate": "2026-03-04T14:06:45.571409"
         },
         {
           "ticker": "IVV",
@@ -113,7 +113,7 @@
           "volatility": 17.99,
           "maxDrawdown": -33.9,
           "volume": 8219400,
-          "lastUpdate": "2026-03-04T13:53:11.967115"
+          "lastUpdate": "2026-03-04T14:06:46.599773"
         },
         {
           "ticker": "SPLG",
@@ -150,7 +150,7 @@
           "volatility": 17.96,
           "maxDrawdown": -33.87,
           "volume": 3774383,
-          "lastUpdate": "2026-03-04T13:53:12.911393"
+          "lastUpdate": "2026-03-04T14:06:47.516967"
         },
         {
           "ticker": "SPYM",
@@ -187,7 +187,7 @@
           "volatility": 17.95,
           "maxDrawdown": -33.87,
           "volume": 25300400,
-          "lastUpdate": "2026-03-04T13:53:14.310349"
+          "lastUpdate": "2026-03-04T14:06:48.524827"
         }
       ]
     },
@@ -212,7 +212,7 @@
             "6M": 5.79,
             "1Y": 21.64,
             "3Y": 104.36,
-            "5Y": 100.52
+            "5Y": 100.51
           },
           "priceReturns": {
             "1W": -1.03,
@@ -230,7 +230,7 @@
           "volatility": 22.18,
           "maxDrawdown": -35.12,
           "volume": 96707500,
-          "lastUpdate": "2026-03-04T13:53:15.323135"
+          "lastUpdate": "2026-03-04T14:06:49.516336"
         },
         {
           "ticker": "QQQM",
@@ -267,7 +267,7 @@
           "volatility": 22.26,
           "maxDrawdown": -35.04,
           "volume": 5284400,
-          "lastUpdate": "2026-03-04T13:53:16.089033"
+          "lastUpdate": "2026-03-04T14:06:50.297504"
         },
         {
           "ticker": "ONEQ",
@@ -304,7 +304,7 @@
           "volatility": 21.59,
           "maxDrawdown": -35.23,
           "volume": 374700,
-          "lastUpdate": "2026-03-04T13:53:17.058418"
+          "lastUpdate": "2026-03-04T14:06:51.269003"
         },
         {
           "ticker": "TQQQ",
@@ -341,7 +341,7 @@
           "volatility": 65.63,
           "maxDrawdown": -81.66,
           "volume": 162083200,
-          "lastUpdate": "2026-03-04T13:53:17.955372"
+          "lastUpdate": "2026-03-04T14:06:52.304822"
         }
       ]
     },
@@ -384,7 +384,7 @@
           "volatility": 18.23,
           "maxDrawdown": -35.0,
           "volume": 10741600,
-          "lastUpdate": "2026-03-04T13:53:18.960804"
+          "lastUpdate": "2026-03-04T14:06:53.375147"
         },
         {
           "ticker": "SCHB",
@@ -421,7 +421,7 @@
           "volatility": 18.25,
           "maxDrawdown": -35.27,
           "volume": 15907000,
-          "lastUpdate": "2026-03-04T13:53:19.888907"
+          "lastUpdate": "2026-03-04T14:06:54.267028"
         },
         {
           "ticker": "ITOT",
@@ -458,7 +458,7 @@
           "volatility": 18.2,
           "maxDrawdown": -35.0,
           "volume": 20026400,
-          "lastUpdate": "2026-03-04T13:53:20.927605"
+          "lastUpdate": "2026-03-04T14:06:55.311455"
         },
         {
           "ticker": "VT",
@@ -495,7 +495,7 @@
           "volatility": 17.13,
           "maxDrawdown": -34.24,
           "volume": 13857100,
-          "lastUpdate": "2026-03-04T13:53:21.844674"
+          "lastUpdate": "2026-03-04T14:06:56.213984"
         },
         {
           "ticker": "DIA",
@@ -532,7 +532,7 @@
           "volatility": 17.45,
           "maxDrawdown": -36.7,
           "volume": 11564900,
-          "lastUpdate": "2026-03-04T13:53:22.971243"
+          "lastUpdate": "2026-03-04T14:06:57.331658"
         },
         {
           "ticker": "RSP",
@@ -569,7 +569,7 @@
           "volatility": 18.34,
           "maxDrawdown": -39.04,
           "volume": 37313400,
-          "lastUpdate": "2026-03-04T13:53:24.153349"
+          "lastUpdate": "2026-03-04T14:06:58.377428"
         }
       ]
     },
@@ -612,7 +612,7 @@
           "volatility": 22.95,
           "maxDrawdown": -41.13,
           "volume": 59439500,
-          "lastUpdate": "2026-03-04T13:53:25.133403"
+          "lastUpdate": "2026-03-04T14:06:59.375549"
         },
         {
           "ticker": "IWB",
@@ -649,7 +649,7 @@
           "volatility": 18.07,
           "maxDrawdown": -34.6,
           "volume": 1994500,
-          "lastUpdate": "2026-03-04T13:53:26.148190"
+          "lastUpdate": "2026-03-04T14:07:00.415873"
         },
         {
           "ticker": "IJH",
@@ -686,7 +686,7 @@
           "volatility": 21.11,
           "maxDrawdown": -42.18,
           "volume": 28534400,
-          "lastUpdate": "2026-03-04T13:53:27.142553"
+          "lastUpdate": "2026-03-04T14:07:01.538168"
         },
         {
           "ticker": "IJR",
@@ -723,7 +723,7 @@
           "volatility": 22.89,
           "maxDrawdown": -44.36,
           "volume": 10454400,
-          "lastUpdate": "2026-03-04T13:53:28.139880"
+          "lastUpdate": "2026-03-04T14:07:02.528816"
         },
         {
           "ticker": "VB",
@@ -760,7 +760,7 @@
           "volatility": 21.36,
           "maxDrawdown": -42.05,
           "volume": 1055600,
-          "lastUpdate": "2026-03-04T13:53:29.090443"
+          "lastUpdate": "2026-03-04T14:07:03.525030"
         },
         {
           "ticker": "VO",
@@ -797,7 +797,7 @@
           "volatility": 18.92,
           "maxDrawdown": -39.37,
           "volume": 1171000,
-          "lastUpdate": "2026-03-04T13:53:30.091000"
+          "lastUpdate": "2026-03-04T14:07:04.545964"
         }
       ]
     },
@@ -840,7 +840,7 @@
           "volatility": 24.23,
           "maxDrawdown": -33.56,
           "volume": 34144600,
-          "lastUpdate": "2026-03-04T13:53:31.137743"
+          "lastUpdate": "2026-03-04T14:07:05.517214"
         },
         {
           "ticker": "VGT",
@@ -877,7 +877,7 @@
           "volatility": 24.38,
           "maxDrawdown": -35.07,
           "volume": 1362000,
-          "lastUpdate": "2026-03-04T13:53:32.071610"
+          "lastUpdate": "2026-03-04T14:07:06.674197"
         },
         {
           "ticker": "SOXX",
@@ -914,7 +914,7 @@
           "volatility": 32.78,
           "maxDrawdown": -45.75,
           "volume": 17919000,
-          "lastUpdate": "2026-03-04T13:53:33.081344"
+          "lastUpdate": "2026-03-04T14:07:07.741058"
         },
         {
           "ticker": "SMH",
@@ -951,7 +951,7 @@
           "volatility": 32.12,
           "maxDrawdown": -45.3,
           "volume": 13758800,
-          "lastUpdate": "2026-03-04T13:53:34.015771"
+          "lastUpdate": "2026-03-04T14:07:08.818156"
         },
         {
           "ticker": "ARKK",
@@ -988,7 +988,7 @@
           "volatility": 39.99,
           "maxDrawdown": -80.91,
           "volume": 18575000,
-          "lastUpdate": "2026-03-04T13:53:34.824096"
+          "lastUpdate": "2026-03-04T14:07:09.647870"
         },
         {
           "ticker": "IGV",
@@ -1025,7 +1025,7 @@
           "volatility": 25.78,
           "maxDrawdown": -45.85,
           "volume": 44884800,
-          "lastUpdate": "2026-03-04T13:53:35.812207"
+          "lastUpdate": "2026-03-04T14:07:10.653060"
         }
       ]
     },
@@ -1068,7 +1068,7 @@
           "volatility": 22.17,
           "maxDrawdown": -42.86,
           "volume": 94729700,
-          "lastUpdate": "2026-03-04T13:53:36.890630"
+          "lastUpdate": "2026-03-04T14:07:11.760475"
         },
         {
           "ticker": "XLV",
@@ -1105,7 +1105,7 @@
           "volatility": 16.51,
           "maxDrawdown": -28.4,
           "volume": 21429400,
-          "lastUpdate": "2026-03-04T13:53:37.928726"
+          "lastUpdate": "2026-03-04T14:07:12.736679"
         },
         {
           "ticker": "XLE",
@@ -1142,7 +1142,7 @@
           "volatility": 29.52,
           "maxDrawdown": -66.81,
           "volume": 154712700,
-          "lastUpdate": "2026-03-04T13:53:39.424249"
+          "lastUpdate": "2026-03-04T14:07:13.744975"
         },
         {
           "ticker": "XLI",
@@ -1179,7 +1179,7 @@
           "volatility": 19.81,
           "maxDrawdown": -42.33,
           "volume": 20479500,
-          "lastUpdate": "2026-03-04T13:53:40.534702"
+          "lastUpdate": "2026-03-04T14:07:14.876533"
         },
         {
           "ticker": "XLP",
@@ -1216,7 +1216,7 @@
           "volatility": 14.65,
           "maxDrawdown": -24.51,
           "volume": 36852400,
-          "lastUpdate": "2026-03-04T13:53:41.700821"
+          "lastUpdate": "2026-03-04T14:07:15.935476"
         },
         {
           "ticker": "XLY",
@@ -1253,7 +1253,7 @@
           "volatility": 21.87,
           "maxDrawdown": -39.67,
           "volume": 20773100,
-          "lastUpdate": "2026-03-04T13:53:42.763805"
+          "lastUpdate": "2026-03-04T14:07:17.037305"
         },
         {
           "ticker": "XLU",
@@ -1290,7 +1290,7 @@
           "volatility": 19.17,
           "maxDrawdown": -36.07,
           "volume": 60935800,
-          "lastUpdate": "2026-03-04T13:53:43.749578"
+          "lastUpdate": "2026-03-04T14:07:18.060543"
         },
         {
           "ticker": "XLB",
@@ -1327,7 +1327,7 @@
           "volatility": 20.59,
           "maxDrawdown": -37.27,
           "volume": 27307400,
-          "lastUpdate": "2026-03-04T13:53:44.924659"
+          "lastUpdate": "2026-03-04T14:07:19.118797"
         },
         {
           "ticker": "XLC",
@@ -1364,7 +1364,7 @@
           "volatility": 22.4,
           "maxDrawdown": -46.65,
           "volume": 13693000,
-          "lastUpdate": "2026-03-04T13:53:45.803447"
+          "lastUpdate": "2026-03-04T14:07:19.904953"
         },
         {
           "ticker": "XLRE",
@@ -1401,7 +1401,7 @@
           "volatility": 20.41,
           "maxDrawdown": -38.82,
           "volume": 12288100,
-          "lastUpdate": "2026-03-04T13:53:46.661855"
+          "lastUpdate": "2026-03-04T14:07:20.745648"
         },
         {
           "ticker": "IBB",
@@ -1438,7 +1438,7 @@
           "volatility": 23.42,
           "maxDrawdown": -39.82,
           "volume": 2531200,
-          "lastUpdate": "2026-03-04T13:53:47.725097"
+          "lastUpdate": "2026-03-04T14:07:21.716901"
         },
         {
           "ticker": "ITA",
@@ -1475,7 +1475,7 @@
           "volatility": 22.84,
           "maxDrawdown": -51.0,
           "volume": 2109100,
-          "lastUpdate": "2026-03-04T13:53:48.720804"
+          "lastUpdate": "2026-03-04T14:07:22.705027"
         },
         {
           "ticker": "KRE",
@@ -1512,7 +1512,7 @@
           "volatility": 31.97,
           "maxDrawdown": -55.03,
           "volume": 29242700,
-          "lastUpdate": "2026-03-04T13:53:49.687010"
+          "lastUpdate": "2026-03-04T14:07:23.774282"
         },
         {
           "ticker": "XBI",
@@ -1549,7 +1549,7 @@
           "volatility": 32.22,
           "maxDrawdown": -63.89,
           "volume": 13501200,
-          "lastUpdate": "2026-03-04T13:53:50.632438"
+          "lastUpdate": "2026-03-04T14:07:24.692844"
         },
         {
           "ticker": "XRT",
@@ -1586,7 +1586,7 @@
           "volatility": 27.13,
           "maxDrawdown": -47.02,
           "volume": 9207100,
-          "lastUpdate": "2026-03-04T13:53:51.556166"
+          "lastUpdate": "2026-03-04T14:07:25.664057"
         },
         {
           "ticker": "XOP",
@@ -1623,7 +1623,7 @@
           "volatility": 40.42,
           "maxDrawdown": -82.61,
           "volume": 9488500,
-          "lastUpdate": "2026-03-04T13:53:52.518820"
+          "lastUpdate": "2026-03-04T14:07:26.606324"
         },
         {
           "ticker": "XME",
@@ -1660,7 +1660,7 @@
           "volatility": 33.12,
           "maxDrawdown": -61.69,
           "volume": 3386800,
-          "lastUpdate": "2026-03-04T13:53:53.463350"
+          "lastUpdate": "2026-03-04T14:07:27.550998"
         },
         {
           "ticker": "XHB",
@@ -1697,7 +1697,7 @@
           "volatility": 27.08,
           "maxDrawdown": -49.57,
           "volume": 3156400,
-          "lastUpdate": "2026-03-04T13:53:54.584295"
+          "lastUpdate": "2026-03-04T14:07:28.543768"
         },
         {
           "ticker": "XSW",
@@ -1734,7 +1734,7 @@
           "volatility": 25.81,
           "maxDrawdown": -45.38,
           "volume": 65900,
-          "lastUpdate": "2026-03-04T13:53:55.526493"
+          "lastUpdate": "2026-03-04T14:07:29.410131"
         }
       ]
     },
@@ -1777,7 +1777,7 @@
           "volatility": 5.37,
           "maxDrawdown": -18.43,
           "volume": 10853400,
-          "lastUpdate": "2026-03-04T13:53:56.562296"
+          "lastUpdate": "2026-03-04T14:07:30.454364"
         },
         {
           "ticker": "TLT",
@@ -1814,7 +1814,7 @@
           "volatility": 14.92,
           "maxDrawdown": -48.35,
           "volume": 51824600,
-          "lastUpdate": "2026-03-04T13:53:57.666782"
+          "lastUpdate": "2026-03-04T14:07:31.489842"
         },
         {
           "ticker": "SHY",
@@ -1851,7 +1851,7 @@
           "volatility": 1.56,
           "maxDrawdown": -5.71,
           "volume": 5817200,
-          "lastUpdate": "2026-03-04T13:53:58.703727"
+          "lastUpdate": "2026-03-04T14:07:32.501781"
         },
         {
           "ticker": "BND",
@@ -1888,7 +1888,7 @@
           "volatility": 5.5,
           "maxDrawdown": -18.58,
           "volume": 8937900,
-          "lastUpdate": "2026-03-04T13:53:59.650998"
+          "lastUpdate": "2026-03-04T14:07:33.451411"
         },
         {
           "ticker": "LQD",
@@ -1925,7 +1925,7 @@
           "volatility": 8.65,
           "maxDrawdown": -24.95,
           "volume": 78775000,
-          "lastUpdate": "2026-03-04T13:54:00.776295"
+          "lastUpdate": "2026-03-04T14:07:34.409487"
         },
         {
           "ticker": "HYG",
@@ -1962,7 +1962,7 @@
           "volatility": 8.31,
           "maxDrawdown": -22.03,
           "volume": 118126800,
-          "lastUpdate": "2026-03-04T13:54:01.738627"
+          "lastUpdate": "2026-03-04T14:07:35.378038"
         },
         {
           "ticker": "JNK",
@@ -1999,7 +1999,7 @@
           "volatility": 8.34,
           "maxDrawdown": -22.89,
           "volume": 8192900,
-          "lastUpdate": "2026-03-04T13:54:02.785484"
+          "lastUpdate": "2026-03-04T14:07:36.300771"
         },
         {
           "ticker": "TIP",
@@ -2036,7 +2036,7 @@
           "volatility": 5.76,
           "maxDrawdown": -14.51,
           "volume": 2735100,
-          "lastUpdate": "2026-03-04T13:54:04.258510"
+          "lastUpdate": "2026-03-04T14:07:37.532361"
         },
         {
           "ticker": "IEF",
@@ -2073,7 +2073,7 @@
           "volatility": 6.62,
           "maxDrawdown": -23.92,
           "volume": 13706400,
-          "lastUpdate": "2026-03-04T13:54:05.454011"
+          "lastUpdate": "2026-03-04T14:07:38.526158"
         },
         {
           "ticker": "SGOV",
@@ -2110,7 +2110,7 @@
           "volatility": 0.24,
           "maxDrawdown": -0.03,
           "volume": 19096900,
-          "lastUpdate": "2026-03-04T13:54:06.207689"
+          "lastUpdate": "2026-03-04T14:07:39.316443"
         },
         {
           "ticker": "BIL",
@@ -2147,7 +2147,7 @@
           "volatility": 0.26,
           "maxDrawdown": -0.21,
           "volume": 11443000,
-          "lastUpdate": "2026-03-04T13:54:07.150657"
+          "lastUpdate": "2026-03-04T14:07:40.224406"
         },
         {
           "ticker": "EMB",
@@ -2184,7 +2184,7 @@
           "volatility": 9.91,
           "maxDrawdown": -28.74,
           "volume": 16425200,
-          "lastUpdate": "2026-03-04T13:54:08.081675"
+          "lastUpdate": "2026-03-04T14:07:41.178677"
         },
         {
           "ticker": "VCIT",
@@ -2221,7 +2221,7 @@
           "volatility": 6.25,
           "maxDrawdown": -20.56,
           "volume": 13616900,
-          "lastUpdate": "2026-03-04T13:54:09.033664"
+          "lastUpdate": "2026-03-04T14:07:42.118931"
         },
         {
           "ticker": "VCSH",
@@ -2258,7 +2258,7 @@
           "volatility": 3.34,
           "maxDrawdown": -12.86,
           "volume": 6398400,
-          "lastUpdate": "2026-03-04T13:54:10.019599"
+          "lastUpdate": "2026-03-04T14:07:42.995800"
         },
         {
           "ticker": "MUB",
@@ -2295,7 +2295,7 @@
           "volatility": 4.89,
           "maxDrawdown": -13.68,
           "volume": 4461100,
-          "lastUpdate": "2026-03-04T13:54:11.211167"
+          "lastUpdate": "2026-03-04T14:07:43.918090"
         },
         {
           "ticker": "BNDX",
@@ -2332,7 +2332,7 @@
           "volatility": 4.02,
           "maxDrawdown": -16.23,
           "volume": 4969900,
-          "lastUpdate": "2026-03-04T13:54:12.106785"
+          "lastUpdate": "2026-03-04T14:07:44.849246"
         },
         {
           "ticker": "VMBS",
@@ -2369,7 +2369,7 @@
           "volatility": 5.34,
           "maxDrawdown": -17.46,
           "volume": 1788700,
-          "lastUpdate": "2026-03-04T13:54:13.037064"
+          "lastUpdate": "2026-03-04T14:07:45.813520"
         },
         {
           "ticker": "FLOT",
@@ -2406,7 +2406,7 @@
           "volatility": 4.15,
           "maxDrawdown": -13.54,
           "volume": 3878300,
-          "lastUpdate": "2026-03-04T13:54:14.011592"
+          "lastUpdate": "2026-03-04T14:07:46.751589"
         }
       ]
     },
@@ -2449,7 +2449,7 @@
           "volatility": 16.31,
           "maxDrawdown": -35.21,
           "volume": 2675200,
-          "lastUpdate": "2026-03-04T13:54:14.955216"
+          "lastUpdate": "2026-03-04T14:07:47.654614"
         },
         {
           "ticker": "SCHD",
@@ -2486,7 +2486,7 @@
           "volatility": 16.7,
           "maxDrawdown": -33.37,
           "volume": 29335900,
-          "lastUpdate": "2026-03-04T13:54:15.879566"
+          "lastUpdate": "2026-03-04T14:07:48.701038"
         },
         {
           "ticker": "HDV",
@@ -2523,7 +2523,7 @@
           "volatility": 15.69,
           "maxDrawdown": -37.04,
           "volume": 1483500,
-          "lastUpdate": "2026-03-04T13:54:16.794802"
+          "lastUpdate": "2026-03-04T14:07:49.566507"
         },
         {
           "ticker": "DVY",
@@ -2560,7 +2560,7 @@
           "volatility": 18.01,
           "maxDrawdown": -41.59,
           "volume": 691600,
-          "lastUpdate": "2026-03-04T13:54:17.735361"
+          "lastUpdate": "2026-03-04T14:07:50.465028"
         },
         {
           "ticker": "VIG",
@@ -2597,7 +2597,7 @@
           "volatility": 16.01,
           "maxDrawdown": -31.72,
           "volume": 2140500,
-          "lastUpdate": "2026-03-04T13:54:18.718568"
+          "lastUpdate": "2026-03-04T14:07:51.331351"
         },
         {
           "ticker": "DGRO",
@@ -2634,7 +2634,7 @@
           "volatility": 16.61,
           "maxDrawdown": -35.1,
           "volume": 4659900,
-          "lastUpdate": "2026-03-04T13:54:19.695689"
+          "lastUpdate": "2026-03-04T14:07:52.159357"
         },
         {
           "ticker": "DGRW",
@@ -2671,7 +2671,7 @@
           "volatility": 16.17,
           "maxDrawdown": -32.04,
           "volume": 1882000,
-          "lastUpdate": "2026-03-04T13:54:20.530186"
+          "lastUpdate": "2026-03-04T14:07:53.026572"
         },
         {
           "ticker": "SPYD",
@@ -2708,7 +2708,7 @@
           "volatility": 19.84,
           "maxDrawdown": -46.42,
           "volume": 2160300,
-          "lastUpdate": "2026-03-04T13:54:21.584001"
+          "lastUpdate": "2026-03-04T14:07:53.822256"
         },
         {
           "ticker": "NOBL",
@@ -2745,7 +2745,7 @@
           "volatility": 16.58,
           "maxDrawdown": -35.43,
           "volume": 1374400,
-          "lastUpdate": "2026-03-04T13:54:22.425090"
+          "lastUpdate": "2026-03-04T14:07:54.705423"
         },
         {
           "ticker": "SDY",
@@ -2782,7 +2782,7 @@
           "volatility": 17.08,
           "maxDrawdown": -36.7,
           "volume": 296900,
-          "lastUpdate": "2026-03-04T13:54:23.396772"
+          "lastUpdate": "2026-03-04T14:07:55.578126"
         },
         {
           "ticker": "FDVV",
@@ -2819,7 +2819,7 @@
           "volatility": 17.09,
           "maxDrawdown": -40.25,
           "volume": 1429700,
-          "lastUpdate": "2026-03-04T13:54:24.226897"
+          "lastUpdate": "2026-03-04T14:07:56.464974"
         },
         {
           "ticker": "PFFD",
@@ -2856,7 +2856,7 @@
           "volatility": 12.87,
           "maxDrawdown": -30.93,
           "volume": 724600,
-          "lastUpdate": "2026-03-04T13:54:25.073743"
+          "lastUpdate": "2026-03-04T14:07:57.314380"
         }
       ]
     },
@@ -2899,7 +2899,7 @@
           "volatility": 10.84,
           "maxDrawdown": -13.71,
           "volume": 7036800,
-          "lastUpdate": "2026-03-04T13:54:25.877147"
+          "lastUpdate": "2026-03-04T14:07:58.101363"
         },
         {
           "ticker": "JEPQ",
@@ -2935,7 +2935,7 @@
           "volatility": 16.82,
           "maxDrawdown": -20.07,
           "volume": 9502300,
-          "lastUpdate": "2026-03-04T13:54:26.591185"
+          "lastUpdate": "2026-03-04T14:07:58.819080"
         },
         {
           "ticker": "XYLD",
@@ -2972,7 +2972,7 @@
           "volatility": 14.19,
           "maxDrawdown": -33.46,
           "volume": 2729100,
-          "lastUpdate": "2026-03-04T13:54:27.474768"
+          "lastUpdate": "2026-03-04T14:07:59.672567"
         },
         {
           "ticker": "QYLD",
@@ -3009,7 +3009,7 @@
           "volatility": 15.45,
           "maxDrawdown": -24.75,
           "volume": 16649400,
-          "lastUpdate": "2026-03-04T13:54:28.390988"
+          "lastUpdate": "2026-03-04T14:08:00.529376"
         }
       ]
     },
@@ -3052,7 +3052,7 @@
           "volatility": 21.29,
           "maxDrawdown": -35.61,
           "volume": 3945300,
-          "lastUpdate": "2026-03-04T13:54:29.315679"
+          "lastUpdate": "2026-03-04T14:08:01.459821"
         },
         {
           "ticker": "VTV",
@@ -3089,7 +3089,7 @@
           "volatility": 16.65,
           "maxDrawdown": -36.78,
           "volume": 7609200,
-          "lastUpdate": "2026-03-04T13:54:30.287068"
+          "lastUpdate": "2026-03-04T14:08:02.479425"
         },
         {
           "ticker": "IWF",
@@ -3126,7 +3126,7 @@
           "volatility": 20.83,
           "maxDrawdown": -32.72,
           "volume": 7216300,
-          "lastUpdate": "2026-03-04T13:54:31.332852"
+          "lastUpdate": "2026-03-04T14:08:03.512369"
         },
         {
           "ticker": "IWD",
@@ -3163,7 +3163,7 @@
           "volatility": 17.26,
           "maxDrawdown": -38.51,
           "volume": 6586500,
-          "lastUpdate": "2026-03-04T13:54:32.343594"
+          "lastUpdate": "2026-03-04T14:08:04.561838"
         },
         {
           "ticker": "SCHG",
@@ -3200,7 +3200,7 @@
           "volatility": 21.43,
           "maxDrawdown": -34.59,
           "volume": 40512300,
-          "lastUpdate": "2026-03-04T13:54:33.247280"
+          "lastUpdate": "2026-03-04T14:08:05.469153"
         },
         {
           "ticker": "SCHV",
@@ -3237,7 +3237,7 @@
           "volatility": 16.89,
           "maxDrawdown": -37.08,
           "volume": 6453300,
-          "lastUpdate": "2026-03-04T13:54:34.152558"
+          "lastUpdate": "2026-03-04T14:08:06.445984"
         },
         {
           "ticker": "QUAL",
@@ -3274,7 +3274,7 @@
           "volatility": 18.02,
           "maxDrawdown": -34.06,
           "volume": 3568500,
-          "lastUpdate": "2026-03-04T13:54:34.983695"
+          "lastUpdate": "2026-03-04T14:08:07.260062"
         },
         {
           "ticker": "USMV",
@@ -3311,7 +3311,7 @@
           "volatility": 14.49,
           "maxDrawdown": -33.1,
           "volume": 6632600,
-          "lastUpdate": "2026-03-04T13:54:35.866793"
+          "lastUpdate": "2026-03-04T14:08:08.165436"
         },
         {
           "ticker": "MGK",
@@ -3348,7 +3348,7 @@
           "volatility": 21.73,
           "maxDrawdown": -36.01,
           "volume": 760800,
-          "lastUpdate": "2026-03-04T13:54:36.752146"
+          "lastUpdate": "2026-03-04T14:08:09.172464"
         },
         {
           "ticker": "MGV",
@@ -3385,7 +3385,7 @@
           "volatility": 16.32,
           "maxDrawdown": -35.41,
           "volume": 297100,
-          "lastUpdate": "2026-03-04T13:54:37.643842"
+          "lastUpdate": "2026-03-04T14:08:10.143574"
         },
         {
           "ticker": "AVUV",
@@ -3422,7 +3422,7 @@
           "volatility": 28.7,
           "maxDrawdown": -49.42,
           "volume": 1312000,
-          "lastUpdate": "2026-03-04T13:54:38.408950"
+          "lastUpdate": "2026-03-04T14:08:11.004928"
         },
         {
           "ticker": "DFAC",
@@ -3458,7 +3458,7 @@
           "volatility": 17.28,
           "maxDrawdown": -23.11,
           "volume": 5195300,
-          "lastUpdate": "2026-03-04T13:54:39.141095"
+          "lastUpdate": "2026-03-04T14:08:11.668125"
         }
       ]
     },
@@ -3501,7 +3501,7 @@
           "volatility": 16.98,
           "maxDrawdown": -35.97,
           "volume": 16641100,
-          "lastUpdate": "2026-03-04T13:54:40.099348"
+          "lastUpdate": "2026-03-04T14:08:12.646969"
         },
         {
           "ticker": "VEA",
@@ -3538,7 +3538,7 @@
           "volatility": 17.14,
           "maxDrawdown": -35.74,
           "volume": 28274600,
-          "lastUpdate": "2026-03-04T13:54:41.008256"
+          "lastUpdate": "2026-03-04T14:08:13.556984"
         },
         {
           "ticker": "VWO",
@@ -3575,7 +3575,7 @@
           "volatility": 19.12,
           "maxDrawdown": -36.39,
           "volume": 31763300,
-          "lastUpdate": "2026-03-04T13:54:41.925727"
+          "lastUpdate": "2026-03-04T14:08:14.527494"
         },
         {
           "ticker": "IEFA",
@@ -3612,7 +3612,7 @@
           "volatility": 17.14,
           "maxDrawdown": -34.79,
           "volume": 37664000,
-          "lastUpdate": "2026-03-04T13:54:42.771493"
+          "lastUpdate": "2026-03-04T14:08:15.355490"
         },
         {
           "ticker": "IEMG",
@@ -3649,7 +3649,7 @@
           "volatility": 19.7,
           "maxDrawdown": -38.71,
           "volume": 39092700,
-          "lastUpdate": "2026-03-04T13:54:43.690951"
+          "lastUpdate": "2026-03-04T14:08:16.195271"
         },
         {
           "ticker": "EFA",
@@ -3686,7 +3686,7 @@
           "volatility": 17.1,
           "maxDrawdown": -34.19,
           "volume": 52561600,
-          "lastUpdate": "2026-03-04T13:54:44.672473"
+          "lastUpdate": "2026-03-04T14:08:17.138752"
         },
         {
           "ticker": "EEM",
@@ -3723,7 +3723,7 @@
           "volatility": 20.18,
           "maxDrawdown": -39.82,
           "volume": 99926000,
-          "lastUpdate": "2026-03-04T13:54:45.669948"
+          "lastUpdate": "2026-03-04T14:08:18.090886"
         },
         {
           "ticker": "MCHI",
@@ -3760,7 +3760,7 @@
           "volatility": 27.36,
           "maxDrawdown": -62.84,
           "volume": 12731300,
-          "lastUpdate": "2026-03-04T13:54:46.597657"
+          "lastUpdate": "2026-03-04T14:08:18.912292"
         },
         {
           "ticker": "EWJ",
@@ -3797,7 +3797,7 @@
           "volatility": 17.18,
           "maxDrawdown": -33.14,
           "volume": 29732100,
-          "lastUpdate": "2026-03-04T13:54:47.603851"
+          "lastUpdate": "2026-03-04T14:08:19.932908"
         },
         {
           "ticker": "KWEB",
@@ -3834,7 +3834,7 @@
           "volatility": 39.83,
           "maxDrawdown": -80.92,
           "volume": 35333800,
-          "lastUpdate": "2026-03-04T13:54:48.529866"
+          "lastUpdate": "2026-03-04T14:08:20.797331"
         },
         {
           "ticker": "VGK",
@@ -3871,7 +3871,7 @@
           "volatility": 18.79,
           "maxDrawdown": -37.24,
           "volume": 7769500,
-          "lastUpdate": "2026-03-04T13:54:49.540506"
+          "lastUpdate": "2026-03-04T14:08:21.750194"
         },
         {
           "ticker": "EWZ",
@@ -3908,7 +3908,7 @@
           "volatility": 34.45,
           "maxDrawdown": -56.99,
           "volume": 98255400,
-          "lastUpdate": "2026-03-04T13:54:50.732050"
+          "lastUpdate": "2026-03-04T14:08:22.758604"
         },
         {
           "ticker": "EWY",
@@ -3945,7 +3945,7 @@
           "volatility": 25.52,
           "maxDrawdown": -49.73,
           "volume": 65259200,
-          "lastUpdate": "2026-03-04T13:54:51.828340"
+          "lastUpdate": "2026-03-04T14:08:23.649552"
         },
         {
           "ticker": "EWT",
@@ -3982,7 +3982,7 @@
           "volatility": 20.98,
           "maxDrawdown": -38.88,
           "volume": 21564300,
-          "lastUpdate": "2026-03-04T13:54:52.851037"
+          "lastUpdate": "2026-03-04T14:08:24.616660"
         },
         {
           "ticker": "EWG",
@@ -4019,7 +4019,7 @@
           "volatility": 20.93,
           "maxDrawdown": -46.8,
           "volume": 4329000,
-          "lastUpdate": "2026-03-04T13:54:53.951246"
+          "lastUpdate": "2026-03-04T14:08:31.927565"
         },
         {
           "ticker": "EWU",
@@ -4056,7 +4056,7 @@
           "volatility": 18.76,
           "maxDrawdown": -43.33,
           "volume": 4547000,
-          "lastUpdate": "2026-03-04T13:54:54.982762"
+          "lastUpdate": "2026-03-04T14:08:32.937771"
         },
         {
           "ticker": "EWC",
@@ -4093,7 +4093,7 @@
           "volatility": 18.81,
           "maxDrawdown": -42.66,
           "volume": 5326600,
-          "lastUpdate": "2026-03-04T13:54:56.018058"
+          "lastUpdate": "2026-03-04T14:08:34.051773"
         },
         {
           "ticker": "EWA",
@@ -4130,7 +4130,7 @@
           "volatility": 22.56,
           "maxDrawdown": -45.54,
           "volume": 10236400,
-          "lastUpdate": "2026-03-04T13:54:57.046380"
+          "lastUpdate": "2026-03-04T14:08:36.732282"
         },
         {
           "ticker": "INDA",
@@ -4167,7 +4167,7 @@
           "volatility": 21.06,
           "maxDrawdown": -45.07,
           "volume": 23116600,
-          "lastUpdate": "2026-03-04T13:54:57.879063"
+          "lastUpdate": "2026-03-04T14:08:37.580619"
         },
         {
           "ticker": "EWH",
@@ -4204,7 +4204,7 @@
           "volatility": 19.51,
           "maxDrawdown": -42.71,
           "volume": 12104400,
-          "lastUpdate": "2026-03-04T13:54:58.916966"
+          "lastUpdate": "2026-03-04T14:08:38.707908"
         },
         {
           "ticker": "VPL",
@@ -4241,7 +4241,7 @@
           "volatility": 16.91,
           "maxDrawdown": -33.89,
           "volume": 2681900,
-          "lastUpdate": "2026-03-04T13:54:59.826486"
+          "lastUpdate": "2026-03-04T14:08:39.597721"
         },
         {
           "ticker": "EWW",
@@ -4278,7 +4278,7 @@
           "volatility": 25.27,
           "maxDrawdown": -53.62,
           "volume": 4971400,
-          "lastUpdate": "2026-03-04T13:55:00.837680"
+          "lastUpdate": "2026-03-04T14:08:40.594607"
         }
       ]
     },
@@ -4321,7 +4321,7 @@
           "volatility": 15.63,
           "maxDrawdown": -22.0,
           "volume": 22510700,
-          "lastUpdate": "2026-03-04T13:55:01.732309"
+          "lastUpdate": "2026-03-04T14:08:41.465256"
         },
         {
           "ticker": "SLV",
@@ -4358,7 +4358,7 @@
           "volatility": 30.99,
           "maxDrawdown": -42.81,
           "volume": 88924600,
-          "lastUpdate": "2026-03-04T13:55:02.564395"
+          "lastUpdate": "2026-03-04T14:08:42.267872"
         },
         {
           "ticker": "IAU",
@@ -4395,7 +4395,7 @@
           "volatility": 15.58,
           "maxDrawdown": -21.82,
           "volume": 19176400,
-          "lastUpdate": "2026-03-04T13:55:03.396536"
+          "lastUpdate": "2026-03-04T14:08:43.113882"
         },
         {
           "ticker": "GLDM",
@@ -4432,7 +4432,7 @@
           "volatility": 16.46,
           "maxDrawdown": -21.63,
           "volume": 19324900,
-          "lastUpdate": "2026-03-04T13:55:04.184858"
+          "lastUpdate": "2026-03-04T14:08:43.878054"
         },
         {
           "ticker": "GDX",
@@ -4469,7 +4469,7 @@
           "volatility": 37.4,
           "maxDrawdown": -49.79,
           "volume": 66596400,
-          "lastUpdate": "2026-03-04T13:55:05.083069"
+          "lastUpdate": "2026-03-04T14:08:44.731616"
         },
         {
           "ticker": "DBC",
@@ -4506,7 +4506,7 @@
           "volatility": 17.59,
           "maxDrawdown": -41.71,
           "volume": 1297800,
-          "lastUpdate": "2026-03-04T13:55:06.040631"
+          "lastUpdate": "2026-03-04T14:08:45.646044"
         },
         {
           "ticker": "USO",
@@ -4543,7 +4543,7 @@
           "volatility": 37.85,
           "maxDrawdown": -86.75,
           "volume": 50197100,
-          "lastUpdate": "2026-03-04T13:55:06.865434"
+          "lastUpdate": "2026-03-04T14:08:46.512494"
         }
       ]
     },
@@ -4586,7 +4586,7 @@
           "volatility": 20.7,
           "maxDrawdown": -42.4,
           "volume": 4832600,
-          "lastUpdate": "2026-03-04T13:55:07.820370"
+          "lastUpdate": "2026-03-04T14:08:47.412768"
         },
         {
           "ticker": "IYR",
@@ -4623,7 +4623,7 @@
           "volatility": 20.29,
           "maxDrawdown": -42.32,
           "volume": 12429500,
-          "lastUpdate": "2026-03-04T13:55:08.795255"
+          "lastUpdate": "2026-03-04T14:08:48.412495"
         },
         {
           "ticker": "SCHH",
@@ -4660,7 +4660,7 @@
           "volatility": 20.97,
           "maxDrawdown": -44.22,
           "volume": 10974400,
-          "lastUpdate": "2026-03-04T13:55:09.737773"
+          "lastUpdate": "2026-03-04T14:08:49.293053"
         },
         {
           "ticker": "REET",
@@ -4697,7 +4697,7 @@
           "volatility": 18.82,
           "maxDrawdown": -44.59,
           "volume": 1397700,
-          "lastUpdate": "2026-03-04T13:55:10.576220"
+          "lastUpdate": "2026-03-04T14:08:50.101504"
         },
         {
           "ticker": "VNQI",
@@ -4734,7 +4734,7 @@
           "volatility": 15.89,
           "maxDrawdown": -38.35,
           "volume": 1117500,
-          "lastUpdate": "2026-03-04T13:55:11.480697"
+          "lastUpdate": "2026-03-04T14:08:50.952053"
         },
         {
           "ticker": "USRT",
@@ -4771,7 +4771,7 @@
           "volatility": 21.27,
           "maxDrawdown": -44.38,
           "volume": 418800,
-          "lastUpdate": "2026-03-04T13:55:12.375677"
+          "lastUpdate": "2026-03-04T14:08:51.897965"
         }
       ]
     },
@@ -4814,7 +4814,7 @@
           "volatility": 37.39,
           "maxDrawdown": -80.01,
           "volume": 247200,
-          "lastUpdate": "2026-03-04T13:55:13.202725"
+          "lastUpdate": "2026-03-04T14:08:52.863399"
         },
         {
           "ticker": "ARKX",
@@ -4850,7 +4850,7 @@
           "volatility": 26.97,
           "maxDrawdown": -43.61,
           "volume": 456900,
-          "lastUpdate": "2026-03-04T13:55:13.866998"
+          "lastUpdate": "2026-03-04T14:08:53.529751"
         },
         {
           "ticker": "UFO",
@@ -4887,7 +4887,7 @@
           "volatility": 29.99,
           "maxDrawdown": -50.33,
           "volume": 389400,
-          "lastUpdate": "2026-03-04T13:55:14.631694"
+          "lastUpdate": "2026-03-04T14:08:54.331766"
         },
         {
           "ticker": "ROKT",
@@ -4924,7 +4924,7 @@
           "volatility": 24.64,
           "maxDrawdown": -43.16,
           "volume": 16800,
-          "lastUpdate": "2026-03-04T13:55:15.454059"
+          "lastUpdate": "2026-03-04T14:08:55.067943"
         },
         {
           "ticker": "CIBR",
@@ -4961,7 +4961,7 @@
           "volatility": 23.18,
           "maxDrawdown": -33.89,
           "volume": 2219500,
-          "lastUpdate": "2026-03-04T13:55:16.313929"
+          "lastUpdate": "2026-03-04T14:08:55.842651"
         },
         {
           "ticker": "BOTZ",
@@ -4998,7 +4998,7 @@
           "volatility": 25.63,
           "maxDrawdown": -55.54,
           "volume": 3333200,
-          "lastUpdate": "2026-03-04T13:55:17.154947"
+          "lastUpdate": "2026-03-04T14:08:56.637596"
         },
         {
           "ticker": "ICLN",
@@ -5035,7 +5035,7 @@
           "volatility": 26.92,
           "maxDrawdown": -66.75,
           "volume": 3220500,
-          "lastUpdate": "2026-03-04T13:55:18.058958"
+          "lastUpdate": "2026-03-04T14:08:57.474730"
         },
         {
           "ticker": "LIT",
@@ -5072,7 +5072,7 @@
           "volatility": 30.45,
           "maxDrawdown": -65.91,
           "volume": 997300,
-          "lastUpdate": "2026-03-04T13:55:18.947026"
+          "lastUpdate": "2026-03-04T14:08:58.358410"
         },
         {
           "ticker": "IBIT",
@@ -5106,7 +5106,7 @@
           "volatility": 51.48,
           "maxDrawdown": -49.36,
           "volume": 70236700,
-          "lastUpdate": "2026-03-04T13:55:19.645477"
+          "lastUpdate": "2026-03-04T14:08:58.964682"
         },
         {
           "ticker": "ARKF",
@@ -5143,7 +5143,7 @@
           "volatility": 39.95,
           "maxDrawdown": -78.63,
           "volume": 461000,
-          "lastUpdate": "2026-03-04T13:55:20.395591"
+          "lastUpdate": "2026-03-04T14:08:59.742727"
         },
         {
           "ticker": "ARKG",
@@ -5180,7 +5180,7 @@
           "volatility": 40.84,
           "maxDrawdown": -83.59,
           "volume": 3853400,
-          "lastUpdate": "2026-03-04T13:55:21.291370"
+          "lastUpdate": "2026-03-04T14:09:00.529635"
         },
         {
           "ticker": "ARKQ",
@@ -5217,7 +5217,7 @@
           "volatility": 29.47,
           "maxDrawdown": -59.89,
           "volume": 231100,
-          "lastUpdate": "2026-03-04T13:55:22.160846"
+          "lastUpdate": "2026-03-04T14:09:01.362326"
         },
         {
           "ticker": "CLOU",
@@ -5254,7 +5254,7 @@
           "volatility": 30.35,
           "maxDrawdown": -53.74,
           "volume": 228400,
-          "lastUpdate": "2026-03-04T13:55:22.930517"
+          "lastUpdate": "2026-03-04T14:09:02.071438"
         },
         {
           "ticker": "JETS",
@@ -5291,7 +5291,7 @@
           "volatility": 33.74,
           "maxDrawdown": -64.73,
           "volume": 5398600,
-          "lastUpdate": "2026-03-04T13:55:23.756922"
+          "lastUpdate": "2026-03-04T14:09:03.082995"
         },
         {
           "ticker": "DRIV",
@@ -5328,7 +5328,7 @@
           "volatility": 27.28,
           "maxDrawdown": -41.93,
           "volume": 61600,
-          "lastUpdate": "2026-03-04T13:55:24.489251"
+          "lastUpdate": "2026-03-04T14:09:03.897276"
         },
         {
           "ticker": "WCLD",
@@ -5365,7 +5365,7 @@
           "volatility": 37.01,
           "maxDrawdown": -64.9,
           "volume": 3929400,
-          "lastUpdate": "2026-03-04T13:55:25.212119"
+          "lastUpdate": "2026-03-04T14:09:04.617788"
         },
         {
           "ticker": "FINX",
@@ -5402,7 +5402,7 @@
           "volatility": 28.62,
           "maxDrawdown": -63.53,
           "volume": 104100,
-          "lastUpdate": "2026-03-04T13:55:26.019169"
+          "lastUpdate": "2026-03-04T14:09:05.371715"
         },
         {
           "ticker": "FBTC",
@@ -5436,7 +5436,7 @@
           "volatility": 51.43,
           "maxDrawdown": -49.33,
           "volume": 5114700,
-          "lastUpdate": "2026-03-04T13:55:26.658310"
+          "lastUpdate": "2026-03-04T14:09:05.988879"
         }
       ]
     },
@@ -5479,7 +5479,7 @@
           "volatility": 22.14,
           "maxDrawdown": -87.3,
           "volume": 14615300,
-          "lastUpdate": "2026-03-04T13:55:27.619501"
+          "lastUpdate": "2026-03-04T14:09:06.880669"
         },
         {
           "ticker": "SQQQ",
@@ -5516,7 +5516,7 @@
           "volatility": 65.77,
           "maxDrawdown": -99.96,
           "volume": 93472300,
-          "lastUpdate": "2026-03-04T13:55:28.543343"
+          "lastUpdate": "2026-03-04T14:09:07.714374"
         },
         {
           "ticker": "SPXL",
@@ -5553,7 +5553,7 @@
           "volatility": 53.2,
           "maxDrawdown": -76.86,
           "volume": 6131600,
-          "lastUpdate": "2026-03-04T13:55:29.542005"
+          "lastUpdate": "2026-03-04T14:09:08.726710"
         },
         {
           "ticker": "SPXS",
@@ -5590,7 +5590,7 @@
           "volatility": 53.33,
           "maxDrawdown": -99.56,
           "volume": 36879000,
-          "lastUpdate": "2026-03-04T13:55:30.414268"
+          "lastUpdate": "2026-03-04T14:09:09.597895"
         },
         {
           "ticker": "SSO",
@@ -5627,7 +5627,7 @@
           "volatility": 35.75,
           "maxDrawdown": -59.34,
           "volume": 6476500,
-          "lastUpdate": "2026-03-04T13:55:31.626330"
+          "lastUpdate": "2026-03-04T14:09:10.488338"
         },
         {
           "ticker": "SDS",
@@ -5664,7 +5664,7 @@
           "volatility": 35.67,
           "maxDrawdown": -96.05,
           "volume": 5149800,
-          "lastUpdate": "2026-03-04T13:55:32.656141"
+          "lastUpdate": "2026-03-04T14:09:11.459406"
         },
         {
           "ticker": "SOXL",
@@ -5701,7 +5701,7 @@
           "volatility": 97.13,
           "maxDrawdown": -90.46,
           "volume": 130307600,
-          "lastUpdate": "2026-03-04T13:55:33.641121"
+          "lastUpdate": "2026-03-04T14:09:12.303469"
         },
         {
           "ticker": "SOXS",
@@ -5738,7 +5738,7 @@
           "volatility": 98.58,
           "maxDrawdown": -100.0,
           "volume": 1258652200,
-          "lastUpdate": "2026-03-04T13:55:34.486080"
+          "lastUpdate": "2026-03-04T14:09:13.248739"
         },
         {
           "ticker": "UPRO",
@@ -5775,7 +5775,7 @@
           "volatility": 53.53,
           "maxDrawdown": -76.82,
           "volume": 6491100,
-          "lastUpdate": "2026-03-04T13:55:35.450243"
+          "lastUpdate": "2026-03-04T14:09:14.123828"
         },
         {
           "ticker": "SH",
@@ -5812,7 +5812,7 @@
           "volatility": 17.94,
           "maxDrawdown": -74.89,
           "volume": 26335800,
-          "lastUpdate": "2026-03-04T13:55:36.427429"
+          "lastUpdate": "2026-03-04T14:09:15.186283"
         }
       ]
     },
@@ -5854,7 +5854,7 @@
           "volatility": 19.62,
           "maxDrawdown": -38.08,
           "volume": 70124750,
-          "lastUpdate": "2026-03-04T13:55:38.630189"
+          "lastUpdate": "2026-03-04T14:09:17.256981"
         },
         {
           "ticker": "102110",
@@ -5890,7 +5890,7 @@
           "volatility": 19.55,
           "maxDrawdown": -37.86,
           "volume": 18359817,
-          "lastUpdate": "2026-03-04T13:55:40.567892"
+          "lastUpdate": "2026-03-04T14:09:18.909606"
         },
         {
           "ticker": "278530",
@@ -5926,7 +5926,7 @@
           "volatility": 20.86,
           "maxDrawdown": -38.14,
           "volume": 5887298,
-          "lastUpdate": "2026-03-04T13:55:42.130709"
+          "lastUpdate": "2026-03-04T14:09:20.431868"
         },
         {
           "ticker": "229200",
@@ -5962,7 +5962,7 @@
           "volatility": 28.43,
           "maxDrawdown": -57.22,
           "volume": 126065387,
-          "lastUpdate": "2026-03-04T13:55:43.978126"
+          "lastUpdate": "2026-03-04T14:09:21.981565"
         },
         {
           "ticker": "091180",
@@ -5998,7 +5998,7 @@
           "volatility": 26.58,
           "maxDrawdown": -53.38,
           "volume": 2971623,
-          "lastUpdate": "2026-03-04T13:55:45.833806"
+          "lastUpdate": "2026-03-04T14:09:23.593939"
         },
         {
           "ticker": "122630",
@@ -6034,7 +6034,7 @@
           "volatility": 38.98,
           "maxDrawdown": -66.22,
           "volume": 53684342,
-          "lastUpdate": "2026-03-04T13:55:47.234074"
+          "lastUpdate": "2026-03-04T14:09:25.134123"
         },
         {
           "ticker": "252670",
@@ -6070,7 +6070,7 @@
           "volatility": 40.4,
           "maxDrawdown": -98.1,
           "volume": 1506168634,
-          "lastUpdate": "2026-03-04T13:55:48.618184"
+          "lastUpdate": "2026-03-04T14:09:26.744998"
         },
         {
           "ticker": "232080",
@@ -6106,7 +6106,7 @@
           "volatility": 28.52,
           "maxDrawdown": -57.53,
           "volume": 21630286,
-          "lastUpdate": "2026-03-04T13:55:50.293391"
+          "lastUpdate": "2026-03-04T14:09:28.327056"
         },
         {
           "ticker": "354500",
@@ -6139,7 +6139,7 @@
           "volatility": 33.86,
           "maxDrawdown": -26.43,
           "volume": 1849715,
-          "lastUpdate": "2026-03-04T13:55:51.692594"
+          "lastUpdate": "2026-03-04T14:09:29.719927"
         },
         {
           "ticker": "233740",
@@ -6175,7 +6175,7 @@
           "volatility": 55.39,
           "maxDrawdown": -85.98,
           "volume": 161200957,
-          "lastUpdate": "2026-03-04T13:55:53.038848"
+          "lastUpdate": "2026-03-04T14:09:31.221293"
         },
         {
           "ticker": "291630",
@@ -6208,7 +6208,7 @@
           "volatility": 67.01,
           "maxDrawdown": -51.07,
           "volume": 400567,
-          "lastUpdate": "2026-03-04T13:55:54.760559"
+          "lastUpdate": "2026-03-04T14:09:32.397221"
         }
       ]
     },
@@ -6250,7 +6250,7 @@
           "volatility": 30.61,
           "maxDrawdown": -45.4,
           "volume": 13675647,
-          "lastUpdate": "2026-03-04T13:55:56.467831"
+          "lastUpdate": "2026-03-04T14:09:34.056003"
         },
         {
           "ticker": "381180",
@@ -6285,7 +6285,7 @@
           "volatility": 33.16,
           "maxDrawdown": -38.07,
           "volume": 2499086,
-          "lastUpdate": "2026-03-04T13:55:57.741479"
+          "lastUpdate": "2026-03-04T14:09:35.426606"
         },
         {
           "ticker": "445090",
@@ -6318,7 +6318,7 @@
           "volatility": 82.94,
           "maxDrawdown": -71.06,
           "volume": 112282,
-          "lastUpdate": "2026-03-04T13:56:00.340714"
+          "lastUpdate": "2026-03-04T14:09:37.843805"
         }
       ]
     },
@@ -6360,7 +6360,7 @@
           "volatility": 38.75,
           "maxDrawdown": -71.74,
           "volume": 8699460,
-          "lastUpdate": "2026-03-04T13:56:01.757371"
+          "lastUpdate": "2026-03-04T14:09:39.355633"
         },
         {
           "ticker": "371460",
@@ -6396,7 +6396,7 @@
           "volatility": 32.45,
           "maxDrawdown": -69.3,
           "volume": 2660320,
-          "lastUpdate": "2026-03-04T13:56:03.270823"
+          "lastUpdate": "2026-03-04T14:09:40.631259"
         },
         {
           "ticker": "364980",
@@ -6432,7 +6432,7 @@
           "volatility": 39.7,
           "maxDrawdown": -73.56,
           "volume": 8233745,
-          "lastUpdate": "2026-03-04T13:56:04.874953"
+          "lastUpdate": "2026-03-04T14:09:41.956191"
         }
       ]
     },
@@ -6474,7 +6474,7 @@
           "volatility": 9.82,
           "maxDrawdown": -18.36,
           "volume": 157257,
-          "lastUpdate": "2026-03-04T13:56:06.432281"
+          "lastUpdate": "2026-03-04T14:09:43.249621"
         },
         {
           "ticker": "114820",
@@ -6510,7 +6510,7 @@
           "volatility": 1.95,
           "maxDrawdown": -5.85,
           "volume": 59119,
-          "lastUpdate": "2026-03-04T13:56:08.346392"
+          "lastUpdate": "2026-03-04T14:09:44.825091"
         },
         {
           "ticker": "157450",
@@ -6546,7 +6546,7 @@
           "volatility": 1.65,
           "maxDrawdown": -3.5,
           "volume": 29972,
-          "lastUpdate": "2026-03-04T13:56:09.762756"
+          "lastUpdate": "2026-03-04T14:09:46.450826"
         },
         {
           "ticker": "357870",
@@ -6579,7 +6579,7 @@
           "volatility": 1.99,
           "maxDrawdown": -0.01,
           "volume": 581700,
-          "lastUpdate": "2026-03-04T13:56:11.029114"
+          "lastUpdate": "2026-03-04T14:09:47.814774"
         },
         {
           "ticker": "385560",
@@ -6614,7 +6614,7 @@
           "volatility": 16.71,
           "maxDrawdown": -46.31,
           "volume": 85672,
-          "lastUpdate": "2026-03-04T13:56:12.361314"
+          "lastUpdate": "2026-03-04T14:09:49.260722"
         },
         {
           "ticker": "148070",
@@ -6650,7 +6650,7 @@
           "volatility": 5.44,
           "maxDrawdown": -20.29,
           "volume": 80353,
-          "lastUpdate": "2026-03-04T13:56:13.876842"
+          "lastUpdate": "2026-03-04T14:09:50.660047"
         }
       ]
     },
@@ -6692,7 +6692,7 @@
           "volatility": 26.28,
           "maxDrawdown": -53.13,
           "volume": 1479247,
-          "lastUpdate": "2026-03-04T13:56:15.424243"
+          "lastUpdate": "2026-03-04T14:09:52.186196"
         },
         {
           "ticker": "143460",
@@ -6728,7 +6728,7 @@
           "volatility": 17.8,
           "maxDrawdown": -41.37,
           "volume": 145,
-          "lastUpdate": "2026-03-04T13:56:17.373051"
+          "lastUpdate": "2026-03-04T14:09:53.730925"
         },
         {
           "ticker": "266410",
@@ -6764,7 +6764,7 @@
           "volatility": 18.85,
           "maxDrawdown": -45.54,
           "volume": 69397,
-          "lastUpdate": "2026-03-04T13:56:18.776655"
+          "lastUpdate": "2026-03-04T14:09:55.256380"
         }
       ]
     },
@@ -6805,8 +6805,8 @@
           },
           "volatility": 21.0,
           "maxDrawdown": -47.96,
-          "volume": 41885,
-          "lastUpdate": "2026-03-04T13:56:20.373479"
+          "volume": 41252,
+          "lastUpdate": "2026-03-04T14:09:56.643448"
         },
         {
           "ticker": "192090",
@@ -6841,8 +6841,8 @@
           },
           "volatility": 19.26,
           "maxDrawdown": -41.43,
-          "volume": 300371,
-          "lastUpdate": "2026-03-04T13:56:21.784908"
+          "volume": 298377,
+          "lastUpdate": "2026-03-04T14:09:58.018645"
         }
       ]
     },
@@ -6883,8 +6883,8 @@
           },
           "volatility": 16.49,
           "maxDrawdown": -24.62,
-          "volume": 533521,
-          "lastUpdate": "2026-03-04T13:56:23.442414"
+          "volume": 527946,
+          "lastUpdate": "2026-03-04T14:09:59.371840"
         },
         {
           "ticker": "319640",
@@ -6919,8 +6919,8 @@
           },
           "volatility": 18.3,
           "maxDrawdown": -24.06,
-          "volume": 92422,
-          "lastUpdate": "2026-03-04T13:56:24.919386"
+          "volume": 92312,
+          "lastUpdate": "2026-03-04T14:10:00.849128"
         }
       ]
     },
@@ -6961,8 +6961,8 @@
           },
           "volatility": 18.16,
           "maxDrawdown": -40.52,
-          "volume": 25104,
-          "lastUpdate": "2026-03-04T13:56:26.335177"
+          "volume": 25081,
+          "lastUpdate": "2026-03-04T14:10:02.405207"
         },
         {
           "ticker": "192720",
@@ -6997,8 +6997,8 @@
           },
           "volatility": 17.28,
           "maxDrawdown": -49.82,
-          "volume": 43144,
-          "lastUpdate": "2026-03-04T13:56:27.747796"
+          "volume": 43142,
+          "lastUpdate": "2026-03-04T14:10:03.905897"
         },
         {
           "ticker": "195980",
@@ -7033,8 +7033,8 @@
           },
           "volatility": 17.81,
           "maxDrawdown": -43.02,
-          "volume": 64444,
-          "lastUpdate": "2026-03-04T13:56:29.120049"
+          "volume": 63275,
+          "lastUpdate": "2026-03-04T14:10:05.279216"
         },
         {
           "ticker": "213630",
@@ -7069,8 +7069,8 @@
           },
           "volatility": 16.7,
           "maxDrawdown": -42.59,
-          "volume": 13045,
-          "lastUpdate": "2026-03-04T13:56:30.509453"
+          "volume": 12145,
+          "lastUpdate": "2026-03-04T14:10:06.597864"
         }
       ]
     },
@@ -7111,8 +7111,8 @@
           },
           "volatility": 20.65,
           "maxDrawdown": -44.09,
-          "volume": 48306,
-          "lastUpdate": "2026-03-04T13:56:31.937485"
+          "volume": 48224,
+          "lastUpdate": "2026-03-04T14:10:08.240063"
         },
         {
           "ticker": "292190",
@@ -7147,8 +7147,8 @@
           },
           "volatility": 21.54,
           "maxDrawdown": -36.76,
-          "volume": 118480,
-          "lastUpdate": "2026-03-04T13:56:33.337761"
+          "volume": 118413,
+          "lastUpdate": "2026-03-04T14:10:09.807635"
         },
         {
           "ticker": "329200",
@@ -7183,8 +7183,8 @@
           },
           "volatility": 12.7,
           "maxDrawdown": -36.25,
-          "volume": 15764553,
-          "lastUpdate": "2026-03-04T13:56:34.678743"
+          "volume": 15686105,
+          "lastUpdate": "2026-03-04T14:10:11.280086"
         }
       ]
     },
@@ -7224,8 +7224,8 @@
           },
           "volatility": 5.85,
           "maxDrawdown": -9.19,
-          "volume": 21299,
-          "lastUpdate": "2026-03-04T13:56:37.360349"
+          "volume": 21298,
+          "lastUpdate": "2026-03-04T14:10:13.530788"
         }
       ]
     },
@@ -7265,8 +7265,8 @@
           },
           "volatility": 25.34,
           "maxDrawdown": -40.59,
-          "volume": 1261739,
-          "lastUpdate": "2026-03-04T13:56:38.671942"
+          "volume": 1250771,
+          "lastUpdate": "2026-03-04T14:10:14.829259"
         },
         {
           "ticker": "449770",
@@ -7300,8 +7300,8 @@
           },
           "volatility": 15.67,
           "maxDrawdown": -19.24,
-          "volume": 14268,
-          "lastUpdate": "2026-03-04T13:56:40.179723"
+          "volume": 14212,
+          "lastUpdate": "2026-03-04T14:10:16.081992"
         },
         {
           "ticker": "461900",
@@ -7333,8 +7333,8 @@
           "cagr": {},
           "volatility": 24.56,
           "maxDrawdown": -30.8,
-          "volume": 13150,
-          "lastUpdate": "2026-03-04T13:56:41.820716"
+          "volume": 12550,
+          "lastUpdate": "2026-03-04T14:10:17.290681"
         }
       ]
     },
@@ -7372,8 +7372,8 @@
           "cagr": {},
           "volatility": 14.55,
           "maxDrawdown": -13.12,
-          "volume": 3438757,
-          "lastUpdate": "2026-03-04T13:56:43.104316"
+          "volume": 3425517,
+          "lastUpdate": "2026-03-04T14:10:18.730899"
         },
         {
           "ticker": "091220",
@@ -7408,8 +7408,8 @@
           },
           "volatility": 25.53,
           "maxDrawdown": -57.3,
-          "volume": 243349,
-          "lastUpdate": "2026-03-04T13:56:44.560450"
+          "volume": 243199,
+          "lastUpdate": "2026-03-04T14:10:20.275471"
         },
         {
           "ticker": "334690",
@@ -7444,8 +7444,8 @@
           },
           "volatility": 41.44,
           "maxDrawdown": -75.86,
-          "volume": 37705,
-          "lastUpdate": "2026-03-04T13:56:46.150675"
+          "volume": 37434,
+          "lastUpdate": "2026-03-04T14:10:21.545745"
         }
       ]
     },
@@ -7486,8 +7486,8 @@
           },
           "volatility": 16.01,
           "maxDrawdown": -19.15,
-          "volume": 14700466,
-          "lastUpdate": "2026-03-04T13:56:47.477700"
+          "volume": 14669666,
+          "lastUpdate": "2026-03-04T14:10:22.829634"
         },
         {
           "ticker": "379800",
@@ -7521,8 +7521,8 @@
           },
           "volatility": 16.01,
           "maxDrawdown": -19.16,
-          "volume": 16800101,
-          "lastUpdate": "2026-03-04T13:56:48.820660"
+          "volume": 16783676,
+          "lastUpdate": "2026-03-04T14:10:24.099932"
         },
         {
           "ticker": "360200",
@@ -7557,8 +7557,8 @@
           },
           "volatility": 15.83,
           "maxDrawdown": -19.12,
-          "volume": 1311680,
-          "lastUpdate": "2026-03-04T13:56:50.143403"
+          "volume": 1303345,
+          "lastUpdate": "2026-03-04T14:10:25.396542"
         },
         {
           "ticker": "448290",
@@ -7592,8 +7592,8 @@
           },
           "volatility": 16.73,
           "maxDrawdown": -20.87,
-          "volume": 337221,
-          "lastUpdate": "2026-03-04T13:56:51.398551"
+          "volume": 335836,
+          "lastUpdate": "2026-03-04T14:10:26.671539"
         },
         {
           "ticker": "449180",
@@ -7627,8 +7627,8 @@
           },
           "volatility": 17.43,
           "maxDrawdown": -20.79,
-          "volume": 648843,
-          "lastUpdate": "2026-03-04T13:56:52.702064"
+          "volume": 646351,
+          "lastUpdate": "2026-03-04T14:10:27.940349"
         }
       ]
     },
@@ -7669,8 +7669,8 @@
           },
           "volatility": 20.17,
           "maxDrawdown": -31.02,
-          "volume": 1140599,
-          "lastUpdate": "2026-03-04T13:56:54.362873"
+          "volume": 1137363,
+          "lastUpdate": "2026-03-04T14:10:29.349375"
         },
         {
           "ticker": "379810",
@@ -7687,7 +7687,7 @@
             "3M": -4.08,
             "6M": 10.98,
             "1Y": 20.9,
-            "3Y": 134.44,
+            "3Y": 134.43,
             "5Y": null
           },
           "priceReturns": {
@@ -7704,8 +7704,8 @@
           },
           "volatility": 21.0,
           "maxDrawdown": -31.03,
-          "volume": 4445648,
-          "lastUpdate": "2026-03-04T13:56:55.668477"
+          "volume": 4424978,
+          "lastUpdate": "2026-03-04T14:10:30.663324"
         },
         {
           "ticker": "367380",
@@ -7740,14 +7740,14 @@
           },
           "volatility": 21.08,
           "maxDrawdown": -31.01,
-          "volume": 1121200,
-          "lastUpdate": "2026-03-04T13:56:56.969947"
+          "volume": 1117191,
+          "lastUpdate": "2026-03-04T14:10:31.968874"
         }
       ]
     }
   },
   "metadata": {
-    "lastUpdate": "2026-03-04T13:56:58.875603",
+    "lastUpdate": "2026-03-04T14:10:34.170802",
     "totalETFs": 207,
     "failedETFs": 2,
     "categories": 29,
