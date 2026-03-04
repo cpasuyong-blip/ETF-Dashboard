@@ -9,6 +9,8 @@ import smtplib
 from datetime import date, datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
 
 KST = timezone(timedelta(hours=9))
 DATA_FILE = os.path.join(os.path.dirname(__file__), '../frontend/public/data/etf_database.json')
@@ -816,12 +818,22 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 
 # ─── 이메일 발송 ──────────────────────────────────────────────────────────────
 
-def send_email(html_content, subject, to_addr, from_addr, app_password):
-    msg = MIMEMultipart('alternative')
+def send_email(html_content, subject, to_addr, from_addr, app_password, attach_filename='etf_blog.html'):
+    msg = MIMEMultipart('mixed')
     msg['Subject'] = subject
     msg['From'] = from_addr
     msg['To'] = to_addr
+
+    # 이메일 본문 (렌더링된 HTML)
     msg.attach(MIMEText(html_content, 'html', 'utf-8'))
+
+    # HTML 파일 첨부 (티스토리 HTML 편집기 붙여넣기용)
+    att = MIMEBase('application', 'octet-stream')
+    att.set_payload(html_content.encode('utf-8'))
+    encoders.encode_base64(att)
+    att.add_header('Content-Disposition', 'attachment', filename=attach_filename)
+    msg.attach(att)
+
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
         server.login(from_addr, app_password)
         server.sendmail(from_addr, to_addr, msg.as_string())
@@ -850,8 +862,9 @@ def main():
     html, label = build_blog_html(cat_key, cat_data, cycle_idx, cycle_total)
     now = datetime.now(KST)
     subject = f"[오늘의 ETF] {label} 수익률 백테스트 하기"
+    filename = f"etf_{now.strftime('%Y%m%d')}_{cat_key.replace('/', '_')}.html"
 
-    send_email(html, subject, notify_email, gmail_user, gmail_password)
+    send_email(html, subject, notify_email, gmail_user, gmail_password, filename)
     print(f"오늘의 카테고리: {label} ({cycle_idx+1}/{cycle_total})")
 
 
