@@ -29,12 +29,17 @@ jobs:
         run: |
           cd scripts
           python collect_etf_data.py
-      
+
+      - name: Run history data collection
+        run: |
+          cd scripts
+          python collect_history_data.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add frontend/public/data/etf_database.json
+          git add frontend/public/data/etf_database.json frontend/public/data/etf_history.json
           git diff --staged --quiet || git commit -m "Update ETF data $(date +'%Y-%m-%d %H:%M')"
           git push
 
