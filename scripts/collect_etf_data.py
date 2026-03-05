@@ -16,7 +16,7 @@ import time
 EXPENSE_RATIOS = {
     # ── 미국 ETF ──────────────────────────────────
     # S&P500
-    'SPY': 0.0945, 'VOO': 0.03, 'IVV': 0.03, 'SPLG': 0.02, 'SPYM': 0.03,
+    'SPY': 0.0945, 'VOO': 0.03, 'IVV': 0.03, 'SPYM': 0.02,
     # 나스닥
     'QQQ': 0.20, 'QQQM': 0.15, 'ONEQ': 0.21, 'TQQQ': 0.88,
     # 전체시장
@@ -117,7 +117,7 @@ EXPENSE_RATIOS = {
 # 미국 ETF 리스트 정의 (AUM $1B+ 기준)
 US_ETFS = {
     'S&P500': {
-        'tickers': ['SPY', 'VOO', 'IVV', 'SPLG', 'SPYM'],
+        'tickers': ['SPY', 'VOO', 'IVV', 'SPYM'],
         'description': '미국 대형주 500개 기업을 추종하는 ETF'
     },
     '나스닥': {
