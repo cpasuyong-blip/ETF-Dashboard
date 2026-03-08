@@ -267,10 +267,31 @@ def fetch_index(idx_id, info):
         current = history['Close'].iloc[-1]
         current_date = str(history.index[-1].date())
 
-        # 기간별 비교: (키, 거래일 수)
-        period_map = [('1W', 5), ('1M', 21), ('3M', 63)]
+        from datetime import timedelta
         periods = {}
-        for pk, n_days in period_map:
+
+        # 1W: 전주 마지막 영업일 종가 → 이번주 마지막 영업일 종가
+        last_date = history.index[-1]
+        this_monday = last_date - timedelta(days=last_date.weekday())
+        prev_week_last = this_monday - timedelta(days=1)
+        mask_1w = history.index <= prev_week_last
+        if mask_1w.any():
+            prev_1w = history['Close'].loc[mask_1w].iloc[-1]
+            prev_1w_date = str(history.index[mask_1w][-1].date())
+        else:
+            prev_1w = history['Close'].iloc[0]
+            prev_1w_date = str(history.index[0].date())
+        chg_pts_1w = current - prev_1w
+        chg_pct_1w = (chg_pts_1w / prev_1w) * 100
+        periods['1W'] = {
+            'prevValue': round(prev_1w, 0 if is_kr else 2),
+            'prevDate': prev_1w_date,
+            'changePoints': round(chg_pts_1w, 0 if is_kr else 2),
+            'changePct': round(chg_pct_1w, 2),
+        }
+
+        # 1M/3M: 거래일 수 기준
+        for pk, n_days in [('1M', 21), ('3M', 63)]:
             prev_idx = max(0, len(history) - n_days - 1)
             prev = history['Close'].iloc[prev_idx]
             prev_date = str(history.index[prev_idx].date())
@@ -313,7 +334,10 @@ def fetch_kr_etf_name(code):
     return None
 
 def calculate_returns(history):
-    """달력 날짜 기준 수익률 계산 (Yahoo Finance 방식)"""
+    """기간별 수익률 계산
+    - 1W: 전주 마지막 영업일 종가 → 이번주 마지막 영업일 종가
+    - 나머지: 달력 기준 해당 기간 전 마지막 거래일 종가 대비
+    """
     if history is None or len(history) == 0:
         return {}, {}
 
@@ -322,9 +346,22 @@ def calculate_returns(history):
     returns = {}
     cagr = {}
 
-    # 기간 정의: (이름, relativedelta 오프셋, 연수)
+    # ── 1W: 전주 마지막 영업일 종가 기준 ────────────────────────────────────
+    # 이번주 마지막 영업일 = last_date (데이터의 최신 거래일)
+    # 전주 마지막 영업일 = last_date 기준 직전 월요일 - 1일(= 전주 금요일) 이전 마지막 거래일
+    from datetime import timedelta
+    this_monday = last_date - timedelta(days=last_date.weekday())  # 이번주 월요일
+    prev_week_last = this_monday - timedelta(days=1)               # 전주 금요일(달력)
+    mask_1w = history.index <= prev_week_last
+    if mask_1w.any():
+        start_price_1w = history['Close'].loc[mask_1w].iloc[-1]   # 전주 마지막 영업일 종가
+        returns['1W'] = round(((current_price / start_price_1w) - 1) * 100, 2)
+    else:
+        returns['1W'] = None
+    # ─────────────────────────────────────────────────────────────────────────
+
+    # 나머지 기간: 달력 기준
     period_defs = [
-        ('1W', relativedelta(weeks=1), 1/52),
         ('1M', relativedelta(months=1), 1/12),
         ('3M', relativedelta(months=3), 3/12),
         ('6M', relativedelta(months=6), 6/12),
@@ -335,13 +372,11 @@ def calculate_returns(history):
 
     for name, delta, years in period_defs:
         target_date = last_date - delta
-        # target_date 이전 마지막 거래일 찾기 (Yahoo Finance 방식)
         mask = history.index <= target_date
         if mask.any():
             start_price = history['Close'].loc[mask].iloc[-1]
             cumulative = ((current_price / start_price) - 1) * 100
             returns[name] = round(cumulative, 2)
-            # 3Y, 5Y는 CAGR도 계산
             if years >= 3:
                 cagr_val = ((current_price / start_price) ** (1 / years) - 1) * 100
                 cagr[name] = round(cagr_val, 2)
