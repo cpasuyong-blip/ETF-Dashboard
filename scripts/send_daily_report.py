@@ -766,6 +766,16 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     avg_str = fmt_pct(avg_1w) if avg_1w is not None else '-'
     avg_c = ret_color(avg_1w)
 
+    # 주간 기간 표시: 데이터 기준 이번주 월~금
+    from datetime import timedelta as _td
+    current_dates = [e.get('currentDate') for e in etfs if e.get('currentDate')]
+    if current_dates:
+        _last = datetime.strptime(max(current_dates), '%Y-%m-%d')
+        _mon = _last - _td(days=_last.weekday())
+        week_range_str = f"{_mon.month}월 {_mon.day}일 ~ {_last.month}월 {_last.day}일"
+    else:
+        week_range_str = ''
+
     analysis_html = generate_analysis(cat_key, etfs, is_kr)
     etf_list_html = build_etf_list_summary(etfs, is_kr)
     _card_periods = [('1M', '1개월'), ('6M', '6개월'), ('1Y', '1년'), ('3Y', '3년'), ('5Y', '5년')]
@@ -805,7 +815,7 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     <div style="font-size:24px;font-weight:700;color:#1e293b;">{len(etfs)}개</div>
   </td>
   <td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px;text-align:center;width:33%;">
-    <div style="font-size:11px;color:#94a3b8;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;">평균 수익률 (1주)</div>
+    <div style="font-size:11px;color:#94a3b8;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px;">주간 수익률 ({week_range_str})</div>
     <div style="font-size:24px;font-weight:700;color:{avg_c};">{avg_str}</div>
   </td>
   <td style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px;text-align:center;width:33%;">
@@ -816,7 +826,7 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
 </table>
 
 {etf_list_html}
-<h2 style="font-size:18px;color:#222;margin:32px 0 12px;border-left:4px solid #10b981;padding-left:12px;">📝 주간 분석</h2>
+<h2 style="font-size:18px;color:#222;margin:32px 0 12px;border-left:4px solid #10b981;padding-left:12px;">📝 주간 분석 ({week_range_str})</h2>
 <div style="font-size:15px;color:#374151;margin:0 0 24px;line-height:1.85;">{analysis_html}</div>
 
 {cards_html}
