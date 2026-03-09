@@ -766,13 +766,15 @@ def build_blog_html(cat_key, cat_data, cycle_idx, cycle_total):
     avg_str = fmt_pct(avg_1w) if avg_1w is not None else '-'
     avg_c = ret_color(avg_1w)
 
-    # 주간 기간 표시: 데이터 기준 이번주 월~금
+    # 주간 기간 표시: 직전주 월요일 ~ 직전주 금요일 (완전히 지난 주)
     from datetime import timedelta as _td
     current_dates = [e.get('currentDate') for e in etfs if e.get('currentDate')]
     if current_dates:
         _last = datetime.strptime(max(current_dates), '%Y-%m-%d')
-        _mon = _last - _td(days=_last.weekday())
-        week_range_str = f"{_mon.month}월 {_mon.day}일 ~ {_last.month}월 {_last.day}일"
+        _this_mon = _last - _td(days=_last.weekday())
+        _prev_fri = _this_mon - _td(days=3)   # 직전주 금요일(달력)
+        _prev_mon = _prev_fri - _td(days=4)   # 직전주 월요일
+        week_range_str = f"{_prev_mon.month}월 {_prev_mon.day}일 ~ {_prev_fri.month}월 {_prev_fri.day}일"
     else:
         week_range_str = ''
 

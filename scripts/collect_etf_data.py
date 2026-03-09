@@ -270,22 +270,26 @@ def fetch_index(idx_id, info):
         from datetime import timedelta
         periods = {}
 
-        # 1W: 전주 마지막 영업일 종가 → 이번주 마지막 영업일 종가
+        # 1W: 완전히 지난 주간 수익률 (직직전주 금요일 → 직전주 금요일)
         last_date = history.index[-1]
         this_monday = last_date - timedelta(days=last_date.weekday())
-        prev_week_last = this_monday - timedelta(days=1)
-        mask_1w = history.index <= prev_week_last
-        if mask_1w.any():
-            prev_1w = history['Close'].loc[mask_1w].iloc[-1]
-            prev_1w_date = str(history.index[mask_1w][-1].date())
+        last_fri_cal = this_monday - timedelta(days=3)   # 직전주 금요일(달력)
+        prev_fri_cal = last_fri_cal - timedelta(days=7)  # 직직전주 금요일(달력)
+        mask_end = history.index <= last_fri_cal
+        mask_start = history.index <= prev_fri_cal
+        if mask_end.any() and mask_start.any():
+            end_1w   = history['Close'].loc[mask_end].iloc[-1]
+            end_1w_date = str(history.index[mask_end][-1].date())
+            start_1w = history['Close'].loc[mask_start].iloc[-1]
         else:
-            prev_1w = history['Close'].iloc[0]
-            prev_1w_date = str(history.index[0].date())
-        chg_pts_1w = current - prev_1w
-        chg_pct_1w = (chg_pts_1w / prev_1w) * 100
+            end_1w = current
+            end_1w_date = current_date
+            start_1w = history['Close'].iloc[0]
+        chg_pts_1w = end_1w - start_1w
+        chg_pct_1w = (chg_pts_1w / start_1w) * 100
         periods['1W'] = {
-            'prevValue': round(prev_1w, 0 if is_kr else 2),
-            'prevDate': prev_1w_date,
+            'prevValue': round(start_1w, 0 if is_kr else 2),
+            'prevDate': str(history.index[mask_start][-1].date()) if mask_start.any() else current_date,
             'changePoints': round(chg_pts_1w, 0 if is_kr else 2),
             'changePct': round(chg_pct_1w, 2),
         }
@@ -346,16 +350,19 @@ def calculate_returns(history):
     returns = {}
     cagr = {}
 
-    # ── 1W: 전주 마지막 영업일 종가 기준 ────────────────────────────────────
-    # 이번주 마지막 영업일 = last_date (데이터의 최신 거래일)
-    # 전주 마지막 영업일 = last_date 기준 직전 월요일 - 1일(= 전주 금요일) 이전 마지막 거래일
+    # ── 1W: 완전히 지난 주간 수익률 (주간 리캡) ──────────────────────────────
+    # 직전주 마지막 영업일 종가 → 직직전주 마지막 영업일 종가
+    # 이번 주 중엔 값이 고정, 다음 주 월요일부터 새 주간 리캡으로 갱신
     from datetime import timedelta
     this_monday = last_date - timedelta(days=last_date.weekday())  # 이번주 월요일
-    prev_week_last = this_monday - timedelta(days=1)               # 전주 금요일(달력)
-    mask_1w = history.index <= prev_week_last
-    if mask_1w.any():
-        start_price_1w = history['Close'].loc[mask_1w].iloc[-1]   # 전주 마지막 영업일 종가
-        returns['1W'] = round(((current_price / start_price_1w) - 1) * 100, 2)
+    last_fri_cal = this_monday - timedelta(days=3)                 # 직전주 금요일(달력)
+    prev_fri_cal = last_fri_cal - timedelta(days=7)                # 직직전주 금요일(달력)
+    mask_end = history.index <= last_fri_cal
+    mask_start = history.index <= prev_fri_cal
+    if mask_end.any() and mask_start.any():
+        end_price_1w   = history['Close'].loc[mask_end].iloc[-1]   # 직전주 마지막 영업일 종가
+        start_price_1w = history['Close'].loc[mask_start].iloc[-1] # 직직전주 마지막 영업일 종가
+        returns['1W'] = round(((end_price_1w / start_price_1w) - 1) * 100, 2)
     else:
         returns['1W'] = None
     # ─────────────────────────────────────────────────────────────────────────
