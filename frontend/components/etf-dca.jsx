@@ -333,7 +333,7 @@ export default function EtfDCA() {
         {/* 헤더 */}
         <header style={{ marginBottom:'1.5rem', textAlign:'center' }}>
           <h1 style={{ fontSize:'clamp(1.8rem,4vw,2.8rem)', fontWeight:'700', background:'linear-gradient(135deg,#fff 0%,#10b981 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text', margin:'0 0 0.4rem', letterSpacing:'-0.02em' }}>
-            적립식 투자 시뮬레이터
+            ETF 조합 시뮬레이터
           </h1>
           <p style={{ color:'#94a3b8', fontSize:'0.9rem', margin:0 }}>
             매월 일정 금액을 투자했다면 지금 얼마가 됐을지 계산합니다 · ETF 조합 포트폴리오 비교 가능

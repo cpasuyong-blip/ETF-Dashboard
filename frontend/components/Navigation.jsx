@@ -8,7 +8,7 @@ export default function Navigation() {
     { href: '/', label: '대시보드' },
     { href: '/backtest', label: '수익률 데이터' },
     { href: '/simulation', label: '시뮬레이션' },
-    { href: '/dca', label: '적립식' },
+    { href: '/etf-combo', label: 'ETF 조합' },
     { href: '/recap', label: '주간 리캡' },
   ]
 
