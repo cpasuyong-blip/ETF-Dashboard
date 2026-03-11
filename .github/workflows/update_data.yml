@@ -31,6 +31,7 @@ jobs:
           python collect_etf_data.py
 
       - name: Run history data collection
+        continue-on-error: true  # 실패해도 이메일/배포는 계속 진행
         run: |
           cd scripts
           python collect_history_data.py
