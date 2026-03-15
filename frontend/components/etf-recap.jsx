@@ -407,7 +407,7 @@ export default function ETFRecap() {
           fontSize: '0.75rem',
           color: '#64748b',
         }}>
-          * 수익률은 각 ETF의 종가 기준이며, 주간은 최근 5 거래일 기준입니다.
+          * 수익률은 각 ETF의 종가 기준이며, 주간은 전주 마지막 영업일 종가 대비 이번주 마지막 영업일 종가 기준입니다.
           미국 ETF는 USD 기준, 한국 ETF는 KRW 기준입니다.
         </div>
       </div>
