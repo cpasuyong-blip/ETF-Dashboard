@@ -417,11 +417,13 @@ export default function EtfDCA() {
         <style>{`
           .dca-layout { display:grid; gap:1rem; align-items:start; }
           @media (min-width:769px) { .dca-layout { grid-template-columns:260px 1fr; } }
+          .etf-panel { position:static; }
+          @media (min-width:769px) { .etf-panel { position:sticky; top:80px; } }
         `}</style>
         <div className="dca-layout">
 
           {/* 좌측: ETF 선택 패널 */}
-          <div style={{ background:'rgba(255,255,255,0.03)', border:'1px solid rgba(255,255,255,0.1)', borderRadius:'20px', padding:'1.25rem', backdropFilter:'blur(20px)', position:'sticky', top:'80px' }}>
+          <div className="etf-panel" style={{ background:'rgba(255,255,255,0.03)', border:'1px solid rgba(255,255,255,0.1)', borderRadius:'20px', padding:'1.25rem', backdropFilter:'blur(20px)' }}>
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'0.75rem' }}>
               <span style={{ fontSize:'0.75rem', color:'#94a3b8', fontWeight:'600', letterSpacing:'0.05em', textTransform:'uppercase' }}>
                 ETF 선택 ({selectedETFs.length}/6)
