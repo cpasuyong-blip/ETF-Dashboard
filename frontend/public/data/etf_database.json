@@ -39,8 +39,8 @@
           },
           "volatility": 17.92,
           "maxDrawdown": -33.72,
-          "volume": 67984061,
-          "lastUpdate": "2026-04-02T23:24:29.951347"
+          "volume": 68358700,
+          "lastUpdate": "2026-04-05T23:21:37.470391"
         },
         {
           "ticker": "VOO",
@@ -77,8 +77,8 @@
           },
           "volatility": 17.99,
           "maxDrawdown": -33.99,
-          "volume": 6440481,
-          "lastUpdate": "2026-04-02T23:24:30.867092"
+          "volume": 12780100,
+          "lastUpdate": "2026-04-05T23:21:38.395216"
         },
         {
           "ticker": "IVV",
@@ -115,8 +115,8 @@
           },
           "volatility": 18.03,
           "maxDrawdown": -33.9,
-          "volume": 4539065,
-          "lastUpdate": "2026-04-02T23:24:31.884555"
+          "volume": 10369300,
+          "lastUpdate": "2026-04-05T23:21:39.463090"
         },
         {
           "ticker": "SPYM",
@@ -127,7 +127,7 @@
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.02,
-          "aum": 107620376576,
+          "aum": null,
           "dividendYield": 1.15,
           "returns": {
             "1W": 3.42,
@@ -153,8 +153,8 @@
           },
           "volatility": 17.99,
           "maxDrawdown": -33.87,
-          "volume": 21978124,
-          "lastUpdate": "2026-04-02T23:24:32.820847"
+          "volume": 21992200,
+          "lastUpdate": "2026-04-05T23:21:40.427273"
         }
       ]
     },
@@ -197,8 +197,8 @@
           },
           "volatility": 22.24,
           "maxDrawdown": -35.12,
-          "volume": 50156537,
-          "lastUpdate": "2026-04-02T23:24:33.913809"
+          "volume": 50941700,
+          "lastUpdate": "2026-04-05T23:21:41.434494"
         },
         {
           "ticker": "QQQM",
@@ -235,8 +235,8 @@
           },
           "volatility": 22.26,
           "maxDrawdown": -35.04,
-          "volume": 2901810,
-          "lastUpdate": "2026-04-02T23:24:34.670961"
+          "volume": 2931400,
+          "lastUpdate": "2026-04-05T23:21:42.325574"
         },
         {
           "ticker": "ONEQ",
@@ -273,8 +273,8 @@
           },
           "volatility": 21.66,
           "maxDrawdown": -35.23,
-          "volume": 349279,
-          "lastUpdate": "2026-04-02T23:24:35.654997"
+          "volume": 349400,
+          "lastUpdate": "2026-04-05T23:21:43.251648"
         },
         {
           "ticker": "TQQQ",
@@ -311,8 +311,8 @@
           },
           "volatility": 65.82,
           "maxDrawdown": -81.66,
-          "volume": 110347183,
-          "lastUpdate": "2026-04-02T23:24:36.874528"
+          "volume": 111377300,
+          "lastUpdate": "2026-04-05T23:21:44.151248"
         }
       ]
     },
@@ -355,8 +355,8 @@
           },
           "volatility": 18.28,
           "maxDrawdown": -35.0,
-          "volume": 3639114,
-          "lastUpdate": "2026-04-02T23:24:37.862579"
+          "volume": 3653400,
+          "lastUpdate": "2026-04-05T23:21:45.174232"
         },
         {
           "ticker": "SCHB",
@@ -393,8 +393,8 @@
           },
           "volatility": 18.3,
           "maxDrawdown": -35.27,
-          "volume": 11227715,
-          "lastUpdate": "2026-04-02T23:24:38.799850"
+          "volume": 11231700,
+          "lastUpdate": "2026-04-05T23:21:46.005835"
         },
         {
           "ticker": "ITOT",
@@ -431,8 +431,8 @@
           },
           "volatility": 18.25,
           "maxDrawdown": -35.0,
-          "volume": 3323521,
-          "lastUpdate": "2026-04-02T23:24:39.789706"
+          "volume": 3338600,
+          "lastUpdate": "2026-04-05T23:21:46.938770"
         },
         {
           "ticker": "VT",
@@ -469,8 +469,8 @@
           },
           "volatility": 17.2,
           "maxDrawdown": -34.24,
-          "volume": 2971461,
-          "lastUpdate": "2026-04-02T23:24:40.632193"
+          "volume": 2973800,
+          "lastUpdate": "2026-04-05T23:21:47.929235"
         },
         {
           "ticker": "DIA",
@@ -507,8 +507,8 @@
           },
           "volatility": 17.5,
           "maxDrawdown": -36.7,
-          "volume": 3804658,
-          "lastUpdate": "2026-04-02T23:24:41.695296"
+          "volume": 3955900,
+          "lastUpdate": "2026-04-05T23:21:48.959958"
         },
         {
           "ticker": "RSP",
@@ -545,8 +545,8 @@
           },
           "volatility": 18.36,
           "maxDrawdown": -39.04,
-          "volume": 10791161,
-          "lastUpdate": "2026-04-02T23:24:42.749334"
+          "volume": 10796600,
+          "lastUpdate": "2026-04-05T23:21:49.893514"
         }
       ]
     },
@@ -589,8 +589,8 @@
           },
           "volatility": 22.99,
           "maxDrawdown": -41.13,
-          "volume": 28803479,
-          "lastUpdate": "2026-04-02T23:24:43.710118"
+          "volume": 30369200,
+          "lastUpdate": "2026-04-05T23:21:50.910241"
         },
         {
           "ticker": "IWB",
@@ -627,8 +627,8 @@
           },
           "volatility": 18.12,
           "maxDrawdown": -34.6,
-          "volume": 870112,
-          "lastUpdate": "2026-04-02T23:24:44.785553"
+          "volume": 897800,
+          "lastUpdate": "2026-04-05T23:21:51.875142"
         },
         {
           "ticker": "IJH",
@@ -665,8 +665,8 @@
           },
           "volatility": 21.15,
           "maxDrawdown": -42.18,
-          "volume": 12452663,
-          "lastUpdate": "2026-04-02T23:24:45.892934"
+          "volume": 14807400,
+          "lastUpdate": "2026-04-05T23:21:52.865305"
         },
         {
           "ticker": "IJR",
@@ -703,8 +703,8 @@
           },
           "volatility": 22.9,
           "maxDrawdown": -44.36,
-          "volume": 4355310,
-          "lastUpdate": "2026-04-02T23:24:46.888328"
+          "volume": 4573700,
+          "lastUpdate": "2026-04-05T23:21:53.823622"
         },
         {
           "ticker": "VB",
@@ -741,8 +741,8 @@
           },
           "volatility": 21.4,
           "maxDrawdown": -42.05,
-          "volume": 718539,
-          "lastUpdate": "2026-04-02T23:24:47.828599"
+          "volume": 728700,
+          "lastUpdate": "2026-04-05T23:21:54.768438"
         },
         {
           "ticker": "VO",
@@ -779,8 +779,8 @@
           },
           "volatility": 18.94,
           "maxDrawdown": -39.37,
-          "volume": 888365,
-          "lastUpdate": "2026-04-02T23:24:48.787949"
+          "volume": 888400,
+          "lastUpdate": "2026-04-05T23:21:55.749661"
         }
       ]
     },
@@ -823,8 +823,8 @@
           },
           "volatility": 24.33,
           "maxDrawdown": -33.56,
-          "volume": 12233970,
-          "lastUpdate": "2026-04-02T23:24:49.815063"
+          "volume": 12266200,
+          "lastUpdate": "2026-04-05T23:21:56.687343"
         },
         {
           "ticker": "VGT",
@@ -861,8 +861,8 @@
           },
           "volatility": 24.48,
           "maxDrawdown": -35.07,
-          "volume": 446224,
-          "lastUpdate": "2026-04-02T23:24:50.697695"
+          "volume": 448800,
+          "lastUpdate": "2026-04-05T23:21:57.634937"
         },
         {
           "ticker": "SOXX",
@@ -899,8 +899,8 @@
           },
           "volatility": 32.98,
           "maxDrawdown": -45.75,
-          "volume": 6395353,
-          "lastUpdate": "2026-04-02T23:24:51.623919"
+          "volume": 6521000,
+          "lastUpdate": "2026-04-05T23:21:58.605741"
         },
         {
           "ticker": "SMH",
@@ -937,8 +937,8 @@
           },
           "volatility": 32.28,
           "maxDrawdown": -45.3,
-          "volume": 7952928,
-          "lastUpdate": "2026-04-02T23:24:52.593423"
+          "volume": 8505800,
+          "lastUpdate": "2026-04-05T23:21:59.530223"
         },
         {
           "ticker": "ARKK",
@@ -975,8 +975,8 @@
           },
           "volatility": 40.1,
           "maxDrawdown": -80.91,
-          "volume": 11688027,
-          "lastUpdate": "2026-04-02T23:24:53.514892"
+          "volume": 11729600,
+          "lastUpdate": "2026-04-05T23:22:00.319363"
         },
         {
           "ticker": "IGV",
@@ -1013,8 +1013,8 @@
           },
           "volatility": 25.88,
           "maxDrawdown": -45.85,
-          "volume": 19181844,
-          "lastUpdate": "2026-04-02T23:24:54.585110"
+          "volume": 19202000,
+          "lastUpdate": "2026-04-05T23:22:01.220247"
         }
       ]
     },
@@ -1057,8 +1057,8 @@
           },
           "volatility": 22.18,
           "maxDrawdown": -42.86,
-          "volume": 39286081,
-          "lastUpdate": "2026-04-02T23:24:55.656406"
+          "volume": 39519800,
+          "lastUpdate": "2026-04-05T23:22:02.175366"
         },
         {
           "ticker": "XLV",
@@ -1095,8 +1095,8 @@
           },
           "volatility": 16.53,
           "maxDrawdown": -28.4,
-          "volume": 11075976,
-          "lastUpdate": "2026-04-02T23:24:56.604314"
+          "volume": 11087900,
+          "lastUpdate": "2026-04-05T23:22:03.135411"
         },
         {
           "ticker": "XLE",
@@ -1133,8 +1133,8 @@
           },
           "volatility": 29.5,
           "maxDrawdown": -66.81,
-          "volume": 58802953,
-          "lastUpdate": "2026-04-02T23:24:57.583183"
+          "volume": 60400500,
+          "lastUpdate": "2026-04-05T23:22:04.078213"
         },
         {
           "ticker": "XLI",
@@ -1171,8 +1171,8 @@
           },
           "volatility": 19.88,
           "maxDrawdown": -42.33,
-          "volume": 10915056,
-          "lastUpdate": "2026-04-02T23:24:58.621477"
+          "volume": 11097200,
+          "lastUpdate": "2026-04-05T23:22:05.007453"
         },
         {
           "ticker": "XLP",
@@ -1209,8 +1209,8 @@
           },
           "volatility": 14.69,
           "maxDrawdown": -24.51,
-          "volume": 20676078,
-          "lastUpdate": "2026-04-02T23:24:59.592580"
+          "volume": 20709800,
+          "lastUpdate": "2026-04-05T23:22:06.023847"
         },
         {
           "ticker": "XLY",
@@ -1247,8 +1247,8 @@
           },
           "volatility": 21.97,
           "maxDrawdown": -39.67,
-          "volume": 9237236,
-          "lastUpdate": "2026-04-02T23:25:00.671115"
+          "volume": 9684700,
+          "lastUpdate": "2026-04-05T23:22:06.998929"
         },
         {
           "ticker": "XLU",
@@ -1285,8 +1285,8 @@
           },
           "volatility": 19.21,
           "maxDrawdown": -36.07,
-          "volume": 16469435,
-          "lastUpdate": "2026-04-02T23:25:01.672539"
+          "volume": 17331800,
+          "lastUpdate": "2026-04-05T23:22:07.941067"
         },
         {
           "ticker": "XLB",
@@ -1323,8 +1323,8 @@
           },
           "volatility": 20.61,
           "maxDrawdown": -37.27,
-          "volume": 13773175,
-          "lastUpdate": "2026-04-02T23:25:02.650848"
+          "volume": 13799900,
+          "lastUpdate": "2026-04-05T23:22:08.998028"
         },
         {
           "ticker": "XLC",
@@ -1361,8 +1361,8 @@
           },
           "volatility": 22.36,
           "maxDrawdown": -46.65,
-          "volume": 5573556,
-          "lastUpdate": "2026-04-02T23:25:03.452310"
+          "volume": 5590500,
+          "lastUpdate": "2026-04-05T23:22:09.789175"
         },
         {
           "ticker": "XLRE",
@@ -1399,8 +1399,8 @@
           },
           "volatility": 20.4,
           "maxDrawdown": -38.82,
-          "volume": 7220797,
-          "lastUpdate": "2026-04-02T23:25:04.358763"
+          "volume": 7354700,
+          "lastUpdate": "2026-04-05T23:22:10.566455"
         },
         {
           "ticker": "IBB",
@@ -1437,8 +1437,8 @@
           },
           "volatility": 23.36,
           "maxDrawdown": -39.82,
-          "volume": 1544019,
-          "lastUpdate": "2026-04-02T23:25:05.416451"
+          "volume": 1544000,
+          "lastUpdate": "2026-04-05T23:22:11.601082"
         },
         {
           "ticker": "ITA",
@@ -1475,8 +1475,8 @@
           },
           "volatility": 22.95,
           "maxDrawdown": -51.0,
-          "volume": 788560,
-          "lastUpdate": "2026-04-02T23:25:06.306631"
+          "volume": 800700,
+          "lastUpdate": "2026-04-05T23:22:12.536285"
         },
         {
           "ticker": "KRE",
@@ -1513,8 +1513,8 @@
           },
           "volatility": 31.96,
           "maxDrawdown": -55.03,
-          "volume": 12577657,
-          "lastUpdate": "2026-04-02T23:25:07.211636"
+          "volume": 12662800,
+          "lastUpdate": "2026-04-05T23:22:13.418992"
         },
         {
           "ticker": "XBI",
@@ -1551,8 +1551,8 @@
           },
           "volatility": 32.14,
           "maxDrawdown": -63.89,
-          "volume": 9891485,
-          "lastUpdate": "2026-04-02T23:25:08.089188"
+          "volume": 9896100,
+          "lastUpdate": "2026-04-05T23:22:14.352365"
         },
         {
           "ticker": "XRT",
@@ -1589,8 +1589,8 @@
           },
           "volatility": 27.16,
           "maxDrawdown": -47.02,
-          "volume": 3346477,
-          "lastUpdate": "2026-04-02T23:25:09.015011"
+          "volume": 3385100,
+          "lastUpdate": "2026-04-05T23:22:15.269452"
         },
         {
           "ticker": "XOP",
@@ -1627,8 +1627,8 @@
           },
           "volatility": 40.29,
           "maxDrawdown": -82.61,
-          "volume": 4683464,
-          "lastUpdate": "2026-04-02T23:25:09.902093"
+          "volume": 4688400,
+          "lastUpdate": "2026-04-05T23:22:16.190469"
         },
         {
           "ticker": "XME",
@@ -1665,8 +1665,8 @@
           },
           "volatility": 32.97,
           "maxDrawdown": -61.69,
-          "volume": 1108132,
-          "lastUpdate": "2026-04-02T23:25:10.818392"
+          "volume": 1167000,
+          "lastUpdate": "2026-04-05T23:22:17.138937"
         },
         {
           "ticker": "XHB",
@@ -1703,8 +1703,8 @@
           },
           "volatility": 27.18,
           "maxDrawdown": -49.57,
-          "volume": 1520765,
-          "lastUpdate": "2026-04-02T23:25:11.790075"
+          "volume": 1520900,
+          "lastUpdate": "2026-04-05T23:22:18.076696"
         },
         {
           "ticker": "XSW",
@@ -1741,8 +1741,8 @@
           },
           "volatility": 25.87,
           "maxDrawdown": -45.38,
-          "volume": 39414,
-          "lastUpdate": "2026-04-02T23:25:12.704794"
+          "volume": 40200,
+          "lastUpdate": "2026-04-05T23:22:18.916446"
         }
       ]
     },
@@ -1785,8 +1785,8 @@
           },
           "volatility": 5.39,
           "maxDrawdown": -18.43,
-          "volume": 10162943,
-          "lastUpdate": "2026-04-02T23:25:13.700758"
+          "volume": 12024600,
+          "lastUpdate": "2026-04-05T23:22:19.881846"
         },
         {
           "ticker": "TLT",
@@ -1823,8 +1823,8 @@
           },
           "volatility": 14.93,
           "maxDrawdown": -48.35,
-          "volume": 32967470,
-          "lastUpdate": "2026-04-02T23:25:14.685854"
+          "volume": 33310600,
+          "lastUpdate": "2026-04-05T23:22:20.895909"
         },
         {
           "ticker": "SHY",
@@ -1861,8 +1861,8 @@
           },
           "volatility": 1.56,
           "maxDrawdown": -5.71,
-          "volume": 4569682,
-          "lastUpdate": "2026-04-02T23:25:15.683571"
+          "volume": 4735100,
+          "lastUpdate": "2026-04-05T23:22:21.857417"
         },
         {
           "ticker": "BND",
@@ -1899,8 +1899,8 @@
           },
           "volatility": 5.52,
           "maxDrawdown": -18.58,
-          "volume": 6719999,
-          "lastUpdate": "2026-04-02T23:25:16.650838"
+          "volume": 7975600,
+          "lastUpdate": "2026-04-05T23:22:22.771735"
         },
         {
           "ticker": "LQD",
@@ -1937,8 +1937,8 @@
           },
           "volatility": 8.67,
           "maxDrawdown": -24.95,
-          "volume": 26521391,
-          "lastUpdate": "2026-04-02T23:25:17.802016"
+          "volume": 27148600,
+          "lastUpdate": "2026-04-05T23:22:23.725270"
         },
         {
           "ticker": "HYG",
@@ -1975,8 +1975,8 @@
           },
           "volatility": 8.31,
           "maxDrawdown": -22.03,
-          "volume": 49634216,
-          "lastUpdate": "2026-04-02T23:25:18.765849"
+          "volume": 53828200,
+          "lastUpdate": "2026-04-05T23:22:24.611811"
         },
         {
           "ticker": "JNK",
@@ -2013,8 +2013,8 @@
           },
           "volatility": 8.33,
           "maxDrawdown": -22.89,
-          "volume": 6299835,
-          "lastUpdate": "2026-04-02T23:25:19.764454"
+          "volume": 6299800,
+          "lastUpdate": "2026-04-05T23:22:25.517951"
         },
         {
           "ticker": "TIP",
@@ -2051,8 +2051,8 @@
           },
           "volatility": 5.75,
           "maxDrawdown": -14.51,
-          "volume": 1976661,
-          "lastUpdate": "2026-04-02T23:25:20.831842"
+          "volume": 1976700,
+          "lastUpdate": "2026-04-05T23:22:26.453593"
         },
         {
           "ticker": "IEF",
@@ -2089,8 +2089,8 @@
           },
           "volatility": 6.63,
           "maxDrawdown": -23.92,
-          "volume": 13136702,
-          "lastUpdate": "2026-04-02T23:25:21.874638"
+          "volume": 13171300,
+          "lastUpdate": "2026-04-05T23:22:27.724421"
         },
         {
           "ticker": "SGOV",
@@ -2127,8 +2127,8 @@
           },
           "volatility": 0.24,
           "maxDrawdown": -0.03,
-          "volume": 21789197,
-          "lastUpdate": "2026-04-02T23:25:22.562018"
+          "volume": 22593000,
+          "lastUpdate": "2026-04-05T23:22:28.503933"
         },
         {
           "ticker": "BIL",
@@ -2165,8 +2165,8 @@
           },
           "volatility": 0.26,
           "maxDrawdown": -0.21,
-          "volume": 11386422,
-          "lastUpdate": "2026-04-02T23:25:23.459829"
+          "volume": 11510300,
+          "lastUpdate": "2026-04-05T23:22:29.377797"
         },
         {
           "ticker": "TBIL",
@@ -2178,11 +2178,11 @@
           "currentDate": "2026-04-02",
           "expenseRatio": 0.15,
           "aum": 6397268992,
-          "dividendYield": 3.94,
+          "dividendYield": 3.93,
           "returns": {
-            "1W": 0.06,
+            "1W": 0.05,
             "1M": 0.34,
-            "3M": 0.88,
+            "3M": 0.87,
             "6M": 1.91,
             "1Y": 4.07,
             "3Y": 14.84,
@@ -2202,8 +2202,8 @@
           },
           "volatility": 0.32,
           "maxDrawdown": -0.1,
-          "volume": 2946711,
-          "lastUpdate": "2026-04-02T23:25:24.182812"
+          "volume": 2966200,
+          "lastUpdate": "2026-04-05T23:22:30.163748"
         },
         {
           "ticker": "EMB",
@@ -2240,8 +2240,8 @@
           },
           "volatility": 9.94,
           "maxDrawdown": -28.74,
-          "volume": 9752591,
-          "lastUpdate": "2026-04-02T23:25:25.113246"
+          "volume": 9752600,
+          "lastUpdate": "2026-04-05T23:22:31.131986"
         },
         {
           "ticker": "VCIT",
@@ -2278,8 +2278,8 @@
           },
           "volatility": 6.27,
           "maxDrawdown": -20.56,
-          "volume": 8350813,
-          "lastUpdate": "2026-04-02T23:25:26.085579"
+          "volume": 9153100,
+          "lastUpdate": "2026-04-05T23:22:32.004998"
         },
         {
           "ticker": "VCSH",
@@ -2314,10 +2314,10 @@
             "3Y": 5.42,
             "5Y": 2.4
           },
-          "volatility": 3.35,
+          "volatility": 3.34,
           "maxDrawdown": -12.86,
-          "volume": 3415763,
-          "lastUpdate": "2026-04-02T23:25:26.960037"
+          "volume": 3624900,
+          "lastUpdate": "2026-04-05T23:22:32.908233"
         },
         {
           "ticker": "BIV",
@@ -2354,8 +2354,8 @@
           },
           "volatility": 5.5,
           "maxDrawdown": -18.94,
-          "volume": 2053622,
-          "lastUpdate": "2026-04-02T23:25:27.861419"
+          "volume": 2069800,
+          "lastUpdate": "2026-04-05T23:22:33.861668"
         },
         {
           "ticker": "MUB",
@@ -2392,8 +2392,8 @@
           },
           "volatility": 4.91,
           "maxDrawdown": -13.68,
-          "volume": 3238889,
-          "lastUpdate": "2026-04-02T23:25:28.858707"
+          "volume": 3398700,
+          "lastUpdate": "2026-04-05T23:22:34.767855"
         },
         {
           "ticker": "BNDX",
@@ -2430,8 +2430,8 @@
           },
           "volatility": 4.05,
           "maxDrawdown": -16.23,
-          "volume": 4956255,
-          "lastUpdate": "2026-04-02T23:25:29.789047"
+          "volume": 4966300,
+          "lastUpdate": "2026-04-05T23:22:35.561735"
         },
         {
           "ticker": "VMBS",
@@ -2468,8 +2468,8 @@
           },
           "volatility": 5.37,
           "maxDrawdown": -17.46,
-          "volume": 1515525,
-          "lastUpdate": "2026-04-02T23:25:30.728033"
+          "volume": 1516300,
+          "lastUpdate": "2026-04-05T23:22:36.449152"
         },
         {
           "ticker": "FLOT",
@@ -2506,8 +2506,8 @@
           },
           "volatility": 4.15,
           "maxDrawdown": -13.54,
-          "volume": 1243674,
-          "lastUpdate": "2026-04-02T23:25:31.569330"
+          "volume": 1336900,
+          "lastUpdate": "2026-04-05T23:22:37.305949"
         }
       ]
     },
@@ -2550,8 +2550,8 @@
           },
           "volatility": 16.33,
           "maxDrawdown": -35.21,
-          "volume": 1163692,
-          "lastUpdate": "2026-04-02T23:25:32.483721"
+          "volume": 1170200,
+          "lastUpdate": "2026-04-05T23:22:38.193320"
         },
         {
           "ticker": "SCHD",
@@ -2588,8 +2588,8 @@
           },
           "volatility": 16.7,
           "maxDrawdown": -33.37,
-          "volume": 20141483,
-          "lastUpdate": "2026-04-02T23:25:33.377824"
+          "volume": 20626200,
+          "lastUpdate": "2026-04-05T23:22:39.043445"
         },
         {
           "ticker": "HDV",
@@ -2626,8 +2626,8 @@
           },
           "volatility": 15.7,
           "maxDrawdown": -37.04,
-          "volume": 1057412,
-          "lastUpdate": "2026-04-02T23:25:34.328834"
+          "volume": 1155400,
+          "lastUpdate": "2026-04-05T23:22:39.889006"
         },
         {
           "ticker": "DVY",
@@ -2664,8 +2664,8 @@
           },
           "volatility": 18.02,
           "maxDrawdown": -41.59,
-          "volume": 341606,
-          "lastUpdate": "2026-04-02T23:25:35.238486"
+          "volume": 341600,
+          "lastUpdate": "2026-04-05T23:22:40.842537"
         },
         {
           "ticker": "VIG",
@@ -2702,8 +2702,8 @@
           },
           "volatility": 16.04,
           "maxDrawdown": -31.72,
-          "volume": 1187228,
-          "lastUpdate": "2026-04-02T23:25:36.167813"
+          "volume": 1190900,
+          "lastUpdate": "2026-04-05T23:22:41.792442"
         },
         {
           "ticker": "DGRO",
@@ -2740,8 +2740,8 @@
           },
           "volatility": 16.63,
           "maxDrawdown": -35.1,
-          "volume": 2594276,
-          "lastUpdate": "2026-04-02T23:25:36.949923"
+          "volume": 2611500,
+          "lastUpdate": "2026-04-05T23:22:42.581269"
         },
         {
           "ticker": "DGRW",
@@ -2778,8 +2778,8 @@
           },
           "volatility": 16.21,
           "maxDrawdown": -32.04,
-          "volume": 850526,
-          "lastUpdate": "2026-04-02T23:25:37.878557"
+          "volume": 851900,
+          "lastUpdate": "2026-04-05T23:22:43.506597"
         },
         {
           "ticker": "SPYD",
@@ -2816,8 +2816,8 @@
           },
           "volatility": 19.82,
           "maxDrawdown": -46.42,
-          "volume": 2387866,
-          "lastUpdate": "2026-04-02T23:25:38.740959"
+          "volume": 2388000,
+          "lastUpdate": "2026-04-05T23:22:44.347470"
         },
         {
           "ticker": "NOBL",
@@ -2854,8 +2854,8 @@
           },
           "volatility": 16.59,
           "maxDrawdown": -35.43,
-          "volume": 1010636,
-          "lastUpdate": "2026-04-02T23:25:39.660639"
+          "volume": 1010600,
+          "lastUpdate": "2026-04-05T23:22:45.122936"
         },
         {
           "ticker": "SDY",
@@ -2892,8 +2892,8 @@
           },
           "volatility": 17.08,
           "maxDrawdown": -36.7,
-          "volume": 182444,
-          "lastUpdate": "2026-04-02T23:25:40.565778"
+          "volume": 182800,
+          "lastUpdate": "2026-04-05T23:22:46.048407"
         },
         {
           "ticker": "FDVV",
@@ -2930,8 +2930,8 @@
           },
           "volatility": 17.08,
           "maxDrawdown": -40.25,
-          "volume": 1052628,
-          "lastUpdate": "2026-04-02T23:25:41.366864"
+          "volume": 1053500,
+          "lastUpdate": "2026-04-05T23:22:46.827235"
         },
         {
           "ticker": "PFFD",
@@ -2968,8 +2968,8 @@
           },
           "volatility": 12.84,
           "maxDrawdown": -30.93,
-          "volume": 658440,
-          "lastUpdate": "2026-04-02T23:25:42.243845"
+          "volume": 662300,
+          "lastUpdate": "2026-04-05T23:22:47.601648"
         }
       ]
     },
@@ -3012,8 +3012,8 @@
           },
           "volatility": 10.88,
           "maxDrawdown": -13.71,
-          "volume": 5011937,
-          "lastUpdate": "2026-04-02T23:25:42.943702"
+          "volume": 5043400,
+          "lastUpdate": "2026-04-05T23:22:48.309026"
         },
         {
           "ticker": "JEPQ",
@@ -3049,8 +3049,8 @@
           },
           "volatility": 16.9,
           "maxDrawdown": -20.07,
-          "volume": 6016437,
-          "lastUpdate": "2026-04-02T23:25:43.684073"
+          "volume": 6050100,
+          "lastUpdate": "2026-04-05T23:22:49.018306"
         },
         {
           "ticker": "XYLD",
@@ -3087,8 +3087,8 @@
           },
           "volatility": 14.23,
           "maxDrawdown": -33.46,
-          "volume": 463882,
-          "lastUpdate": "2026-04-02T23:25:44.591543"
+          "volume": 463900,
+          "lastUpdate": "2026-04-05T23:22:49.865011"
         },
         {
           "ticker": "QYLD",
@@ -3125,8 +3125,8 @@
           },
           "volatility": 15.51,
           "maxDrawdown": -24.75,
-          "volume": 8583494,
-          "lastUpdate": "2026-04-02T23:25:45.437824"
+          "volume": 8719300,
+          "lastUpdate": "2026-04-05T23:22:50.678204"
         },
         {
           "ticker": "RYLD",
@@ -3163,8 +3163,8 @@
           },
           "volatility": 17.37,
           "maxDrawdown": -41.52,
-          "volume": 1052601,
-          "lastUpdate": "2026-04-02T23:25:46.250488"
+          "volume": 1056900,
+          "lastUpdate": "2026-04-05T23:22:51.408573"
         },
         {
           "ticker": "DIVO",
@@ -3201,8 +3201,8 @@
           },
           "volatility": 14.92,
           "maxDrawdown": -30.04,
-          "volume": 711431,
-          "lastUpdate": "2026-04-02T23:25:47.122241"
+          "volume": 712300,
+          "lastUpdate": "2026-04-05T23:22:52.191608"
         },
         {
           "ticker": "SPYI",
@@ -3238,8 +3238,8 @@
           },
           "volatility": 13.12,
           "maxDrawdown": -16.47,
-          "volume": 5745681,
-          "lastUpdate": "2026-04-02T23:25:47.806275"
+          "volume": 5750100,
+          "lastUpdate": "2026-04-05T23:22:52.902248"
         }
       ]
     },
@@ -3251,20 +3251,20 @@
           "ticker": "TSLY",
           "name": "YieldMax TSLA Option Income Strategy ETF",
           "price": 29.01,
-          "priceChange": -1.5,
-          "priceChangePct": -4.92,
+          "priceChange": -1.24,
+          "priceChangePct": -4.1,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.99,
           "aum": 949812032,
-          "dividendYield": 101.68,
+          "dividendYield": 102.57,
           "returns": {
-            "1W": -0.65,
-            "1M": -7.5,
-            "3M": -11.0,
-            "6M": -8.37,
-            "1Y": 36.12,
-            "3Y": 34.87,
+            "1W": 0.2,
+            "1M": -6.71,
+            "3M": -10.23,
+            "6M": -7.59,
+            "1Y": 37.29,
+            "3Y": 36.03,
             "5Y": null
           },
           "priceReturns": {
@@ -3277,30 +3277,30 @@
             "5Y": null
           },
           "cagr": {
-            "3Y": 10.49
+            "3Y": 10.8
           },
-          "volatility": 46.09,
+          "volatility": 46.07,
           "maxDrawdown": -49.52,
-          "volume": 745268,
-          "lastUpdate": "2026-04-02T23:25:48.574787"
+          "volume": 759200,
+          "lastUpdate": "2026-04-05T23:22:53.635037"
         },
         {
           "ticker": "NVDY",
           "name": "YieldMax NVDA Option Income Strategy ETF",
           "price": 13.02,
-          "priceChange": -0.05,
-          "priceChangePct": -0.38,
+          "priceChange": 0.07,
+          "priceChangePct": 0.5,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.99,
           "aum": 1310683392,
-          "dividendYield": 72.58,
+          "dividendYield": 73.46,
           "returns": {
-            "1W": 3.83,
-            "1M": -1.2,
-            "3M": -2.34,
-            "6M": 0.09,
-            "1Y": 52.42,
+            "1W": 4.75,
+            "1M": -0.32,
+            "3M": -1.47,
+            "6M": 0.98,
+            "1Y": 53.77,
             "3Y": null,
             "5Y": null
           },
@@ -3316,26 +3316,26 @@
           "cagr": {},
           "volatility": 38.72,
           "maxDrawdown": -34.09,
-          "volume": 5462012,
-          "lastUpdate": "2026-04-02T23:25:49.315483"
+          "volume": 5482700,
+          "lastUpdate": "2026-04-05T23:22:54.344039"
         },
         {
           "ticker": "AMZY",
           "name": "YieldMax AMZN Option Income Strategy ETF",
           "price": 11.0,
-          "priceChange": -0.05,
-          "priceChangePct": -0.45,
+          "priceChange": 0.03,
+          "priceChangePct": 0.25,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.99,
           "aum": 223049360,
-          "dividendYield": 60.47,
+          "dividendYield": 61.17,
           "returns": {
-            "1W": 3.53,
-            "1M": 0.89,
-            "3M": -8.24,
-            "6M": -7.16,
-            "1Y": 5.8,
+            "1W": 4.26,
+            "1M": 1.6,
+            "3M": -7.6,
+            "6M": -6.51,
+            "1Y": 6.55,
             "3Y": null,
             "5Y": null
           },
@@ -3351,26 +3351,26 @@
           "cagr": {},
           "volatility": 25.22,
           "maxDrawdown": -23.69,
-          "volume": 273577,
-          "lastUpdate": "2026-04-02T23:25:50.043556"
+          "volume": 274700,
+          "lastUpdate": "2026-04-05T23:22:54.995296"
         },
         {
           "ticker": "MSFO",
           "name": "YieldMax MSFT Option Income Strategy ETF",
           "price": 11.6,
-          "priceChange": 0.08,
-          "priceChangePct": 0.69,
+          "priceChange": 0.15,
+          "priceChangePct": 1.28,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.99,
           "aum": 95391048,
-          "dividendYield": 44.02,
+          "dividendYield": 41.72,
           "returns": {
-            "1W": 3.94,
-            "1M": -6.15,
-            "3M": -18.09,
-            "6M": -22.94,
-            "1Y": -0.82,
+            "1W": 4.55,
+            "1M": -5.6,
+            "3M": -17.61,
+            "6M": -22.49,
+            "1Y": -0.24,
             "3Y": null,
             "5Y": null
           },
@@ -3384,28 +3384,28 @@
             "5Y": null
           },
           "cagr": {},
-          "volatility": 19.12,
+          "volatility": 19.14,
           "maxDrawdown": -29.28,
-          "volume": 55846,
-          "lastUpdate": "2026-04-02T23:25:50.782800"
+          "volume": 61400,
+          "lastUpdate": "2026-04-05T23:22:55.659489"
         },
         {
           "ticker": "APLY",
           "name": "YieldMax AAPL Option Income Strategy ETF",
           "price": 11.72,
-          "priceChange": -0.05,
-          "priceChangePct": -0.42,
+          "priceChange": 0.01,
+          "priceChangePct": 0.1,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.99,
           "aum": 109286888,
-          "dividendYield": 38.75,
+          "dividendYield": 39.28,
           "returns": {
-            "1W": 1.82,
-            "1M": -2.41,
-            "3M": -5.77,
-            "6M": -1.6,
-            "1Y": 8.96,
+            "1W": 2.36,
+            "1M": -1.89,
+            "3M": -5.28,
+            "6M": -1.08,
+            "1Y": 9.54,
             "3Y": null,
             "5Y": null
           },
@@ -3421,26 +3421,26 @@
           "cagr": {},
           "volatility": 21.16,
           "maxDrawdown": -31.09,
-          "volume": 79389,
-          "lastUpdate": "2026-04-02T23:25:52.484234"
+          "volume": 90500,
+          "lastUpdate": "2026-04-05T23:22:57.138717"
         },
         {
           "ticker": "CONY",
           "name": "YieldMax COIN Option Income Strategy ETF",
           "price": 25.64,
-          "priceChange": -0.53,
-          "priceChangePct": -2.03,
+          "priceChange": -0.15,
+          "priceChangePct": -0.6,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.99,
           "aum": 397758624,
-          "dividendYield": 217.5,
+          "dividendYield": 201.88,
           "returns": {
-            "1W": 4.53,
-            "1M": -6.37,
-            "3M": -26.67,
-            "6M": -50.43,
-            "1Y": -26.45,
+            "1W": 6.05,
+            "1M": -5.0,
+            "3M": -25.6,
+            "6M": -49.71,
+            "1Y": -25.38,
             "3Y": null,
             "5Y": null
           },
@@ -3454,10 +3454,10 @@
             "5Y": null
           },
           "cagr": {},
-          "volatility": 60.46,
+          "volatility": 60.45,
           "maxDrawdown": -63.57,
-          "volume": 342226,
-          "lastUpdate": "2026-04-02T23:25:53.171836"
+          "volume": 352100,
+          "lastUpdate": "2026-04-05T23:22:57.784062"
         },
         {
           "ticker": "YMAG",
@@ -3469,7 +3469,7 @@
           "currentDate": "2026-04-02",
           "expenseRatio": 0.29,
           "aum": 316991968,
-          "dividendYield": 56.54,
+          "dividendYield": 55.73,
           "returns": {
             "1W": 4.14,
             "1M": -3.72,
@@ -3491,8 +3491,8 @@
           "cagr": {},
           "volatility": 21.3,
           "maxDrawdown": -25.96,
-          "volume": 1252995,
-          "lastUpdate": "2026-04-02T23:25:53.850355"
+          "volume": 1259700,
+          "lastUpdate": "2026-04-05T23:22:58.480357"
         },
         {
           "ticker": "YMAX",
@@ -3504,7 +3504,7 @@
           "currentDate": "2026-04-02",
           "expenseRatio": 0.29,
           "aum": 446964512,
-          "dividendYield": 88.37,
+          "dividendYield": 86.06,
           "returns": {
             "1W": 3.14,
             "1M": -6.7,
@@ -3526,8 +3526,8 @@
           "cagr": {},
           "volatility": 22.98,
           "maxDrawdown": -26.14,
-          "volume": 1107144,
-          "lastUpdate": "2026-04-02T23:25:54.592955"
+          "volume": 1115300,
+          "lastUpdate": "2026-04-05T23:22:59.137984"
         }
       ]
     },
@@ -3570,8 +3570,8 @@
           },
           "volatility": 21.38,
           "maxDrawdown": -35.61,
-          "volume": 2358167,
-          "lastUpdate": "2026-04-02T23:25:55.539556"
+          "volume": 2360800,
+          "lastUpdate": "2026-04-05T23:23:00.041139"
         },
         {
           "ticker": "VTV",
@@ -3608,8 +3608,8 @@
           },
           "volatility": 16.67,
           "maxDrawdown": -36.78,
-          "volume": 4410815,
-          "lastUpdate": "2026-04-02T23:25:56.517229"
+          "volume": 4437800,
+          "lastUpdate": "2026-04-05T23:23:00.950690"
         },
         {
           "ticker": "IWF",
@@ -3646,8 +3646,8 @@
           },
           "volatility": 20.92,
           "maxDrawdown": -32.72,
-          "volume": 2080699,
-          "lastUpdate": "2026-04-02T23:25:57.612593"
+          "volume": 2505500,
+          "lastUpdate": "2026-04-05T23:23:01.917013"
         },
         {
           "ticker": "IWD",
@@ -3684,8 +3684,8 @@
           },
           "volatility": 17.28,
           "maxDrawdown": -38.51,
-          "volume": 2303561,
-          "lastUpdate": "2026-04-02T23:25:58.669177"
+          "volume": 2315100,
+          "lastUpdate": "2026-04-05T23:23:02.826932"
         },
         {
           "ticker": "SCHG",
@@ -3722,8 +3722,8 @@
           },
           "volatility": 21.51,
           "maxDrawdown": -34.59,
-          "volume": 18520184,
-          "lastUpdate": "2026-04-02T23:25:59.590613"
+          "volume": 18610800,
+          "lastUpdate": "2026-04-05T23:23:03.739207"
         },
         {
           "ticker": "SCHV",
@@ -3760,8 +3760,8 @@
           },
           "volatility": 16.91,
           "maxDrawdown": -37.08,
-          "volume": 4384935,
-          "lastUpdate": "2026-04-02T23:26:00.543251"
+          "volume": 4392300,
+          "lastUpdate": "2026-04-05T23:23:04.607575"
         },
         {
           "ticker": "QUAL",
@@ -3798,8 +3798,8 @@
           },
           "volatility": 18.08,
           "maxDrawdown": -34.06,
-          "volume": 1511279,
-          "lastUpdate": "2026-04-02T23:26:01.413881"
+          "volume": 1696200,
+          "lastUpdate": "2026-04-05T23:23:05.434495"
         },
         {
           "ticker": "USMV",
@@ -3836,8 +3836,8 @@
           },
           "volatility": 14.51,
           "maxDrawdown": -33.1,
-          "volume": 2776657,
-          "lastUpdate": "2026-04-02T23:26:02.344934"
+          "volume": 2776700,
+          "lastUpdate": "2026-04-05T23:23:06.295561"
         },
         {
           "ticker": "MGK",
@@ -3874,8 +3874,8 @@
           },
           "volatility": 21.82,
           "maxDrawdown": -36.01,
-          "volume": 487008,
-          "lastUpdate": "2026-04-02T23:26:03.271062"
+          "volume": 487000,
+          "lastUpdate": "2026-04-05T23:23:07.156067"
         },
         {
           "ticker": "MGV",
@@ -3912,8 +3912,8 @@
           },
           "volatility": 16.33,
           "maxDrawdown": -35.41,
-          "volume": 374993,
-          "lastUpdate": "2026-04-02T23:26:04.261648"
+          "volume": 375000,
+          "lastUpdate": "2026-04-05T23:23:08.102134"
         },
         {
           "ticker": "AVUV",
@@ -3950,8 +3950,8 @@
           },
           "volatility": 28.58,
           "maxDrawdown": -49.42,
-          "volume": 1231052,
-          "lastUpdate": "2026-04-02T23:26:05.029625"
+          "volume": 1231200,
+          "lastUpdate": "2026-04-05T23:23:08.792459"
         },
         {
           "ticker": "DFAC",
@@ -3987,8 +3987,8 @@
           },
           "volatility": 17.29,
           "maxDrawdown": -23.11,
-          "volume": 3771820,
-          "lastUpdate": "2026-04-02T23:26:05.745734"
+          "volume": 3778100,
+          "lastUpdate": "2026-04-05T23:23:09.508486"
         }
       ]
     },
@@ -4031,8 +4031,8 @@
           },
           "volatility": 17.09,
           "maxDrawdown": -35.97,
-          "volume": 7674276,
-          "lastUpdate": "2026-04-02T23:26:06.615142"
+          "volume": 7689000,
+          "lastUpdate": "2026-04-05T23:23:10.318893"
         },
         {
           "ticker": "VEA",
@@ -4069,8 +4069,8 @@
           },
           "volatility": 17.26,
           "maxDrawdown": -35.74,
-          "volume": 12254357,
-          "lastUpdate": "2026-04-02T23:26:07.582879"
+          "volume": 16486000,
+          "lastUpdate": "2026-04-05T23:23:11.228483"
         },
         {
           "ticker": "VWO",
@@ -4107,8 +4107,8 @@
           },
           "volatility": 19.18,
           "maxDrawdown": -36.39,
-          "volume": 8329924,
-          "lastUpdate": "2026-04-02T23:26:08.467743"
+          "volume": 10256100,
+          "lastUpdate": "2026-04-05T23:23:12.101397"
         },
         {
           "ticker": "IEFA",
@@ -4145,8 +4145,8 @@
           },
           "volatility": 17.24,
           "maxDrawdown": -34.79,
-          "volume": 14986636,
-          "lastUpdate": "2026-04-02T23:26:09.307348"
+          "volume": 17592800,
+          "lastUpdate": "2026-04-05T23:23:12.926464"
         },
         {
           "ticker": "IEMG",
@@ -4183,8 +4183,8 @@
           },
           "volatility": 19.84,
           "maxDrawdown": -38.71,
-          "volume": 13222699,
-          "lastUpdate": "2026-04-02T23:26:10.173198"
+          "volume": 14930400,
+          "lastUpdate": "2026-04-05T23:23:13.759693"
         },
         {
           "ticker": "EFA",
@@ -4221,8 +4221,8 @@
           },
           "volatility": 17.21,
           "maxDrawdown": -34.19,
-          "volume": 17264570,
-          "lastUpdate": "2026-04-02T23:26:11.166994"
+          "volume": 17276100,
+          "lastUpdate": "2026-04-05T23:23:14.687840"
         },
         {
           "ticker": "EEM",
@@ -4259,8 +4259,8 @@
           },
           "volatility": 20.32,
           "maxDrawdown": -39.82,
-          "volume": 33296781,
-          "lastUpdate": "2026-04-02T23:26:12.210719"
+          "volume": 33449800,
+          "lastUpdate": "2026-04-05T23:23:15.601016"
         },
         {
           "ticker": "MCHI",
@@ -4297,8 +4297,8 @@
           },
           "volatility": 27.37,
           "maxDrawdown": -62.84,
-          "volume": 1970179,
-          "lastUpdate": "2026-04-02T23:26:13.142969"
+          "volume": 2053200,
+          "lastUpdate": "2026-04-05T23:23:16.424512"
         },
         {
           "ticker": "EWJ",
@@ -4335,8 +4335,8 @@
           },
           "volatility": 17.33,
           "maxDrawdown": -33.14,
-          "volume": 6420584,
-          "lastUpdate": "2026-04-02T23:26:14.131958"
+          "volume": 6422100,
+          "lastUpdate": "2026-04-05T23:23:17.366036"
         },
         {
           "ticker": "KWEB",
@@ -4373,8 +4373,8 @@
           },
           "volatility": 39.86,
           "maxDrawdown": -80.92,
-          "volume": 14590480,
-          "lastUpdate": "2026-04-02T23:26:15.171590"
+          "volume": 15116600,
+          "lastUpdate": "2026-04-05T23:23:18.180487"
         },
         {
           "ticker": "VGK",
@@ -4411,8 +4411,8 @@
           },
           "volatility": 18.87,
           "maxDrawdown": -37.24,
-          "volume": 4950611,
-          "lastUpdate": "2026-04-02T23:26:16.195869"
+          "volume": 5097800,
+          "lastUpdate": "2026-04-05T23:23:19.047770"
         },
         {
           "ticker": "EWZ",
@@ -4449,8 +4449,8 @@
           },
           "volatility": 34.3,
           "maxDrawdown": -56.99,
-          "volume": 25936652,
-          "lastUpdate": "2026-04-02T23:26:17.191146"
+          "volume": 26086500,
+          "lastUpdate": "2026-04-05T23:23:19.977298"
         },
         {
           "ticker": "EWY",
@@ -4487,8 +4487,8 @@
           },
           "volatility": 26.21,
           "maxDrawdown": -49.73,
-          "volume": 17749953,
-          "lastUpdate": "2026-04-02T23:26:18.370262"
+          "volume": 17840300,
+          "lastUpdate": "2026-04-05T23:23:20.872756"
         },
         {
           "ticker": "EWT",
@@ -4525,8 +4525,8 @@
           },
           "volatility": 21.13,
           "maxDrawdown": -38.88,
-          "volume": 6587693,
-          "lastUpdate": "2026-04-02T23:26:19.393740"
+          "volume": 6588000,
+          "lastUpdate": "2026-04-05T23:23:21.854159"
         },
         {
           "ticker": "EWG",
@@ -4563,8 +4563,8 @@
           },
           "volatility": 21.03,
           "maxDrawdown": -46.8,
-          "volume": 3430569,
-          "lastUpdate": "2026-04-02T23:26:20.472290"
+          "volume": 3465300,
+          "lastUpdate": "2026-04-05T23:23:22.835022"
         },
         {
           "ticker": "EWU",
@@ -4601,8 +4601,8 @@
           },
           "volatility": 18.81,
           "maxDrawdown": -43.33,
-          "volume": 1734824,
-          "lastUpdate": "2026-04-02T23:26:21.540943"
+          "volume": 1805200,
+          "lastUpdate": "2026-04-05T23:23:23.838704"
         },
         {
           "ticker": "EWC",
@@ -4639,8 +4639,8 @@
           },
           "volatility": 18.79,
           "maxDrawdown": -42.66,
-          "volume": 1714754,
-          "lastUpdate": "2026-04-02T23:26:22.555403"
+          "volume": 1714800,
+          "lastUpdate": "2026-04-05T23:23:24.820177"
         },
         {
           "ticker": "EWA",
@@ -4677,8 +4677,8 @@
           },
           "volatility": 22.61,
           "maxDrawdown": -45.54,
-          "volume": 6877164,
-          "lastUpdate": "2026-04-02T23:26:23.967435"
+          "volume": 6877400,
+          "lastUpdate": "2026-04-05T23:23:25.837654"
         },
         {
           "ticker": "INDA",
@@ -4715,8 +4715,8 @@
           },
           "volatility": 21.12,
           "maxDrawdown": -45.07,
-          "volume": 9019428,
-          "lastUpdate": "2026-04-02T23:26:24.903753"
+          "volume": 9115400,
+          "lastUpdate": "2026-04-05T23:23:26.712804"
         },
         {
           "ticker": "EWH",
@@ -4753,8 +4753,8 @@
           },
           "volatility": 19.55,
           "maxDrawdown": -42.71,
-          "volume": 5806918,
-          "lastUpdate": "2026-04-02T23:26:25.919112"
+          "volume": 5813500,
+          "lastUpdate": "2026-04-05T23:23:27.732889"
         },
         {
           "ticker": "VPL",
@@ -4791,8 +4791,8 @@
           },
           "volatility": 17.12,
           "maxDrawdown": -33.89,
-          "volume": 1623817,
-          "lastUpdate": "2026-04-02T23:26:26.934059"
+          "volume": 1628100,
+          "lastUpdate": "2026-04-05T23:23:28.621931"
         },
         {
           "ticker": "EWW",
@@ -4829,8 +4829,8 @@
           },
           "volatility": 25.39,
           "maxDrawdown": -53.62,
-          "volume": 965714,
-          "lastUpdate": "2026-04-02T23:26:27.966350"
+          "volume": 1009600,
+          "lastUpdate": "2026-04-05T23:23:29.574740"
         }
       ]
     },
@@ -4873,8 +4873,8 @@
           },
           "volatility": 15.89,
           "maxDrawdown": -22.0,
-          "volume": 10669988,
-          "lastUpdate": "2026-04-02T23:26:28.766064"
+          "volume": 10838600,
+          "lastUpdate": "2026-04-05T23:23:30.358080"
         },
         {
           "ticker": "IAU",
@@ -4911,8 +4911,8 @@
           },
           "volatility": 15.84,
           "maxDrawdown": -21.82,
-          "volume": 6045724,
-          "lastUpdate": "2026-04-02T23:26:29.631801"
+          "volume": 6147000,
+          "lastUpdate": "2026-04-05T23:23:31.158534"
         },
         {
           "ticker": "GLDM",
@@ -4949,8 +4949,8 @@
           },
           "volatility": 16.79,
           "maxDrawdown": -21.63,
-          "volume": 5612051,
-          "lastUpdate": "2026-04-02T23:26:30.414979"
+          "volume": 5723700,
+          "lastUpdate": "2026-04-05T23:23:31.867957"
         },
         {
           "ticker": "SGOL",
@@ -4987,8 +4987,8 @@
           },
           "volatility": 15.85,
           "maxDrawdown": -21.56,
-          "volume": 4612201,
-          "lastUpdate": "2026-04-02T23:26:31.190971"
+          "volume": 4615100,
+          "lastUpdate": "2026-04-05T23:23:32.640746"
         },
         {
           "ticker": "SLV",
@@ -5025,8 +5025,8 @@
           },
           "volatility": 31.37,
           "maxDrawdown": -42.81,
-          "volume": 36220831,
-          "lastUpdate": "2026-04-02T23:26:32.028008"
+          "volume": 37002900,
+          "lastUpdate": "2026-04-05T23:23:33.452952"
         },
         {
           "ticker": "GDX",
@@ -5063,8 +5063,8 @@
           },
           "volatility": 37.45,
           "maxDrawdown": -49.79,
-          "volume": 22693394,
-          "lastUpdate": "2026-04-02T23:26:32.915182"
+          "volume": 22726700,
+          "lastUpdate": "2026-04-05T23:23:34.278726"
         },
         {
           "ticker": "CPER",
@@ -5101,8 +5101,8 @@
           },
           "volatility": 23.87,
           "maxDrawdown": -38.42,
-          "volume": 1620351,
-          "lastUpdate": "2026-04-02T23:26:33.692566"
+          "volume": 1956300,
+          "lastUpdate": "2026-04-05T23:23:34.992370"
         },
         {
           "ticker": "COPX",
@@ -5139,8 +5139,8 @@
           },
           "volatility": 35.5,
           "maxDrawdown": -65.41,
-          "volume": 3079871,
-          "lastUpdate": "2026-04-02T23:26:34.573818"
+          "volume": 3108000,
+          "lastUpdate": "2026-04-05T23:23:35.838364"
         },
         {
           "ticker": "DBB",
@@ -5177,8 +5177,8 @@
           },
           "volatility": 18.46,
           "maxDrawdown": -37.98,
-          "volume": 405768,
-          "lastUpdate": "2026-04-02T23:26:35.512069"
+          "volume": 406100,
+          "lastUpdate": "2026-04-05T23:23:36.661084"
         },
         {
           "ticker": "PICK",
@@ -5215,8 +5215,8 @@
           },
           "volatility": 28.46,
           "maxDrawdown": -52.73,
-          "volume": 240982,
-          "lastUpdate": "2026-04-02T23:26:36.496543"
+          "volume": 241000,
+          "lastUpdate": "2026-04-05T23:23:37.631231"
         },
         {
           "ticker": "DBC",
@@ -5253,8 +5253,8 @@
           },
           "volatility": 17.73,
           "maxDrawdown": -41.71,
-          "volume": 1594291,
-          "lastUpdate": "2026-04-02T23:26:37.414455"
+          "volume": 1765000,
+          "lastUpdate": "2026-04-05T23:23:38.477009"
         },
         {
           "ticker": "PDBC",
@@ -5291,8 +5291,8 @@
           },
           "volatility": 17.7,
           "maxDrawdown": -40.73,
-          "volume": 15058821,
-          "lastUpdate": "2026-04-02T23:26:38.260480"
+          "volume": 15094000,
+          "lastUpdate": "2026-04-05T23:23:39.254358"
         },
         {
           "ticker": "USO",
@@ -5329,8 +5329,8 @@
           },
           "volatility": 38.48,
           "maxDrawdown": -86.75,
-          "volume": 63718883,
-          "lastUpdate": "2026-04-02T23:26:39.187311"
+          "volume": 63983600,
+          "lastUpdate": "2026-04-05T23:23:40.061437"
         },
         {
           "ticker": "UNG",
@@ -5367,8 +5367,8 @@
           },
           "volatility": 54.86,
           "maxDrawdown": -93.49,
-          "volume": 7893613,
-          "lastUpdate": "2026-04-02T23:26:40.089895"
+          "volume": 7923600,
+          "lastUpdate": "2026-04-05T23:23:40.882462"
         },
         {
           "ticker": "REMX",
@@ -5405,8 +5405,8 @@
           },
           "volatility": 36.6,
           "maxDrawdown": -73.34,
-          "volume": 694554,
-          "lastUpdate": "2026-04-02T23:26:40.929811"
+          "volume": 699100,
+          "lastUpdate": "2026-04-05T23:23:41.732425"
         }
       ]
     },
@@ -5449,8 +5449,8 @@
           },
           "volatility": 20.71,
           "maxDrawdown": -42.4,
-          "volume": 3288296,
-          "lastUpdate": "2026-04-02T23:26:41.836030"
+          "volume": 3288900,
+          "lastUpdate": "2026-04-05T23:23:42.787905"
         },
         {
           "ticker": "IYR",
@@ -5487,8 +5487,8 @@
           },
           "volatility": 20.3,
           "maxDrawdown": -42.32,
-          "volume": 5495574,
-          "lastUpdate": "2026-04-02T23:26:42.904855"
+          "volume": 5593000,
+          "lastUpdate": "2026-04-05T23:23:43.828134"
         },
         {
           "ticker": "SCHH",
@@ -5525,8 +5525,8 @@
           },
           "volatility": 20.97,
           "maxDrawdown": -44.22,
-          "volume": 13945801,
-          "lastUpdate": "2026-04-02T23:26:43.824813"
+          "volume": 13976800,
+          "lastUpdate": "2026-04-05T23:23:44.758763"
         },
         {
           "ticker": "REET",
@@ -5563,8 +5563,8 @@
           },
           "volatility": 18.83,
           "maxDrawdown": -44.59,
-          "volume": 3949344,
-          "lastUpdate": "2026-04-02T23:26:44.664664"
+          "volume": 3957000,
+          "lastUpdate": "2026-04-05T23:23:45.581588"
         },
         {
           "ticker": "VNQI",
@@ -5601,8 +5601,8 @@
           },
           "volatility": 15.96,
           "maxDrawdown": -38.35,
-          "volume": 293294,
-          "lastUpdate": "2026-04-02T23:26:45.522891"
+          "volume": 294100,
+          "lastUpdate": "2026-04-05T23:23:46.441476"
         },
         {
           "ticker": "USRT",
@@ -5639,8 +5639,8 @@
           },
           "volatility": 21.28,
           "maxDrawdown": -44.38,
-          "volume": 581882,
-          "lastUpdate": "2026-04-02T23:26:46.529269"
+          "volume": 588800,
+          "lastUpdate": "2026-04-05T23:23:47.353557"
         }
       ]
     },
@@ -5683,8 +5683,8 @@
           },
           "volatility": 37.53,
           "maxDrawdown": -80.01,
-          "volume": 123303,
-          "lastUpdate": "2026-04-02T23:26:47.395713"
+          "volume": 124100,
+          "lastUpdate": "2026-04-05T23:23:48.121406"
         },
         {
           "ticker": "ARKX",
@@ -5721,8 +5721,8 @@
           },
           "volatility": 27.19,
           "maxDrawdown": -43.61,
-          "volume": 709743,
-          "lastUpdate": "2026-04-02T23:26:48.091937"
+          "volume": 714600,
+          "lastUpdate": "2026-04-05T23:23:48.834379"
         },
         {
           "ticker": "UFO",
@@ -5759,8 +5759,8 @@
           },
           "volatility": 30.29,
           "maxDrawdown": -50.33,
-          "volume": 776363,
-          "lastUpdate": "2026-04-02T23:26:48.885292"
+          "volume": 959300,
+          "lastUpdate": "2026-04-05T23:23:49.573038"
         },
         {
           "ticker": "ROKT",
@@ -5797,8 +5797,8 @@
           },
           "volatility": 24.85,
           "maxDrawdown": -43.16,
-          "volume": 36886,
-          "lastUpdate": "2026-04-02T23:26:49.673991"
+          "volume": 37100,
+          "lastUpdate": "2026-04-05T23:23:50.362398"
         },
         {
           "ticker": "CIBR",
@@ -5835,8 +5835,8 @@
           },
           "volatility": 23.22,
           "maxDrawdown": -33.89,
-          "volume": 981797,
-          "lastUpdate": "2026-04-02T23:26:50.548315"
+          "volume": 983300,
+          "lastUpdate": "2026-04-05T23:23:51.221189"
         },
         {
           "ticker": "BOTZ",
@@ -5873,8 +5873,8 @@
           },
           "volatility": 25.68,
           "maxDrawdown": -55.54,
-          "volume": 700910,
-          "lastUpdate": "2026-04-02T23:26:51.362789"
+          "volume": 701900,
+          "lastUpdate": "2026-04-05T23:23:51.987383"
         },
         {
           "ticker": "ICLN",
@@ -5911,8 +5911,8 @@
           },
           "volatility": 27.03,
           "maxDrawdown": -66.75,
-          "volume": 7739297,
-          "lastUpdate": "2026-04-02T23:26:52.269586"
+          "volume": 7989900,
+          "lastUpdate": "2026-04-05T23:23:52.805652"
         },
         {
           "ticker": "LIT",
@@ -5949,8 +5949,8 @@
           },
           "volatility": 30.5,
           "maxDrawdown": -65.91,
-          "volume": 174012,
-          "lastUpdate": "2026-04-02T23:26:53.164902"
+          "volume": 176600,
+          "lastUpdate": "2026-04-05T23:23:53.640913"
         },
         {
           "ticker": "IBIT",
@@ -5984,8 +5984,8 @@
           "cagr": {},
           "volatility": 51.18,
           "maxDrawdown": -49.36,
-          "volume": 33755911,
-          "lastUpdate": "2026-04-02T23:26:53.848870"
+          "volume": 34264400,
+          "lastUpdate": "2026-04-05T23:23:54.243307"
         },
         {
           "ticker": "ARKF",
@@ -6022,8 +6022,8 @@
           },
           "volatility": 39.95,
           "maxDrawdown": -78.63,
-          "volume": 124398,
-          "lastUpdate": "2026-04-02T23:26:54.672207"
+          "volume": 125600,
+          "lastUpdate": "2026-04-05T23:23:54.970519"
         },
         {
           "ticker": "ARKG",
@@ -6060,8 +6060,8 @@
           },
           "volatility": 40.92,
           "maxDrawdown": -83.59,
-          "volume": 2144617,
-          "lastUpdate": "2026-04-02T23:26:55.452398"
+          "volume": 2155000,
+          "lastUpdate": "2026-04-05T23:23:55.745027"
         },
         {
           "ticker": "ARKQ",
@@ -6098,8 +6098,8 @@
           },
           "volatility": 29.62,
           "maxDrawdown": -59.89,
-          "volume": 178601,
-          "lastUpdate": "2026-04-02T23:26:56.256262"
+          "volume": 179600,
+          "lastUpdate": "2026-04-05T23:23:56.555655"
         },
         {
           "ticker": "CLOU",
@@ -6136,8 +6136,8 @@
           },
           "volatility": 30.3,
           "maxDrawdown": -53.74,
-          "volume": 128416,
-          "lastUpdate": "2026-04-02T23:26:56.983488"
+          "volume": 128400,
+          "lastUpdate": "2026-04-05T23:23:57.283196"
         },
         {
           "ticker": "JETS",
@@ -6174,15 +6174,15 @@
           },
           "volatility": 33.88,
           "maxDrawdown": -64.73,
-          "volume": 3149269,
-          "lastUpdate": "2026-04-02T23:26:57.861818"
+          "volume": 3150600,
+          "lastUpdate": "2026-04-05T23:23:58.123275"
         },
         {
           "ticker": "DRIV",
           "name": "Global X Autonomous & Electric Vehicles ETF",
           "price": 30.96,
           "priceChange": 0.05,
-          "priceChangePct": 0.17,
+          "priceChangePct": 0.16,
           "currency": "USD",
           "currentDate": "2026-04-02",
           "expenseRatio": 0.68,
@@ -6191,16 +6191,16 @@
           "returns": {
             "1W": 4.54,
             "1M": -4.91,
-            "3M": 1.65,
+            "3M": 1.64,
             "6M": 6.84,
             "1Y": 47.55,
             "3Y": 36.26,
-            "5Y": 22.18
+            "5Y": 22.17
           },
           "priceReturns": {
             "1W": 4.54,
             "1M": -4.91,
-            "3M": 1.65,
+            "3M": 1.64,
             "6M": 6.32,
             "1Y": 45.77,
             "3Y": 29.87,
@@ -6212,8 +6212,8 @@
           },
           "volatility": 27.33,
           "maxDrawdown": -41.93,
-          "volume": 66811,
-          "lastUpdate": "2026-04-02T23:26:58.699143"
+          "volume": 66800,
+          "lastUpdate": "2026-04-05T23:23:58.841336"
         },
         {
           "ticker": "WCLD",
@@ -6250,8 +6250,8 @@
           },
           "volatility": 36.95,
           "maxDrawdown": -64.9,
-          "volume": 1338330,
-          "lastUpdate": "2026-04-02T23:26:59.394335"
+          "volume": 1338800,
+          "lastUpdate": "2026-04-05T23:23:59.516501"
         },
         {
           "ticker": "FINX",
@@ -6288,8 +6288,8 @@
           },
           "volatility": 28.67,
           "maxDrawdown": -63.53,
-          "volume": 28661,
-          "lastUpdate": "2026-04-02T23:27:00.293264"
+          "volume": 28700,
+          "lastUpdate": "2026-04-05T23:24:00.363061"
         },
         {
           "ticker": "FBTC",
@@ -6323,8 +6323,8 @@
           "cagr": {},
           "volatility": 51.13,
           "maxDrawdown": -49.33,
-          "volume": 4647982,
-          "lastUpdate": "2026-04-02T23:27:01.006830"
+          "volume": 4726100,
+          "lastUpdate": "2026-04-05T23:24:00.975549"
         }
       ]
     },
@@ -6367,8 +6367,8 @@
           },
           "volatility": 22.2,
           "maxDrawdown": -87.3,
-          "volume": 11541800,
-          "lastUpdate": "2026-04-02T23:27:02.003406"
+          "volume": 11638800,
+          "lastUpdate": "2026-04-05T23:24:01.930176"
         },
         {
           "ticker": "SQQQ",
@@ -6405,8 +6405,8 @@
           },
           "volatility": 65.97,
           "maxDrawdown": -99.96,
-          "volume": 71180376,
-          "lastUpdate": "2026-04-02T23:27:02.890997"
+          "volume": 71844000,
+          "lastUpdate": "2026-04-05T23:24:02.803040"
         },
         {
           "ticker": "SPXL",
@@ -6443,8 +6443,8 @@
           },
           "volatility": 53.36,
           "maxDrawdown": -76.86,
-          "volume": 3688954,
-          "lastUpdate": "2026-04-02T23:27:03.845549"
+          "volume": 3724000,
+          "lastUpdate": "2026-04-05T23:24:03.986457"
         },
         {
           "ticker": "SPXS",
@@ -6481,8 +6481,8 @@
           },
           "volatility": 53.49,
           "maxDrawdown": -99.52,
-          "volume": 28098903,
-          "lastUpdate": "2026-04-02T23:27:04.722738"
+          "volume": 28280000,
+          "lastUpdate": "2026-04-05T23:24:04.909254"
         },
         {
           "ticker": "SSO",
@@ -6519,8 +6519,8 @@
           },
           "volatility": 35.86,
           "maxDrawdown": -59.34,
-          "volume": 4542734,
-          "lastUpdate": "2026-04-02T23:27:05.799321"
+          "volume": 4570400,
+          "lastUpdate": "2026-04-05T23:24:05.803066"
         },
         {
           "ticker": "SDS",
@@ -6557,8 +6557,8 @@
           },
           "volatility": 35.78,
           "maxDrawdown": -95.87,
-          "volume": 5096175,
-          "lastUpdate": "2026-04-02T23:27:06.740557"
+          "volume": 5200300,
+          "lastUpdate": "2026-04-05T23:24:06.664477"
         },
         {
           "ticker": "SOXL",
@@ -6595,8 +6595,8 @@
           },
           "volatility": 97.72,
           "maxDrawdown": -90.46,
-          "volume": 103245452,
-          "lastUpdate": "2026-04-02T23:27:07.589585"
+          "volume": 104471700,
+          "lastUpdate": "2026-04-05T23:24:07.544068"
         },
         {
           "ticker": "SOXS",
@@ -6611,7 +6611,7 @@
           "dividendYield": 9.32,
           "returns": {
             "1W": -16.64,
-            "1M": 1.11,
+            "1M": 1.1,
             "3M": -34.19,
             "6M": -60.13,
             "1Y": -93.42,
@@ -6633,8 +6633,8 @@
           },
           "volatility": 99.18,
           "maxDrawdown": -100.0,
-          "volume": 64258276,
-          "lastUpdate": "2026-04-02T23:27:08.523276"
+          "volume": 65787100,
+          "lastUpdate": "2026-04-05T23:24:08.375292"
         },
         {
           "ticker": "UPRO",
@@ -6671,8 +6671,8 @@
           },
           "volatility": 53.69,
           "maxDrawdown": -76.82,
-          "volume": 3576035,
-          "lastUpdate": "2026-04-02T23:27:09.481904"
+          "volume": 3625100,
+          "lastUpdate": "2026-04-05T23:24:09.224374"
         },
         {
           "ticker": "SH",
@@ -6709,8 +6709,8 @@
           },
           "volatility": 17.99,
           "maxDrawdown": -74.31,
-          "volume": 16309788,
-          "lastUpdate": "2026-04-02T23:27:10.412608"
+          "volume": 16554500,
+          "lastUpdate": "2026-04-05T23:24:10.091595"
         }
       ]
     },
@@ -6721,403 +6721,403 @@
         {
           "ticker": "069500",
           "name": "KODEX 200",
-          "price": 78190.0,
-          "priceChange": -3980.0,
-          "priceChangePct": -4.84,
+          "price": 80575.0,
+          "priceChange": 2385.0,
+          "priceChangePct": 3.05,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.15,
-          "dividendYield": 1.06,
+          "dividendYield": 1.02,
           "returns": {
-            "1W": -3.74,
-            "1M": -16.93,
-            "3M": 24.92,
-            "6M": 58.29,
-            "1Y": 133.41,
-            "3Y": 154.62,
-            "5Y": 101.98
+            "1W": -0.8,
+            "1M": -7.07,
+            "3M": 28.73,
+            "6M": 63.12,
+            "1Y": 143.56,
+            "3Y": 163.71,
+            "5Y": 108.14
           },
           "priceReturns": {
-            "1W": -3.74,
-            "1M": -16.93,
-            "3M": 24.78,
-            "6M": 57.74,
-            "1Y": 128.76,
-            "3Y": 139.19,
-            "5Y": 81.65
+            "1W": -0.8,
+            "1M": -7.07,
+            "3M": 28.59,
+            "6M": 62.55,
+            "1Y": 138.71,
+            "3Y": 147.73,
+            "5Y": 87.19
           },
           "cagr": {
-            "3Y": 36.55,
-            "5Y": 15.1
+            "3Y": 38.16,
+            "5Y": 15.79
           },
-          "volatility": 20.71,
+          "volatility": 20.73,
           "maxDrawdown": -38.08,
-          "volume": 34620270,
-          "lastUpdate": "2026-04-02T23:27:12.372291"
+          "volume": 14703480,
+          "lastUpdate": "2026-04-05T23:24:12.131125"
         },
         {
           "ticker": "102110",
           "name": "TIGER 200",
-          "price": 78275.0,
-          "priceChange": -3835.0,
-          "priceChangePct": -4.67,
+          "price": 80495.0,
+          "priceChange": 2220.0,
+          "priceChangePct": 2.84,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.05,
-          "dividendYield": 1.12,
+          "dividendYield": 1.09,
           "returns": {
-            "1W": -3.59,
-            "1M": -16.77,
-            "3M": 25.14,
-            "6M": 58.53,
-            "1Y": 134.16,
-            "3Y": 155.64,
-            "5Y": 103.96
+            "1W": -0.86,
+            "1M": -7.05,
+            "3M": 28.69,
+            "6M": 63.03,
+            "1Y": 143.84,
+            "3Y": 164.23,
+            "5Y": 109.75
           },
           "priceReturns": {
-            "1W": -3.59,
-            "1M": -16.77,
-            "3M": 24.81,
-            "6M": 57.72,
-            "1Y": 129.51,
-            "3Y": 139.3,
-            "5Y": 82.46
+            "1W": -0.86,
+            "1M": -7.05,
+            "3M": 28.35,
+            "6M": 62.19,
+            "1Y": 139.0,
+            "3Y": 147.33,
+            "5Y": 87.63
           },
           "cagr": {
-            "3Y": 36.73,
-            "5Y": 15.32
+            "3Y": 38.25,
+            "5Y": 15.97
           },
-          "volatility": 20.65,
+          "volatility": 20.66,
           "maxDrawdown": -37.86,
-          "volume": 6936975,
-          "lastUpdate": "2026-04-02T23:27:13.824594"
+          "volume": 3351742,
+          "lastUpdate": "2026-04-05T23:24:13.578906"
         },
         {
           "ticker": "278530",
           "name": "KODEX 200TR",
-          "price": 28170.0,
-          "priceChange": -1390.0,
-          "priceChangePct": -4.7,
+          "price": 28960.0,
+          "priceChange": 790.0,
+          "priceChangePct": 2.8,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.05,
           "dividendYield": 0,
           "returns": {
-            "1W": -3.64,
-            "1M": -16.93,
-            "3M": 24.89,
-            "6M": 58.84,
-            "1Y": 134.26,
-            "3Y": 156.44,
-            "5Y": 103.25
+            "1W": -0.94,
+            "1M": -7.24,
+            "3M": 28.4,
+            "6M": 63.29,
+            "1Y": 144.08,
+            "3Y": 164.84,
+            "5Y": 108.95
           },
           "priceReturns": {
-            "1W": -3.64,
-            "1M": -16.93,
-            "3M": 24.89,
-            "6M": 58.84,
-            "1Y": 134.26,
-            "3Y": 156.44,
-            "5Y": 103.25
+            "1W": -0.94,
+            "1M": -7.24,
+            "3M": 28.4,
+            "6M": 63.29,
+            "1Y": 144.08,
+            "3Y": 164.84,
+            "5Y": 108.95
           },
           "cagr": {
-            "3Y": 36.88,
-            "5Y": 15.24
+            "3Y": 38.35,
+            "5Y": 15.88
           },
-          "volatility": 22.02,
+          "volatility": 22.04,
           "maxDrawdown": -38.14,
-          "volume": 2165073,
-          "lastUpdate": "2026-04-02T23:27:14.948697"
+          "volume": 1400879,
+          "lastUpdate": "2026-04-05T23:24:15.017184"
         },
         {
           "ticker": "229200",
           "name": "KODEX 코스닥150",
-          "price": 18060.0,
-          "priceChange": -1160.0,
-          "priceChangePct": -6.04,
+          "price": 18080.0,
+          "priceChange": 20.0,
+          "priceChangePct": 0.11,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.15,
           "dividendYield": 0.24,
           "returns": {
-            "1W": -8.93,
-            "1M": -14.41,
-            "3M": 14.16,
-            "6M": 27.99,
-            "1Y": 60.07,
-            "3Y": 44.77,
-            "5Y": 28.15
+            "1W": -8.83,
+            "1M": -9.6,
+            "3M": 14.29,
+            "6M": 28.14,
+            "1Y": 60.25,
+            "3Y": 44.07,
+            "5Y": 28.29
           },
           "priceReturns": {
-            "1W": -8.93,
-            "1M": -14.41,
-            "3M": 14.16,
-            "6M": 27.99,
-            "1Y": 59.47,
-            "3Y": 43.45,
-            "5Y": 25.03
+            "1W": -8.83,
+            "1M": -9.6,
+            "3M": 14.29,
+            "6M": 28.14,
+            "1Y": 59.65,
+            "3Y": 42.76,
+            "5Y": 25.16
           },
           "cagr": {
-            "3Y": 13.12,
-            "5Y": 5.08
+            "3Y": 12.94,
+            "5Y": 5.11
           },
-          "volatility": 29.2,
+          "volatility": 29.19,
           "maxDrawdown": -57.22,
-          "volume": 43432760,
-          "lastUpdate": "2026-04-02T23:27:16.300548"
+          "volume": 25027640,
+          "lastUpdate": "2026-04-05T23:24:16.546229"
         },
         {
           "ticker": "091180",
           "name": "KODEX 자동차",
-          "price": 29555.0,
-          "priceChange": -1340.0,
-          "priceChangePct": -4.34,
+          "price": 29565.0,
+          "priceChange": 10.0,
+          "priceChangePct": 0.03,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.25,
           "dividendYield": 2.2,
           "returns": {
-            "1W": -4.63,
-            "1M": -24.48,
-            "3M": 18.71,
-            "6M": 52.67,
-            "1Y": 65.63,
-            "3Y": 77.66,
-            "5Y": 38.18
+            "1W": -4.6,
+            "1M": -16.39,
+            "3M": 18.75,
+            "6M": 52.72,
+            "1Y": 68.19,
+            "3Y": 78.86,
+            "5Y": 38.23
           },
           "priceReturns": {
-            "1W": -4.63,
-            "1M": -24.48,
-            "3M": 18.46,
-            "6M": 52.35,
-            "1Y": 59.93,
-            "3Y": 63.15,
-            "5Y": 23.2
+            "1W": -4.6,
+            "1M": -16.39,
+            "3M": 18.5,
+            "6M": 52.4,
+            "1Y": 62.4,
+            "3Y": 64.25,
+            "5Y": 23.24
           },
           "cagr": {
-            "3Y": 21.12,
-            "5Y": 6.68
+            "3Y": 21.39,
+            "5Y": 6.69
           },
           "volatility": 27.07,
           "maxDrawdown": -53.38,
-          "volume": 764921,
-          "lastUpdate": "2026-04-02T23:27:17.554094"
+          "volume": 1029673,
+          "lastUpdate": "2026-04-05T23:24:18.317596"
         },
         {
           "ticker": "122630",
           "name": "KODEX 레버리지",
-          "price": 71095.0,
-          "priceChange": -7735.0,
-          "priceChangePct": -9.81,
+          "price": 75240.0,
+          "priceChange": 4145.0,
+          "priceChangePct": 5.83,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.67,
           "dividendYield": 0,
           "returns": {
-            "1W": -8.49,
-            "1M": -36.11,
-            "3M": 40.38,
-            "6M": 119.02,
-            "1Y": 356.62,
-            "3Y": 361.36,
-            "5Y": 158.67
+            "1W": -3.15,
+            "1M": -19.27,
+            "3M": 48.56,
+            "6M": 131.79,
+            "1Y": 396.14,
+            "3Y": 393.54,
+            "5Y": 173.75
           },
           "priceReturns": {
-            "1W": -8.49,
-            "1M": -36.11,
-            "3M": 40.38,
-            "6M": 119.02,
-            "1Y": 356.62,
-            "3Y": 361.36,
-            "5Y": 158.67
+            "1W": -3.15,
+            "1M": -19.27,
+            "3M": 48.56,
+            "6M": 131.79,
+            "1Y": 396.14,
+            "3Y": 393.54,
+            "5Y": 173.75
           },
           "cagr": {
-            "3Y": 66.47,
-            "5Y": 20.93
+            "3Y": 70.26,
+            "5Y": 22.31
           },
-          "volatility": 41.26,
+          "volatility": 41.29,
           "maxDrawdown": -66.22,
-          "volume": 41303550,
-          "lastUpdate": "2026-04-02T23:27:18.858189"
+          "volume": 21371730,
+          "lastUpdate": "2026-04-05T23:24:19.687538"
         },
         {
           "ticker": "252670",
           "name": "KODEX 200선물인버스2X",
-          "price": 289.0,
-          "priceChange": 28.0,
-          "priceChangePct": 10.73,
+          "price": 271.0,
+          "priceChange": -18.0,
+          "priceChangePct": -6.23,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.64,
           "dividendYield": 0,
           "returns": {
-            "1W": 3.96,
-            "1M": 21.43,
-            "3M": -50.09,
-            "6M": -70.51,
-            "1Y": -87.16,
-            "3Y": -89.7,
-            "5Y": -85.66
+            "1W": -2.52,
+            "1M": -2.17,
+            "3M": -53.2,
+            "6M": -72.35,
+            "1Y": -88.27,
+            "3Y": -90.46,
+            "5Y": -86.55
           },
           "priceReturns": {
-            "1W": 3.96,
-            "1M": 21.43,
-            "3M": -50.09,
-            "6M": -70.51,
-            "1Y": -87.16,
-            "3Y": -89.7,
-            "5Y": -85.66
+            "1W": -2.52,
+            "1M": -2.17,
+            "3M": -53.2,
+            "6M": -72.35,
+            "1Y": -88.27,
+            "3Y": -90.46,
+            "5Y": -86.55
           },
           "cagr": {
-            "3Y": -53.12,
-            "5Y": -32.19
+            "3Y": -54.3,
+            "5Y": -33.05
           },
-          "volatility": 42.57,
+          "volatility": 42.61,
           "maxDrawdown": -98.12,
-          "volume": 8568412000,
-          "lastUpdate": "2026-04-02T23:27:19.995087"
+          "volume": 4846251000,
+          "lastUpdate": "2026-04-05T23:24:20.955681"
         },
         {
           "ticker": "232080",
           "name": "TIGER 코스닥150",
-          "price": 18500.0,
-          "priceChange": -1115.0,
-          "priceChangePct": -5.68,
+          "price": 18485.0,
+          "priceChange": -15.0,
+          "priceChangePct": -0.08,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.19,
           "dividendYield": 0.19,
           "returns": {
-            "1W": -8.71,
-            "1M": -14.05,
-            "3M": 14.59,
-            "6M": 27.76,
-            "1Y": 60.09,
-            "3Y": 44.37,
-            "5Y": 28.98
+            "1W": -8.78,
+            "1M": -9.41,
+            "3M": 14.49,
+            "6M": 27.66,
+            "1Y": 59.82,
+            "3Y": 43.26,
+            "5Y": 28.88
           },
           "priceReturns": {
-            "1W": -8.71,
-            "1M": -14.05,
-            "3M": 14.59,
-            "6M": 27.76,
-            "1Y": 59.62,
-            "3Y": 43.02,
-            "5Y": 27.41
+            "1W": -8.78,
+            "1M": -9.41,
+            "3M": 14.49,
+            "6M": 27.66,
+            "1Y": 59.35,
+            "3Y": 41.92,
+            "5Y": 27.31
           },
           "cagr": {
-            "3Y": 13.02,
-            "5Y": 5.22
+            "3Y": 12.73,
+            "5Y": 5.2
           },
-          "volatility": 29.27,
+          "volatility": 29.26,
           "maxDrawdown": -57.53,
-          "volume": 4389294,
-          "lastUpdate": "2026-04-02T23:27:21.369615"
+          "volume": 3275963,
+          "lastUpdate": "2026-04-05T23:24:22.448729"
         },
         {
           "ticker": "354500",
           "name": "ACE 코스닥150",
-          "price": 18255.0,
-          "priceChange": -1125.0,
-          "priceChangePct": -5.8,
+          "price": 18250.0,
+          "priceChange": -5.0,
+          "priceChangePct": -0.03,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.09,
           "dividendYield": 0.22,
           "returns": {
-            "1W": -8.66,
-            "1M": -14.01,
-            "3M": 14.85,
-            "6M": 28.29,
-            "1Y": 60.46,
+            "1W": -8.68,
+            "1M": -9.59,
+            "3M": 14.82,
+            "6M": 28.25,
+            "1Y": 60.56,
             "3Y": null,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -8.66,
-            "1M": -14.01,
-            "3M": 14.85,
-            "6M": 28.29,
-            "1Y": 59.92,
+            "1W": -8.68,
+            "1M": -9.59,
+            "3M": 14.82,
+            "6M": 28.25,
+            "1Y": 60.02,
             "3Y": null,
             "5Y": null
           },
           "cagr": {},
-          "volatility": 36.88,
+          "volatility": 36.83,
           "maxDrawdown": -26.43,
-          "volume": 513545,
-          "lastUpdate": "2026-04-02T23:27:22.523203"
+          "volume": 258610,
+          "lastUpdate": "2026-04-05T23:24:23.806543"
         },
         {
           "ticker": "233740",
           "name": "KODEX 코스닥150레버리지",
-          "price": 13895.0,
-          "priceChange": -1820.0,
-          "priceChangePct": -11.58,
+          "price": 13865.0,
+          "priceChange": -30.0,
+          "priceChangePct": -0.22,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.64,
           "dividendYield": 0,
           "returns": {
-            "1W": -17.93,
-            "1M": -32.07,
-            "3M": 15.79,
-            "6M": 41.5,
-            "1Y": 111.33,
-            "3Y": 37.44,
-            "5Y": -6.34
+            "1W": -18.1,
+            "1M": -24.65,
+            "3M": 15.54,
+            "6M": 41.19,
+            "1Y": 111.84,
+            "3Y": 36.06,
+            "5Y": -6.54
           },
           "priceReturns": {
-            "1W": -17.93,
-            "1M": -32.07,
-            "3M": 15.79,
-            "6M": 41.5,
-            "1Y": 111.33,
-            "3Y": 37.44,
-            "5Y": -6.34
+            "1W": -18.1,
+            "1M": -24.65,
+            "3M": 15.54,
+            "6M": 41.19,
+            "1Y": 111.84,
+            "3Y": 36.06,
+            "5Y": -6.54
           },
           "cagr": {
-            "3Y": 11.18,
-            "5Y": -1.3
+            "3Y": 10.81,
+            "5Y": -1.34
           },
-          "volatility": 56.77,
+          "volatility": 56.76,
           "maxDrawdown": -85.98,
-          "volume": 71114180,
-          "lastUpdate": "2026-04-02T23:27:23.700210"
+          "volume": 33997910,
+          "lastUpdate": "2026-04-05T23:24:25.264510"
         },
         {
           "ticker": "291630",
           "name": "KIWOOM 코스닥150선물레버리지",
-          "price": 6925.0,
-          "priceChange": -945.0,
-          "priceChangePct": -12.01,
+          "price": 6975.0,
+          "priceChange": 50.0,
+          "priceChangePct": 0.72,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.64,
           "dividendYield": 0,
           "returns": {
-            "1W": -18.19,
-            "1M": -32.44,
-            "3M": 15.51,
-            "6M": 41.47,
-            "1Y": 112.75,
+            "1W": -17.6,
+            "1M": -23.85,
+            "3M": 16.35,
+            "6M": 42.49,
+            "1Y": 114.95,
             "3Y": null,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -18.19,
-            "1M": -32.44,
-            "3M": 15.51,
-            "6M": 41.47,
-            "1Y": 112.75,
+            "1W": -17.6,
+            "1M": -23.85,
+            "3M": 16.35,
+            "6M": 42.49,
+            "1Y": 114.95,
             "3Y": null,
             "5Y": null
           },
           "cagr": {},
-          "volatility": 72.38,
+          "volatility": 72.29,
           "maxDrawdown": -51.07,
-          "volume": 99445,
-          "lastUpdate": "2026-04-02T23:27:24.838868"
+          "volume": 57503,
+          "lastUpdate": "2026-04-05T23:24:26.603630"
         }
       ]
     },
@@ -7128,109 +7128,109 @@
         {
           "ticker": "091160",
           "name": "KODEX 반도체",
-          "price": 90105.0,
-          "priceChange": -5820.0,
-          "priceChangePct": -6.07,
+          "price": 93160.0,
+          "priceChange": 3055.0,
+          "priceChangePct": 3.39,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.45,
-          "dividendYield": 0.46,
+          "dividendYield": 0.45,
           "returns": {
-            "1W": -5.6,
-            "1M": -14.51,
-            "3M": 37.61,
-            "6M": 82.42,
-            "1Y": 190.45,
-            "3Y": 216.6,
-            "5Y": 144.61
+            "1W": -2.4,
+            "1M": -4.66,
+            "3M": 42.27,
+            "6M": 88.6,
+            "1Y": 205.83,
+            "3Y": 230.0,
+            "5Y": 152.91
           },
           "priceReturns": {
-            "1W": -5.6,
-            "1M": -14.51,
-            "3M": 37.61,
-            "6M": 82.42,
-            "1Y": 186.41,
-            "3Y": 209.32,
-            "5Y": 136.5
+            "1W": -2.4,
+            "1M": -4.66,
+            "3M": 42.27,
+            "6M": 88.6,
+            "1Y": 201.59,
+            "3Y": 222.41,
+            "5Y": 144.51
           },
           "cagr": {
-            "3Y": 46.84,
-            "5Y": 19.59
+            "3Y": 48.88,
+            "5Y": 20.39
           },
-          "volatility": 31.88,
+          "volatility": 31.89,
           "maxDrawdown": -45.4,
-          "volume": 6790590,
-          "lastUpdate": "2026-04-02T23:27:26.133012"
+          "volume": 3957849,
+          "lastUpdate": "2026-04-05T23:24:28.028758"
         },
         {
           "ticker": "381180",
           "name": "TIGER 미국필라델피아반도체나스닥",
-          "price": 30120.0,
-          "priceChange": -230.0,
-          "priceChangePct": -0.76,
+          "price": 30755.0,
+          "priceChange": 635.0,
+          "priceChangePct": 2.11,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.49,
           "dividendYield": 0.43,
           "returns": {
-            "1W": -0.89,
-            "1M": -1.86,
-            "3M": 11.05,
-            "6M": 26.06,
-            "1Y": 83.73,
-            "3Y": 177.88,
+            "1W": 1.2,
+            "1M": 0.41,
+            "3M": 13.39,
+            "6M": 28.71,
+            "1Y": 92.39,
+            "3Y": 180.96,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -0.89,
-            "1M": -1.86,
-            "3M": 10.92,
-            "6M": 25.74,
-            "1Y": 82.71,
-            "3Y": 170.38,
+            "1W": 1.2,
+            "1M": 0.41,
+            "3M": 13.26,
+            "6M": 28.39,
+            "1Y": 91.32,
+            "3Y": 173.38,
             "5Y": null
           },
           "cagr": {
-            "3Y": 40.59
+            "3Y": 41.11
           },
           "volatility": 33.28,
           "maxDrawdown": -38.07,
-          "volume": 2267697,
-          "lastUpdate": "2026-04-02T23:27:27.352622"
+          "volume": 349941,
+          "lastUpdate": "2026-04-05T23:24:29.456955"
         },
         {
           "ticker": "445090",
           "name": "에이직랜드",
-          "price": 26600.0,
-          "priceChange": -1700.0,
-          "priceChangePct": -6.01,
+          "price": 26900.0,
+          "priceChange": 300.0,
+          "priceChangePct": 1.13,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.45,
           "dividendYield": 0,
           "returns": {
-            "1W": -2.21,
-            "1M": -13.92,
-            "3M": -9.06,
-            "6M": -16.87,
-            "1Y": -1.66,
+            "1W": -1.1,
+            "1M": -5.45,
+            "3M": -8.03,
+            "6M": -15.94,
+            "1Y": 0.0,
             "3Y": null,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -2.21,
-            "1M": -13.92,
-            "3M": -9.06,
-            "6M": -16.87,
-            "1Y": -1.66,
+            "1W": -1.1,
+            "1M": -5.45,
+            "3M": -8.03,
+            "6M": -15.94,
+            "1Y": 0.0,
             "3Y": null,
             "5Y": null
           },
           "cagr": {},
-          "volatility": 83.72,
+          "volatility": 83.65,
           "maxDrawdown": -71.06,
-          "volume": 43508,
-          "lastUpdate": "2026-04-02T23:27:29.464211"
+          "volume": 21277,
+          "lastUpdate": "2026-04-05T23:24:31.839952"
         }
       ]
     },
@@ -7241,113 +7241,113 @@
         {
           "ticker": "305540",
           "name": "TIGER 2차전지테마",
-          "price": 20955.0,
-          "priceChange": -45.0,
-          "priceChangePct": -0.21,
+          "price": 20945.0,
+          "priceChange": -10.0,
+          "priceChangePct": -0.05,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.4,
           "dividendYield": 0.05,
           "returns": {
-            "1W": 1.09,
-            "1M": -12.51,
-            "3M": 26.23,
-            "6M": 40.54,
-            "1Y": 56.61,
-            "3Y": -26.2,
-            "5Y": 23.38
+            "1W": 1.04,
+            "1M": -3.7,
+            "3M": 26.17,
+            "6M": 40.48,
+            "1Y": 59.94,
+            "3Y": -28.75,
+            "5Y": 23.32
           },
           "priceReturns": {
-            "1W": 1.09,
-            "1M": -12.51,
-            "3M": 26.23,
-            "6M": 40.54,
-            "1Y": 56.5,
-            "3Y": -26.58,
-            "5Y": 22.65
+            "1W": 1.04,
+            "1M": -3.7,
+            "3M": 26.17,
+            "6M": 40.48,
+            "1Y": 59.82,
+            "3Y": -29.12,
+            "5Y": 22.59
           },
           "cagr": {
-            "3Y": -9.63,
-            "5Y": 4.29
+            "3Y": -10.69,
+            "5Y": 4.28
           },
-          "volatility": 39.12,
+          "volatility": 39.11,
           "maxDrawdown": -71.74,
-          "volume": 1276688,
-          "lastUpdate": "2026-04-02T23:27:30.640632"
+          "volume": 728586,
+          "lastUpdate": "2026-04-05T23:24:33.363557"
         },
         {
           "ticker": "371460",
           "name": "TIGER 차이나전기차SOLACTIVE",
-          "price": 13370.0,
-          "priceChange": -135.0,
-          "priceChangePct": -1.0,
+          "price": 13095.0,
+          "priceChange": -275.0,
+          "priceChangePct": -2.06,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.49,
-          "dividendYield": 1.05,
+          "dividendYield": 1.07,
           "returns": {
-            "1W": -2.55,
-            "1M": 8.88,
-            "3M": 4.82,
-            "6M": -2.0,
-            "1Y": 32.67,
-            "3Y": 18.02,
-            "5Y": 23.92
+            "1W": -4.56,
+            "1M": 5.9,
+            "3M": 2.67,
+            "6M": -4.01,
+            "1Y": 31.69,
+            "3Y": 14.0,
+            "5Y": 21.37
           },
           "priceReturns": {
-            "1W": -2.55,
-            "1M": 8.88,
-            "3M": 4.82,
-            "6M": -3.08,
-            "1Y": 31.21,
-            "3Y": 16.72,
-            "5Y": 22.55
+            "1W": -4.56,
+            "1M": 5.9,
+            "3M": 2.67,
+            "6M": -5.07,
+            "1Y": 30.23,
+            "3Y": 12.74,
+            "5Y": 20.03
           },
           "cagr": {
-            "3Y": 5.68,
-            "5Y": 4.38
+            "3Y": 4.46,
+            "5Y": 3.95
           },
           "volatility": 32.32,
           "maxDrawdown": -69.3,
-          "volume": 567503,
-          "lastUpdate": "2026-04-02T23:27:31.847079"
+          "volume": 341413,
+          "lastUpdate": "2026-04-05T23:24:34.585030"
         },
         {
           "ticker": "364980",
           "name": "TIGER 2차전지TOP10",
-          "price": 10620.0,
-          "priceChange": -85.0,
-          "priceChangePct": -0.79,
+          "price": 10655.0,
+          "priceChange": 35.0,
+          "priceChangePct": 0.33,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.4,
           "dividendYield": 0.38,
           "returns": {
-            "1W": 2.61,
-            "1M": -10.15,
-            "3M": 24.07,
-            "6M": 33.08,
-            "1Y": 42.37,
-            "3Y": -38.33,
-            "5Y": -32.36
+            "1W": 2.95,
+            "1M": -2.43,
+            "3M": 24.47,
+            "6M": 33.52,
+            "1Y": 46.75,
+            "3Y": -39.53,
+            "5Y": -32.14
           },
           "priceReturns": {
-            "1W": 2.61,
-            "1M": -10.15,
-            "3M": 24.07,
-            "6M": 33.08,
-            "1Y": 41.6,
-            "3Y": -38.97,
-            "5Y": -33.27
+            "1W": 2.95,
+            "1M": -2.43,
+            "3M": 24.47,
+            "6M": 33.52,
+            "1Y": 45.96,
+            "3Y": -40.16,
+            "5Y": -33.05
           },
           "cagr": {
-            "3Y": -14.88,
-            "5Y": -7.52
+            "3Y": -15.44,
+            "5Y": -7.46
           },
-          "volatility": 40.16,
+          "volatility": 40.15,
           "maxDrawdown": -73.56,
-          "volume": 5309232,
-          "lastUpdate": "2026-04-02T23:27:33.217148"
+          "volume": 3374730,
+          "lastUpdate": "2026-04-05T23:24:35.839180"
         }
       ]
     },
@@ -7358,220 +7358,220 @@
         {
           "ticker": "308620",
           "name": "KODEX 미국10년국채선물",
-          "price": 12795.0,
-          "priceChange": 50.0,
-          "priceChangePct": 0.39,
+          "price": 12715.0,
+          "priceChange": -80.0,
+          "priceChangePct": -0.63,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.3,
-          "dividendYield": 1.25,
+          "dividendYield": 1.26,
           "returns": {
-            "1W": 1.15,
-            "1M": 3.02,
-            "3M": 4.36,
-            "6M": 7.48,
-            "1Y": 5.42,
-            "3Y": 14.4,
-            "5Y": 15.42
+            "1W": 0.51,
+            "1M": 0.91,
+            "3M": 3.71,
+            "6M": 6.81,
+            "1Y": 3.59,
+            "3Y": 12.55,
+            "5Y": 14.7
           },
           "priceReturns": {
-            "1W": 1.15,
-            "1M": 3.02,
-            "3M": 4.36,
-            "6M": 6.09,
-            "1Y": 4.07,
-            "3Y": 12.93,
-            "5Y": 13.94
+            "1W": 0.51,
+            "1M": 0.91,
+            "3M": 3.71,
+            "6M": 5.43,
+            "1Y": 2.25,
+            "3Y": 11.1,
+            "5Y": 13.22
           },
           "cagr": {
-            "3Y": 4.59,
-            "5Y": 2.91
+            "3Y": 4.02,
+            "5Y": 2.78
           },
           "volatility": 9.85,
           "maxDrawdown": -18.36,
-          "volume": 54581,
-          "lastUpdate": "2026-04-02T23:27:34.361594"
+          "volume": 57415,
+          "lastUpdate": "2026-04-05T23:24:37.268947"
         },
         {
           "ticker": "114820",
           "name": "TIGER 국채3년",
-          "price": 104530.0,
-          "priceChange": -415.0,
-          "priceChangePct": -0.4,
+          "price": 104685.0,
+          "priceChange": 155.0,
+          "priceChangePct": 0.15,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.15,
           "dividendYield": 2.66,
           "returns": {
-            "1W": 0.36,
-            "1M": -0.87,
-            "3M": -0.52,
-            "6M": -1.05,
-            "1Y": 0.0,
-            "3Y": 7.25,
-            "5Y": 6.75
+            "1W": 0.51,
+            "1M": -0.36,
+            "3M": -0.38,
+            "6M": -0.91,
+            "1Y": -0.02,
+            "3Y": 7.57,
+            "5Y": 6.91
           },
           "priceReturns": {
-            "1W": 0.36,
-            "1M": -0.87,
-            "3M": -0.52,
-            "6M": -1.57,
-            "1Y": -2.57,
-            "3Y": -2.23,
-            "5Y": -5.72
+            "1W": 0.51,
+            "1M": -0.36,
+            "3M": -0.38,
+            "6M": -1.43,
+            "1Y": -2.6,
+            "3Y": -1.94,
+            "5Y": -5.58
           },
           "cagr": {
-            "3Y": 2.36,
-            "5Y": 1.32
+            "3Y": 2.46,
+            "5Y": 1.35
           },
           "volatility": 2.0,
           "maxDrawdown": -5.85,
-          "volume": 16095,
-          "lastUpdate": "2026-04-02T23:27:35.647536"
+          "volume": 10416,
+          "lastUpdate": "2026-04-05T23:24:38.857068"
         },
         {
           "ticker": "157450",
           "name": "TIGER 단기통안채",
-          "price": 111345.0,
-          "priceChange": -20.0,
-          "priceChangePct": -0.02,
+          "price": 111400.0,
+          "priceChange": 55.0,
+          "priceChangePct": 0.05,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.05,
           "dividendYield": 1.02,
           "returns": {
-            "1W": 0.01,
-            "1M": 0.13,
-            "3M": 0.47,
-            "6M": 0.96,
-            "1Y": 2.28,
-            "3Y": 9.21,
-            "5Y": 12.32
+            "1W": 0.06,
+            "1M": 0.19,
+            "3M": 0.52,
+            "6M": 1.01,
+            "1Y": 2.29,
+            "3Y": 9.25,
+            "5Y": 12.38
           },
           "priceReturns": {
-            "1W": 0.01,
-            "1M": 0.13,
-            "3M": 0.47,
-            "6M": -0.07,
-            "1Y": 1.24,
-            "3Y": 8.11,
-            "5Y": 11.18
+            "1W": 0.06,
+            "1M": 0.19,
+            "3M": 0.52,
+            "6M": -0.02,
+            "1Y": 1.25,
+            "3Y": 8.14,
+            "5Y": 11.24
           },
           "cagr": {
-            "3Y": 2.98,
-            "5Y": 2.35
+            "3Y": 2.99,
+            "5Y": 2.36
           },
           "volatility": 1.65,
           "maxDrawdown": -3.5,
-          "volume": 60407,
-          "lastUpdate": "2026-04-02T23:27:36.994876"
+          "volume": 7462,
+          "lastUpdate": "2026-04-05T23:24:40.284688"
         },
         {
           "ticker": "357870",
           "name": "TIGER CD금리투자KIS(합성)",
-          "price": 57305.0,
-          "priceChange": 15.0,
-          "priceChangePct": 0.03,
+          "price": 57310.0,
+          "priceChange": 5.0,
+          "priceChangePct": 0.01,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.05,
           "dividendYield": 0.11,
           "returns": {
-            "1W": 0.04,
-            "1M": 0.25,
-            "3M": 0.68,
-            "6M": 1.28,
-            "1Y": 2.67,
+            "1W": 0.05,
+            "1M": 0.26,
+            "3M": 0.69,
+            "6M": 1.29,
+            "1Y": 2.66,
             "3Y": null,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.04,
-            "1M": 0.25,
-            "3M": 0.68,
+            "1W": 0.05,
+            "1M": 0.26,
+            "3M": 0.69,
             "6M": 1.17,
-            "1Y": 2.55,
+            "1Y": 2.54,
             "3Y": null,
             "5Y": null
           },
           "cagr": {},
           "volatility": 1.95,
           "maxDrawdown": -0.01,
-          "volume": 280693,
-          "lastUpdate": "2026-04-02T23:27:38.051610"
+          "volume": 252207,
+          "lastUpdate": "2026-04-05T23:24:41.711566"
         },
         {
           "ticker": "385560",
           "name": "RISE KIS국고채30년Enhanced",
-          "price": 62440.0,
-          "priceChange": -1400.0,
-          "priceChangePct": -2.19,
+          "price": 63695.0,
+          "priceChange": 1255.0,
+          "priceChangePct": 2.01,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.3,
-          "dividendYield": 3.83,
+          "dividendYield": 3.75,
           "returns": {
-            "1W": 2.32,
-            "1M": -6.9,
-            "3M": -10.27,
-            "6M": -19.16,
-            "1Y": -23.31,
-            "3Y": -3.61,
+            "1W": 4.38,
+            "1M": -1.63,
+            "3M": -8.47,
+            "6M": -17.53,
+            "1Y": -22.3,
+            "3Y": -0.14,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 2.32,
-            "1M": -8.68,
-            "3M": -11.99,
-            "6M": -20.7,
-            "1Y": -25.82,
-            "3Y": -13.48,
+            "1W": 4.38,
+            "1M": -3.51,
+            "3M": -10.22,
+            "6M": -19.11,
+            "1Y": -24.83,
+            "3Y": -10.37,
             "5Y": null
           },
           "cagr": {
-            "3Y": -1.22
+            "3Y": -0.05
           },
-          "volatility": 16.87,
+          "volatility": 16.89,
           "maxDrawdown": -46.31,
-          "volume": 62978,
-          "lastUpdate": "2026-04-02T23:27:39.163633"
+          "volume": 36094,
+          "lastUpdate": "2026-04-05T23:24:43.152709"
         },
         {
           "ticker": "148070",
           "name": "KIWOOM 국고채10년",
-          "price": 106925.0,
-          "priceChange": -900.0,
-          "priceChangePct": -0.83,
+          "price": 107390.0,
+          "priceChange": 465.0,
+          "priceChangePct": 0.43,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.15,
-          "dividendYield": 3.5,
+          "dividendYield": 3.48,
           "returns": {
-            "1W": 1.02,
-            "1M": -2.27,
-            "3M": -2.05,
-            "6M": -4.72,
-            "1Y": -4.77,
-            "3Y": 5.63,
-            "5Y": -0.77
+            "1W": 1.46,
+            "1M": -0.86,
+            "3M": -1.63,
+            "6M": -4.31,
+            "1Y": -4.67,
+            "3Y": 6.58,
+            "5Y": -0.34
           },
           "priceReturns": {
-            "1W": 1.02,
-            "1M": -2.27,
-            "3M": -2.05,
-            "6M": -7.88,
-            "1Y": -7.93,
-            "3Y": -4.35,
-            "5Y": -11.13
+            "1W": 1.46,
+            "1M": -0.86,
+            "3M": -1.63,
+            "6M": -7.48,
+            "1Y": -7.84,
+            "3Y": -3.49,
+            "5Y": -10.75
           },
           "cagr": {
-            "3Y": 1.84,
-            "5Y": -0.15
+            "3Y": 2.15,
+            "5Y": -0.07
           },
           "volatility": 5.52,
           "maxDrawdown": -20.29,
-          "volume": 106343,
-          "lastUpdate": "2026-04-02T23:27:40.787518"
+          "volume": 15011,
+          "lastUpdate": "2026-04-05T23:24:44.562425"
         }
       ]
     },
@@ -7582,39 +7582,39 @@
         {
           "ticker": "228800",
           "name": "TIGER 여행레저",
-          "price": 3090.0,
-          "priceChange": -130.0,
-          "priceChangePct": -4.04,
+          "price": 3040.0,
+          "priceChange": -50.0,
+          "priceChangePct": -1.62,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.45,
-          "dividendYield": 1.46,
+          "dividendYield": 1.48,
           "returns": {
-            "1W": -5.94,
-            "1M": -15.46,
-            "3M": -9.91,
-            "6M": -15.57,
-            "1Y": 7.21,
-            "3Y": -24.62,
-            "5Y": -32.19
+            "1W": -7.46,
+            "1M": -11.5,
+            "3M": -11.37,
+            "6M": -16.94,
+            "1Y": 6.38,
+            "3Y": -26.01,
+            "5Y": -33.29
           },
           "priceReturns": {
-            "1W": -5.94,
-            "1M": -15.46,
-            "3M": -9.91,
-            "6M": -15.57,
-            "1Y": 5.64,
-            "3Y": -27.38,
-            "5Y": -34.81
+            "1W": -7.46,
+            "1M": -11.5,
+            "3M": -11.37,
+            "6M": -16.94,
+            "1Y": 4.83,
+            "3Y": -28.72,
+            "5Y": -35.86
           },
           "cagr": {
-            "3Y": -8.99,
-            "5Y": -7.48
+            "3Y": -9.55,
+            "5Y": -7.78
           },
           "volatility": 26.62,
           "maxDrawdown": -53.13,
-          "volume": 632559,
-          "lastUpdate": "2026-04-02T23:27:42.212095"
+          "volume": 459817,
+          "lastUpdate": "2026-04-05T23:24:46.110585"
         },
         {
           "ticker": "143460",
@@ -7651,44 +7651,44 @@
           "volatility": 17.86,
           "maxDrawdown": -41.37,
           "volume": 145,
-          "lastUpdate": "2026-04-02T23:27:43.456703"
+          "lastUpdate": "2026-04-05T23:24:47.470370"
         },
         {
           "ticker": "266410",
           "name": "KODEX 필수소비재",
-          "price": 9335.0,
-          "priceChange": -235.0,
-          "priceChangePct": -2.46,
+          "price": 9185.0,
+          "priceChange": -150.0,
+          "priceChangePct": -1.61,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.45,
-          "dividendYield": 1.59,
+          "dividendYield": 1.61,
           "returns": {
-            "1W": -0.64,
-            "1M": -2.51,
-            "3M": 14.89,
-            "6M": 10.74,
-            "1Y": 42.28,
-            "3Y": 34.59,
-            "5Y": 0.99
+            "1W": -2.24,
+            "1M": 0.22,
+            "3M": 13.05,
+            "6M": 8.96,
+            "1Y": 40.83,
+            "3Y": 32.97,
+            "5Y": -0.63
           },
           "priceReturns": {
-            "1W": -0.64,
-            "1M": -2.51,
-            "3M": 14.89,
-            "6M": 10.74,
-            "1Y": 39.33,
-            "3Y": 26.92,
-            "5Y": -7.71
+            "1W": -2.24,
+            "1M": 0.22,
+            "3M": 13.05,
+            "6M": 8.96,
+            "1Y": 37.91,
+            "3Y": 25.39,
+            "5Y": -9.19
           },
           "cagr": {
-            "3Y": 10.41,
-            "5Y": 0.2
+            "3Y": 9.96,
+            "5Y": -0.13
           },
-          "volatility": 19.12,
+          "volatility": 19.13,
           "maxDrawdown": -45.54,
-          "volume": 86463,
-          "lastUpdate": "2026-04-02T23:27:44.654344"
+          "volume": 40647,
+          "lastUpdate": "2026-04-05T23:24:48.758435"
         }
       ]
     },
@@ -7699,76 +7699,76 @@
         {
           "ticker": "099140",
           "name": "KODEX 차이나H",
-          "price": 23275.0,
-          "priceChange": -35.0,
-          "priceChangePct": -0.15,
+          "price": 23110.0,
+          "priceChange": -165.0,
+          "priceChangePct": -0.71,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.69,
-          "dividendYield": 2.89,
+          "dividendYield": 2.91,
           "returns": {
-            "1W": -0.47,
-            "1M": -0.02,
-            "3M": -4.25,
-            "6M": -6.47,
-            "1Y": 3.59,
-            "3Y": 51.6,
-            "5Y": 13.95
+            "1W": -1.18,
+            "1M": -0.41,
+            "3M": -4.93,
+            "6M": -7.13,
+            "1Y": 3.8,
+            "3Y": 49.94,
+            "5Y": 13.14
           },
           "priceReturns": {
-            "1W": -0.47,
-            "1M": -0.02,
-            "3M": -4.69,
-            "6M": -7.53,
-            "1Y": 0.71,
-            "3Y": 39.08,
-            "5Y": 4.54
+            "1W": -1.18,
+            "1M": -0.41,
+            "3M": -5.36,
+            "6M": -8.18,
+            "1Y": 0.92,
+            "3Y": 37.56,
+            "5Y": 3.8
           },
           "cagr": {
-            "3Y": 14.88,
-            "5Y": 2.65
+            "3Y": 14.46,
+            "5Y": 2.5
           },
           "volatility": 21.03,
           "maxDrawdown": -47.96,
-          "volume": 13529,
-          "lastUpdate": "2026-04-02T23:27:45.886808"
+          "volume": 4745,
+          "lastUpdate": "2026-04-05T23:24:50.118803"
         },
         {
           "ticker": "192090",
           "name": "TIGER 차이나CSI300",
-          "price": 12955.0,
-          "priceChange": -55.0,
-          "priceChangePct": -0.42,
+          "price": 12820.0,
+          "priceChange": -135.0,
+          "priceChangePct": -1.04,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.64,
-          "dividendYield": 2.39,
+          "dividendYield": 2.42,
           "returns": {
-            "1W": 0.5,
-            "1M": 0.7,
-            "3M": 1.61,
-            "6M": 6.8,
-            "1Y": 29.2,
-            "3Y": 34.38,
-            "5Y": 17.4
+            "1W": -0.54,
+            "1M": -1.12,
+            "3M": 0.55,
+            "6M": 5.69,
+            "1Y": 28.8,
+            "3Y": 30.44,
+            "5Y": 16.18
           },
           "priceReturns": {
-            "1W": 0.5,
-            "1M": 0.7,
-            "3M": 1.61,
-            "6M": 4.22,
-            "1Y": 26.08,
-            "3Y": 29.16,
-            "5Y": 10.92
+            "1W": -0.54,
+            "1M": -1.12,
+            "3M": 0.55,
+            "6M": 3.14,
+            "1Y": 25.69,
+            "3Y": 25.38,
+            "5Y": 9.76
           },
           "cagr": {
-            "3Y": 10.35,
-            "5Y": 3.26
+            "3Y": 9.26,
+            "5Y": 3.04
           },
           "volatility": 19.26,
           "maxDrawdown": -41.43,
-          "volume": 41699,
-          "lastUpdate": "2026-04-02T23:27:47.278909"
+          "volume": 44216,
+          "lastUpdate": "2026-04-05T23:24:51.677282"
         }
       ]
     },
@@ -7779,260 +7779,260 @@
         {
           "ticker": "132030",
           "name": "KODEX 골드선물(H)",
-          "price": 26095.0,
-          "priceChange": -660.0,
-          "priceChangePct": -2.47,
+          "price": 26585.0,
+          "priceChange": 490.0,
+          "priceChangePct": 1.88,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.68,
-          "dividendYield": 0.5,
+          "dividendYield": 0.49,
           "returns": {
-            "1W": 2.78,
-            "1M": -12.11,
-            "3M": 3.1,
-            "6M": 15.5,
-            "1Y": 40.05,
-            "3Y": 102.58,
-            "5Y": 124.14
+            "1W": 4.71,
+            "1M": -12.45,
+            "3M": 5.04,
+            "6M": 17.67,
+            "1Y": 42.87,
+            "3Y": 109.3,
+            "5Y": 128.35
           },
           "priceReturns": {
-            "1W": 2.78,
-            "1M": -12.11,
-            "3M": 3.1,
-            "6M": 14.93,
-            "1Y": 39.36,
-            "3Y": 101.58,
-            "5Y": 123.03
+            "1W": 4.71,
+            "1M": -12.45,
+            "3M": 5.04,
+            "6M": 17.09,
+            "1Y": 42.17,
+            "3Y": 108.26,
+            "5Y": 127.22
           },
           "cagr": {
-            "3Y": 26.53,
-            "5Y": 17.52
+            "3Y": 27.92,
+            "5Y": 17.96
           },
-          "volatility": 16.9,
+          "volatility": 16.91,
           "maxDrawdown": -24.67,
-          "volume": 475489,
-          "lastUpdate": "2026-04-02T23:27:48.569253"
+          "volume": 85443,
+          "lastUpdate": "2026-04-05T23:24:52.983254"
         },
         {
           "ticker": "319640",
           "name": "TIGER 골드선물(H)",
-          "price": 27480.0,
-          "priceChange": -730.0,
-          "priceChangePct": -2.59,
+          "price": 27970.0,
+          "priceChange": 490.0,
+          "priceChangePct": 1.78,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.5,
-          "dividendYield": 0.99,
+          "dividendYield": 0.97,
           "returns": {
-            "1W": 2.69,
-            "1M": -12.01,
-            "3M": 3.08,
-            "6M": 15.15,
-            "1Y": 39.28,
-            "3Y": 100.29,
-            "5Y": 122.18
+            "1W": 4.52,
+            "1M": -12.4,
+            "3M": 4.91,
+            "6M": 17.2,
+            "1Y": 41.72,
+            "3Y": 106.55,
+            "5Y": 126.15
           },
           "priceReturns": {
-            "1W": 2.69,
-            "1M": -12.01,
-            "3M": 3.08,
-            "6M": 14.02,
-            "1Y": 37.92,
-            "3Y": 98.34,
-            "5Y": 120.02
+            "1W": 4.52,
+            "1M": -12.4,
+            "3M": 4.91,
+            "6M": 16.06,
+            "1Y": 40.34,
+            "3Y": 104.53,
+            "5Y": 123.94
           },
           "cagr": {
-            "3Y": 26.05,
-            "5Y": 17.31
+            "3Y": 27.35,
+            "5Y": 17.73
           },
           "volatility": 18.86,
           "maxDrawdown": -24.71,
-          "volume": 110901,
-          "lastUpdate": "2026-04-02T23:27:49.797547"
+          "volume": 7786,
+          "lastUpdate": "2026-04-05T23:24:54.249034"
         },
         {
           "ticker": "217770",
           "name": "TIGER 원유선물인버스(H)",
-          "price": 1388.0,
-          "priceChange": -72.0,
-          "priceChangePct": -4.93,
+          "price": 1365.0,
+          "priceChange": -23.0,
+          "priceChangePct": -1.66,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.45,
-          "dividendYield": 1.44,
+          "dividendYield": 1.47,
           "returns": {
-            "1W": -9.4,
-            "1M": -41.56,
-            "3M": -49.8,
-            "6M": -47.44,
-            "1Y": -47.93,
-            "3Y": -59.71,
-            "5Y": -80.72
+            "1W": -10.9,
+            "1M": -35.46,
+            "3M": -50.63,
+            "6M": -48.31,
+            "1Y": -49.64,
+            "3Y": -57.56,
+            "5Y": -81.03
           },
           "priceReturns": {
-            "1W": -9.4,
-            "1M": -41.56,
-            "3M": -49.8,
-            "6M": -47.82,
-            "1Y": -48.31,
-            "3Y": -60.0,
-            "5Y": -80.86
+            "1W": -10.9,
+            "1M": -35.46,
+            "3M": -50.63,
+            "6M": -48.68,
+            "1Y": -50.0,
+            "3Y": -57.87,
+            "5Y": -81.17
           },
           "cagr": {
-            "3Y": -26.14,
-            "5Y": -28.05
+            "3Y": -24.85,
+            "5Y": -28.29
           },
           "volatility": 43.52,
-          "maxDrawdown": -95.17,
-          "volume": 5077958,
-          "lastUpdate": "2026-04-02T23:27:51.046199"
+          "maxDrawdown": -95.25,
+          "volume": 1898215,
+          "lastUpdate": "2026-04-05T23:24:55.550034"
         },
         {
           "ticker": "261220",
           "name": "KODEX WTI원유선물(H)",
-          "price": 25665.0,
-          "priceChange": 1850.0,
-          "priceChangePct": 7.77,
+          "price": 26205.0,
+          "priceChange": 540.0,
+          "priceChangePct": 2.1,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.5,
           "dividendYield": 0,
           "returns": {
-            "1W": 13.24,
-            "1M": 67.31,
-            "3M": 91.39,
-            "6M": 80.04,
-            "1Y": 68.79,
-            "3Y": 90.61,
-            "5Y": 182.97
+            "1W": 15.62,
+            "1M": 53.79,
+            "3M": 95.41,
+            "6M": 83.83,
+            "1Y": 75.93,
+            "3Y": 81.98,
+            "5Y": 188.92
           },
           "priceReturns": {
-            "1W": 13.24,
-            "1M": 67.31,
-            "3M": 91.39,
-            "6M": 80.04,
-            "1Y": 68.79,
-            "3Y": 90.61,
-            "5Y": 182.97
+            "1W": 15.62,
+            "1M": 53.79,
+            "3M": 95.41,
+            "6M": 83.83,
+            "1Y": 75.93,
+            "3Y": 81.98,
+            "5Y": 188.92
           },
           "cagr": {
-            "3Y": 23.99,
-            "5Y": 23.13
+            "3Y": 22.09,
+            "5Y": 23.64
           },
-          "volatility": 42.93,
+          "volatility": 42.92,
           "maxDrawdown": -88.57,
-          "volume": 2298580,
-          "lastUpdate": "2026-04-02T23:27:52.365487"
+          "volume": 1353875,
+          "lastUpdate": "2026-04-05T23:24:56.852913"
         },
         {
           "ticker": "439870",
           "name": "KODEX 국고채30년액티브",
-          "price": 100885.0,
-          "priceChange": -1655.0,
-          "priceChangePct": -1.61,
+          "price": 102735.0,
+          "priceChange": 1850.0,
+          "priceChangePct": 1.83,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.45,
-          "dividendYield": 1.69,
+          "dividendYield": 1.66,
           "returns": {
-            "1W": 2.23,
-            "1M": -5.04,
-            "3M": -7.71,
-            "6M": -14.53,
-            "1Y": -17.34,
-            "3Y": 0.99,
+            "1W": 4.1,
+            "1M": -0.63,
+            "3M": -6.02,
+            "6M": -12.96,
+            "1Y": -16.18,
+            "3Y": 4.31,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 2.23,
-            "1M": -5.04,
-            "3M": -7.71,
-            "6M": -15.85,
-            "1Y": -18.61,
-            "3Y": -0.57,
+            "1W": 4.1,
+            "1M": -0.63,
+            "3M": -6.02,
+            "6M": -14.31,
+            "1Y": -17.47,
+            "3Y": 2.7,
             "5Y": null
           },
           "cagr": {
-            "3Y": 0.33
+            "3Y": 1.42
           },
-          "volatility": 13.0,
+          "volatility": 13.03,
           "maxDrawdown": -21.17,
-          "volume": 18261,
-          "lastUpdate": "2026-04-02T23:27:53.572089"
+          "volume": 13961,
+          "lastUpdate": "2026-04-05T23:24:58.095371"
         },
         {
           "ticker": "091220",
           "name": "TIGER 은행",
-          "price": 15535.0,
-          "priceChange": -220.0,
-          "priceChangePct": -1.4,
+          "price": 15370.0,
+          "priceChange": -165.0,
+          "priceChangePct": -1.06,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.5,
-          "dividendYield": 2.95,
+          "dividendYield": 2.98,
           "returns": {
-            "1W": -2.05,
-            "1M": -8.21,
-            "3M": 19.19,
-            "6M": 26.02,
-            "1Y": 81.5,
-            "3Y": 183.42,
-            "5Y": 170.03
+            "1W": -3.09,
+            "1M": -7.02,
+            "3M": 17.92,
+            "6M": 24.68,
+            "1Y": 82.74,
+            "3Y": 182.38,
+            "5Y": 167.16
           },
           "priceReturns": {
-            "1W": -2.05,
-            "1M": -8.21,
-            "3M": 18.45,
-            "6M": 24.28,
-            "1Y": 73.96,
-            "3Y": 140.67,
-            "5Y": 110.36
+            "1W": -3.09,
+            "1M": -7.02,
+            "3M": 17.19,
+            "6M": 22.96,
+            "1Y": 75.16,
+            "3Y": 139.78,
+            "5Y": 108.12
           },
           "cagr": {
-            "3Y": 41.52,
-            "5Y": 21.98
+            "3Y": 41.34,
+            "5Y": 21.72
           },
           "volatility": 25.82,
           "maxDrawdown": -57.3,
-          "volume": 43077,
-          "lastUpdate": "2026-04-02T23:27:54.856564"
+          "volume": 22080,
+          "lastUpdate": "2026-04-05T23:24:59.545534"
         },
         {
           "ticker": "334690",
           "name": "RISE 팔라듐선물(H)",
-          "price": 6685.0,
-          "priceChange": -180.0,
-          "priceChangePct": -2.62,
+          "price": 6835.0,
+          "priceChange": 150.0,
+          "priceChangePct": 2.24,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.5,
-          "dividendYield": 0.58,
+          "dividendYield": 0.57,
           "returns": {
-            "1W": 2.22,
-            "1M": -22.72,
-            "3M": -17.57,
-            "6M": 6.19,
-            "1Y": 33.03,
-            "3Y": -17.14,
-            "5Y": -56.39
+            "1W": 4.51,
+            "1M": -17.5,
+            "3M": -15.72,
+            "6M": 8.57,
+            "1Y": 41.34,
+            "3Y": -13.9,
+            "5Y": -55.41
           },
           "priceReturns": {
-            "1W": 2.22,
-            "1M": -22.72,
-            "3M": -17.57,
-            "6M": 5.78,
-            "1Y": 32.51,
-            "3Y": -17.47,
-            "5Y": -56.56
+            "1W": 4.51,
+            "1M": -17.5,
+            "3M": -15.72,
+            "6M": 8.15,
+            "1Y": 40.78,
+            "3Y": -14.24,
+            "5Y": -55.59
           },
           "cagr": {
-            "3Y": -6.08,
-            "5Y": -15.29
+            "3Y": -4.87,
+            "5Y": -14.92
           },
           "volatility": 41.81,
           "maxDrawdown": -75.86,
-          "volume": 6826,
-          "lastUpdate": "2026-04-02T23:27:56.099449"
+          "volume": 3154,
+          "lastUpdate": "2026-04-05T23:25:00.777266"
         }
       ]
     },
@@ -8043,150 +8043,150 @@
         {
           "ticker": "195970",
           "name": "PLUS 선진국MSCI(합성 H)",
-          "price": 14845.0,
-          "priceChange": -45.0,
-          "priceChangePct": -0.3,
+          "price": 14740.0,
+          "priceChange": -105.0,
+          "priceChangePct": -0.71,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.3,
           "dividendYield": 0.03,
           "returns": {
-            "1W": 0.85,
-            "1M": -8.25,
-            "3M": -1.17,
-            "6M": 3.45,
-            "1Y": 17.48,
-            "3Y": 37.82,
-            "5Y": 26.65
+            "1W": 0.14,
+            "1M": -7.56,
+            "3M": -1.86,
+            "6M": 2.72,
+            "1Y": 20.56,
+            "3Y": 35.9,
+            "5Y": 25.76
           },
           "priceReturns": {
-            "1W": 0.85,
-            "1M": -8.25,
-            "3M": -1.17,
-            "6M": 3.41,
-            "1Y": 17.44,
-            "3Y": 37.77,
-            "5Y": 26.61
+            "1W": 0.14,
+            "1M": -7.56,
+            "3M": -1.86,
+            "6M": 2.68,
+            "1Y": 20.52,
+            "3Y": 35.85,
+            "5Y": 25.71
           },
           "cagr": {
-            "3Y": 11.28,
-            "5Y": 4.84
+            "3Y": 10.77,
+            "5Y": 4.69
           },
           "volatility": 18.34,
           "maxDrawdown": -40.52,
-          "volume": 81699,
-          "lastUpdate": "2026-04-02T23:27:57.306330"
+          "volume": 118906,
+          "lastUpdate": "2026-04-05T23:25:02.146042"
         },
         {
           "ticker": "192720",
           "name": "파워 고배당저변동성",
-          "price": 54440.0,
-          "priceChange": -1945.0,
-          "priceChangePct": -3.45,
+          "price": 54630.0,
+          "priceChange": 190.0,
+          "priceChangePct": 0.35,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.3,
-          "dividendYield": 2.96,
+          "dividendYield": 2.95,
           "returns": {
-            "1W": -3.73,
-            "1M": -11.23,
-            "3M": 16.49,
-            "6M": 26.26,
-            "1Y": 64.63,
-            "3Y": 117.49,
-            "5Y": 123.3
+            "1W": -3.4,
+            "1M": -7.44,
+            "3M": 16.89,
+            "6M": 26.7,
+            "1Y": 67.83,
+            "3Y": 118.75,
+            "5Y": 124.08
           },
           "priceReturns": {
-            "1W": -3.73,
-            "1M": -11.23,
-            "3M": 16.49,
-            "6M": 25.95,
-            "1Y": 57.34,
-            "3Y": 91.52,
-            "5Y": 83.58
+            "1W": -3.4,
+            "1M": -7.44,
+            "3M": 16.89,
+            "6M": 26.39,
+            "1Y": 60.39,
+            "3Y": 92.63,
+            "5Y": 84.22
           },
           "cagr": {
-            "3Y": 29.56,
-            "5Y": 17.43
+            "3Y": 29.81,
+            "5Y": 17.51
           },
           "volatility": 17.7,
           "maxDrawdown": -49.82,
-          "volume": 6094,
-          "lastUpdate": "2026-04-02T23:27:58.640225"
+          "volume": 3757,
+          "lastUpdate": "2026-04-05T23:25:03.490385"
         },
         {
           "ticker": "195980",
           "name": "PLUS 신흥국MSCI(합성 H)",
-          "price": 12440.0,
-          "priceChange": -395.0,
-          "priceChangePct": -3.08,
+          "price": 12410.0,
+          "priceChange": -30.0,
+          "priceChangePct": -0.24,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.3,
           "dividendYield": 0.04,
           "returns": {
-            "1W": -3.53,
-            "1M": -13.1,
-            "3M": -1.43,
-            "6M": 1.68,
-            "1Y": 25.26,
-            "3Y": 37.44,
-            "5Y": -3.71
+            "1W": -3.76,
+            "1M": -7.77,
+            "3M": -1.66,
+            "6M": 1.43,
+            "1Y": 25.03,
+            "3Y": 37.41,
+            "5Y": -3.95
           },
           "priceReturns": {
-            "1W": -3.53,
-            "1M": -13.1,
-            "3M": -1.43,
-            "6M": 1.63,
-            "1Y": 25.21,
-            "3Y": 37.38,
-            "5Y": -3.75
+            "1W": -3.76,
+            "1M": -7.77,
+            "3M": -1.66,
+            "6M": 1.39,
+            "1Y": 24.97,
+            "3Y": 37.35,
+            "5Y": -3.98
           },
           "cagr": {
-            "3Y": 11.18,
-            "5Y": -0.75
+            "3Y": 11.17,
+            "5Y": -0.8
           },
           "volatility": 18.19,
           "maxDrawdown": -43.02,
-          "volume": 74154,
-          "lastUpdate": "2026-04-02T23:27:59.876854"
+          "volume": 127632,
+          "lastUpdate": "2026-04-05T23:25:05.182697"
         },
         {
           "ticker": "213630",
           "name": "PLUS 미국다우존스고배당주(합성 H)",
-          "price": 19255.0,
-          "priceChange": -490.0,
-          "priceChangePct": -2.48,
+          "price": 19660.0,
+          "priceChange": 405.0,
+          "priceChangePct": 2.1,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.3,
-          "dividendYield": 0.97,
+          "dividendYield": 0.95,
           "returns": {
-            "1W": -1.86,
-            "1M": -4.42,
-            "3M": 4.17,
-            "6M": 4.59,
-            "1Y": 10.76,
-            "3Y": 27.2,
-            "5Y": 27.12
+            "1W": 0.2,
+            "1M": -1.55,
+            "3M": 6.36,
+            "6M": 6.79,
+            "1Y": 12.83,
+            "3Y": 29.07,
+            "5Y": 29.79
           },
           "priceReturns": {
-            "1W": -1.86,
-            "1M": -4.42,
-            "3M": 4.17,
-            "6M": 3.55,
-            "1Y": 9.65,
-            "3Y": 25.93,
-            "5Y": 25.85
+            "1W": 0.2,
+            "1M": -1.55,
+            "3M": 6.36,
+            "6M": 5.73,
+            "1Y": 11.7,
+            "3Y": 27.79,
+            "5Y": 28.5
           },
           "cagr": {
-            "3Y": 8.35,
-            "5Y": 4.92
+            "3Y": 8.88,
+            "5Y": 5.35
           },
-          "volatility": 16.83,
+          "volatility": 16.84,
           "maxDrawdown": -42.59,
-          "volume": 5400,
-          "lastUpdate": "2026-04-02T23:28:01.022851"
+          "volume": 4543,
+          "lastUpdate": "2026-04-05T23:25:06.667106"
         }
       ]
     },
@@ -8197,113 +8197,113 @@
         {
           "ticker": "182480",
           "name": "TIGER 미국MSCI리츠(합성 H)",
-          "price": 12720.0,
-          "priceChange": 100.0,
-          "priceChangePct": 0.79,
+          "price": 12850.0,
+          "priceChange": 130.0,
+          "priceChangePct": 1.02,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.29,
-          "dividendYield": 3.39,
+          "dividendYield": 3.35,
           "returns": {
-            "1W": 1.07,
-            "1M": -5.72,
-            "3M": 3.92,
-            "6M": 1.82,
-            "1Y": 3.81,
-            "3Y": 22.11,
-            "5Y": 11.67
+            "1W": 2.11,
+            "1M": -6.24,
+            "3M": 4.98,
+            "6M": 2.86,
+            "1Y": 7.28,
+            "3Y": 20.57,
+            "5Y": 12.81
           },
           "priceReturns": {
-            "1W": 0.67,
-            "1M": -6.09,
-            "3M": 3.08,
-            "6M": 0.08,
-            "1Y": 0.28,
-            "3Y": 9.09,
-            "5Y": -6.16
+            "1W": 1.7,
+            "1M": -6.61,
+            "3M": 4.13,
+            "6M": 1.1,
+            "1Y": 3.63,
+            "3Y": 7.71,
+            "5Y": -5.2
           },
           "cagr": {
-            "3Y": 6.89,
-            "5Y": 2.23
+            "3Y": 6.43,
+            "5Y": 2.44
           },
           "volatility": 20.66,
           "maxDrawdown": -44.09,
-          "volume": 42320,
-          "lastUpdate": "2026-04-02T23:28:02.337423"
+          "volume": 52462,
+          "lastUpdate": "2026-04-05T23:25:08.057297"
         },
         {
           "ticker": "292190",
           "name": "KODEX KRX300",
-          "price": 35990.0,
-          "priceChange": -1505.0,
-          "priceChangePct": -4.01,
+          "price": 36915.0,
+          "priceChange": 925.0,
+          "priceChangePct": 2.57,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.12,
-          "dividendYield": 0.97,
+          "dividendYield": 0.95,
           "returns": {
-            "1W": -3.15,
-            "1M": -16.44,
-            "3M": 24.17,
-            "6M": 55.83,
-            "1Y": 128.38,
-            "3Y": 148.75,
-            "5Y": 99.32
+            "1W": -0.66,
+            "1M": -7.09,
+            "3M": 27.36,
+            "6M": 59.84,
+            "1Y": 136.98,
+            "3Y": 156.06,
+            "5Y": 104.44
           },
           "priceReturns": {
-            "1W": -3.15,
-            "1M": -16.44,
-            "3M": 24.17,
-            "6M": 55.83,
-            "1Y": 123.47,
-            "3Y": 133.78,
-            "5Y": 81.72
+            "1W": -0.66,
+            "1M": -7.09,
+            "3M": 27.36,
+            "6M": 59.84,
+            "1Y": 131.88,
+            "3Y": 140.65,
+            "5Y": 86.39
           },
           "cagr": {
-            "3Y": 35.49,
-            "5Y": 14.79
+            "3Y": 36.81,
+            "5Y": 15.38
           },
-          "volatility": 22.65,
+          "volatility": 22.66,
           "maxDrawdown": -36.76,
-          "volume": 61502,
-          "lastUpdate": "2026-04-02T23:28:03.553626"
+          "volume": 4694,
+          "lastUpdate": "2026-04-05T23:25:09.436305"
         },
         {
           "ticker": "329200",
           "name": "TIGER 리츠부동산인프라",
-          "price": 4600.0,
-          "priceChange": 5.0,
-          "priceChangePct": 0.11,
+          "price": 4620.0,
+          "priceChange": 20.0,
+          "priceChangePct": 0.43,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.29,
-          "dividendYield": 8.61,
+          "dividendYield": 8.57,
           "returns": {
-            "1W": -0.15,
-            "1M": 0.06,
-            "3M": 4.79,
-            "6M": 9.99,
-            "1Y": 19.87,
+            "1W": 0.28,
+            "1M": 2.38,
+            "3M": 5.25,
+            "6M": 10.46,
+            "1Y": 20.68,
             "3Y": 25.09,
-            "5Y": 18.58
+            "5Y": 19.1
           },
           "priceReturns": {
-            "1W": -0.86,
-            "1M": -0.65,
-            "3M": 2.56,
-            "6M": 5.26,
-            "1Y": 9.52,
-            "3Y": 0.55,
-            "5Y": -15.83
+            "1W": -0.43,
+            "1M": 1.65,
+            "3M": 3.01,
+            "6M": 5.72,
+            "1Y": 10.26,
+            "3Y": 0.54,
+            "5Y": -15.46
           },
           "cagr": {
             "3Y": 7.75,
-            "5Y": 3.47
+            "5Y": 3.56
           },
-          "volatility": 12.77,
+          "volatility": 12.76,
           "maxDrawdown": -36.25,
-          "volume": 4364062,
-          "lastUpdate": "2026-04-02T23:28:04.709296"
+          "volume": 3501244,
+          "lastUpdate": "2026-04-05T23:25:10.917775"
         }
       ]
     },
@@ -8314,38 +8314,38 @@
         {
           "ticker": "437080",
           "name": "KODEX 미국종합채권ESG액티브(H)",
-          "price": 99270.0,
-          "priceChange": -455.0,
-          "priceChangePct": -0.46,
+          "price": 99695.0,
+          "priceChange": 425.0,
+          "priceChangePct": 0.43,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.49,
-          "dividendYield": 4.48,
+          "dividendYield": 4.46,
           "returns": {
-            "1W": 0.44,
-            "1M": -1.96,
-            "3M": -0.69,
-            "6M": -0.75,
-            "1Y": 1.59,
-            "3Y": 7.63,
+            "1W": 0.87,
+            "1M": -1.06,
+            "3M": -0.26,
+            "6M": -0.32,
+            "1Y": 1.25,
+            "3Y": 7.95,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.11,
-            "1M": -2.28,
-            "3M": -1.73,
-            "6M": -2.83,
-            "1Y": -2.77,
-            "3Y": 2.19,
+            "1W": 0.54,
+            "1M": -1.38,
+            "3M": -1.31,
+            "6M": -2.42,
+            "1Y": -3.1,
+            "3Y": 2.49,
             "5Y": null
           },
           "cagr": {
-            "3Y": 2.48
+            "3Y": 2.58
           },
-          "volatility": 5.85,
+          "volatility": 5.86,
           "maxDrawdown": -9.19,
-          "volume": 15143,
-          "lastUpdate": "2026-04-02T23:28:06.545082"
+          "volume": 7612,
+          "lastUpdate": "2026-04-05T23:25:12.838798"
         }
       ]
     },
@@ -8356,108 +8356,108 @@
         {
           "ticker": "381170",
           "name": "TIGER 미국테크TOP10 INDXX",
-          "price": 28325.0,
-          "priceChange": -240.0,
-          "priceChangePct": -0.84,
+          "price": 28580.0,
+          "priceChange": 255.0,
+          "priceChangePct": 0.9,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.49,
           "dividendYield": 0.27,
           "returns": {
-            "1W": 0.35,
-            "1M": -1.1,
-            "3M": -7.83,
-            "6M": -1.93,
-            "1Y": 31.16,
-            "3Y": 164.88,
+            "1W": 1.26,
+            "1M": 0.05,
+            "3M": -7.0,
+            "6M": -1.05,
+            "1Y": 36.83,
+            "3Y": 161.66,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.35,
-            "1M": -1.1,
-            "3M": -7.83,
-            "6M": -2.18,
-            "1Y": 30.83,
-            "3Y": 164.23,
+            "1W": 1.26,
+            "1M": 0.05,
+            "3M": -7.0,
+            "6M": -1.3,
+            "1Y": 36.49,
+            "3Y": 161.0,
             "5Y": null
           },
           "cagr": {
-            "3Y": 38.36
+            "3Y": 37.8
           },
-          "volatility": 25.27,
+          "volatility": 25.26,
           "maxDrawdown": -40.59,
-          "volume": 1500204,
-          "lastUpdate": "2026-04-02T23:28:07.709268"
+          "volume": 218419,
+          "lastUpdate": "2026-04-05T23:25:14.065007"
         },
         {
           "ticker": "449770",
           "name": "KIWOOM 미국S&P500",
-          "price": 19620.0,
-          "priceChange": -40.0,
-          "priceChangePct": -0.2,
+          "price": 19720.0,
+          "priceChange": 100.0,
+          "priceChangePct": 0.51,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.49,
           "dividendYield": 1.27,
           "returns": {
-            "1W": 0.18,
-            "1M": -0.43,
-            "3M": -0.57,
-            "6M": 5.05,
-            "1Y": 20.01,
-            "3Y": 91.22,
+            "1W": 0.69,
+            "1M": -0.9,
+            "3M": -0.06,
+            "6M": 5.59,
+            "1Y": 23.41,
+            "3Y": 87.91,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.18,
-            "1M": -0.43,
-            "3M": -0.88,
-            "6M": 4.47,
-            "1Y": 18.34,
-            "3Y": 86.59,
+            "1W": 0.69,
+            "1M": -0.9,
+            "3M": -0.38,
+            "6M": 5.01,
+            "1Y": 21.69,
+            "3Y": 83.36,
             "5Y": null
           },
           "cagr": {
-            "3Y": 24.12
+            "3Y": 23.4
           },
-          "volatility": 15.59,
+          "volatility": 15.58,
           "maxDrawdown": -19.24,
-          "volume": 5451,
-          "lastUpdate": "2026-04-02T23:28:08.826709"
+          "volume": 24740,
+          "lastUpdate": "2026-04-05T23:25:15.267659"
         },
         {
           "ticker": "461900",
           "name": "PLUS 미국테크TOP10",
-          "price": 20500.0,
-          "priceChange": -120.0,
-          "priceChangePct": -0.58,
+          "price": 20670.0,
+          "priceChange": 170.0,
+          "priceChangePct": 0.83,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.49,
           "dividendYield": 0.05,
           "returns": {
-            "1W": 0.47,
-            "1M": -0.53,
-            "3M": -8.15,
-            "6M": -3.82,
-            "1Y": 28.05,
+            "1W": 1.3,
+            "1M": -0.51,
+            "3M": -7.39,
+            "6M": -3.03,
+            "1Y": 33.22,
             "3Y": null,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.47,
-            "1M": -0.53,
-            "3M": -8.15,
-            "6M": -3.82,
-            "1Y": 27.97,
+            "1W": 1.3,
+            "1M": -0.51,
+            "3M": -7.39,
+            "6M": -3.03,
+            "1Y": 33.14,
             "3Y": null,
             "5Y": null
           },
           "cagr": {},
-          "volatility": 24.53,
+          "volatility": 24.51,
           "maxDrawdown": -30.8,
-          "volume": 6078,
-          "lastUpdate": "2026-04-02T23:28:09.874400"
+          "volume": 9232,
+          "lastUpdate": "2026-04-05T23:25:16.517045"
         }
       ]
     },
@@ -8468,36 +8468,36 @@
         {
           "ticker": "458730",
           "name": "TIGER 미국배당다우존스",
-          "price": 14630.0,
-          "priceChange": -105.0,
-          "priceChangePct": -0.71,
+          "price": 14620.0,
+          "priceChange": -10.0,
+          "priceChangePct": -0.07,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.09,
-          "dividendYield": 2.84,
+          "dividendYield": 2.85,
           "returns": {
-            "1W": -0.77,
-            "1M": 2.67,
-            "3M": 16.02,
-            "6M": 21.31,
-            "1Y": 16.01,
+            "1W": -0.84,
+            "1M": -0.17,
+            "3M": 15.94,
+            "6M": 21.23,
+            "1Y": 17.24,
             "3Y": null,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -1.01,
-            "1M": 2.42,
-            "3M": 15.15,
-            "6M": 19.38,
-            "1Y": 12.24,
+            "1W": -1.08,
+            "1M": -0.41,
+            "3M": 15.07,
+            "6M": 19.3,
+            "1Y": 13.42,
             "3Y": null,
             "5Y": null
           },
           "cagr": {},
-          "volatility": 14.45,
+          "volatility": 14.43,
           "maxDrawdown": -13.12,
-          "volume": 2385340,
-          "lastUpdate": "2026-04-02T23:28:10.981588"
+          "volume": 1310488,
+          "lastUpdate": "2026-04-05T23:25:18.008836"
         }
       ]
     },
@@ -8508,184 +8508,184 @@
         {
           "ticker": "360750",
           "name": "TIGER 미국S&P500",
-          "price": 24475.0,
-          "priceChange": -70.0,
-          "priceChangePct": -0.29,
+          "price": 24570.0,
+          "priceChange": 95.0,
+          "priceChangePct": 0.39,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
           "dividendYield": 1.07,
           "returns": {
-            "1W": 0.23,
-            "1M": -0.37,
-            "3M": -0.59,
-            "6M": 5.22,
-            "1Y": 20.45,
-            "3Y": 91.58,
-            "5Y": 125.17
+            "1W": 0.61,
+            "1M": -0.89,
+            "3M": -0.2,
+            "6M": 5.62,
+            "1Y": 23.59,
+            "3Y": 88.2,
+            "5Y": 126.05
           },
           "priceReturns": {
-            "1W": 0.23,
-            "1M": -0.37,
-            "3M": -0.85,
-            "6M": 4.68,
-            "1Y": 19.04,
-            "3Y": 84.93,
-            "5Y": 113.2
+            "1W": 0.61,
+            "1M": -0.89,
+            "3M": -0.47,
+            "6M": 5.09,
+            "1Y": 22.15,
+            "3Y": 81.66,
+            "5Y": 114.02
           },
           "cagr": {
-            "3Y": 24.2,
-            "5Y": 17.63
+            "3Y": 23.46,
+            "5Y": 17.72
           },
-          "volatility": 15.96,
+          "volatility": 15.95,
           "maxDrawdown": -19.15,
-          "volume": 9569844,
-          "lastUpdate": "2026-04-02T23:28:12.121358"
+          "volume": 12683640,
+          "lastUpdate": "2026-04-05T23:25:19.508686"
         },
         {
           "ticker": "379800",
           "name": "KODEX 미국S&P500",
-          "price": 22365.0,
-          "priceChange": -25.0,
-          "priceChangePct": -0.11,
+          "price": 22455.0,
+          "priceChange": 90.0,
+          "priceChangePct": 0.4,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
-          "dividendYield": 1.74,
+          "dividendYield": 1.73,
           "returns": {
-            "1W": 0.2,
-            "1M": -0.36,
-            "3M": -0.54,
-            "6M": 5.25,
-            "1Y": 20.52,
-            "3Y": 92.88,
+            "1W": 0.6,
+            "1M": -0.82,
+            "3M": -0.14,
+            "6M": 5.68,
+            "1Y": 23.62,
+            "3Y": 89.48,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.2,
-            "1M": -0.36,
-            "3M": -1.06,
-            "6M": 4.19,
-            "1Y": 18.33,
-            "3Y": 89.37,
+            "1W": 0.6,
+            "1M": -0.82,
+            "3M": -0.66,
+            "6M": 4.61,
+            "1Y": 21.38,
+            "3Y": 86.04,
             "5Y": null
           },
           "cagr": {
-            "3Y": 24.48
+            "3Y": 23.74
           },
-          "volatility": 15.95,
+          "volatility": 15.94,
           "maxDrawdown": -19.16,
-          "volume": 11291520,
-          "lastUpdate": "2026-04-02T23:28:13.305417"
+          "volume": 15178310,
+          "lastUpdate": "2026-04-05T23:25:20.746547"
         },
         {
           "ticker": "360200",
           "name": "ACE 미국S&P500",
-          "price": 24760.0,
-          "priceChange": 0.0,
-          "priceChangePct": 0.0,
+          "price": 24830.0,
+          "priceChange": 70.0,
+          "priceChangePct": 0.28,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
           "dividendYield": 0.97,
           "returns": {
-            "1W": 0.32,
-            "1M": -0.28,
-            "3M": -0.4,
-            "6M": 5.33,
-            "1Y": 20.53,
-            "3Y": 91.8,
-            "5Y": 126.54
+            "1W": 0.61,
+            "1M": -0.98,
+            "3M": -0.12,
+            "6M": 5.63,
+            "1Y": 23.49,
+            "3Y": 87.98,
+            "5Y": 127.18
           },
           "priceReturns": {
-            "1W": 0.32,
-            "1M": -0.28,
-            "3M": -0.66,
-            "6M": 4.8,
-            "1Y": 19.27,
-            "3Y": 85.26,
-            "5Y": 114.37
+            "1W": 0.61,
+            "1M": -0.98,
+            "3M": -0.38,
+            "6M": 5.1,
+            "1Y": 22.19,
+            "3Y": 81.57,
+            "5Y": 114.98
           },
           "cagr": {
-            "3Y": 24.25,
-            "5Y": 17.77
+            "3Y": 23.42,
+            "5Y": 17.83
           },
-          "volatility": 15.78,
+          "volatility": 15.77,
           "maxDrawdown": -19.12,
-          "volume": 714852,
-          "lastUpdate": "2026-04-02T23:28:14.427686"
+          "volume": 336820,
+          "lastUpdate": "2026-04-05T23:25:22.204663"
         },
         {
           "ticker": "448290",
           "name": "TIGER 미국S&P500(H)",
-          "price": 15170.0,
-          "priceChange": -205.0,
-          "priceChangePct": -1.33,
+          "price": 15380.0,
+          "priceChange": 210.0,
+          "priceChangePct": 1.38,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
-          "dividendYield": 1.05,
+          "dividendYield": 1.04,
           "returns": {
-            "1W": -0.59,
-            "1M": -5.78,
-            "3M": -6.01,
-            "6M": -3.91,
-            "1Y": 13.39,
-            "3Y": 53.54,
+            "1W": 0.79,
+            "1M": -3.69,
+            "3M": -4.71,
+            "6M": -2.58,
+            "1Y": 17.62,
+            "3Y": 54.04,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -0.59,
-            "1M": -5.78,
-            "3M": -6.24,
-            "6M": -4.38,
-            "1Y": 12.2,
-            "3Y": 51.93,
+            "1W": 0.79,
+            "1M": -3.69,
+            "3M": -4.94,
+            "6M": -3.06,
+            "1Y": 16.38,
+            "3Y": 52.43,
             "5Y": null
           },
           "cagr": {
-            "3Y": 15.36
+            "3Y": 15.49
           },
           "volatility": 16.94,
           "maxDrawdown": -20.87,
-          "volume": 192972,
-          "lastUpdate": "2026-04-02T23:28:15.544819"
+          "volume": 113529,
+          "lastUpdate": "2026-04-05T23:25:23.445111"
         },
         {
           "ticker": "449180",
           "name": "KODEX 미국S&P500(H)",
-          "price": 14600.0,
-          "priceChange": -210.0,
-          "priceChangePct": -1.42,
+          "price": 14810.0,
+          "priceChange": 210.0,
+          "priceChangePct": 1.44,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
-          "dividendYield": 1.02,
+          "dividendYield": 1.01,
           "returns": {
-            "1W": -0.61,
-            "1M": -5.99,
-            "3M": -6.17,
-            "6M": -4.38,
-            "1Y": 13.33,
-            "3Y": 52.02,
+            "1W": 0.82,
+            "1M": -3.8,
+            "3M": -4.82,
+            "6M": -3.01,
+            "1Y": 17.53,
+            "3Y": 52.67,
             "5Y": null
           },
           "priceReturns": {
-            "1W": -0.61,
-            "1M": -5.99,
-            "3M": -6.41,
-            "6M": -4.86,
-            "1Y": 12.18,
-            "3Y": 47.33,
+            "1W": 0.82,
+            "1M": -3.8,
+            "3M": -5.06,
+            "6M": -3.49,
+            "1Y": 16.34,
+            "3Y": 47.95,
             "5Y": null
           },
           "cagr": {
-            "3Y": 14.98
+            "3Y": 15.15
           },
-          "volatility": 17.6,
+          "volatility": 17.61,
           "maxDrawdown": -20.79,
-          "volume": 1102497,
-          "lastUpdate": "2026-04-02T23:28:16.731750"
+          "volume": 446458,
+          "lastUpdate": "2026-04-05T23:25:24.676162"
         }
       ]
     },
@@ -8696,118 +8696,118 @@
         {
           "ticker": "133690",
           "name": "TIGER 미국나스닥100",
-          "price": 159125.0,
-          "priceChange": -245.0,
-          "priceChangePct": -0.15,
+          "price": 160160.0,
+          "priceChange": 1035.0,
+          "priceChangePct": 0.65,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
-          "dividendYield": 0.66,
+          "dividendYield": 0.65,
           "returns": {
-            "1W": 0.23,
-            "1M": 0.05,
-            "3M": -2.16,
-            "6M": 3.29,
-            "1Y": 26.45,
-            "3Y": 114.48,
-            "5Y": 141.67
+            "1W": 0.88,
+            "1M": -0.33,
+            "3M": -1.52,
+            "6M": 3.96,
+            "1Y": 30.45,
+            "3Y": 111.31,
+            "5Y": 143.24
           },
           "priceReturns": {
-            "1W": 0.23,
-            "1M": 0.05,
-            "3M": -2.29,
-            "6M": 3.01,
-            "1Y": 25.53,
-            "3Y": 110.83,
-            "5Y": 135.69
+            "1W": 0.88,
+            "1M": -0.33,
+            "3M": -1.65,
+            "6M": 3.68,
+            "1Y": 29.5,
+            "3Y": 107.72,
+            "5Y": 137.22
           },
           "cagr": {
-            "3Y": 28.96,
-            "5Y": 19.3
+            "3Y": 28.32,
+            "5Y": 19.46
           },
           "volatility": 20.21,
           "maxDrawdown": -31.02,
-          "volume": 626965,
-          "lastUpdate": "2026-04-02T23:28:18.087662"
+          "volume": 243175,
+          "lastUpdate": "2026-04-05T23:25:26.010727"
         },
         {
           "ticker": "379810",
           "name": "KODEX 미국나스닥100",
-          "price": 23835.0,
-          "priceChange": -60.0,
-          "priceChangePct": -0.25,
+          "price": 23995.0,
+          "priceChange": 160.0,
+          "priceChangePct": 0.67,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
-          "dividendYield": 0.94,
+          "dividendYield": 0.93,
           "returns": {
-            "1W": 0.17,
-            "1M": 0.02,
-            "3M": -2.15,
-            "6M": 3.21,
-            "1Y": 26.51,
-            "3Y": 115.57,
+            "1W": 0.84,
+            "1M": -0.31,
+            "3M": -1.49,
+            "6M": 3.91,
+            "1Y": 30.62,
+            "3Y": 112.55,
             "5Y": null
           },
           "priceReturns": {
-            "1W": 0.17,
-            "1M": 0.02,
-            "3M": -2.42,
-            "6M": 2.67,
-            "1Y": 25.28,
-            "3Y": 113.48,
+            "1W": 0.84,
+            "1M": -0.31,
+            "3M": -1.76,
+            "6M": 3.36,
+            "1Y": 29.35,
+            "3Y": 110.48,
             "5Y": null
           },
           "cagr": {
-            "3Y": 29.18
+            "3Y": 28.57
           },
           "volatility": 20.92,
           "maxDrawdown": -31.03,
-          "volume": 6010199,
-          "lastUpdate": "2026-04-02T23:28:19.224239"
+          "volume": 4228198,
+          "lastUpdate": "2026-04-05T23:25:27.243753"
         },
         {
           "ticker": "367380",
           "name": "ACE 미국나스닥100",
-          "price": 27350.0,
-          "priceChange": -50.0,
-          "priceChangePct": -0.18,
+          "price": 27550.0,
+          "priceChange": 200.0,
+          "priceChangePct": 0.73,
           "currency": "KRW",
-          "currentDate": "2026-04-02",
+          "currentDate": "2026-04-03",
           "expenseRatio": 0.07,
           "dividendYield": 0.53,
           "returns": {
-            "1W": 0.18,
-            "1M": 0.04,
-            "3M": -2.16,
-            "6M": 3.27,
-            "1Y": 26.44,
-            "3Y": 114.39,
-            "5Y": 141.57
+            "1W": 0.92,
+            "1M": -0.27,
+            "3M": -1.44,
+            "6M": 4.02,
+            "1Y": 30.58,
+            "3Y": 111.23,
+            "5Y": 143.33
           },
           "priceReturns": {
-            "1W": 0.18,
-            "1M": 0.04,
-            "3M": -2.29,
-            "6M": 2.99,
-            "1Y": 25.72,
-            "3Y": 110.95,
-            "5Y": 135.98
+            "1W": 0.92,
+            "1M": -0.27,
+            "3M": -1.57,
+            "6M": 3.75,
+            "1Y": 29.83,
+            "3Y": 107.85,
+            "5Y": 137.7
           },
           "cagr": {
-            "3Y": 28.94,
-            "5Y": 19.29
+            "3Y": 28.31,
+            "5Y": 19.47
           },
           "volatility": 21.0,
           "maxDrawdown": -31.01,
-          "volume": 739487,
-          "lastUpdate": "2026-04-02T23:28:20.351152"
+          "volume": 537931,
+          "lastUpdate": "2026-04-05T23:25:28.570732"
         }
       ]
     }
   },
   "metadata": {
-    "lastUpdate": "2026-04-02T23:28:22.325653",
+    "lastUpdate": "2026-04-05T23:25:30.408354",
     "totalETFs": 230,
     "failedETFs": 3,
     "categories": 30,
@@ -8872,26 +8872,26 @@
       "id": "kospi",
       "label": "KOSPI",
       "currency": "KRW",
-      "currentValue": 5479.0,
-      "currentDate": "2026-04-01",
+      "currentValue": 5377.0,
+      "currentDate": "2026-04-03",
       "periods": {
         "1W": {
           "prevValue": 5439.0,
           "prevDate": "2026-03-30",
-          "changePoints": 40.0,
-          "changePct": 0.73
+          "changePoints": -62.0,
+          "changePct": -1.13
         },
         "1M": {
-          "prevValue": 5792.0,
-          "prevDate": "2026-03-03",
-          "changePoints": -313.0,
-          "changePct": -5.41
+          "prevValue": 5584.0,
+          "prevDate": "2026-03-05",
+          "changePoints": -207.0,
+          "changePct": -3.7
         },
         "3M": {
-          "prevValue": 4109.0,
-          "prevDate": "2025-12-24",
-          "changePoints": 1370.0,
-          "changePct": 33.35
+          "prevValue": 4221.0,
+          "prevDate": "2025-12-29",
+          "changePoints": 1157.0,
+          "changePct": 27.41
         }
       }
     },
@@ -8899,26 +8899,26 @@
       "id": "kosdaq",
       "label": "KOSDAQ",
       "currency": "KRW",
-      "currentValue": 1116.0,
-      "currentDate": "2026-04-01",
+      "currentValue": 1064.0,
+      "currentDate": "2026-04-03",
       "periods": {
         "1W": {
           "prevValue": 1142.0,
           "prevDate": "2026-03-30",
-          "changePoints": -25.0,
-          "changePct": -2.22
+          "changePoints": -78.0,
+          "changePct": -6.81
         },
         "1M": {
-          "prevValue": 1138.0,
-          "prevDate": "2026-03-03",
-          "changePoints": -22.0,
-          "changePct": -1.89
+          "prevValue": 1116.0,
+          "prevDate": "2026-03-05",
+          "changePoints": -53.0,
+          "changePct": -4.72
         },
         "3M": {
-          "prevValue": 915.0,
-          "prevDate": "2025-12-24",
-          "changePoints": 201.0,
-          "changePct": 21.96
+          "prevValue": 933.0,
+          "prevDate": "2025-12-29",
+          "changePoints": 131.0,
+          "changePct": 14.06
         }
       }
     }
