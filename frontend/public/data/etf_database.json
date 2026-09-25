@@ -11,7 +11,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.0945,
           "aum": 811937038336,
           "dividendYield": NaN,
@@ -39,8 +39,8 @@
           },
           "volatility": 17.96,
           "maxDrawdown": -33.72,
-          "volume": 54730992,
-          "lastUpdate": "2026-09-24T00:57:26.918194"
+          "volume": 42694185,
+          "lastUpdate": "2026-09-25T01:00:18.631643"
         },
         {
           "ticker": "VOO",
@@ -49,7 +49,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 1756880437248,
           "dividendYield": NaN,
@@ -75,10 +75,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 18.03,
+          "volatility": 18.02,
           "maxDrawdown": -33.99,
-          "volume": 13785872,
-          "lastUpdate": "2026-09-24T00:57:27.802420"
+          "volume": 9398273,
+          "lastUpdate": "2026-09-25T01:00:19.953087"
         },
         {
           "ticker": "IVV",
@@ -87,7 +87,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 883985416192,
           "dividendYield": NaN,
@@ -115,8 +115,8 @@
           },
           "volatility": 18.08,
           "maxDrawdown": -33.9,
-          "volume": 8406663,
-          "lastUpdate": "2026-09-24T00:57:28.953592"
+          "volume": 7955072,
+          "lastUpdate": "2026-09-25T01:00:20.971751"
         },
         {
           "ticker": "SPYM",
@@ -125,7 +125,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.02,
           "aum": 171264491520,
           "dividendYield": NaN,
@@ -153,8 +153,8 @@
           },
           "volatility": 18.02,
           "maxDrawdown": -33.87,
-          "volume": 8960097,
-          "lastUpdate": "2026-09-24T00:57:29.836765"
+          "volume": 8724213,
+          "lastUpdate": "2026-09-25T01:00:21.879316"
         }
       ]
     },
@@ -169,7 +169,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.18,
           "aum": 488981004288,
           "dividendYield": NaN,
@@ -195,10 +195,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 22.57,
+          "volatility": 22.56,
           "maxDrawdown": -35.12,
-          "volume": 32952535,
-          "lastUpdate": "2026-09-24T00:57:30.811268"
+          "volume": 28622284,
+          "lastUpdate": "2026-09-25T01:00:22.848628"
         },
         {
           "ticker": "QQQM",
@@ -207,7 +207,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 104376492032,
           "dividendYield": NaN,
@@ -233,10 +233,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 22.23,
+          "volatility": 22.22,
           "maxDrawdown": -35.04,
-          "volume": 2651656,
-          "lastUpdate": "2026-09-24T00:57:31.542989"
+          "volume": 2037051,
+          "lastUpdate": "2026-09-25T01:00:23.670898"
         },
         {
           "ticker": "ONEQ",
@@ -245,7 +245,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.21,
           "aum": 10751847424,
           "dividendYield": NaN,
@@ -271,10 +271,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 21.87,
+          "volatility": 21.86,
           "maxDrawdown": -35.23,
-          "volume": 197240,
-          "lastUpdate": "2026-09-24T00:57:32.406768"
+          "volume": 212648,
+          "lastUpdate": "2026-09-25T01:00:24.889615"
         },
         {
           "ticker": "TQQQ",
@@ -283,7 +283,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.88,
           "aum": 36114247680,
           "dividendYield": NaN,
@@ -311,8 +311,8 @@
           },
           "volatility": 66.77,
           "maxDrawdown": -81.66,
-          "volume": 51435137,
-          "lastUpdate": "2026-09-24T00:57:33.251875"
+          "volume": 57593257,
+          "lastUpdate": "2026-09-25T01:00:25.720660"
         }
       ]
     },
@@ -327,7 +327,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 2343736705024,
           "dividendYield": NaN,
@@ -355,8 +355,8 @@
           },
           "volatility": 18.31,
           "maxDrawdown": -35.0,
-          "volume": 2572694,
-          "lastUpdate": "2026-09-24T00:57:34.138432"
+          "volume": 2584375,
+          "lastUpdate": "2026-09-25T01:00:26.658905"
         },
         {
           "ticker": "SCHB",
@@ -365,7 +365,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 44611325952,
           "dividendYield": NaN,
@@ -393,8 +393,8 @@
           },
           "volatility": 18.33,
           "maxDrawdown": -35.27,
-          "volume": 8917191,
-          "lastUpdate": "2026-09-24T00:57:35.045105"
+          "volume": 11295709,
+          "lastUpdate": "2026-09-25T01:00:27.533157"
         },
         {
           "ticker": "ITOT",
@@ -403,7 +403,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 97117683712,
           "dividendYield": NaN,
@@ -431,8 +431,8 @@
           },
           "volatility": 18.28,
           "maxDrawdown": -35.0,
-          "volume": 1043997,
-          "lastUpdate": "2026-09-24T00:57:35.927418"
+          "volume": 1509172,
+          "lastUpdate": "2026-09-25T01:00:28.414619"
         },
         {
           "ticker": "VT",
@@ -441,7 +441,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 101670690816,
           "dividendYield": NaN,
@@ -469,8 +469,8 @@
           },
           "volatility": 17.18,
           "maxDrawdown": -34.24,
-          "volume": 4286476,
-          "lastUpdate": "2026-09-24T00:57:36.770278"
+          "volume": 2057837,
+          "lastUpdate": "2026-09-25T01:00:29.248921"
         },
         {
           "ticker": "DIA",
@@ -479,7 +479,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.16,
           "aum": 45455503360,
           "dividendYield": NaN,
@@ -507,8 +507,8 @@
           },
           "volatility": 17.56,
           "maxDrawdown": -36.7,
-          "volume": 3919907,
-          "lastUpdate": "2026-09-24T00:57:37.785317"
+          "volume": 2624253,
+          "lastUpdate": "2026-09-25T01:00:30.207843"
         },
         {
           "ticker": "RSP",
@@ -517,7 +517,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.2,
           "aum": 100867555328,
           "dividendYield": NaN,
@@ -543,10 +543,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 18.28,
+          "volatility": 18.27,
           "maxDrawdown": -39.04,
-          "volume": 5963613,
-          "lastUpdate": "2026-09-24T00:57:38.663111"
+          "volume": 7707460,
+          "lastUpdate": "2026-09-25T01:00:31.127468"
         }
       ]
     },
@@ -561,7 +561,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.19,
           "aum": 80460996608,
           "dividendYield": NaN,
@@ -589,8 +589,8 @@
           },
           "volatility": 23.01,
           "maxDrawdown": -41.13,
-          "volume": 24267666,
-          "lastUpdate": "2026-09-24T00:57:39.618916"
+          "volume": 27088934,
+          "lastUpdate": "2026-09-25T01:00:32.000775"
         },
         {
           "ticker": "IWB",
@@ -599,7 +599,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 48816013312,
           "dividendYield": NaN,
@@ -627,8 +627,8 @@
           },
           "volatility": 18.15,
           "maxDrawdown": -34.6,
-          "volume": 255958,
-          "lastUpdate": "2026-09-24T00:57:40.563719"
+          "volume": 422713,
+          "lastUpdate": "2026-09-25T01:00:32.957831"
         },
         {
           "ticker": "IJH",
@@ -637,7 +637,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.05,
           "aum": 124935077888,
           "dividendYield": NaN,
@@ -665,8 +665,8 @@
           },
           "volatility": 21.13,
           "maxDrawdown": -42.18,
-          "volume": 8573950,
-          "lastUpdate": "2026-09-24T00:57:41.536011"
+          "volume": 6748085,
+          "lastUpdate": "2026-09-25T01:00:33.966215"
         },
         {
           "ticker": "IJR",
@@ -675,7 +675,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.06,
           "aum": 109249667072,
           "dividendYield": NaN,
@@ -703,8 +703,8 @@
           },
           "volatility": 22.84,
           "maxDrawdown": -44.36,
-          "volume": 2303585,
-          "lastUpdate": "2026-09-24T00:57:42.440892"
+          "volume": 2297235,
+          "lastUpdate": "2026-09-25T01:00:34.946969"
         },
         {
           "ticker": "VB",
@@ -713,7 +713,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.05,
           "aum": 185273745408,
           "dividendYield": NaN,
@@ -739,10 +739,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 21.38,
+          "volatility": 21.37,
           "maxDrawdown": -42.05,
-          "volume": 385097,
-          "lastUpdate": "2026-09-24T00:57:43.277076"
+          "volume": 501009,
+          "lastUpdate": "2026-09-25T01:00:35.894382"
         },
         {
           "ticker": "VO",
@@ -751,7 +751,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 226376384512,
           "dividendYield": NaN,
@@ -777,10 +777,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 18.86,
+          "volatility": 18.85,
           "maxDrawdown": -39.37,
-          "volume": 2877393,
-          "lastUpdate": "2026-09-24T00:57:44.255607"
+          "volume": 2509204,
+          "lastUpdate": "2026-09-25T01:00:36.798823"
         }
       ]
     },
@@ -795,7 +795,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 121437732864,
           "dividendYield": NaN,
@@ -821,10 +821,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 25.05,
+          "volatility": 25.04,
           "maxDrawdown": -33.56,
-          "volume": 5821732,
-          "lastUpdate": "2026-09-24T00:57:45.218468"
+          "volume": 6324299,
+          "lastUpdate": "2026-09-25T01:00:37.744867"
         },
         {
           "ticker": "VGT",
@@ -833,7 +833,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.1,
           "aum": 170651172864,
           "dividendYield": NaN,
@@ -859,10 +859,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 25.01,
+          "volatility": 25.0,
           "maxDrawdown": -35.07,
-          "volume": 4404701,
-          "lastUpdate": "2026-09-24T00:57:46.119811"
+          "volume": 6742773,
+          "lastUpdate": "2026-09-25T01:00:38.638476"
         },
         {
           "ticker": "SOXX",
@@ -871,7 +871,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 41810907136,
           "dividendYield": NaN,
@@ -899,8 +899,8 @@
           },
           "volatility": 34.84,
           "maxDrawdown": -45.75,
-          "volume": 9892606,
-          "lastUpdate": "2026-09-24T00:57:47.037692"
+          "volume": 4903456,
+          "lastUpdate": "2026-09-25T01:00:39.570940"
         },
         {
           "ticker": "SMH",
@@ -909,7 +909,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 67787030528,
           "dividendYield": NaN,
@@ -937,8 +937,8 @@
           },
           "volatility": 33.54,
           "maxDrawdown": -45.3,
-          "volume": 6050308,
-          "lastUpdate": "2026-09-24T00:57:47.931468"
+          "volume": 5612349,
+          "lastUpdate": "2026-09-25T01:00:40.553352"
         },
         {
           "ticker": "ARKK",
@@ -947,7 +947,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 6437586432,
           "dividendYield": 0,
@@ -973,10 +973,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 40.72,
+          "volatility": 40.71,
           "maxDrawdown": -80.91,
-          "volume": 3852963,
-          "lastUpdate": "2026-09-24T00:57:48.684870"
+          "volume": 5473192,
+          "lastUpdate": "2026-09-25T01:00:41.401115"
         },
         {
           "ticker": "IGV",
@@ -985,7 +985,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.41,
           "aum": 15741521920,
           "dividendYield": NaN,
@@ -1011,10 +1011,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 26.82,
+          "volatility": 26.81,
           "maxDrawdown": -45.85,
-          "volume": 6858911,
-          "lastUpdate": "2026-09-24T00:57:49.510642"
+          "volume": 6401132,
+          "lastUpdate": "2026-09-25T01:00:42.356436"
         }
       ]
     },
@@ -1029,7 +1029,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 54592368640,
           "dividendYield": NaN,
@@ -1057,8 +1057,8 @@
           },
           "volatility": 22.09,
           "maxDrawdown": -42.86,
-          "volume": 42573909,
-          "lastUpdate": "2026-09-24T00:57:50.454433"
+          "volume": 28667342,
+          "lastUpdate": "2026-09-25T01:00:43.245396"
         },
         {
           "ticker": "XLV",
@@ -1067,7 +1067,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 43909783552,
           "dividendYield": NaN,
@@ -1093,10 +1093,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 16.74,
+          "volatility": 16.73,
           "maxDrawdown": -28.4,
-          "volume": 7327832,
-          "lastUpdate": "2026-09-24T00:57:51.462383"
+          "volume": 8783505,
+          "lastUpdate": "2026-09-25T01:00:44.187254"
         },
         {
           "ticker": "XLE",
@@ -1105,7 +1105,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 41438105600,
           "dividendYield": NaN,
@@ -1133,8 +1133,8 @@
           },
           "volatility": 29.61,
           "maxDrawdown": -66.81,
-          "volume": 36479755,
-          "lastUpdate": "2026-09-24T00:57:52.484021"
+          "volume": 37713159,
+          "lastUpdate": "2026-09-25T01:00:45.139092"
         },
         {
           "ticker": "XLI",
@@ -1143,7 +1143,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 31947403264,
           "dividendYield": NaN,
@@ -1169,10 +1169,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.07,
+          "volatility": 20.06,
           "maxDrawdown": -42.33,
-          "volume": 7996530,
-          "lastUpdate": "2026-09-24T00:57:53.409763"
+          "volume": 8522853,
+          "lastUpdate": "2026-09-25T01:00:46.267062"
         },
         {
           "ticker": "XLP",
@@ -1181,7 +1181,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 14524716032,
           "dividendYield": NaN,
@@ -1209,8 +1209,8 @@
           },
           "volatility": 14.88,
           "maxDrawdown": -24.51,
-          "volume": 10700163,
-          "lastUpdate": "2026-09-24T00:57:54.292037"
+          "volume": 10608620,
+          "lastUpdate": "2026-09-25T01:00:47.110174"
         },
         {
           "ticker": "XLY",
@@ -1219,7 +1219,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 22749814784,
           "dividendYield": NaN,
@@ -1247,8 +1247,8 @@
           },
           "volatility": 22.23,
           "maxDrawdown": -39.67,
-          "volume": 6905601,
-          "lastUpdate": "2026-09-24T00:57:55.486933"
+          "volume": 4949775,
+          "lastUpdate": "2026-09-25T01:00:48.014724"
         },
         {
           "ticker": "XLU",
@@ -1257,7 +1257,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 21836873728,
           "dividendYield": NaN,
@@ -1283,10 +1283,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 19.26,
+          "volatility": 19.27,
           "maxDrawdown": -36.07,
-          "volume": 27794894,
-          "lastUpdate": "2026-09-24T00:57:56.433276"
+          "volume": 25543115,
+          "lastUpdate": "2026-09-25T01:00:48.940010"
         },
         {
           "ticker": "XLB",
@@ -1295,7 +1295,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 8752943104,
           "dividendYield": NaN,
@@ -1321,10 +1321,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.71,
+          "volatility": 20.7,
           "maxDrawdown": -37.27,
-          "volume": 10466595,
-          "lastUpdate": "2026-09-24T00:57:57.394337"
+          "volume": 12806366,
+          "lastUpdate": "2026-09-25T01:00:50.054541"
         },
         {
           "ticker": "XLC",
@@ -1333,7 +1333,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 22430177280,
           "dividendYield": NaN,
@@ -1359,10 +1359,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 22.14,
+          "volatility": 22.15,
           "maxDrawdown": -46.65,
-          "volume": 5613884,
-          "lastUpdate": "2026-09-24T00:57:58.181981"
+          "volume": 5482442,
+          "lastUpdate": "2026-09-25T01:00:50.929323"
         },
         {
           "ticker": "XLRE",
@@ -1371,7 +1371,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 8312176128,
           "dividendYield": NaN,
@@ -1397,10 +1397,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.43,
+          "volatility": 20.44,
           "maxDrawdown": -38.82,
-          "volume": 6710964,
-          "lastUpdate": "2026-09-24T00:57:59.035658"
+          "volume": 5673101,
+          "lastUpdate": "2026-09-25T01:00:51.885516"
         },
         {
           "ticker": "IBB",
@@ -1409,7 +1409,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.44,
           "aum": 10474939392,
           "dividendYield": NaN,
@@ -1435,10 +1435,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 23.23,
+          "volatility": 23.22,
           "maxDrawdown": -39.82,
-          "volume": 1834400,
-          "lastUpdate": "2026-09-24T00:57:59.939585"
+          "volume": 1582658,
+          "lastUpdate": "2026-09-25T01:00:52.854205"
         },
         {
           "ticker": "ITA",
@@ -1447,7 +1447,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.39,
           "aum": 13628640256,
           "dividendYield": NaN,
@@ -1473,10 +1473,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 23.38,
+          "volatility": 23.37,
           "maxDrawdown": -51.0,
-          "volume": 852525,
-          "lastUpdate": "2026-09-24T00:58:00.884170"
+          "volume": 675459,
+          "lastUpdate": "2026-09-25T01:00:53.719994"
         },
         {
           "ticker": "KRE",
@@ -1485,7 +1485,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 4010872832,
           "dividendYield": NaN,
@@ -1513,8 +1513,8 @@
           },
           "volatility": 31.77,
           "maxDrawdown": -55.03,
-          "volume": 16313282,
-          "lastUpdate": "2026-09-24T00:58:01.738525"
+          "volume": 16220256,
+          "lastUpdate": "2026-09-25T01:00:54.622266"
         },
         {
           "ticker": "XBI",
@@ -1523,7 +1523,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 11404576768,
           "dividendYield": NaN,
@@ -1551,8 +1551,8 @@
           },
           "volatility": 31.95,
           "maxDrawdown": -63.89,
-          "volume": 13066152,
-          "lastUpdate": "2026-09-24T00:58:02.619571"
+          "volume": 13767331,
+          "lastUpdate": "2026-09-25T01:00:55.497401"
         },
         {
           "ticker": "XRT",
@@ -1561,7 +1561,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 362040704,
           "dividendYield": NaN,
@@ -1587,10 +1587,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 27.24,
+          "volatility": 27.23,
           "maxDrawdown": -47.02,
-          "volume": 2805055,
-          "lastUpdate": "2026-09-24T00:58:03.483349"
+          "volume": 2878502,
+          "lastUpdate": "2026-09-25T01:00:56.350081"
         },
         {
           "ticker": "XOP",
@@ -1599,7 +1599,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 3986409216,
           "dividendYield": NaN,
@@ -1625,10 +1625,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 40.16,
+          "volatility": 40.15,
           "maxDrawdown": -82.61,
-          "volume": 5070986,
-          "lastUpdate": "2026-09-24T00:58:04.393562"
+          "volume": 3526605,
+          "lastUpdate": "2026-09-25T01:00:57.294034"
         },
         {
           "ticker": "XME",
@@ -1637,7 +1637,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 4885382656,
           "dividendYield": NaN,
@@ -1665,8 +1665,8 @@
           },
           "volatility": 32.92,
           "maxDrawdown": -61.69,
-          "volume": 1229276,
-          "lastUpdate": "2026-09-24T00:58:05.245798"
+          "volume": 2033170,
+          "lastUpdate": "2026-09-25T01:00:58.134788"
         },
         {
           "ticker": "XHB",
@@ -1675,7 +1675,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 1331822720,
           "dividendYield": NaN,
@@ -1701,10 +1701,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 27.69,
+          "volatility": 27.68,
           "maxDrawdown": -49.57,
-          "volume": 1763670,
-          "lastUpdate": "2026-09-24T00:58:06.163424"
+          "volume": 2052709,
+          "lastUpdate": "2026-09-25T01:00:59.193558"
         },
         {
           "ticker": "XSW",
@@ -1713,7 +1713,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 509260864,
           "dividendYield": 0,
@@ -1739,10 +1739,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 26.63,
+          "volatility": 26.62,
           "maxDrawdown": -45.38,
-          "volume": 24173,
-          "lastUpdate": "2026-09-24T00:58:06.982702"
+          "volume": 56255,
+          "lastUpdate": "2026-09-25T01:01:00.147918"
         }
       ]
     },
@@ -1757,7 +1757,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 138317873152,
           "dividendYield": NaN,
@@ -1783,10 +1783,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 5.43,
+          "volatility": 5.44,
           "maxDrawdown": -18.43,
-          "volume": 17267468,
-          "lastUpdate": "2026-09-24T00:58:07.927223"
+          "volume": 10688477,
+          "lastUpdate": "2026-09-25T01:01:01.051166"
         },
         {
           "ticker": "TLT",
@@ -1795,7 +1795,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 47046328320,
           "dividendYield": NaN,
@@ -1821,10 +1821,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 14.82,
+          "volatility": 14.83,
           "maxDrawdown": -48.35,
-          "volume": 53370864,
-          "lastUpdate": "2026-09-24T00:58:09.049464"
+          "volume": 58811713,
+          "lastUpdate": "2026-09-25T01:01:02.027809"
         },
         {
           "ticker": "SHY",
@@ -1833,7 +1833,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 25913065472,
           "dividendYield": NaN,
@@ -1861,8 +1861,8 @@
           },
           "volatility": 1.58,
           "maxDrawdown": -5.71,
-          "volume": 5620080,
-          "lastUpdate": "2026-09-24T00:58:10.065608"
+          "volume": 5181826,
+          "lastUpdate": "2026-09-25T01:01:03.026119"
         },
         {
           "ticker": "BND",
@@ -1871,7 +1871,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.03,
           "aum": 398834597888,
           "dividendYield": NaN,
@@ -1899,8 +1899,8 @@
           },
           "volatility": 5.55,
           "maxDrawdown": -18.58,
-          "volume": 12706302,
-          "lastUpdate": "2026-09-24T00:58:11.014833"
+          "volume": 12609645,
+          "lastUpdate": "2026-09-25T01:01:03.927662"
         },
         {
           "ticker": "LQD",
@@ -1909,7 +1909,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.14,
           "aum": 32042811392,
           "dividendYield": NaN,
@@ -1937,8 +1937,8 @@
           },
           "volatility": 8.7,
           "maxDrawdown": -24.95,
-          "volume": 34585019,
-          "lastUpdate": "2026-09-24T00:58:11.933790"
+          "volume": 39322385,
+          "lastUpdate": "2026-09-25T01:01:04.913294"
         },
         {
           "ticker": "HYG",
@@ -1947,7 +1947,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.48,
           "aum": 16186192896,
           "dividendYield": NaN,
@@ -1975,8 +1975,8 @@
           },
           "volatility": 8.19,
           "maxDrawdown": -22.03,
-          "volume": 67880147,
-          "lastUpdate": "2026-09-24T00:58:12.850182"
+          "volume": 74263262,
+          "lastUpdate": "2026-09-25T01:01:05.840680"
         },
         {
           "ticker": "JNK",
@@ -1985,7 +1985,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.4,
           "aum": 6970858496,
           "dividendYield": NaN,
@@ -2013,8 +2013,8 @@
           },
           "volatility": 8.2,
           "maxDrawdown": -22.89,
-          "volume": 3691053,
-          "lastUpdate": "2026-09-24T00:58:13.843992"
+          "volume": 5086886,
+          "lastUpdate": "2026-09-25T01:01:06.726008"
         },
         {
           "ticker": "TIP",
@@ -2023,7 +2023,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.19,
           "aum": 15010082816,
           "dividendYield": NaN,
@@ -2049,10 +2049,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 5.72,
+          "volatility": 5.73,
           "maxDrawdown": -14.51,
-          "volume": 2362359,
-          "lastUpdate": "2026-09-24T00:58:14.714727"
+          "volume": 2546966,
+          "lastUpdate": "2026-09-25T01:01:07.647012"
         },
         {
           "ticker": "IEF",
@@ -2061,7 +2061,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 41824055296,
           "dividendYield": NaN,
@@ -2089,8 +2089,8 @@
           },
           "volatility": 6.62,
           "maxDrawdown": -23.92,
-          "volume": 14503841,
-          "lastUpdate": "2026-09-24T00:58:15.668281"
+          "volume": 11004147,
+          "lastUpdate": "2026-09-25T01:01:08.624853"
         },
         {
           "ticker": "SGOV",
@@ -2099,7 +2099,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 105976479744,
           "dividendYield": NaN,
@@ -2127,8 +2127,8 @@
           },
           "volatility": 0.23,
           "maxDrawdown": -0.03,
-          "volume": 20792352,
-          "lastUpdate": "2026-09-24T00:58:16.409792"
+          "volume": 19050055,
+          "lastUpdate": "2026-09-25T01:01:09.353119"
         },
         {
           "ticker": "BIL",
@@ -2137,7 +2137,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.14,
           "aum": 46752960512,
           "dividendYield": NaN,
@@ -2165,8 +2165,8 @@
           },
           "volatility": 0.25,
           "maxDrawdown": -0.21,
-          "volume": 9835799,
-          "lastUpdate": "2026-09-24T00:58:17.295697"
+          "volume": 10911814,
+          "lastUpdate": "2026-09-25T01:01:10.264014"
         },
         {
           "ticker": "TBIL",
@@ -2175,7 +2175,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 7193713152,
           "dividendYield": NaN,
@@ -2202,8 +2202,8 @@
           },
           "volatility": 0.32,
           "maxDrawdown": -0.1,
-          "volume": 1801981,
-          "lastUpdate": "2026-09-24T00:58:17.976681"
+          "volume": 2344488,
+          "lastUpdate": "2026-09-25T01:01:10.953057"
         },
         {
           "ticker": "EMB",
@@ -2212,7 +2212,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.39,
           "aum": 14916531200,
           "dividendYield": NaN,
@@ -2238,10 +2238,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 9.94,
+          "volatility": 9.95,
           "maxDrawdown": -28.74,
-          "volume": 9840448,
-          "lastUpdate": "2026-09-24T00:58:18.899424"
+          "volume": 13968538,
+          "lastUpdate": "2026-09-25T01:01:11.925815"
         },
         {
           "ticker": "VCIT",
@@ -2250,7 +2250,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 72038932480,
           "dividendYield": NaN,
@@ -2276,10 +2276,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 6.29,
+          "volatility": 6.3,
           "maxDrawdown": -20.56,
-          "volume": 14017652,
-          "lastUpdate": "2026-09-24T00:58:19.891834"
+          "volume": 17619506,
+          "lastUpdate": "2026-09-25T01:01:12.792010"
         },
         {
           "ticker": "VCSH",
@@ -2288,7 +2288,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 51733753856,
           "dividendYield": NaN,
@@ -2316,8 +2316,8 @@
           },
           "volatility": 3.36,
           "maxDrawdown": -12.86,
-          "volume": 6477694,
-          "lastUpdate": "2026-09-24T00:58:20.724371"
+          "volume": 9878496,
+          "lastUpdate": "2026-09-25T01:01:13.694749"
         },
         {
           "ticker": "BIV",
@@ -2326,7 +2326,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 52098875392,
           "dividendYield": NaN,
@@ -2352,10 +2352,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 5.51,
+          "volatility": 5.52,
           "maxDrawdown": -18.94,
-          "volume": 3210476,
-          "lastUpdate": "2026-09-24T00:58:21.622560"
+          "volume": 2739995,
+          "lastUpdate": "2026-09-25T01:01:14.596043"
         },
         {
           "ticker": "MUB",
@@ -2364,7 +2364,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.05,
           "aum": 45378338816,
           "dividendYield": NaN,
@@ -2392,8 +2392,8 @@
           },
           "volatility": 4.93,
           "maxDrawdown": -13.68,
-          "volume": 15121960,
-          "lastUpdate": "2026-09-24T00:58:22.554288"
+          "volume": 17244554,
+          "lastUpdate": "2026-09-25T01:01:15.507628"
         },
         {
           "ticker": "BNDX",
@@ -2402,7 +2402,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 123027218432,
           "dividendYield": NaN,
@@ -2430,8 +2430,8 @@
           },
           "volatility": 4.1,
           "maxDrawdown": -16.23,
-          "volume": 5699267,
-          "lastUpdate": "2026-09-24T00:58:23.459159"
+          "volume": 6010196,
+          "lastUpdate": "2026-09-25T01:01:16.385025"
         },
         {
           "ticker": "VMBS",
@@ -2440,7 +2440,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 17585383424,
           "dividendYield": NaN,
@@ -2466,10 +2466,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 5.45,
+          "volatility": 5.46,
           "maxDrawdown": -17.46,
-          "volume": 2583757,
-          "lastUpdate": "2026-09-24T00:58:24.308199"
+          "volume": 2809421,
+          "lastUpdate": "2026-09-25T01:01:17.299845"
         },
         {
           "ticker": "FLOT",
@@ -2478,7 +2478,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 10684036096,
           "dividendYield": NaN,
@@ -2506,8 +2506,8 @@
           },
           "volatility": 4.15,
           "maxDrawdown": -13.54,
-          "volume": 2949367,
-          "lastUpdate": "2026-09-24T00:58:25.171985"
+          "volume": 2532123,
+          "lastUpdate": "2026-09-25T01:01:18.128119"
         }
       ]
     },
@@ -2522,7 +2522,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.06,
           "aum": 100835540992,
           "dividendYield": NaN,
@@ -2550,8 +2550,8 @@
           },
           "volatility": 16.28,
           "maxDrawdown": -35.21,
-          "volume": 1523877,
-          "lastUpdate": "2026-09-24T00:58:26.013321"
+          "volume": 1070888,
+          "lastUpdate": "2026-09-25T01:01:18.935694"
         },
         {
           "ticker": "SCHD",
@@ -2560,7 +2560,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.06,
           "aum": 112337240064,
           "dividendYield": NaN,
@@ -2588,8 +2588,8 @@
           },
           "volatility": 16.73,
           "maxDrawdown": -33.37,
-          "volume": 23060474,
-          "lastUpdate": "2026-09-24T00:58:26.981899"
+          "volume": 21342309,
+          "lastUpdate": "2026-09-25T01:01:19.815045"
         },
         {
           "ticker": "HDV",
@@ -2598,7 +2598,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.08,
           "aum": 15491693568,
           "dividendYield": NaN,
@@ -2624,10 +2624,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 15.78,
+          "volatility": 15.77,
           "maxDrawdown": -37.04,
-          "volume": 3504948,
-          "lastUpdate": "2026-09-24T00:58:27.775060"
+          "volume": 6003576,
+          "lastUpdate": "2026-09-25T01:01:20.734022"
         },
         {
           "ticker": "DVY",
@@ -2636,7 +2636,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.38,
           "aum": 23607969792,
           "dividendYield": NaN,
@@ -2664,8 +2664,8 @@
           },
           "volatility": 18.01,
           "maxDrawdown": -41.59,
-          "volume": 408162,
-          "lastUpdate": "2026-09-24T00:58:28.664548"
+          "volume": 372441,
+          "lastUpdate": "2026-09-25T01:01:21.615833"
         },
         {
           "ticker": "VIG",
@@ -2674,7 +2674,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.06,
           "aum": 132408557568,
           "dividendYield": NaN,
@@ -2702,8 +2702,8 @@
           },
           "volatility": 16.01,
           "maxDrawdown": -31.72,
-          "volume": 745144,
-          "lastUpdate": "2026-09-24T00:58:29.604916"
+          "volume": 1164869,
+          "lastUpdate": "2026-09-25T01:01:22.430122"
         },
         {
           "ticker": "DGRO",
@@ -2712,7 +2712,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.08,
           "aum": 43460890624,
           "dividendYield": NaN,
@@ -2740,8 +2740,8 @@
           },
           "volatility": 16.57,
           "maxDrawdown": -35.1,
-          "volume": 1509354,
-          "lastUpdate": "2026-09-24T00:58:30.398356"
+          "volume": 1576303,
+          "lastUpdate": "2026-09-25T01:01:23.224986"
         },
         {
           "ticker": "DGRW",
@@ -2750,7 +2750,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.28,
           "aum": 17165455360,
           "dividendYield": NaN,
@@ -2778,8 +2778,8 @@
           },
           "volatility": 16.18,
           "maxDrawdown": -32.04,
-          "volume": 579687,
-          "lastUpdate": "2026-09-24T00:58:31.239750"
+          "volume": 383905,
+          "lastUpdate": "2026-09-25T01:01:24.047142"
         },
         {
           "ticker": "SPYD",
@@ -2788,7 +2788,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 7653382656,
           "dividendYield": NaN,
@@ -2816,8 +2816,8 @@
           },
           "volatility": 19.76,
           "maxDrawdown": -46.42,
-          "volume": 1940644,
-          "lastUpdate": "2026-09-24T00:58:32.131482"
+          "volume": 1310829,
+          "lastUpdate": "2026-09-25T01:01:24.799479"
         },
         {
           "ticker": "NOBL",
@@ -2826,7 +2826,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 11801154560,
           "dividendYield": NaN,
@@ -2852,10 +2852,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 16.63,
+          "volatility": 16.62,
           "maxDrawdown": -35.43,
-          "volume": 985085,
-          "lastUpdate": "2026-09-24T00:58:32.914337"
+          "volume": 1186317,
+          "lastUpdate": "2026-09-25T01:01:25.670887"
         },
         {
           "ticker": "SDY",
@@ -2864,7 +2864,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 21783742464,
           "dividendYield": NaN,
@@ -2892,8 +2892,8 @@
           },
           "volatility": 17.08,
           "maxDrawdown": -36.7,
-          "volume": 312516,
-          "lastUpdate": "2026-09-24T00:58:33.813687"
+          "volume": 219040,
+          "lastUpdate": "2026-09-25T01:01:26.547503"
         },
         {
           "ticker": "FDVV",
@@ -2902,7 +2902,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.29,
           "aum": 10381726720,
           "dividendYield": NaN,
@@ -2928,10 +2928,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 16.85,
+          "volatility": 16.86,
           "maxDrawdown": -40.25,
-          "volume": 760210,
-          "lastUpdate": "2026-09-24T00:58:34.605498"
+          "volume": 790765,
+          "lastUpdate": "2026-09-25T01:01:27.373988"
         },
         {
           "ticker": "PFFD",
@@ -2940,7 +2940,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.23,
           "aum": 2152815616,
           "dividendYield": NaN,
@@ -2966,10 +2966,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 12.62,
+          "volatility": 12.63,
           "maxDrawdown": -30.93,
-          "volume": 1111196,
-          "lastUpdate": "2026-09-24T00:58:35.383204"
+          "volume": 1131934,
+          "lastUpdate": "2026-09-25T01:01:28.187889"
         }
       ]
     },
@@ -2984,7 +2984,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 46155608064,
           "dividendYield": NaN,
@@ -3010,10 +3010,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 10.66,
+          "volatility": 10.65,
           "maxDrawdown": -13.71,
-          "volume": 3529743,
-          "lastUpdate": "2026-09-24T00:58:36.113924"
+          "volume": 3159189,
+          "lastUpdate": "2026-09-25T01:01:29.075820"
         },
         {
           "ticker": "JEPQ",
@@ -3022,7 +3022,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.35,
           "aum": 42209615872,
           "dividendYield": NaN,
@@ -3047,10 +3047,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 16.73,
+          "volatility": 16.72,
           "maxDrawdown": -20.07,
-          "volume": 4694887,
-          "lastUpdate": "2026-09-24T00:58:36.824636"
+          "volume": 4486147,
+          "lastUpdate": "2026-09-25T01:01:29.892001"
         },
         {
           "ticker": "XYLD",
@@ -3059,7 +3059,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.6,
           "aum": 3335013888,
           "dividendYield": NaN,
@@ -3087,8 +3087,8 @@
           },
           "volatility": 14.13,
           "maxDrawdown": -33.46,
-          "volume": 536607,
-          "lastUpdate": "2026-09-24T00:58:37.795800"
+          "volume": 590642,
+          "lastUpdate": "2026-09-25T01:01:30.751327"
         },
         {
           "ticker": "QYLD",
@@ -3097,7 +3097,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.6,
           "aum": 8324322304,
           "dividendYield": NaN,
@@ -3123,10 +3123,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 15.64,
+          "volatility": 15.63,
           "maxDrawdown": -24.75,
-          "volume": 3004781,
-          "lastUpdate": "2026-09-24T00:58:38.576047"
+          "volume": 4727638,
+          "lastUpdate": "2026-09-25T01:01:31.555677"
         },
         {
           "ticker": "RYLD",
@@ -3135,7 +3135,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.6,
           "aum": 1386214400,
           "dividendYield": NaN,
@@ -3161,10 +3161,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 16.92,
+          "volatility": 16.91,
           "maxDrawdown": -41.52,
-          "volume": 723012,
-          "lastUpdate": "2026-09-24T00:58:39.367490"
+          "volume": 655424,
+          "lastUpdate": "2026-09-25T01:01:32.358717"
         },
         {
           "ticker": "DIVO",
@@ -3173,7 +3173,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.55,
           "aum": 7912351232,
           "dividendYield": NaN,
@@ -3201,8 +3201,8 @@
           },
           "volatility": 14.7,
           "maxDrawdown": -30.04,
-          "volume": 724184,
-          "lastUpdate": "2026-09-24T00:58:40.360283"
+          "volume": 585415,
+          "lastUpdate": "2026-09-25T01:01:33.141739"
         },
         {
           "ticker": "SPYI",
@@ -3211,7 +3211,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.68,
           "aum": 11710310400,
           "dividendYield": NaN,
@@ -3238,8 +3238,8 @@
           },
           "volatility": 12.81,
           "maxDrawdown": -16.47,
-          "volume": 2538047,
-          "lastUpdate": "2026-09-24T00:58:41.179271"
+          "volume": 1925692,
+          "lastUpdate": "2026-09-25T01:01:33.871692"
         }
       ]
     },
@@ -3254,7 +3254,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.99,
           "aum": 683078912,
           "dividendYield": NaN,
@@ -3279,10 +3279,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 45.51,
+          "volatility": 45.49,
           "maxDrawdown": -49.52,
-          "volume": 650248,
-          "lastUpdate": "2026-09-24T00:58:41.904868"
+          "volume": 270251,
+          "lastUpdate": "2026-09-25T01:01:34.689547"
         },
         {
           "ticker": "NVDY",
@@ -3291,7 +3291,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.99,
           "aum": 1371284736,
           "dividendYield": NaN,
@@ -3316,10 +3316,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 37.72,
+          "volatility": 37.7,
           "maxDrawdown": -34.09,
-          "volume": 1424858,
-          "lastUpdate": "2026-09-24T00:58:42.590340"
+          "volume": 857595,
+          "lastUpdate": "2026-09-25T01:01:35.418470"
         },
         {
           "ticker": "AMZY",
@@ -3328,7 +3328,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.99,
           "aum": 236633216,
           "dividendYield": NaN,
@@ -3353,10 +3353,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 25.91,
+          "volatility": 25.93,
           "maxDrawdown": -23.69,
-          "volume": 222149,
-          "lastUpdate": "2026-09-24T00:58:43.241788"
+          "volume": 162756,
+          "lastUpdate": "2026-09-25T01:01:36.193136"
         },
         {
           "ticker": "MSFO",
@@ -3365,7 +3365,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.99,
           "aum": 107788728,
           "dividendYield": NaN,
@@ -3390,10 +3390,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 22.05,
+          "volatility": 22.03,
           "maxDrawdown": -29.65,
-          "volume": 37529,
-          "lastUpdate": "2026-09-24T00:58:44.032608"
+          "volume": 16407,
+          "lastUpdate": "2026-09-25T01:01:36.927147"
         },
         {
           "ticker": "APLY",
@@ -3402,7 +3402,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.99,
           "aum": 96748896,
           "dividendYield": NaN,
@@ -3427,10 +3427,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 21.53,
+          "volatility": 21.52,
           "maxDrawdown": -31.09,
-          "volume": 60497,
-          "lastUpdate": "2026-09-24T00:58:45.713745"
+          "volume": 63775,
+          "lastUpdate": "2026-09-25T01:01:38.786167"
         },
         {
           "ticker": "CONY",
@@ -3439,7 +3439,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.99,
           "aum": 367508864,
           "dividendYield": NaN,
@@ -3464,10 +3464,10 @@
           "cagr": {
             "3Y": NaN
           },
-          "volatility": 60.31,
+          "volatility": 60.28,
           "maxDrawdown": -63.57,
-          "volume": 671084,
-          "lastUpdate": "2026-09-24T00:58:46.453085"
+          "volume": 627362,
+          "lastUpdate": "2026-09-25T01:01:39.505756"
         },
         {
           "ticker": "YMAG",
@@ -3476,7 +3476,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.29,
           "aum": 295201536,
           "dividendYield": NaN,
@@ -3499,10 +3499,10 @@
             "5Y": null
           },
           "cagr": {},
-          "volatility": 20.87,
+          "volatility": 20.88,
           "maxDrawdown": -25.96,
-          "volume": 545291,
-          "lastUpdate": "2026-09-24T00:58:47.120839"
+          "volume": 1021248,
+          "lastUpdate": "2026-09-25T01:01:40.216408"
         },
         {
           "ticker": "YMAX",
@@ -3511,7 +3511,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.29,
           "aum": 384902016,
           "dividendYield": NaN,
@@ -3534,10 +3534,10 @@
             "5Y": null
           },
           "cagr": {},
-          "volatility": 23.38,
+          "volatility": 23.37,
           "maxDrawdown": -26.14,
-          "volume": 1222536,
-          "lastUpdate": "2026-09-24T00:58:47.822518"
+          "volume": 1241464,
+          "lastUpdate": "2026-09-25T01:01:40.922156"
         }
       ]
     },
@@ -3552,7 +3552,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 384533856256,
           "dividendYield": NaN,
@@ -3580,8 +3580,8 @@
           },
           "volatility": 21.6,
           "maxDrawdown": -35.61,
-          "volume": 5866208,
-          "lastUpdate": "2026-09-24T00:58:48.693678"
+          "volume": 4359033,
+          "lastUpdate": "2026-09-25T01:01:41.864674"
         },
         {
           "ticker": "VTV",
@@ -3590,7 +3590,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 262299090944,
           "dividendYield": NaN,
@@ -3618,8 +3618,8 @@
           },
           "volatility": 16.6,
           "maxDrawdown": -36.78,
-          "volume": 2519419,
-          "lastUpdate": "2026-09-24T00:58:49.606100"
+          "volume": 2215155,
+          "lastUpdate": "2026-09-25T01:01:42.755173"
         },
         {
           "ticker": "IWF",
@@ -3628,7 +3628,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.19,
           "aum": 125535297536,
           "dividendYield": NaN,
@@ -3656,8 +3656,8 @@
           },
           "volatility": 21.17,
           "maxDrawdown": -32.72,
-          "volume": 3471791,
-          "lastUpdate": "2026-09-24T00:58:50.556704"
+          "volume": 3461924,
+          "lastUpdate": "2026-09-25T01:01:43.758024"
         },
         {
           "ticker": "IWD",
@@ -3666,7 +3666,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.19,
           "aum": 83947945984,
           "dividendYield": NaN,
@@ -3692,10 +3692,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 17.24,
+          "volatility": 17.23,
           "maxDrawdown": -38.51,
-          "volume": 1723136,
-          "lastUpdate": "2026-09-24T00:58:51.411621"
+          "volume": 1513805,
+          "lastUpdate": "2026-09-25T01:01:44.647161"
         },
         {
           "ticker": "SCHG",
@@ -3704,7 +3704,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 63028015104,
           "dividendYield": NaN,
@@ -3732,8 +3732,8 @@
           },
           "volatility": 21.63,
           "maxDrawdown": -34.59,
-          "volume": 8581860,
-          "lastUpdate": "2026-09-24T00:58:52.270962"
+          "volume": 9327258,
+          "lastUpdate": "2026-09-25T01:01:45.490338"
         },
         {
           "ticker": "SCHV",
@@ -3742,7 +3742,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.04,
           "aum": 15666246656,
           "dividendYield": NaN,
@@ -3770,8 +3770,8 @@
           },
           "volatility": 16.93,
           "maxDrawdown": -37.08,
-          "volume": 2529165,
-          "lastUpdate": "2026-09-24T00:58:53.094312"
+          "volume": 2712851,
+          "lastUpdate": "2026-09-25T01:01:46.329786"
         },
         {
           "ticker": "QUAL",
@@ -3780,7 +3780,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 47691345920,
           "dividendYield": NaN,
@@ -3808,8 +3808,8 @@
           },
           "volatility": 18.1,
           "maxDrawdown": -34.06,
-          "volume": 925917,
-          "lastUpdate": "2026-09-24T00:58:53.902672"
+          "volume": 968209,
+          "lastUpdate": "2026-09-25T01:01:47.222669"
         },
         {
           "ticker": "USMV",
@@ -3818,7 +3818,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.15,
           "aum": 24225730560,
           "dividendYield": NaN,
@@ -3846,8 +3846,8 @@
           },
           "volatility": 14.48,
           "maxDrawdown": -33.1,
-          "volume": 1241633,
-          "lastUpdate": "2026-09-24T00:58:54.705777"
+          "volume": 1529520,
+          "lastUpdate": "2026-09-25T01:01:48.013899"
         },
         {
           "ticker": "MGK",
@@ -3856,7 +3856,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 33694470144,
           "dividendYield": NaN,
@@ -3884,8 +3884,8 @@
           },
           "volatility": 22.07,
           "maxDrawdown": -36.01,
-          "volume": 938529,
-          "lastUpdate": "2026-09-24T00:58:55.596699"
+          "volume": 1164274,
+          "lastUpdate": "2026-09-25T01:01:48.872539"
         },
         {
           "ticker": "MGV",
@@ -3894,7 +3894,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 13899940864,
           "dividendYield": NaN,
@@ -3922,8 +3922,8 @@
           },
           "volatility": 16.29,
           "maxDrawdown": -35.41,
-          "volume": 135322,
-          "lastUpdate": "2026-09-24T00:58:56.500641"
+          "volume": 218459,
+          "lastUpdate": "2026-09-25T01:01:49.816653"
         },
         {
           "ticker": "AVUV",
@@ -3932,7 +3932,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.25,
           "aum": 31173472256,
           "dividendYield": NaN,
@@ -3958,10 +3958,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 27.79,
+          "volatility": 27.78,
           "maxDrawdown": -49.42,
-          "volume": 1329870,
-          "lastUpdate": "2026-09-24T00:58:57.268093"
+          "volume": 1609745,
+          "lastUpdate": "2026-09-25T01:01:50.548164"
         },
         {
           "ticker": "DFAC",
@@ -3970,7 +3970,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.18,
           "aum": 49144967168,
           "dividendYield": NaN,
@@ -3998,8 +3998,8 @@
           },
           "volatility": 16.87,
           "maxDrawdown": -23.11,
-          "volume": 2947858,
-          "lastUpdate": "2026-09-24T00:58:57.984884"
+          "volume": 2128996,
+          "lastUpdate": "2026-09-25T01:01:51.303474"
         }
       ]
     },
@@ -4014,7 +4014,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 665693061120,
           "dividendYield": NaN,
@@ -4042,8 +4042,8 @@
           },
           "volatility": 17.02,
           "maxDrawdown": -35.97,
-          "volume": 6056776,
-          "lastUpdate": "2026-09-24T00:58:58.810061"
+          "volume": 5498575,
+          "lastUpdate": "2026-09-25T01:01:52.140090"
         },
         {
           "ticker": "VEA",
@@ -4052,7 +4052,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.05,
           "aum": 323821109248,
           "dividendYield": NaN,
@@ -4080,8 +4080,8 @@
           },
           "volatility": 17.22,
           "maxDrawdown": -35.74,
-          "volume": 7699659,
-          "lastUpdate": "2026-09-24T00:58:59.685803"
+          "volume": 10042271,
+          "lastUpdate": "2026-09-25T01:01:52.985145"
         },
         {
           "ticker": "VWO",
@@ -4090,7 +4090,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.08,
           "aum": 168359133184,
           "dividendYield": NaN,
@@ -4116,10 +4116,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 19.11,
+          "volatility": 19.12,
           "maxDrawdown": -36.39,
-          "volume": 5590508,
-          "lastUpdate": "2026-09-24T00:59:00.575617"
+          "volume": 9746756,
+          "lastUpdate": "2026-09-25T01:01:53.850136"
         },
         {
           "ticker": "IEFA",
@@ -4128,7 +4128,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 194385543168,
           "dividendYield": NaN,
@@ -4156,8 +4156,8 @@
           },
           "volatility": 17.03,
           "maxDrawdown": -34.79,
-          "volume": 10762466,
-          "lastUpdate": "2026-09-24T00:59:01.332722"
+          "volume": 9051633,
+          "lastUpdate": "2026-09-25T01:01:54.672700"
         },
         {
           "ticker": "IEMG",
@@ -4166,7 +4166,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 160899022848,
           "dividendYield": NaN,
@@ -4192,10 +4192,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.34,
+          "volatility": 20.35,
           "maxDrawdown": -38.71,
-          "volume": 16463089,
-          "lastUpdate": "2026-09-24T00:59:02.145261"
+          "volume": 17221578,
+          "lastUpdate": "2026-09-25T01:01:55.477182"
         },
         {
           "ticker": "EFA",
@@ -4204,7 +4204,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.32,
           "aum": 79317098496,
           "dividendYield": NaN,
@@ -4232,8 +4232,8 @@
           },
           "volatility": 16.99,
           "maxDrawdown": -34.19,
-          "volume": 12150037,
-          "lastUpdate": "2026-09-24T00:59:03.022151"
+          "volume": 16995070,
+          "lastUpdate": "2026-09-25T01:01:56.376240"
         },
         {
           "ticker": "EEM",
@@ -4242,7 +4242,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.68,
           "aum": 31207041024,
           "dividendYield": NaN,
@@ -4270,8 +4270,8 @@
           },
           "volatility": 20.83,
           "maxDrawdown": -39.82,
-          "volume": 23817081,
-          "lastUpdate": "2026-09-24T00:59:03.936906"
+          "volume": 17960088,
+          "lastUpdate": "2026-09-25T01:01:57.317864"
         },
         {
           "ticker": "MCHI",
@@ -4280,7 +4280,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.59,
           "aum": 6326371328,
           "dividendYield": NaN,
@@ -4308,8 +4308,8 @@
           },
           "volatility": 27.31,
           "maxDrawdown": -62.84,
-          "volume": 1186218,
-          "lastUpdate": "2026-09-24T00:59:04.756998"
+          "volume": 2300355,
+          "lastUpdate": "2026-09-25T01:01:58.175875"
         },
         {
           "ticker": "EWJ",
@@ -4318,7 +4318,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 22687311872,
           "dividendYield": NaN,
@@ -4346,8 +4346,8 @@
           },
           "volatility": 17.47,
           "maxDrawdown": -33.14,
-          "volume": 3667952,
-          "lastUpdate": "2026-09-24T00:59:05.622300"
+          "volume": 4073887,
+          "lastUpdate": "2026-09-25T01:01:59.225403"
         },
         {
           "ticker": "KWEB",
@@ -4356,7 +4356,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.67,
           "aum": 5103524864,
           "dividendYield": NaN,
@@ -4384,8 +4384,8 @@
           },
           "volatility": 40.07,
           "maxDrawdown": -80.92,
-          "volume": 19920418,
-          "lastUpdate": "2026-09-24T00:59:06.423640"
+          "volume": 12669663,
+          "lastUpdate": "2026-09-25T01:02:00.039793"
         },
         {
           "ticker": "VGK",
@@ -4394,7 +4394,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.09,
           "aum": 39061614592,
           "dividendYield": NaN,
@@ -4422,8 +4422,8 @@
           },
           "volatility": 18.46,
           "maxDrawdown": -37.24,
-          "volume": 2154948,
-          "lastUpdate": "2026-09-24T00:59:07.275686"
+          "volume": 5719528,
+          "lastUpdate": "2026-09-25T01:02:00.898964"
         },
         {
           "ticker": "EWZ",
@@ -4432,7 +4432,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.57,
           "aum": 8173754368,
           "dividendYield": NaN,
@@ -4460,8 +4460,8 @@
           },
           "volatility": 33.83,
           "maxDrawdown": -56.99,
-          "volume": 33376653,
-          "lastUpdate": "2026-09-24T00:59:08.303167"
+          "volume": 29969982,
+          "lastUpdate": "2026-09-25T01:02:01.766368"
         },
         {
           "ticker": "EWY",
@@ -4470,7 +4470,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 27722782720,
           "dividendYield": NaN,
@@ -4496,10 +4496,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 29.88,
+          "volatility": 29.89,
           "maxDrawdown": -49.73,
-          "volume": 16580450,
-          "lastUpdate": "2026-09-24T00:59:09.254896"
+          "volume": 12628185,
+          "lastUpdate": "2026-09-25T01:02:02.732635"
         },
         {
           "ticker": "EWT",
@@ -4508,7 +4508,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.57,
           "aum": 11758742528,
           "dividendYield": NaN,
@@ -4534,10 +4534,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 22.25,
+          "volatility": 22.27,
           "maxDrawdown": -38.88,
-          "volume": 4244685,
-          "lastUpdate": "2026-09-24T00:59:10.092189"
+          "volume": 3691783,
+          "lastUpdate": "2026-09-25T01:02:03.667867"
         },
         {
           "ticker": "EWG",
@@ -4546,7 +4546,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 1815145088,
           "dividendYield": NaN,
@@ -4574,8 +4574,8 @@
           },
           "volatility": 20.8,
           "maxDrawdown": -46.8,
-          "volume": 1399268,
-          "lastUpdate": "2026-09-24T00:59:10.983655"
+          "volume": 956977,
+          "lastUpdate": "2026-09-25T01:02:04.524965"
         },
         {
           "ticker": "EWU",
@@ -4584,7 +4584,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 3788491776,
           "dividendYield": NaN,
@@ -4612,8 +4612,8 @@
           },
           "volatility": 18.2,
           "maxDrawdown": -43.33,
-          "volume": 885295,
-          "lastUpdate": "2026-09-24T00:59:11.866646"
+          "volume": 1006194,
+          "lastUpdate": "2026-09-25T01:02:05.471255"
         },
         {
           "ticker": "EWC",
@@ -4622,7 +4622,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 6848205824,
           "dividendYield": NaN,
@@ -4650,8 +4650,8 @@
           },
           "volatility": 18.64,
           "maxDrawdown": -42.66,
-          "volume": 1876641,
-          "lastUpdate": "2026-09-24T00:59:12.748405"
+          "volume": 1558570,
+          "lastUpdate": "2026-09-25T01:02:06.423595"
         },
         {
           "ticker": "EWA",
@@ -4660,7 +4660,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 1332844288,
           "dividendYield": NaN,
@@ -4686,10 +4686,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 22.49,
+          "volatility": 22.5,
           "maxDrawdown": -45.54,
-          "volume": 3119588,
-          "lastUpdate": "2026-09-24T00:59:13.819512"
+          "volume": 2941687,
+          "lastUpdate": "2026-09-25T01:02:07.382670"
         },
         {
           "ticker": "INDA",
@@ -4698,7 +4698,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.65,
           "aum": 6747315712,
           "dividendYield": 0,
@@ -4724,10 +4724,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 21.04,
+          "volatility": 21.03,
           "maxDrawdown": -45.07,
-          "volume": 4514804,
-          "lastUpdate": "2026-09-24T00:59:14.592750"
+          "volume": 4474921,
+          "lastUpdate": "2026-09-25T01:02:08.189487"
         },
         {
           "ticker": "EWH",
@@ -4736,7 +4736,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 1213570432,
           "dividendYield": NaN,
@@ -4762,10 +4762,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 19.54,
+          "volatility": 19.55,
           "maxDrawdown": -42.71,
-          "volume": 2899290,
-          "lastUpdate": "2026-09-24T00:59:15.533581"
+          "volume": 2399079,
+          "lastUpdate": "2026-09-25T01:02:09.064713"
         },
         {
           "ticker": "VPL",
@@ -4774,7 +4774,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.08,
           "aum": 13774309376,
           "dividendYield": NaN,
@@ -4802,8 +4802,8 @@
           },
           "volatility": 17.82,
           "maxDrawdown": -33.89,
-          "volume": 394126,
-          "lastUpdate": "2026-09-24T00:59:16.421766"
+          "volume": 328572,
+          "lastUpdate": "2026-09-25T01:02:09.933180"
         },
         {
           "ticker": "EWW",
@@ -4812,7 +4812,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 1819569408,
           "dividendYield": NaN,
@@ -4840,8 +4840,8 @@
           },
           "volatility": 25.19,
           "maxDrawdown": -53.62,
-          "volume": 2458557,
-          "lastUpdate": "2026-09-24T00:59:17.402338"
+          "volume": 1118640,
+          "lastUpdate": "2026-09-25T01:02:10.803236"
         }
       ]
     },
@@ -4856,7 +4856,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.4,
           "aum": 152861196288,
           "dividendYield": 0,
@@ -4884,8 +4884,8 @@
           },
           "volatility": 16.38,
           "maxDrawdown": -26.4,
-          "volume": 7353000,
-          "lastUpdate": "2026-09-24T00:59:18.388850"
+          "volume": 6667320,
+          "lastUpdate": "2026-09-25T01:02:11.532678"
         },
         {
           "ticker": "IAU",
@@ -4894,7 +4894,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.25,
           "aum": 67539091456,
           "dividendYield": 0,
@@ -4922,8 +4922,8 @@
           },
           "volatility": 16.32,
           "maxDrawdown": -26.36,
-          "volume": 5640029,
-          "lastUpdate": "2026-09-24T00:59:19.135502"
+          "volume": 5339609,
+          "lastUpdate": "2026-09-25T01:02:12.388457"
         },
         {
           "ticker": "GLDM",
@@ -4932,7 +4932,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.1,
           "aum": 32785807360,
           "dividendYield": 0,
@@ -4960,8 +4960,8 @@
           },
           "volatility": 17.28,
           "maxDrawdown": -26.27,
-          "volume": 4126138,
-          "lastUpdate": "2026-09-24T00:59:19.856488"
+          "volume": 4738631,
+          "lastUpdate": "2026-09-25T01:02:13.050916"
         },
         {
           "ticker": "SGOL",
@@ -4970,7 +4970,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.17,
           "aum": 7748807680,
           "dividendYield": 0,
@@ -4998,8 +4998,8 @@
           },
           "volatility": 16.34,
           "maxDrawdown": -26.32,
-          "volume": 2865545,
-          "lastUpdate": "2026-09-24T00:59:20.580058"
+          "volume": 2516345,
+          "lastUpdate": "2026-09-25T01:02:13.786670"
         },
         {
           "ticker": "SLV",
@@ -5008,7 +5008,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.5,
           "aum": 34683150336,
           "dividendYield": 0,
@@ -5034,10 +5034,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 32.42,
+          "volatility": 32.44,
           "maxDrawdown": -52.28,
-          "volume": 14859069,
-          "lastUpdate": "2026-09-24T00:59:21.347978"
+          "volume": 15730363,
+          "lastUpdate": "2026-09-25T01:02:14.541448"
         },
         {
           "ticker": "GDX",
@@ -5046,7 +5046,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.51,
           "aum": 30543091712,
           "dividendYield": NaN,
@@ -5072,10 +5072,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 37.5,
+          "volatility": 37.52,
           "maxDrawdown": -49.79,
-          "volume": 27772706,
-          "lastUpdate": "2026-09-24T00:59:22.182730"
+          "volume": 21433979,
+          "lastUpdate": "2026-09-25T01:02:15.362241"
         },
         {
           "ticker": "CPER",
@@ -5084,7 +5084,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.65,
           "aum": 750299264,
           "dividendYield": 0,
@@ -5110,10 +5110,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 24.21,
+          "volatility": 24.2,
           "maxDrawdown": -38.42,
-          "volume": 1024835,
-          "lastUpdate": "2026-09-24T00:59:22.849257"
+          "volume": 275701,
+          "lastUpdate": "2026-09-25T01:02:16.081439"
         },
         {
           "ticker": "COPX",
@@ -5122,7 +5122,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.65,
           "aum": 8443984896,
           "dividendYield": NaN,
@@ -5148,10 +5148,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 36.09,
+          "volatility": 36.08,
           "maxDrawdown": -65.41,
-          "volume": 2299089,
-          "lastUpdate": "2026-09-24T00:59:23.721739"
+          "volume": 1263915,
+          "lastUpdate": "2026-09-25T01:02:16.887168"
         },
         {
           "ticker": "DBB",
@@ -5160,7 +5160,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.85,
           "aum": 363845280,
           "dividendYield": NaN,
@@ -5186,10 +5186,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 18.55,
+          "volatility": 18.54,
           "maxDrawdown": -37.98,
-          "volume": 155222,
-          "lastUpdate": "2026-09-24T00:59:24.609690"
+          "volume": 287714,
+          "lastUpdate": "2026-09-25T01:02:17.694748"
         },
         {
           "ticker": "PICK",
@@ -5198,7 +5198,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.39,
           "aum": 2583474688,
           "dividendYield": NaN,
@@ -5224,10 +5224,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 28.36,
+          "volatility": 28.35,
           "maxDrawdown": -52.73,
-          "volume": 517440,
-          "lastUpdate": "2026-09-24T00:59:25.448470"
+          "volume": 530083,
+          "lastUpdate": "2026-09-25T01:02:18.507235"
         },
         {
           "ticker": "DBC",
@@ -5236,7 +5236,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.85,
           "aum": 1798552320,
           "dividendYield": NaN,
@@ -5264,8 +5264,8 @@
           },
           "volatility": 17.95,
           "maxDrawdown": -41.71,
-          "volume": 639400,
-          "lastUpdate": "2026-09-24T00:59:26.266744"
+          "volume": 804724,
+          "lastUpdate": "2026-09-25T01:02:19.395109"
         },
         {
           "ticker": "PDBC",
@@ -5274,7 +5274,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.59,
           "aum": 7286278144,
           "dividendYield": NaN,
@@ -5302,8 +5302,8 @@
           },
           "volatility": 17.9,
           "maxDrawdown": -40.73,
-          "volume": 4992384,
-          "lastUpdate": "2026-09-24T00:59:27.058862"
+          "volume": 4875534,
+          "lastUpdate": "2026-09-25T01:02:20.232548"
         },
         {
           "ticker": "USO",
@@ -5312,7 +5312,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.79,
           "aum": 1897174656,
           "dividendYield": 0,
@@ -5338,10 +5338,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 39.44,
+          "volatility": 39.45,
           "maxDrawdown": -86.75,
-          "volume": 5834934,
-          "lastUpdate": "2026-09-24T00:59:28.013279"
+          "volume": 9505248,
+          "lastUpdate": "2026-09-25T01:02:21.046518"
         },
         {
           "ticker": "UNG",
@@ -5350,7 +5350,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.6,
           "aum": 579413120,
           "dividendYield": 0,
@@ -5376,10 +5376,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 54.68,
+          "volatility": 54.67,
           "maxDrawdown": -93.88,
-          "volume": 48593270,
-          "lastUpdate": "2026-09-24T00:59:28.760332"
+          "volume": 66276299,
+          "lastUpdate": "2026-09-25T01:02:21.879649"
         },
         {
           "ticker": "REMX",
@@ -5388,7 +5388,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.59,
           "aum": 2290166272,
           "dividendYield": NaN,
@@ -5416,8 +5416,8 @@
           },
           "volatility": 37.54,
           "maxDrawdown": -73.34,
-          "volume": 491169,
-          "lastUpdate": "2026-09-24T00:59:29.560387"
+          "volume": 478694,
+          "lastUpdate": "2026-09-25T01:02:22.727798"
         }
       ]
     },
@@ -5432,7 +5432,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.12,
           "aum": 70822862848,
           "dividendYield": NaN,
@@ -5458,10 +5458,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.71,
+          "volatility": 20.72,
           "maxDrawdown": -42.4,
-          "volume": 5409790,
-          "lastUpdate": "2026-09-24T00:59:30.454681"
+          "volume": 5765923,
+          "lastUpdate": "2026-09-25T01:02:23.590409"
         },
         {
           "ticker": "IYR",
@@ -5470,7 +5470,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.39,
           "aum": 4394973184,
           "dividendYield": NaN,
@@ -5496,10 +5496,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.34,
+          "volatility": 20.35,
           "maxDrawdown": -42.32,
-          "volume": 5500334,
-          "lastUpdate": "2026-09-24T00:59:31.341119"
+          "volume": 7530370,
+          "lastUpdate": "2026-09-25T01:02:24.479670"
         },
         {
           "ticker": "SCHH",
@@ -5508,7 +5508,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.07,
           "aum": 11197114368,
           "dividendYield": NaN,
@@ -5534,10 +5534,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 20.98,
+          "volatility": 20.99,
           "maxDrawdown": -44.22,
-          "volume": 9728519,
-          "lastUpdate": "2026-09-24T00:59:32.221118"
+          "volume": 15199747,
+          "lastUpdate": "2026-09-25T01:02:25.374578"
         },
         {
           "ticker": "REET",
@@ -5546,7 +5546,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.14,
           "aum": 4936422912,
           "dividendYield": NaN,
@@ -5574,8 +5574,8 @@
           },
           "volatility": 18.81,
           "maxDrawdown": -44.59,
-          "volume": 3363216,
-          "lastUpdate": "2026-09-24T00:59:33.027205"
+          "volume": 2725893,
+          "lastUpdate": "2026-09-25T01:02:26.156718"
         },
         {
           "ticker": "VNQI",
@@ -5584,7 +5584,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.12,
           "aum": 3759717376,
           "dividendYield": NaN,
@@ -5612,8 +5612,8 @@
           },
           "volatility": 15.91,
           "maxDrawdown": -38.35,
-          "volume": 324313,
-          "lastUpdate": "2026-09-24T00:59:33.836727"
+          "volume": 215764,
+          "lastUpdate": "2026-09-25T01:02:26.966772"
         },
         {
           "ticker": "USRT",
@@ -5622,7 +5622,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.08,
           "aum": 4570247168,
           "dividendYield": NaN,
@@ -5650,8 +5650,8 @@
           },
           "volatility": 21.3,
           "maxDrawdown": -44.38,
-          "volume": 661751,
-          "lastUpdate": "2026-09-24T00:59:34.718633"
+          "volume": 1567094,
+          "lastUpdate": "2026-09-25T01:02:27.942678"
         }
       ]
     },
@@ -5666,7 +5666,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 1840587648,
           "dividendYield": NaN,
@@ -5694,8 +5694,8 @@
           },
           "volatility": 37.98,
           "maxDrawdown": -80.01,
-          "volume": 87812,
-          "lastUpdate": "2026-09-24T00:59:35.484252"
+          "volume": 81177,
+          "lastUpdate": "2026-09-25T01:02:28.679994"
         },
         {
           "ticker": "ARKX",
@@ -5704,7 +5704,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 768021440,
           "dividendYield": 0,
@@ -5730,10 +5730,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 27.74,
+          "volatility": 27.73,
           "maxDrawdown": -43.61,
-          "volume": 227549,
-          "lastUpdate": "2026-09-24T00:59:36.183270"
+          "volume": 252595,
+          "lastUpdate": "2026-09-25T01:02:29.332360"
         },
         {
           "ticker": "UFO",
@@ -5742,7 +5742,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 557151040,
           "dividendYield": NaN,
@@ -5770,8 +5770,8 @@
           },
           "volatility": 31.19,
           "maxDrawdown": -50.33,
-          "volume": 158724,
-          "lastUpdate": "2026-09-24T00:59:36.902439"
+          "volume": 255805,
+          "lastUpdate": "2026-09-25T01:02:30.051804"
         },
         {
           "ticker": "ROKT",
@@ -5780,7 +5780,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 193732992,
           "dividendYield": NaN,
@@ -5808,8 +5808,8 @@
           },
           "volatility": 25.45,
           "maxDrawdown": -43.16,
-          "volume": 10916,
-          "lastUpdate": "2026-09-24T00:59:37.643889"
+          "volume": 4833,
+          "lastUpdate": "2026-09-25T01:02:30.833190"
         },
         {
           "ticker": "CIBR",
@@ -5818,7 +5818,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.4,
           "aum": 16119134208,
           "dividendYield": NaN,
@@ -5846,8 +5846,8 @@
           },
           "volatility": 24.05,
           "maxDrawdown": -33.89,
-          "volume": 2402136,
-          "lastUpdate": "2026-09-24T00:59:38.478327"
+          "volume": 1185182,
+          "lastUpdate": "2026-09-25T01:02:31.649702"
         },
         {
           "ticker": "BOTZ",
@@ -5856,7 +5856,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.68,
           "aum": 3438523904,
           "dividendYield": NaN,
@@ -5884,8 +5884,8 @@
           },
           "volatility": 25.87,
           "maxDrawdown": -55.54,
-          "volume": 814951,
-          "lastUpdate": "2026-09-24T00:59:39.258472"
+          "volume": 411550,
+          "lastUpdate": "2026-09-25T01:02:32.390806"
         },
         {
           "ticker": "ICLN",
@@ -5894,7 +5894,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.4,
           "aum": 2181427456,
           "dividendYield": NaN,
@@ -5920,10 +5920,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 27.55,
+          "volatility": 27.56,
           "maxDrawdown": -66.75,
-          "volume": 6064654,
-          "lastUpdate": "2026-09-24T00:59:40.071651"
+          "volume": 5618222,
+          "lastUpdate": "2026-09-25T01:02:33.281510"
         },
         {
           "ticker": "LIT",
@@ -5932,7 +5932,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 1643735296,
           "dividendYield": NaN,
@@ -5960,8 +5960,8 @@
           },
           "volatility": 30.85,
           "maxDrawdown": -65.91,
-          "volume": 123426,
-          "lastUpdate": "2026-09-24T00:59:40.868388"
+          "volume": 108806,
+          "lastUpdate": "2026-09-25T01:02:34.131629"
         },
         {
           "ticker": "IBIT",
@@ -5970,7 +5970,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.25,
           "aum": 61435101184,
           "dividendYield": 0,
@@ -5993,10 +5993,10 @@
             "5Y": null
           },
           "cagr": {},
-          "volatility": 49.31,
+          "volatility": 49.29,
           "maxDrawdown": -53.3,
-          "volume": 46645510,
-          "lastUpdate": "2026-09-24T00:59:41.494531"
+          "volume": 37915318,
+          "lastUpdate": "2026-09-25T01:02:34.806385"
         },
         {
           "ticker": "ARKF",
@@ -6005,7 +6005,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 818739968,
           "dividendYield": NaN,
@@ -6031,10 +6031,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 39.56,
+          "volatility": 39.55,
           "maxDrawdown": -78.63,
-          "volume": 56433,
-          "lastUpdate": "2026-09-24T00:59:42.216058"
+          "volume": 180347,
+          "lastUpdate": "2026-09-25T01:02:35.602244"
         },
         {
           "ticker": "ARKG",
@@ -6043,7 +6043,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 2020345088,
           "dividendYield": 0,
@@ -6069,10 +6069,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 41.77,
+          "volatility": 41.76,
           "maxDrawdown": -83.59,
-          "volume": 5282094,
-          "lastUpdate": "2026-09-24T00:59:42.992359"
+          "volume": 5727716,
+          "lastUpdate": "2026-09-25T01:02:36.355928"
         },
         {
           "ticker": "ARKQ",
@@ -6081,7 +6081,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.75,
           "aum": 1923636480,
           "dividendYield": NaN,
@@ -6109,8 +6109,8 @@
           },
           "volatility": 30.29,
           "maxDrawdown": -59.89,
-          "volume": 91653,
-          "lastUpdate": "2026-09-24T00:59:43.779447"
+          "volume": 72282,
+          "lastUpdate": "2026-09-25T01:02:37.146468"
         },
         {
           "ticker": "CLOU",
@@ -6119,7 +6119,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.68,
           "aum": 382466336,
           "dividendYield": 0,
@@ -6145,10 +6145,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 30.88,
+          "volatility": 30.87,
           "maxDrawdown": -53.74,
-          "volume": 305546,
-          "lastUpdate": "2026-09-24T00:59:44.520248"
+          "volume": 106334,
+          "lastUpdate": "2026-09-25T01:02:37.960373"
         },
         {
           "ticker": "JETS",
@@ -6157,7 +6157,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.6,
           "aum": 765059520,
           "dividendYield": NaN,
@@ -6183,10 +6183,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 34.28,
+          "volatility": 34.29,
           "maxDrawdown": -64.73,
-          "volume": 7554856,
-          "lastUpdate": "2026-09-24T00:59:45.329962"
+          "volume": 3872930,
+          "lastUpdate": "2026-09-25T01:02:38.752843"
         },
         {
           "ticker": "DRIV",
@@ -6195,7 +6195,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.68,
           "aum": 373723328,
           "dividendYield": NaN,
@@ -6223,8 +6223,8 @@
           },
           "volatility": 27.68,
           "maxDrawdown": -41.93,
-          "volume": 22627,
-          "lastUpdate": "2026-09-24T00:59:46.058878"
+          "volume": 12298,
+          "lastUpdate": "2026-09-25T01:02:39.505377"
         },
         {
           "ticker": "WCLD",
@@ -6233,7 +6233,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.45,
           "aum": 366981408,
           "dividendYield": 0,
@@ -6259,10 +6259,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 37.55,
+          "volatility": 37.54,
           "maxDrawdown": -64.9,
-          "volume": 661950,
-          "lastUpdate": "2026-09-24T00:59:46.758369"
+          "volume": 496935,
+          "lastUpdate": "2026-09-25T01:02:40.167150"
         },
         {
           "ticker": "FINX",
@@ -6271,7 +6271,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.68,
           "aum": 174752448,
           "dividendYield": NaN,
@@ -6299,8 +6299,8 @@
           },
           "volatility": 28.81,
           "maxDrawdown": -63.53,
-          "volume": 16292,
-          "lastUpdate": "2026-09-24T00:59:47.521245"
+          "volume": 60148,
+          "lastUpdate": "2026-09-25T01:02:40.931568"
         },
         {
           "ticker": "FBTC",
@@ -6309,7 +6309,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.25,
           "aum": 13866148864,
           "dividendYield": 0,
@@ -6332,10 +6332,10 @@
             "5Y": null
           },
           "cagr": {},
-          "volatility": 49.24,
+          "volatility": 49.22,
           "maxDrawdown": -53.35,
-          "volume": 7207300,
-          "lastUpdate": "2026-09-24T00:59:48.185373"
+          "volume": 2443040,
+          "lastUpdate": "2026-09-25T01:02:41.595999"
         }
       ]
     },
@@ -6350,7 +6350,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.95,
           "aum": 635620928,
           "dividendYield": NaN,
@@ -6378,8 +6378,8 @@
           },
           "volatility": 22.52,
           "maxDrawdown": -87.68,
-          "volume": 16689758,
-          "lastUpdate": "2026-09-24T00:59:49.085121"
+          "volume": 22867600,
+          "lastUpdate": "2026-09-25T01:02:42.483751"
         },
         {
           "ticker": "SQQQ",
@@ -6388,7 +6388,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.95,
           "aum": 1935680000,
           "dividendYield": NaN,
@@ -6414,10 +6414,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 66.94,
+          "volatility": 66.93,
           "maxDrawdown": -99.97,
-          "volume": 49848246,
-          "lastUpdate": "2026-09-24T00:59:49.857802"
+          "volume": 59353445,
+          "lastUpdate": "2026-09-25T01:02:43.348999"
         },
         {
           "ticker": "SPXL",
@@ -6426,7 +6426,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.95,
           "aum": 6966057472,
           "dividendYield": NaN,
@@ -6452,10 +6452,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 53.48,
+          "volatility": 53.47,
           "maxDrawdown": -76.86,
-          "volume": 1913919,
-          "lastUpdate": "2026-09-24T00:59:50.712641"
+          "volume": 1631095,
+          "lastUpdate": "2026-09-25T01:02:44.269308"
         },
         {
           "ticker": "SPXS",
@@ -6464,7 +6464,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.95,
           "aum": 339081984,
           "dividendYield": NaN,
@@ -6490,10 +6490,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 53.61,
+          "volatility": 53.6,
           "maxDrawdown": -99.59,
-          "volume": 15327029,
-          "lastUpdate": "2026-09-24T00:59:51.550839"
+          "volume": 15077282,
+          "lastUpdate": "2026-09-25T01:02:45.147975"
         },
         {
           "ticker": "SSO",
@@ -6502,7 +6502,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.89,
           "aum": 8813299712,
           "dividendYield": NaN,
@@ -6528,10 +6528,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 35.93,
+          "volatility": 35.92,
           "maxDrawdown": -59.34,
-          "volume": 2513925,
-          "lastUpdate": "2026-09-24T00:59:52.517831"
+          "volume": 2138410,
+          "lastUpdate": "2026-09-25T01:02:45.984869"
         },
         {
           "ticker": "SDS",
@@ -6540,7 +6540,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.89,
           "aum": 365798944,
           "dividendYield": NaN,
@@ -6566,10 +6566,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 35.86,
+          "volatility": 35.85,
           "maxDrawdown": -96.26,
-          "volume": 2853412,
-          "lastUpdate": "2026-09-24T00:59:53.360632"
+          "volume": 4260597,
+          "lastUpdate": "2026-09-25T01:02:46.780175"
         },
         {
           "ticker": "SOXL",
@@ -6578,7 +6578,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.95,
           "aum": 19311783936,
           "dividendYield": NaN,
@@ -6604,10 +6604,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 102.98,
+          "volatility": 102.97,
           "maxDrawdown": -90.46,
-          "volume": 61043803,
-          "lastUpdate": "2026-09-24T00:59:54.186707"
+          "volume": 64553899,
+          "lastUpdate": "2026-09-25T01:02:47.565593"
         },
         {
           "ticker": "SOXS",
@@ -6616,7 +6616,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 1.01,
           "aum": 1403304960,
           "dividendYield": NaN,
@@ -6642,10 +6642,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 108.67,
+          "volatility": 108.66,
           "maxDrawdown": -100.0,
-          "volume": 81507773,
-          "lastUpdate": "2026-09-24T00:59:55.057550"
+          "volume": 83472119,
+          "lastUpdate": "2026-09-25T01:02:48.380484"
         },
         {
           "ticker": "UPRO",
@@ -6654,7 +6654,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.92,
           "aum": 5447582720,
           "dividendYield": NaN,
@@ -6680,10 +6680,10 @@
             "3Y": NaN,
             "5Y": NaN
           },
-          "volatility": 53.82,
+          "volatility": 53.81,
           "maxDrawdown": -76.82,
-          "volume": 1579655,
-          "lastUpdate": "2026-09-24T00:59:55.944542"
+          "volume": 1610446,
+          "lastUpdate": "2026-09-25T01:02:49.275405"
         },
         {
           "ticker": "SH",
@@ -6692,7 +6692,7 @@
           "priceChange": NaN,
           "priceChangePct": NaN,
           "currency": "USD",
-          "currentDate": "2026-09-23",
+          "currentDate": "2026-09-24",
           "expenseRatio": 0.89,
           "aum": 836657984,
           "dividendYield": NaN,
@@ -6720,8 +6720,8 @@
           },
           "volatility": 18.03,
           "maxDrawdown": -75.23,
-          "volume": 9348886,
-          "lastUpdate": "2026-09-24T00:59:56.871193"
+          "volume": 11757450,
+          "lastUpdate": "2026-09-25T01:02:50.106103"
         }
       ]
     },
@@ -6764,7 +6764,7 @@
           "volatility": 26.01,
           "maxDrawdown": -40.81,
           "volume": 21157647,
-          "lastUpdate": "2026-09-24T00:59:58.646239"
+          "lastUpdate": "2026-09-25T01:02:51.807617"
         },
         {
           "ticker": "102110",
@@ -6801,7 +6801,7 @@
           "volatility": 25.98,
           "maxDrawdown": -40.63,
           "volume": 15602772,
-          "lastUpdate": "2026-09-24T01:00:00.286876"
+          "lastUpdate": "2026-09-25T01:02:53.138857"
         },
         {
           "ticker": "278530",
@@ -6838,7 +6838,7 @@
           "volatility": 27.05,
           "maxDrawdown": -40.62,
           "volume": 412823,
-          "lastUpdate": "2026-09-24T01:00:01.776138"
+          "lastUpdate": "2026-09-25T01:02:54.529405"
         },
         {
           "ticker": "229200",
@@ -6875,7 +6875,7 @@
           "volatility": 31.92,
           "maxDrawdown": -57.22,
           "volume": 20804287,
-          "lastUpdate": "2026-09-24T01:00:03.657419"
+          "lastUpdate": "2026-09-25T01:02:55.903217"
         },
         {
           "ticker": "091180",
@@ -6912,7 +6912,7 @@
           "volatility": 29.34,
           "maxDrawdown": -53.38,
           "volume": 118638,
-          "lastUpdate": "2026-09-24T01:00:05.566703"
+          "lastUpdate": "2026-09-25T01:02:57.183863"
         },
         {
           "ticker": "122630",
@@ -6949,7 +6949,7 @@
           "volatility": 51.71,
           "maxDrawdown": -68.37,
           "volume": 11452818,
-          "lastUpdate": "2026-09-24T01:00:07.327364"
+          "lastUpdate": "2026-09-25T01:02:58.432187"
         },
         {
           "ticker": "252670",
@@ -6986,7 +6986,7 @@
           "volatility": 52.03,
           "maxDrawdown": -99.5,
           "volume": 3688854199,
-          "lastUpdate": "2026-09-24T01:00:09.059461"
+          "lastUpdate": "2026-09-25T01:02:59.551068"
         },
         {
           "ticker": "232080",
@@ -7023,7 +7023,7 @@
           "volatility": 31.84,
           "maxDrawdown": -57.53,
           "volume": 8975731,
-          "lastUpdate": "2026-09-24T01:00:10.459818"
+          "lastUpdate": "2026-09-25T01:03:00.881947"
         },
         {
           "ticker": "354500",
@@ -7057,7 +7057,7 @@
           "volatility": 42.77,
           "maxDrawdown": -49.19,
           "volume": 47341,
-          "lastUpdate": "2026-09-24T01:00:12.208633"
+          "lastUpdate": "2026-09-25T01:03:02.059504"
         },
         {
           "ticker": "233740",
@@ -7094,7 +7094,7 @@
           "volatility": 62.08,
           "maxDrawdown": -85.98,
           "volume": 45069882,
-          "lastUpdate": "2026-09-24T01:00:13.673859"
+          "lastUpdate": "2026-09-25T01:03:03.327500"
         },
         {
           "ticker": "291630",
@@ -7128,7 +7128,7 @@
           "volatility": 83.87,
           "maxDrawdown": -79.89,
           "volume": 74469,
-          "lastUpdate": "2026-09-24T01:00:15.204166"
+          "lastUpdate": "2026-09-25T01:03:04.538523"
         }
       ]
     },
@@ -7171,7 +7171,7 @@
           "volatility": 36.97,
           "maxDrawdown": -50.26,
           "volume": 1695607,
-          "lastUpdate": "2026-09-24T01:00:16.754747"
+          "lastUpdate": "2026-09-25T01:03:05.966145"
         },
         {
           "ticker": "381180",
@@ -7208,7 +7208,7 @@
           "volatility": 35.01,
           "maxDrawdown": -38.07,
           "volume": 1065033,
-          "lastUpdate": "2026-09-24T01:00:17.993402"
+          "lastUpdate": "2026-09-25T01:03:07.065362"
         },
         {
           "ticker": "445090",
@@ -7242,7 +7242,7 @@
           "volatility": 88.29,
           "maxDrawdown": -80.68,
           "volume": 26688,
-          "lastUpdate": "2026-09-24T01:00:20.500442"
+          "lastUpdate": "2026-09-25T01:03:09.032547"
         }
       ]
     },
@@ -7285,7 +7285,7 @@
           "volatility": 40.83,
           "maxDrawdown": -71.74,
           "volume": 192973,
-          "lastUpdate": "2026-09-24T01:00:21.994236"
+          "lastUpdate": "2026-09-25T01:03:10.165381"
         },
         {
           "ticker": "371460",
@@ -7322,7 +7322,7 @@
           "volatility": 31.95,
           "maxDrawdown": -69.3,
           "volume": 105160,
-          "lastUpdate": "2026-09-24T01:00:23.450026"
+          "lastUpdate": "2026-09-25T01:03:11.401307"
         },
         {
           "ticker": "364980",
@@ -7359,7 +7359,7 @@
           "volatility": 42.74,
           "maxDrawdown": -73.56,
           "volume": 1385228,
-          "lastUpdate": "2026-09-24T01:00:24.932551"
+          "lastUpdate": "2026-09-25T01:03:12.792246"
         }
       ]
     },
@@ -7402,7 +7402,7 @@
           "volatility": 9.83,
           "maxDrawdown": -18.36,
           "volume": 37446,
-          "lastUpdate": "2026-09-24T01:00:26.432511"
+          "lastUpdate": "2026-09-25T01:03:13.924543"
         },
         {
           "ticker": "114820",
@@ -7439,7 +7439,7 @@
           "volatility": 2.05,
           "maxDrawdown": -5.85,
           "volume": 14992,
-          "lastUpdate": "2026-09-24T01:00:27.941130"
+          "lastUpdate": "2026-09-25T01:03:15.254523"
         },
         {
           "ticker": "157450",
@@ -7476,7 +7476,7 @@
           "volatility": 1.65,
           "maxDrawdown": -3.5,
           "volume": 7756,
-          "lastUpdate": "2026-09-24T01:00:29.354168"
+          "lastUpdate": "2026-09-25T01:03:16.443585"
         },
         {
           "ticker": "357870",
@@ -7512,7 +7512,7 @@
           "volatility": 1.73,
           "maxDrawdown": -0.01,
           "volume": 154555,
-          "lastUpdate": "2026-09-24T01:00:30.818157"
+          "lastUpdate": "2026-09-25T01:03:17.688763"
         },
         {
           "ticker": "385560",
@@ -7549,7 +7549,7 @@
           "volatility": 16.93,
           "maxDrawdown": -46.31,
           "volume": 20277,
-          "lastUpdate": "2026-09-24T01:00:32.155084"
+          "lastUpdate": "2026-09-25T01:03:18.928601"
         },
         {
           "ticker": "148070",
@@ -7586,7 +7586,7 @@
           "volatility": 5.64,
           "maxDrawdown": -20.29,
           "volume": 97939,
-          "lastUpdate": "2026-09-24T01:00:33.592834"
+          "lastUpdate": "2026-09-25T01:03:20.275976"
         }
       ]
     },
@@ -7629,7 +7629,7 @@
           "volatility": 27.44,
           "maxDrawdown": -57.03,
           "volume": 49818,
-          "lastUpdate": "2026-09-24T01:00:35.131039"
+          "lastUpdate": "2026-09-25T01:03:21.588842"
         },
         {
           "ticker": "266410",
@@ -7666,7 +7666,7 @@
           "volatility": 20.08,
           "maxDrawdown": -45.54,
           "volume": 75950,
-          "lastUpdate": "2026-09-24T01:00:37.218504"
+          "lastUpdate": "2026-09-25T01:03:23.726221"
         }
       ]
     },
@@ -7709,7 +7709,7 @@
           "volatility": 21.0,
           "maxDrawdown": -47.96,
           "volume": 1626,
-          "lastUpdate": "2026-09-24T01:00:38.607056"
+          "lastUpdate": "2026-09-25T01:03:24.878132"
         },
         {
           "ticker": "192090",
@@ -7746,7 +7746,7 @@
           "volatility": 19.57,
           "maxDrawdown": -41.43,
           "volume": 25303,
-          "lastUpdate": "2026-09-24T01:00:39.955141"
+          "lastUpdate": "2026-09-25T01:03:26.370776"
         }
       ]
     },
@@ -7789,7 +7789,7 @@
           "volatility": 17.34,
           "maxDrawdown": -30.49,
           "volume": 36476,
-          "lastUpdate": "2026-09-24T01:00:41.268753"
+          "lastUpdate": "2026-09-25T01:03:27.624132"
         },
         {
           "ticker": "319640",
@@ -7826,7 +7826,7 @@
           "volatility": 19.18,
           "maxDrawdown": -30.49,
           "volume": 5371,
-          "lastUpdate": "2026-09-24T01:00:42.527725"
+          "lastUpdate": "2026-09-25T01:03:28.806113"
         },
         {
           "ticker": "217770",
@@ -7863,7 +7863,7 @@
           "volatility": 44.42,
           "maxDrawdown": -96.42,
           "volume": 1171241,
-          "lastUpdate": "2026-09-24T01:00:43.842623"
+          "lastUpdate": "2026-09-25T01:03:30.120250"
         },
         {
           "ticker": "261220",
@@ -7900,7 +7900,7 @@
           "volatility": 43.83,
           "maxDrawdown": -88.57,
           "volume": 99739,
-          "lastUpdate": "2026-09-24T01:00:45.107398"
+          "lastUpdate": "2026-09-25T01:03:31.359648"
         },
         {
           "ticker": "439870",
@@ -7936,7 +7936,7 @@
           "volatility": 13.16,
           "maxDrawdown": -32.21,
           "volume": 12707,
-          "lastUpdate": "2026-09-24T01:00:46.403819"
+          "lastUpdate": "2026-09-25T01:03:32.540192"
         },
         {
           "ticker": "091220",
@@ -7973,7 +7973,7 @@
           "volatility": 26.38,
           "maxDrawdown": -57.3,
           "volume": 19092,
-          "lastUpdate": "2026-09-24T01:00:47.868209"
+          "lastUpdate": "2026-09-25T01:03:33.877159"
         },
         {
           "ticker": "334690",
@@ -8010,7 +8010,7 @@
           "volatility": 41.66,
           "maxDrawdown": -75.86,
           "volume": 4629,
-          "lastUpdate": "2026-09-24T01:00:49.150608"
+          "lastUpdate": "2026-09-25T01:03:34.956018"
         }
       ]
     },
@@ -8053,7 +8053,7 @@
           "volatility": 18.33,
           "maxDrawdown": -40.52,
           "volume": 3357,
-          "lastUpdate": "2026-09-24T01:00:50.714732"
+          "lastUpdate": "2026-09-25T01:03:36.107347"
         },
         {
           "ticker": "192720",
@@ -8090,7 +8090,7 @@
           "volatility": 18.48,
           "maxDrawdown": -49.82,
           "volume": 1723,
-          "lastUpdate": "2026-09-24T01:00:52.078076"
+          "lastUpdate": "2026-09-25T01:03:37.296010"
         },
         {
           "ticker": "195980",
@@ -8127,7 +8127,7 @@
           "volatility": 18.91,
           "maxDrawdown": -43.02,
           "volume": 11136,
-          "lastUpdate": "2026-09-24T01:00:53.403319"
+          "lastUpdate": "2026-09-25T01:03:38.464512"
         },
         {
           "ticker": "213630",
@@ -8164,7 +8164,7 @@
           "volatility": 17.27,
           "maxDrawdown": -42.59,
           "volume": 1412,
-          "lastUpdate": "2026-09-24T01:00:54.935607"
+          "lastUpdate": "2026-09-25T01:03:39.632611"
         }
       ]
     },
@@ -8207,7 +8207,7 @@
           "volatility": 20.68,
           "maxDrawdown": -44.09,
           "volume": 6310,
-          "lastUpdate": "2026-09-24T01:00:56.568116"
+          "lastUpdate": "2026-09-25T01:03:40.956185"
         },
         {
           "ticker": "292190",
@@ -8244,7 +8244,7 @@
           "volatility": 27.68,
           "maxDrawdown": -41.14,
           "volume": 12615,
-          "lastUpdate": "2026-09-24T01:00:58.416622"
+          "lastUpdate": "2026-09-25T01:03:42.425576"
         },
         {
           "ticker": "329200",
@@ -8281,7 +8281,7 @@
           "volatility": 13.6,
           "maxDrawdown": -36.25,
           "volume": 3209654,
-          "lastUpdate": "2026-09-24T01:00:59.811893"
+          "lastUpdate": "2026-09-25T01:03:43.547633"
         }
       ]
     },
@@ -8323,7 +8323,7 @@
           "volatility": 5.67,
           "maxDrawdown": -9.19,
           "volume": 9731,
-          "lastUpdate": "2026-09-24T01:01:02.079022"
+          "lastUpdate": "2026-09-25T01:03:45.402419"
         }
       ]
     },
@@ -8366,7 +8366,7 @@
           "volatility": 24.9,
           "maxDrawdown": -40.59,
           "volume": 1114447,
-          "lastUpdate": "2026-09-24T01:01:03.702617"
+          "lastUpdate": "2026-09-25T01:03:46.606714"
         },
         {
           "ticker": "449770",
@@ -8402,7 +8402,7 @@
           "volatility": 15.27,
           "maxDrawdown": -19.24,
           "volume": 2617,
-          "lastUpdate": "2026-09-24T01:01:05.146148"
+          "lastUpdate": "2026-09-25T01:03:47.675135"
         },
         {
           "ticker": "461900",
@@ -8438,7 +8438,7 @@
           "volatility": 23.99,
           "maxDrawdown": -30.8,
           "volume": 1408,
-          "lastUpdate": "2026-09-24T01:01:06.428567"
+          "lastUpdate": "2026-09-25T01:03:48.865999"
         }
       ]
     },
@@ -8480,7 +8480,7 @@
           "volatility": 14.04,
           "maxDrawdown": -13.12,
           "volume": 1835740,
-          "lastUpdate": "2026-09-24T01:01:07.731696"
+          "lastUpdate": "2026-09-25T01:03:49.996001"
         }
       ]
     },
@@ -8523,7 +8523,7 @@
           "volatility": 15.76,
           "maxDrawdown": -19.15,
           "volume": 27225020,
-          "lastUpdate": "2026-09-24T01:01:09.260219"
+          "lastUpdate": "2026-09-25T01:03:51.246517"
         },
         {
           "ticker": "379800",
@@ -8560,7 +8560,7 @@
           "volatility": 15.71,
           "maxDrawdown": -19.16,
           "volume": 20844085,
-          "lastUpdate": "2026-09-24T01:01:10.600984"
+          "lastUpdate": "2026-09-25T01:03:52.419887"
         },
         {
           "ticker": "360200",
@@ -8597,7 +8597,7 @@
           "volatility": 15.57,
           "maxDrawdown": -19.12,
           "volume": 501670,
-          "lastUpdate": "2026-09-24T01:01:11.911887"
+          "lastUpdate": "2026-09-25T01:03:53.548262"
         },
         {
           "ticker": "448290",
@@ -8633,7 +8633,7 @@
           "volatility": 16.42,
           "maxDrawdown": -20.87,
           "volume": 140281,
-          "lastUpdate": "2026-09-24T01:01:13.203843"
+          "lastUpdate": "2026-09-25T01:03:54.670567"
         },
         {
           "ticker": "449180",
@@ -8669,7 +8669,7 @@
           "volatility": 17.04,
           "maxDrawdown": -20.79,
           "volume": 486164,
-          "lastUpdate": "2026-09-24T01:01:14.517195"
+          "lastUpdate": "2026-09-25T01:03:55.756378"
         }
       ]
     },
@@ -8712,7 +8712,7 @@
           "volatility": 20.48,
           "maxDrawdown": -31.02,
           "volume": 5613942,
-          "lastUpdate": "2026-09-24T01:01:15.915537"
+          "lastUpdate": "2026-09-25T01:03:56.941594"
         },
         {
           "ticker": "379810",
@@ -8749,7 +8749,7 @@
           "volatility": 20.84,
           "maxDrawdown": -31.03,
           "volume": 22981525,
-          "lastUpdate": "2026-09-24T01:01:17.173935"
+          "lastUpdate": "2026-09-25T01:03:58.028297"
         },
         {
           "ticker": "367380",
@@ -8786,13 +8786,13 @@
           "volatility": 20.92,
           "maxDrawdown": -31.01,
           "volume": 581513,
-          "lastUpdate": "2026-09-24T01:01:18.492665"
+          "lastUpdate": "2026-09-25T01:03:59.145614"
         }
       ]
     }
   },
   "metadata": {
-    "lastUpdate": "2026-09-24T01:01:20.406248",
+    "lastUpdate": "2026-09-25T01:04:01.059314",
     "totalETFs": 229,
     "failedETFs": 4,
     "categories": 30,
@@ -8803,26 +8803,26 @@
       "id": "sp500",
       "label": "S&P 500",
       "currency": "USD",
-      "currentValue": 7706.03,
-      "currentDate": "2026-09-23",
+      "currentValue": 7704.13,
+      "currentDate": "2026-09-24",
       "periods": {
         "1W": {
           "prevValue": 7650.5,
           "prevDate": "2026-09-21",
-          "changePoints": 55.53,
-          "changePct": 0.73
+          "changePoints": 53.63,
+          "changePct": 0.7
         },
         "1M": {
-          "prevValue": 7674.37,
-          "prevDate": "2026-08-21",
-          "changePoints": 31.66,
-          "changePct": 0.41
+          "prevValue": 7652.86,
+          "prevDate": "2026-08-24",
+          "changePoints": 51.27,
+          "changePct": 0.67
         },
         "3M": {
-          "prevValue": 7365.46,
-          "prevDate": "2026-06-23",
-          "changePoints": 340.57,
-          "changePct": 4.62
+          "prevValue": 7358.22,
+          "prevDate": "2026-06-24",
+          "changePoints": 345.91,
+          "changePct": 4.7
         }
       }
     },
@@ -8830,26 +8830,26 @@
       "id": "nasdaq",
       "label": "Nasdaq 100",
       "currency": "USD",
-      "currentValue": 30470.29,
-      "currentDate": "2026-09-23",
+      "currentValue": 30478.86,
+      "currentDate": "2026-09-24",
       "periods": {
         "1W": {
           "prevValue": 29644.17,
           "prevDate": "2026-09-21",
-          "changePoints": 826.12,
-          "changePct": 2.79
+          "changePoints": 834.69,
+          "changePct": 2.82
         },
         "1M": {
-          "prevValue": 29308.86,
-          "prevDate": "2026-08-21",
-          "changePoints": 1161.43,
-          "changePct": 3.96
+          "prevValue": 29023.18,
+          "prevDate": "2026-08-24",
+          "changePoints": 1455.68,
+          "changePct": 5.02
         },
         "3M": {
-          "prevValue": 29347.27,
-          "prevDate": "2026-06-23",
-          "changePoints": 1123.02,
-          "changePct": 3.83
+          "prevValue": 29220.06,
+          "prevDate": "2026-06-24",
+          "changePoints": 1258.79,
+          "changePct": 4.31
         }
       }
     },
@@ -8857,26 +8857,26 @@
       "id": "kospi",
       "label": "KOSPI",
       "currency": "KRW",
-      "currentValue": NaN,
+      "currentValue": 7081.0,
       "currentDate": "2026-09-23",
       "periods": {
         "1W": {
           "prevValue": 6894.0,
           "prevDate": "2026-09-21",
-          "changePoints": NaN,
-          "changePct": NaN
+          "changePoints": 187.0,
+          "changePct": 2.71
         },
         "1M": {
           "prevValue": 6697.0,
           "prevDate": "2026-08-24",
-          "changePoints": NaN,
-          "changePct": NaN
+          "changePoints": 384.0,
+          "changePct": 5.73
         },
         "3M": {
           "prevValue": 8204.0,
           "prevDate": "2026-06-23",
-          "changePoints": NaN,
-          "changePct": NaN
+          "changePoints": -1123.0,
+          "changePct": -13.69
         }
       }
     },
@@ -8884,26 +8884,26 @@
       "id": "kosdaq",
       "label": "KOSDAQ",
       "currency": "KRW",
-      "currentValue": 836.0,
-      "currentDate": "2026-09-21",
+      "currentValue": 844.0,
+      "currentDate": "2026-09-23",
       "periods": {
         "1W": {
           "prevValue": 827.0,
           "prevDate": "2026-09-21",
-          "changePoints": 9.0,
-          "changePct": 1.11
+          "changePoints": 17.0,
+          "changePct": 2.1
         },
         "1M": {
-          "prevValue": 802.0,
-          "prevDate": "2026-08-21",
-          "changePoints": 34.0,
-          "changePct": 4.28
+          "prevValue": 813.0,
+          "prevDate": "2026-08-24",
+          "changePoints": 31.0,
+          "changePct": 3.83
         },
         "3M": {
-          "prevValue": 968.0,
-          "prevDate": "2026-06-22",
-          "changePoints": -132.0,
-          "changePct": -13.64
+          "prevValue": 892.0,
+          "prevDate": "2026-06-23",
+          "changePoints": -47.0,
+          "changePct": -5.28
         }
       }
     }
